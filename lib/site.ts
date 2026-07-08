@@ -17,7 +17,7 @@ export const site = {
   // Leave as null to render NO ad markup (clean dev/preview, avoids policy issues pre-approval).
   adsenseClient: null as string | null,
   // Google Analytics 4 measurement ID (gtag.js). Null = no analytics markup.
-  gaMeasurementId: null as string | null,
+  gaMeasurementId: 'G-VFL6YGR44D' as string | null,
   // ── Nav ─────────────────────────────────────────────────────────
   nav: [
     { label: 'By Industry', href: '/by-industry' },

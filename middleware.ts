@@ -12,11 +12,12 @@ export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl
 
   // Redirect explicit /en/* to the clean URL (avoid duplicate canonicals).
+  // 308 (permanent) so search engines consolidate signals on the clean URL.
   if (pathname === `/${defaultLocale}` || pathname.startsWith(`/${defaultLocale}/`)) {
     const stripped = pathname.replace(`/${defaultLocale}`, '') || '/'
     const url = req.nextUrl.clone()
     url.pathname = stripped
-    return NextResponse.redirect(url)
+    return NextResponse.redirect(url, 308)
   }
 
   // Already a supported non-default locale → pass through.
