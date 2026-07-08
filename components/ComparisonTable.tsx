@@ -133,7 +133,8 @@ export function ComparisonTable({
 
       <p className="mt-3 px-1 text-[12.5px] text-slate-400">
         Ratings aggregated from G2 and Capterra. Prices are each vendor’s lowest published plan
-        (checked Jul 2026); “Custom” means the vendor quotes per business. {site.name} may earn a
+        with annual billing (checked Jul 2026) — month-to-month runs higher; “Custom” means the
+        vendor quotes per business. {site.name} may earn a
         commission from software links — this never affects our scoring. Verify current pricing for
         your {industryName} business before deciding.
       </p>

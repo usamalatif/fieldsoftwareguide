@@ -25,6 +25,14 @@ export function AuthorBio({
         <div className="mt-0.5 text-lg font-extrabold text-slate-900 dark:text-white">{name}</div>
         <div className="mt-0.5 text-[13.5px] font-semibold text-orange-600 dark:text-orange-400">{credential}</div>
         <p className="mt-2.5 max-w-[660px] text-sm leading-[1.6] text-slate-600 dark:text-slate-300">{bio}</p>
+        <a
+          href="https://www.usamalatif.com"
+          target="_blank"
+          rel="noopener"
+          className="mt-2 inline-block text-[13.5px] font-semibold text-orange-600 hover:text-orange-800 dark:text-orange-400"
+        >
+          More about Usama →
+        </a>
       </div>
     </aside>
   )

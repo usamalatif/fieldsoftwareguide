@@ -12,6 +12,7 @@ export const staticRoutes: readonly string[] = [
   '/by-industry',
   '/by-size',
   '/compare',
+  '/compare/jobber-vs-housecall-pro',
   '/free',
   '/guides',
   '/about',

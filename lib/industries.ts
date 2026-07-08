@@ -108,6 +108,9 @@ export interface Industry {
 // Vendor pricing checked against each vendor's own pricing page; vertical-fit,
 // offline, GPS, and asset-tracking claims verified against vendor docs.
 import { hvac } from '@/content/industries/hvac'
+import { plumbing } from '@/content/industries/plumbing'
+import { electrical } from '@/content/industries/electrical'
+import { pestControl } from '@/content/industries/pest-control'
 import { oilGas } from '@/content/industries/oil-gas'
 import { healthcare } from '@/content/industries/healthcare'
 import { transportation } from '@/content/industries/transportation'
@@ -117,6 +120,9 @@ import { equipmentRental } from '@/content/industries/equipment-rental'
 
 export const industries: Industry[] = [
   hvac,
+  plumbing,
+  electrical,
+  pestControl,
   oilGas,
   healthcare,
   transportation,

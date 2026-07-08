@@ -26,6 +26,7 @@ function PersonJsonLd() {
           '@type': 'Person',
           name: 'Usama Latif',
           url: `${site.url}/author/usama-latif`,
+          sameAs: ['https://www.usamalatif.com'],
           jobTitle: 'Software & AI product builder; FSM software researcher',
           worksFor: { '@type': 'Organization', name: site.name, url: site.url },
           description:
@@ -80,7 +81,12 @@ export default function AuthorPage() {
             <li><Link href="/by-industry">FSM software by industry</Link></li>
           </ul>
           <p>
-            Reach Usama via the <Link href="/contact">contact page</Link>.
+            Reach Usama via the <Link href="/contact">contact page</Link>, or see more of his work
+            at{' '}
+            <a href="https://www.usamalatif.com" target="_blank" rel="noopener">
+              usamalatif.com
+            </a>
+            .
           </p>
         </div>
       </div>
