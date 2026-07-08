@@ -195,7 +195,8 @@ function PricingList({ industry: ind }: { industry: Industry }) {
         ))}
       </dl>
       <p className="border-t border-slate-100 px-6 py-3 text-[12.5px] text-slate-400 dark:border-slate-800">
-        Lowest vendor-published plan (checked Jul 2026). {isPricePublishable(ind.priceRange) && ind.priceRange.note
+        Lowest vendor-published plan with annual billing (checked Jul 2026); month-to-month rates
+        run higher. {isPricePublishable(ind.priceRange) && ind.priceRange.note
           ? ind.priceRange.note
           : 'Custom-priced tools require a quote; costs scale with technicians and features.'}
       </p>

@@ -24,12 +24,12 @@ const faqs = [
   {
     question: 'Which FSM software is best?',
     answer:
-      'There is no single best FSM tool. Jobber (from $29/mo) and Housecall Pro (from $59/mo) suit small home-service teams; ServiceTitan fits larger commercial trades; Workiz and FieldPulse are strong mid-market picks. The right choice depends on your industry and team size.',
+      'There is no single best FSM tool. Jobber (from $29/mo billed annually) and Housecall Pro (from $59/mo billed annually) suit small home-service teams; ServiceTitan fits larger commercial trades; Workiz and FieldPulse are strong mid-market picks. The right choice depends on your industry and team size.',
   },
   {
     question: 'How much does FSM software cost?',
     answer:
-      'Published plans start at about $29/month (Jobber) and $59/month (Housecall Pro) per user, scaling with technicians. ServiceTitan, Workiz, FieldPulse, and Commusoft are custom-quoted, so you request pricing based on your business.',
+      'Published plans start at $29/month (Jobber) and $59/month (Housecall Pro) for a single user billed annually — month-to-month is $49 and $79 — scaling with technicians. ServiceTitan, Workiz, FieldPulse, and Commusoft are custom-quoted, so you request pricing based on your business.',
   },
   {
     question: 'How is this comparison kept independent?',
@@ -47,7 +47,7 @@ const order = ['jobber', 'housecall-pro', 'servicetitan', 'workiz', 'fieldpulse'
 
 export default function ComparePage() {
   const list = order.map((s) => providers[s]).filter(Boolean)
-  const fee = (n: number | null) => (n != null ? `from $${n}/mo` : 'Custom pricing')
+  const fee = (n: number | null) => (n != null ? `from $${n}/mo (annual)` : 'Custom pricing')
   return (
     <>
       <BreadcrumbJsonLd items={crumbs} />
@@ -71,8 +71,9 @@ export default function ComparePage() {
             The best field service management (FSM) software in 2026 are Jobber, Housecall Pro,
             ServiceTitan, Workiz, FieldPulse, and Commusoft — the tools that combine solid customer
             reviews with strong scheduling, dispatch, invoicing, and mobile field apps. There is no
-            universal winner: Jobber (from $29/month) is the most affordable published option and
-            Housecall Pro (from $59/month) is a favorite of small home-service teams, while
+            universal winner: Jobber (from $29/month billed annually) is the most affordable
+            published option and Housecall Pro (from $59/month billed annually) is a favorite of
+            small home-service teams, while
             ServiceTitan is the enterprise standard for larger commercial trades and is
             custom-quoted. Workiz, FieldPulse, and Commusoft round out the mid-market, also on
             custom pricing. The comparison below is independent — ranked on G2 and Capterra ratings,
@@ -118,7 +119,8 @@ export default function ComparePage() {
         </div>
         <p className="mt-6 text-[12.5px] text-slate-400">
           Ratings aggregated from G2 and Capterra. Prices are each vendor’s lowest published plan
-          (checked Jul 2026); “Custom pricing” means the vendor quotes per business. Some links are
+          with annual billing (checked Jul 2026) — month-to-month rates run higher; “Custom
+          pricing” means the vendor quotes per business. Some links are
           affiliate links — this never affects our scoring. For the best tool in your trade, see the{' '}
           <Link href="/by-industry" className="font-semibold text-orange-600 dark:text-orange-400">industry guides</Link>.
         </p>

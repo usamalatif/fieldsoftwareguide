@@ -17,7 +17,7 @@ const homeFaqs = [
   {
     question: 'How much does field service management software cost?',
     answer:
-      'Published plans start around $29/month (Jobber) and $59/month (Housecall Pro) for a single user, scaling with technicians. Enterprise tools like ServiceTitan are custom-quoted and typically cost more. Many tools offer free trials.',
+      'Published plans start at $29/month for Jobber and $59/month for Housecall Pro (single user, billed annually; month-to-month is $49 and $79), scaling with technicians. Enterprise tools like ServiceTitan are custom-quoted and typically cost more. Many tools offer free trials.',
   },
   {
     question: 'What is the best FSM software?',
@@ -109,8 +109,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             businesses schedule jobs, dispatch technicians, manage work orders, invoice, and take
             payment — usually from a single mobile app. The best tool depends on your industry and
             team size. Small HVAC, plumbing, and electrical shops most often choose{' '}
-            <strong>Jobber</strong> (from $29/month) or <strong>Housecall Pro</strong> (from
-            $59/month), both with transparent published pricing. Larger commercial operations tend
+            <strong>Jobber</strong> (from $29/month billed annually) or{' '}
+            <strong>Housecall Pro</strong> (from $59/month billed annually), both with transparent
+            published pricing. Larger commercial operations tend
             to run <strong>ServiceTitan</strong>, which is custom-quoted. This site compares FSM
             software by industry and by business size, with every price checked against the
             vendor’s own pricing page and dated, so you can pick — and defend — the right tool fast.

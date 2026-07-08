@@ -51,8 +51,9 @@ export default async function ByIndustryPage({ params }: { params: Promise<{ loc
           <AnswerBlock>
             <p>
               The best field service management (FSM) software depends on your industry. HVAC,
-              plumbing, and electrical shops lean toward Jobber (from $29/mo) and Housecall Pro
-              (from $59/mo) for small teams, and ServiceTitan for larger commercial operations.
+              plumbing, and electrical shops lean toward Jobber (from $29/mo billed annually) and
+              Housecall Pro (from $59/mo billed annually) for small teams, and ServiceTitan for
+              larger commercial operations.
               Specialized fields — oil &amp; gas, refrigeration, telecom — need inspection,
               compliance, and asset-tracking features that general tools handle differently. Below,
               each industry has its own guide comparing the tools that fit it best, with pricing

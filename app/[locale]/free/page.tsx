@@ -21,7 +21,7 @@ const faqs = [
   {
     question: 'Is there truly free field service management software?',
     answer:
-      'A few tools offer limited free tiers and there are open-source options, but most field-grade FSM software is paid. Free plans usually cap users, jobs, or features. Paid tools like Jobber (from $29/mo) and Housecall Pro (from $59/mo) offer free trials instead.',
+      'A few tools offer limited free tiers and there are open-source options, but most field-grade FSM software is paid. Free plans usually cap users, jobs, or features. Paid tools like Jobber (from $29/mo billed annually) and Housecall Pro (from $59/mo billed annually) offer free trials instead.',
   },
   {
     question: 'What is the best free FSM software for small business?',
@@ -60,7 +60,8 @@ export default function FreePage() {
             A handful of tools offer permanently free tiers (usually capping users, jobs, or
             features), and there are open-source options for teams with technical resources. For most
             field service businesses, though, the practical “free” path is a free trial of a paid
-            tool: Jobber (from $29/month) and Housecall Pro (from $59/month) both let you test the
+            tool: Jobber (from $29/month billed annually) and Housecall Pro (from $59/month billed
+            annually) both let you test the
             full product on real jobs before paying. If you need scheduling, dispatch, invoicing, and
             a mobile app working together, expect to move to a paid plan fairly quickly — free tiers
             rarely cover all four well.

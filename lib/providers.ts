@@ -7,8 +7,10 @@
  * partner/marketing URL (rel="sponsored nofollow" is applied automatically).
  *
  * Pricing note: `publishedFromUsd` is the lowest price the vendor lists on its OWN
- * pricing page (checked 2026-07-08). null = the vendor only quotes custom pricing.
- * Per the data-confidence policy we never invent a number for custom-priced tools.
+ * pricing page (checked 2026-07-08), which is the ANNUAL-BILLING rate — the basis
+ * vendors advertise as "from $X/mo". Month-to-month rates are higher (see
+ * `monthlyBilledUsd`). null = the vendor only quotes custom pricing. Per the
+ * data-confidence policy we never invent a number for custom-priced tools.
  */
 export interface Provider {
   slug: string
@@ -21,8 +23,10 @@ export interface Provider {
   reviewHref?: string
   /** Aggregate rating from public review platforms (0-5). */
   rating: number
-  /** Lowest vendor-published starting price per month (USD), or null = custom/quote. */
+  /** Lowest vendor-published starting price per month with ANNUAL billing (USD), or null = custom/quote. */
   publishedFromUsd: number | null
+  /** Same entry plan billed month-to-month (USD), when the vendor publishes it. */
+  monthlyBilledUsd?: number | null
   /** Source for the published price (vendor pricing page + date checked). */
   priceSource?: { url: string; checked: string }
   /** Avatar background hex (brand mono letter swatch — fallback when no logo file exists). */
@@ -40,7 +44,8 @@ export const providers: Record<string, Provider> = {
     blurb: 'Cloud FSM for small home-service businesses: quoting, scheduling, invoicing, payments.',
     affiliateUrl: 'https://www.getjobber.com/partners/', // TODO: replace with tracked affiliate link
     rating: 4.5,
-    publishedFromUsd: 29,
+    publishedFromUsd: 29, // Core, 1 user, annual billing
+    monthlyBilledUsd: 49, // Core, month-to-month
     priceSource: { url: 'https://www.getjobber.com/pricing/', checked: '2026-07-08' },
     mono: '#149A5B',
     domain: 'getjobber.com',
@@ -51,7 +56,8 @@ export const providers: Record<string, Provider> = {
     blurb: 'All-in-one field service app for home-service pros: scheduling, dispatch, invoicing, payments.',
     affiliateUrl: 'https://www.housecallpro.com/partner/', // TODO: replace with tracked affiliate link
     rating: 4.6,
-    publishedFromUsd: 59,
+    publishedFromUsd: 59, // Basic, 1 user, annual billing
+    monthlyBilledUsd: 79, // Basic, month-to-month
     priceSource: { url: 'https://www.housecallpro.com/pricing/', checked: '2026-07-08' },
     mono: '#0A5AF5',
     domain: 'housecallpro.com',

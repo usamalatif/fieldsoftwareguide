@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 const sizes = [
-  { slug: 'solo-operator', name: 'Solo operator', range: '1 technician', desc: 'One-person shops: keep it cheap and simple. Published entry plans and free trials matter most.', top: 'Jobber (from $29/mo)' },
-  { slug: 'small-team', name: 'Small team', range: '2–10 technicians', desc: 'Scheduling and dispatch start to matter. Housecall Pro and Jobber lead here on published pricing.', top: 'Housecall Pro (from $59/mo)' },
+  { slug: 'solo-operator', name: 'Solo operator', range: '1 technician', desc: 'One-person shops: keep it cheap and simple. Published entry plans and free trials matter most.', top: 'Jobber (from $29/mo billed annually)' },
+  { slug: 'small-team', name: 'Small team', range: '2–10 technicians', desc: 'Scheduling and dispatch start to matter. Housecall Pro and Jobber lead here on published pricing.', top: 'Housecall Pro (from $59/mo billed annually)' },
   { slug: 'growing-business', name: 'Growing business', range: '10–50 technicians', desc: 'You need reporting, roles, and tighter dispatch. Mid-market tools and ServiceTitan enter the picture.', top: 'Workiz / ServiceTitan (custom)' },
   { slug: 'enterprise', name: 'Enterprise', range: '50+ technicians', desc: 'Multi-location, deep reporting, financing, and integrations. Enterprise platforms, all custom-quoted.', top: 'ServiceTitan (custom)' },
 ]
@@ -55,7 +55,8 @@ export default async function BySizePage({ params }: { params: Promise<{ locale:
           <p>
             The best field service management software depends heavily on your team size. Solo
             operators and small teams (1–10 technicians) are usually best served by Jobber (from
-            $29/month) and Housecall Pro (from $59/month), which publish transparent pricing and are
+            $29/month billed annually) and Housecall Pro (from $59/month billed annually), which
+            publish transparent pricing and are
             quick to set up. Growing businesses (10–50 technicians) start to need role-based access,
             reporting, and stronger dispatch, where mid-market tools like Workiz and FieldPulse — and
             increasingly ServiceTitan — fit. Enterprise operations (50+ technicians) typically run

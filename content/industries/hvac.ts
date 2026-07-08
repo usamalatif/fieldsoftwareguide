@@ -13,7 +13,7 @@ export const hvac: Industry = {
   category: 'Trades',
 
   answer:
-    'The best field service management software for HVAC companies in 2026 depends on your size. For most small-to-midsize HVAC shops, Housecall Pro (from $59/month) and Jobber (from $29/month) are the top picks — both publish transparent pricing and cover scheduling, dispatch, invoicing, and payments. For larger commercial HVAC operations that need deep reporting, financing, and dispatch at scale, ServiceTitan is the enterprise standard, though it is custom-quoted rather than publicly priced. Workiz and FieldPulse are strong mid-market alternatives, also on custom pricing. HVAC businesses specifically need maintenance-agreement tracking, equipment/asset history, and QuickBooks sync. Expect to pay roughly $29–$299/month per plan for published tools, with ServiceTitan and other enterprise platforms typically higher once quoted.',
+    'The best field service management software for HVAC companies in 2026 depends on your size. For most small-to-midsize HVAC shops, Housecall Pro (from $59/month billed annually; $79 month-to-month) and Jobber (from $29/month billed annually; $49 month-to-month) are the top picks — both publish transparent pricing and cover scheduling, dispatch, invoicing, and payments. For larger commercial HVAC operations that need deep reporting, financing, and dispatch at scale, ServiceTitan is the enterprise standard, though it is custom-quoted rather than publicly priced. Workiz and FieldPulse are strong mid-market alternatives, also on custom pricing. HVAC businesses specifically need maintenance-agreement tracking, equipment/asset history, and QuickBooks sync. Expect published plans from $29–$299/month with annual billing, with ServiceTitan and other enterprise platforms typically higher once quoted.',
 
   intro:
     'HVAC companies live and die by scheduling and recurring maintenance contracts. The right FSM software has to handle seasonal demand spikes, track equipment and warranty history per site, manage maintenance agreements, and get invoices out the same day a tech leaves the job. QuickBooks sync is non-negotiable for most shops, and a fast mobile app matters because your techs are on rooftops, not at desks.',
@@ -30,7 +30,7 @@ export const hvac: Industry = {
   priceRange: {
     min: 29,
     max: 299,
-    note: 'Published plans run $29/mo (Jobber Core) to $299/mo (Housecall Pro MAX). ServiceTitan and other enterprise HVAC tools are custom-quoted and typically higher.',
+    note: 'Published plans run $29/mo (Jobber Core, annual billing; $49 month-to-month) to $299/mo (Housecall Pro MAX, annual billing; $329 month-to-month). ServiceTitan and other enterprise HVAC tools are custom-quoted and typically higher.',
     source: { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-07-08' },
     structured: true,
   },
@@ -49,12 +49,12 @@ export const hvac: Industry = {
     {
       question: 'What FSM software do most HVAC companies use?',
       answer:
-        'Small and midsize HVAC shops most often use Housecall Pro (from $59/month) or Jobber (from $29/month), while larger commercial HVAC operations tend to run ServiceTitan, which is custom-priced.',
+        'Small and midsize HVAC shops most often use Housecall Pro (from $59/month billed annually) or Jobber (from $29/month billed annually), while larger commercial HVAC operations tend to run ServiceTitan, which is custom-priced.',
     },
     {
       question: 'How much does HVAC field service software cost?',
       answer:
-        'Published plans run from about $29/month (Jobber Core, 1 user) to $299/month (Housecall Pro MAX, up to 8 users). ServiceTitan, Workiz, and FieldPulse are quote-based and typically cost more, scaling with technicians.',
+        'Published plans run from $29/month (Jobber Core, 1 user, billed annually; $49 month-to-month) to $299/month (Housecall Pro MAX, up to 8 users, billed annually; $329 month-to-month). ServiceTitan, Workiz, and FieldPulse are quote-based and typically cost more, scaling with technicians.',
     },
     {
       question: 'Is ServiceTitan worth it for a small HVAC company?',

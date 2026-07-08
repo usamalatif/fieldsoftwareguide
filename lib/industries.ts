@@ -104,10 +104,10 @@ export interface Industry {
 }
 
 // ── Registry ───────────────────────────────────────────────────────
-// Verified (researched + sourced, dataVerified: true)
+// All 7 industries verified (researched + sourced 2026-07-08, dataVerified: true).
+// Vendor pricing checked against each vendor's own pricing page; vertical-fit,
+// offline, GPS, and asset-tracking claims verified against vendor docs.
 import { hvac } from '@/content/industries/hvac'
-// Wave 1 — structurally complete, pricing sourced from the software registry.
-// Marked dataVerified per file; drafts render with a noindex "unverified" banner.
 import { oilGas } from '@/content/industries/oil-gas'
 import { healthcare } from '@/content/industries/healthcare'
 import { transportation } from '@/content/industries/transportation'

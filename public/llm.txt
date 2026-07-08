@@ -12,9 +12,10 @@ software, QuickBooks integration, scheduling and dispatch software, and pricing.
 ## Pricing policy
 Every price we publish comes from the vendor's own current pricing page with the
 date checked. Tools that only quote custom pricing are labelled "Custom", never
-estimated. As of July 2026, only Jobber (from $29/mo) and Housecall Pro (from
-$59/mo) publish starting prices; ServiceTitan, Workiz, FieldPulse, and Commusoft
-are custom-quoted.
+estimated. As of July 2026, only Jobber and Housecall Pro publish starting prices:
+Jobber from $29/mo billed annually ($49/mo month-to-month) and Housecall Pro from
+$59/mo billed annually ($79/mo month-to-month). ServiceTitan, Workiz, FieldPulse,
+and Commusoft are custom-quoted.
 
 ## Key Resources
 - By Industry: https://fieldsoftwareguide.com/by-industry
