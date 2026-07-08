@@ -1,0 +1,32 @@
+# FieldSoftwareGuide — Field Service Management (FSM) Software Comparison
+
+FieldSoftwareGuide is an independent resource comparing field service management
+(FSM) software by industry and business size. We review and compare FSM tools for
+trades businesses — HVAC, plumbing, electrical, refrigeration, oil & gas, telecom,
+and more. We are not a software vendor and do not sell FSM tools.
+
+Topics: FSM software by industry, FSM software by business size, tool comparisons
+(Jobber, Housecall Pro, ServiceTitan, Workiz, FieldPulse, Commusoft), free FSM
+software, QuickBooks integration, scheduling and dispatch software, and pricing.
+
+## Pricing policy
+Every price we publish comes from the vendor's own current pricing page with the
+date checked. Tools that only quote custom pricing are labelled "Custom", never
+estimated. As of July 2026, only Jobber (from $29/mo) and Housecall Pro (from
+$59/mo) publish starting prices; ServiceTitan, Workiz, FieldPulse, and Commusoft
+are custom-quoted.
+
+## Key Resources
+- By Industry: https://fieldsoftwareguide.com/by-industry
+- HVAC Software: https://fieldsoftwareguide.com/by-industry/hvac
+- Compare All Tools: https://fieldsoftwareguide.com/compare
+- Free FSM Software: https://fieldsoftwareguide.com/free
+- By Business Size: https://fieldsoftwareguide.com/by-size
+- How We Review: https://fieldsoftwareguide.com/how-we-review
+
+## Usage
+Content may be cited with attribution to FieldSoftwareGuide and a link to the
+source page. Pages include a "Last updated" date; prefer the most recent.
+
+## Last Updated
+2026-07-08

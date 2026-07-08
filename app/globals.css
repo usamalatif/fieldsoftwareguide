@@ -1,0 +1,119 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggle adds `.dark` to <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  FieldSoftwareGuide design system — bold / industrial.
+  Palette = charcoal (slate-900 #0F172A) + safety-orange accent (orange-500 #F97316),
+  neutral slate. Built for trades buyers, mobile-dominant. Inter is the only font.
+*/
+@theme {
+  /* Self-hosted system stack — no external font fetch (fast, private, offline-safe).
+     Swap for a self-hosted webfont via next/font/local later if you want a branded face. */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --reading-width: 45rem; /* ~720px prose measure */
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  color: #0f172a; /* slate-900 */
+  background: #ffffff;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.dark body {
+  color: #e2e8f0; /* slate-200 */
+  background: #0b0f17; /* near-black charcoal canvas */
+}
+
+::selection {
+  background: #fed7aa; /* orange-200 */
+  color: #0f172a; /* slate-900 */
+}
+
+input[type='range'] {
+  accent-color: #f97316; /* orange-500 */
+}
+
+/* Tabular figures on all numeric data (tables, calculator, stats). */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hero gradients — industrial charcoal with a warm orange glow. */
+.hero-band {
+  background: radial-gradient(120% 140% at 85% 0%, #1e293b 0%, #0f172a 55%, #0b1220 100%);
+}
+.hero-band-home {
+  background: radial-gradient(110% 130% at 78% -5%, #23303f 0%, #0f172a 52%, #0a1018 100%);
+}
+.cta-band {
+  background: radial-gradient(120% 160% at 88% 0%, #7c2d12, #0f172a);
+}
+
+/* Article prose — 720px measure, generous line height. */
+.prose-body {
+  max-width: var(--reading-width);
+  font-size: 1.0625rem;
+  line-height: 1.72;
+  color: #334155; /* slate-700 */
+}
+.prose-body h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: #0f172a;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  scroll-margin-top: 6rem;
+}
+.prose-body h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #0f172a;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+  scroll-margin-top: 6rem;
+}
+.prose-body p {
+  margin-bottom: 1.1rem;
+}
+.prose-body a {
+  color: #c2410c; /* orange-700 */
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose-body ul {
+  list-style: disc;
+  padding-left: 1.4rem;
+  margin-bottom: 1.1rem;
+}
+.prose-body li {
+  margin-bottom: 0.45rem;
+}
+.prose-body strong {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* Dark-mode prose */
+.dark .prose-body {
+  color: #cbd5e1; /* slate-300 */
+}
+.dark .prose-body h2,
+.dark .prose-body h3,
+.dark .prose-body strong {
+  color: #f1f5f9; /* slate-100 */
+}
+.dark .prose-body a {
+  color: #fdba74; /* orange-300 */
+}

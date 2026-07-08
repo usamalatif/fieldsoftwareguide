@@ -1,0 +1,4 @@
+# ads.txt for fieldsoftwareguide.com
+# After your Google AdSense account is approved, replace the line below with your
+# real publisher line (found in AdSense > Sites > ads.txt), for example:
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
