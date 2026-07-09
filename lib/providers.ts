@@ -33,7 +33,7 @@ export interface Provider {
   mono: string
   /** Brand domain (reference / favicon fallback). */
   domain: string
-  /** Self-hosted logo path under /public/logos/<slug>.svg. Mono tile shows until it exists. */
+  /** Self-hosted logo path under /public/logos/<slug>.png (official brand icon). */
   logo?: string
 }
 
@@ -49,6 +49,7 @@ export const providers: Record<string, Provider> = {
     priceSource: { url: 'https://www.getjobber.com/pricing/', checked: '2026-07-08' },
     mono: '#149A5B',
     domain: 'getjobber.com',
+    logo: '/logos/jobber.png',
   },
   'housecall-pro': {
     slug: 'housecall-pro',
@@ -61,6 +62,7 @@ export const providers: Record<string, Provider> = {
     priceSource: { url: 'https://www.housecallpro.com/pricing/', checked: '2026-07-08' },
     mono: '#0A5AF5',
     domain: 'housecallpro.com',
+    logo: '/logos/housecall-pro.png',
   },
   servicetitan: {
     slug: 'servicetitan',
@@ -72,6 +74,7 @@ export const providers: Record<string, Provider> = {
     priceSource: { url: 'https://www.servicetitan.com/pricing', checked: '2026-07-08' },
     mono: '#1F1F1F',
     domain: 'servicetitan.com',
+    logo: '/logos/servicetitan.png',
   },
   workiz: {
     slug: 'workiz',
@@ -83,6 +86,7 @@ export const providers: Record<string, Provider> = {
     priceSource: { url: 'https://www.workiz.com/pricing-plans/', checked: '2026-07-08' },
     mono: '#7A3BF5',
     domain: 'workiz.com',
+    logo: '/logos/workiz.png',
   },
   fieldpulse: {
     slug: 'fieldpulse',
@@ -94,6 +98,7 @@ export const providers: Record<string, Provider> = {
     priceSource: { url: 'https://www.fieldpulse.com/pricing', checked: '2026-07-08' },
     mono: '#F0642D',
     domain: 'fieldpulse.com',
+    logo: '/logos/fieldpulse.png',
   },
   commusoft: {
     slug: 'commusoft',
@@ -105,6 +110,7 @@ export const providers: Record<string, Provider> = {
     priceSource: { url: 'https://www.commusoft.com/en-us/plans/', checked: '2026-07-08' },
     mono: '#0E6DD4',
     domain: 'commusoft.com',
+    logo: '/logos/commusoft.png',
   },
 }
 
