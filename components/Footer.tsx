@@ -26,6 +26,8 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             links={[
               [dict.nav.compare, L('/compare')],
               [dict.nav.free, L('/free')],
+              ['QuickBooks sync', L('/quickbooks')],
+              ['For small business', L('/for-small-business')],
               [dict.nav.guides, L('/guides')],
             ]}
           />
