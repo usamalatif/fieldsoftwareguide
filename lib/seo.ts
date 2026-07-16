@@ -15,6 +15,12 @@ interface BuildMetadataArgs {
   modifiedTime?: string
   type?: 'website' | 'article'
   noindex?: boolean
+  /**
+   * false = emit the title as-is (no "| FieldSoftwareGuide" template suffix).
+   * Use for pages whose keyword-rich title would exceed 70 chars with the suffix
+   * (Bing flags titles over 70).
+   */
+  brandSuffix?: boolean
 }
 
 /**
@@ -30,6 +36,7 @@ export function buildMetadata({
   modifiedTime,
   type = 'website',
   noindex = false,
+  brandSuffix = true,
 }: BuildMetadataArgs): Metadata {
   const path = slug ? `/${slug}` : '/'
   const canonical = `${site.url}${localizePath(locale, path)}`.replace(/\/$/, '') || site.url
@@ -42,7 +49,7 @@ export function buildMetadata({
   languages['x-default'] = `${site.url}${localizePath(defaultLocale, path)}`.replace(/\/$/, '') || site.url
 
   return {
-    title,
+    title: brandSuffix ? title : { absolute: title },
     description,
     alternates: { canonical, languages },
     robots: noindex ? { index: false, follow: false } : { index: true, follow: true },

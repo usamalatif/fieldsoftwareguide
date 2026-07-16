@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   const loc = (isLocale(locale) ? locale : defaultLocale) as Locale
   return buildMetadata({
-    title: 'Field Service Management Software Comparison by Industry | FieldSoftwareGuide',
+    title: 'Field Service Management Software by Industry | FieldSoftwareGuide',
     description:
       'Independent field service management (FSM) software comparison by industry and business size. Real, vendor-published pricing for HVAC, plumbing, electrical and more.',
     locale: loc,

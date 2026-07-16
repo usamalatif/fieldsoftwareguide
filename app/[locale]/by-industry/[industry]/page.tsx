@@ -36,6 +36,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
     type: 'article',
     modifiedTime: ind.lastUpdated,
     noindex: !ind.dataVerified,
+    // Keyword title + template suffix exceeds Bing's 70-char limit; emit as-is.
+    brandSuffix: false,
   })
 }
 

@@ -22,6 +22,8 @@ export const metadata = buildMetadata({
   description:
     'What is actually free in FSM software, verified July 2026: no major vendor has a free plan. Real free tiers (Odoo, Connecteam), exact trial lengths, and the trade-offs.',
   slug: 'free',
+  // 50-char keyword title + suffix would hit 71 chars (Bing limit 70); emit as-is.
+  brandSuffix: false,
 })
 
 const crumbs = [

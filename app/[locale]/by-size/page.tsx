@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   const loc = (isLocale(locale) ? locale : defaultLocale) as Locale
   return buildMetadata({
-    title: 'FSM Software by Business Size — Solo to Enterprise (2026)',
+    title: 'Field Service Software by Business Size (2026)',
     description:
       'The best field service management software for your team size: solo operators, small teams, growing businesses, and enterprise field service operations.',
     slug: 'by-size',
