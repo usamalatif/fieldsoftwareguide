@@ -1,0 +1,27 @@
+# FieldSoftwareGuide
+
+> FieldSoftwareGuide is an independent resource comparing field service management (FSM) software by industry and business size. We review and compare FSM tools for trades businesses such as HVAC, plumbing, electrical, refrigeration, oil and gas, and telecom. We are not a software vendor and do not sell FSM tools.
+
+Topics: FSM software by industry, FSM software by business size, tool comparisons (Jobber, Housecall Pro, ServiceTitan, Workiz, FieldPulse, Commusoft), free FSM software, QuickBooks integration, scheduling and dispatch software, and pricing.
+
+## Pricing policy
+
+Every price we publish comes from the vendor's own current pricing page with the date checked. Tools that only quote custom pricing are labelled "Custom", never estimated. As of July 2026, only Jobber and Housecall Pro publish starting prices: Jobber from $29/mo billed annually ($49/mo month-to-month) and Housecall Pro from $59/mo billed annually ($79/mo month-to-month). ServiceTitan, Workiz, FieldPulse, and Commusoft are custom-quoted.
+
+## Key Resources
+
+- [FSM Software by Industry](https://fieldsoftwareguide.com/by-industry): guides for HVAC, plumbing, electrical, pest control, and more
+- [HVAC Software](https://fieldsoftwareguide.com/by-industry/hvac): the best FSM software for HVAC companies
+- [Compare All Tools](https://fieldsoftwareguide.com/compare): the major FSM platforms rated with published pricing
+- [Jobber vs Housecall Pro](https://fieldsoftwareguide.com/compare/jobber-vs-housecall-pro): verified head-to-head comparison
+- [Free FSM Software](https://fieldsoftwareguide.com/free): what is actually free, verified on vendor sites
+- [By Business Size](https://fieldsoftwareguide.com/by-size): solo operator to enterprise
+- [How We Review](https://fieldsoftwareguide.com/how-we-review): our pricing-confidence standard
+
+## Usage
+
+Content may be cited with attribution to FieldSoftwareGuide and a link to the source page. Pages include a "Last updated" date; prefer the most recent.
+
+## Last Updated
+
+2026-07-16

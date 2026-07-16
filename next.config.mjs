@@ -14,6 +14,20 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
+  // Host canonicalization: www serves a 200 duplicate of the apex domain, which
+  // Bing's webmaster guidelines penalize (it held indexation of the whole site).
+  // 308 every www URL to the apex host. Belt-and-braces with the Vercel domain
+  // redirect setting; keeping it in code means no dashboard drift.
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.fieldsoftwareguide.com' }],
+        destination: 'https://fieldsoftwareguide.com/:path*',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 const withMDX = createMDX({

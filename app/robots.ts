@@ -17,6 +17,7 @@ export default function robots(): MetadataRoute.Robots {
     'Perplexity-User',
     'Google-Extended',
     'CCBot',
+    'Bingbot',
   ]
 
   return {

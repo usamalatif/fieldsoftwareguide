@@ -2,16 +2,18 @@ import type { MetadataRoute } from 'next'
 import { site } from '@/lib/site'
 import { getPublishedIndustries } from '@/lib/industries'
 import { locales, localizePath, defaultLocale } from '@/lib/i18n/config'
-import { staticRoutes } from '@/lib/routes'
+import { staticRoutes, staticRouteLastmod } from '@/lib/routes'
 
 /**
  * Locale-aware sitemap. Static routes come from lib/routes.ts; industry pages are
  * generated dynamically from getPublishedIndustries() (verified pages only — drafts
  * stay out of the sitemap and are noindex).
+ *
+ * lastmod = real content-change dates from lib/routes.ts / industry lastUpdated,
+ * never the build timestamp (a fresh lastmod on every deploy trains crawlers to
+ * ignore the field).
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date()
-
   const staticPaths = staticRoutes
   const industryPaths = getPublishedIndustries().map((i) => ({
     path: `/by-industry/${i.slug}`,
@@ -32,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const loc of locales) {
       entries.push({
         url: abs(loc, path),
-        lastModified: now,
+        lastModified: new Date(staticRouteLastmod[path]),
         changeFrequency: 'weekly',
         priority: path === '/' ? 1 : 0.7,
         alternates: { languages: languagesFor(path) },

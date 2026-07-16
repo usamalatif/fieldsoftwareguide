@@ -1,0 +1,642 @@
+{
+  "date": "2026-07-16",
+  "window": "last 28 days (site live since 2026-07-08)",
+  "totals": {
+    "clicks": 0,
+    "impressions": 1868,
+    "avg_position_note": "site-wide ~72, discovery phase"
+  },
+  "daily": [
+    {
+      "Date": "2026-07-07",
+      "Clicks": 0,
+      "Impressions": 0,
+      "CTR": "",
+      "Position": ""
+    },
+    {
+      "Date": "2026-07-08",
+      "Clicks": 0,
+      "Impressions": 58,
+      "CTR": 0.0,
+      "Position": 2.5
+    },
+    {
+      "Date": "2026-07-09",
+      "Clicks": 0,
+      "Impressions": 145,
+      "CTR": 0.0,
+      "Position": 67.1
+    },
+    {
+      "Date": "2026-07-10",
+      "Clicks": 0,
+      "Impressions": 690,
+      "CTR": 0.0,
+      "Position": 79.9
+    },
+    {
+      "Date": "2026-07-11",
+      "Clicks": 0,
+      "Impressions": 296,
+      "CTR": 0.0,
+      "Position": 68.6
+    },
+    {
+      "Date": "2026-07-12",
+      "Clicks": 0,
+      "Impressions": 257,
+      "CTR": 0.0,
+      "Position": 72.5
+    },
+    {
+      "Date": "2026-07-13",
+      "Clicks": 0,
+      "Impressions": 317,
+      "CTR": 0.0,
+      "Position": 72.5
+    },
+    {
+      "Date": "2026-07-14",
+      "Clicks": 0,
+      "Impressions": 245,
+      "CTR": 0.0,
+      "Position": 73.1
+    }
+  ],
+  "top_queries": [
+    {
+      "query": "hvac field service management software",
+      "Clicks": 0,
+      "Impressions": 73,
+      "CTR": 0,
+      "Position": 78.81
+    },
+    {
+      "query": "best hvac software",
+      "Clicks": 0,
+      "Impressions": 56,
+      "CTR": 0,
+      "Position": 84.21
+    },
+    {
+      "query": "field service dispatch software for oil and gas",
+      "Clicks": 0,
+      "Impressions": 50,
+      "CTR": 0,
+      "Position": 71.9
+    },
+    {
+      "query": "field service management for equipment rental",
+      "Clicks": 0,
+      "Impressions": 45,
+      "CTR": 0,
+      "Position": 17.51
+    },
+    {
+      "query": "hvac business software",
+      "Clicks": 0,
+      "Impressions": 45,
+      "CTR": 0,
+      "Position": 91.4
+    },
+    {
+      "query": "field service management software hvac",
+      "Clicks": 0,
+      "Impressions": 43,
+      "CTR": 0,
+      "Position": 79.14
+    },
+    {
+      "query": "hvac service management software",
+      "Clicks": 0,
+      "Impressions": 40,
+      "CTR": 0,
+      "Position": 91.2
+    },
+    {
+      "query": "best hvac dispatch software",
+      "Clicks": 0,
+      "Impressions": 38,
+      "CTR": 0,
+      "Position": 59.0
+    },
+    {
+      "query": "refrigeration service management software",
+      "Clicks": 0,
+      "Impressions": 35,
+      "CTR": 0,
+      "Position": 63.09
+    },
+    {
+      "query": "best hvac management software",
+      "Clicks": 0,
+      "Impressions": 35,
+      "CTR": 0,
+      "Position": 83.17
+    },
+    {
+      "query": "hvac field service software",
+      "Clicks": 0,
+      "Impressions": 33,
+      "CTR": 0,
+      "Position": 87.21
+    },
+    {
+      "query": "hvac management software",
+      "Clicks": 0,
+      "Impressions": 33,
+      "CTR": 0,
+      "Position": 92.76
+    },
+    {
+      "query": "hvac service software",
+      "Clicks": 0,
+      "Impressions": 29,
+      "CTR": 0,
+      "Position": 92.72
+    },
+    {
+      "query": "field service software comparison",
+      "Clicks": 0,
+      "Impressions": 28,
+      "CTR": 0,
+      "Position": 79.46
+    },
+    {
+      "query": "hvac field service management",
+      "Clicks": 0,
+      "Impressions": 28,
+      "CTR": 0,
+      "Position": 86.79
+    },
+    {
+      "query": "best hvac scheduling software",
+      "Clicks": 0,
+      "Impressions": 26,
+      "CTR": 0,
+      "Position": 56.81
+    },
+    {
+      "query": "field service management software for transportation",
+      "Clicks": 0,
+      "Impressions": 23,
+      "CTR": 0,
+      "Position": 60.87
+    },
+    {
+      "query": "commercial hvac service software",
+      "Clicks": 0,
+      "Impressions": 23,
+      "CTR": 0,
+      "Position": 86.43
+    },
+    {
+      "query": "hvac field management software",
+      "Clicks": 0,
+      "Impressions": 23,
+      "CTR": 0,
+      "Position": 91.39
+    },
+    {
+      "query": "plumbing field service software",
+      "Clicks": 0,
+      "Impressions": 22,
+      "CTR": 0,
+      "Position": 81.5
+    },
+    {
+      "query": "refrigerant tracking software",
+      "Clicks": 0,
+      "Impressions": 19,
+      "CTR": 0,
+      "Position": 77.58
+    },
+    {
+      "query": "hvac software list",
+      "Clicks": 0,
+      "Impressions": 19,
+      "CTR": 0,
+      "Position": 84.58
+    },
+    {
+      "query": "hvac service software programs",
+      "Clicks": 0,
+      "Impressions": 19,
+      "CTR": 0,
+      "Position": 92.16
+    },
+    {
+      "query": "oil and gas field service software",
+      "Clicks": 0,
+      "Impressions": 18,
+      "CTR": 0,
+      "Position": 72.89
+    },
+    {
+      "query": "field health services software",
+      "Clicks": 0,
+      "Impressions": 17,
+      "CTR": 0,
+      "Position": 50.94
+    },
+    {
+      "query": "oil and gas field service management",
+      "Clicks": 0,
+      "Impressions": 17,
+      "CTR": 0,
+      "Position": 62.65
+    },
+    {
+      "query": "fieldpulse alternative",
+      "Clicks": 0,
+      "Impressions": 17,
+      "CTR": 0,
+      "Position": 73.71
+    },
+    {
+      "query": "service software for hvac",
+      "Clicks": 0,
+      "Impressions": 17,
+      "CTR": 0,
+      "Position": 89.53
+    },
+    {
+      "query": "best field service software",
+      "Clicks": 0,
+      "Impressions": 17,
+      "CTR": 0,
+      "Position": 90.0
+    },
+    {
+      "query": "software for hvac companies",
+      "Clicks": 0,
+      "Impressions": 17,
+      "CTR": 0,
+      "Position": 93.88
+    },
+    {
+      "query": "field service software for hvac",
+      "Clicks": 0,
+      "Impressions": 16,
+      "CTR": 0,
+      "Position": 70.56
+    },
+    {
+      "query": "best hvac service software",
+      "Clicks": 0,
+      "Impressions": 16,
+      "CTR": 0,
+      "Position": 84.0
+    },
+    {
+      "query": "management software for hvac",
+      "Clicks": 0,
+      "Impressions": 16,
+      "CTR": 0,
+      "Position": 86.0
+    },
+    {
+      "query": "hvac company software",
+      "Clicks": 0,
+      "Impressions": 16,
+      "CTR": 0,
+      "Position": 97.88
+    },
+    {
+      "query": "field service management software for hvac",
+      "Clicks": 0,
+      "Impressions": 15,
+      "CTR": 0,
+      "Position": 66.47
+    },
+    {
+      "query": "telecom field services",
+      "Clicks": 0,
+      "Impressions": 15,
+      "CTR": 0,
+      "Position": 75.2
+    },
+    {
+      "query": "telecom project management software",
+      "Clicks": 0,
+      "Impressions": 15,
+      "CTR": 0,
+      "Position": 87.87
+    },
+    {
+      "query": "hvac field service software dispatch analytics",
+      "Clicks": 0,
+      "Impressions": 14,
+      "CTR": 0,
+      "Position": 3.14
+    },
+    {
+      "query": "oil and gas service dispatch software",
+      "Clicks": 0,
+      "Impressions": 14,
+      "CTR": 0,
+      "Position": 54.86
+    },
+    {
+      "query": "field service management software for equipment rental industry",
+      "Clicks": 0,
+      "Impressions": 13,
+      "CTR": 0,
+      "Position": 34.85
+    }
+  ],
+  "pages": [
+    {
+      "page": "https://fieldsoftwareguide.com/by-industry/hvac",
+      "Clicks": 0,
+      "Impressions": 828,
+      "CTR": 0,
+      "Position": 79.54
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/by-industry/oil-gas",
+      "Clicks": 0,
+      "Impressions": 251,
+      "CTR": 0,
+      "Position": 68.79
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/compare",
+      "Clicks": 0,
+      "Impressions": 190,
+      "CTR": 0,
+      "Position": 62.73
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/by-industry/equipment-rental",
+      "Clicks": 0,
+      "Impressions": 174,
+      "CTR": 0,
+      "Position": 46.88
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/by-industry/transportation",
+      "Clicks": 0,
+      "Impressions": 113,
+      "CTR": 0,
+      "Position": 52.64
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/by-industry/healthcare",
+      "Clicks": 0,
+      "Impressions": 103,
+      "CTR": 0,
+      "Position": 59.83
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/by-industry/refrigeration",
+      "Clicks": 0,
+      "Impressions": 96,
+      "CTR": 0,
+      "Position": 56.09
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/by-industry/telecom",
+      "Clicks": 0,
+      "Impressions": 86,
+      "CTR": 0,
+      "Position": 81.92
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/free",
+      "Clicks": 0,
+      "Impressions": 84,
+      "CTR": 0,
+      "Position": 63.13
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/by-industry/pest-control",
+      "Clicks": 0,
+      "Impressions": 52,
+      "CTR": 0,
+      "Position": 85.4
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/by-industry/plumbing",
+      "Clicks": 0,
+      "Impressions": 37,
+      "CTR": 0,
+      "Position": 83.41
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/compare/jobber-vs-housecall-pro",
+      "Clicks": 0,
+      "Impressions": 28,
+      "CTR": 0,
+      "Position": 62.04
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/",
+      "Clicks": 0,
+      "Impressions": 14,
+      "CTR": 0,
+      "Position": 69.07
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/by-industry",
+      "Clicks": 0,
+      "Impressions": 12,
+      "CTR": 0,
+      "Position": 87.83
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/by-size",
+      "Clicks": 0,
+      "Impressions": 10,
+      "CTR": 0,
+      "Position": 86.8
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/guides",
+      "Clicks": 0,
+      "Impressions": 8,
+      "CTR": 0,
+      "Position": 74.0
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/how-we-review",
+      "Clicks": 0,
+      "Impressions": 7,
+      "CTR": 0,
+      "Position": 50.43
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/by-industry/electrical",
+      "Clicks": 0,
+      "Impressions": 7,
+      "CTR": 0,
+      "Position": 88.14
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/about",
+      "Clicks": 0,
+      "Impressions": 3,
+      "CTR": 0,
+      "Position": 34.0
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/terms",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0,
+      "Position": 4.0
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/contact",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0,
+      "Position": 5.0
+    },
+    {
+      "page": "https://fieldsoftwareguide.com/privacy",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0,
+      "Position": 5.0
+    }
+  ],
+  "classification": {
+    "note": "first snapshot; all queries classified NEW",
+    "striking_distance_real": [
+      {
+        "query": "field service management for equipment rental",
+        "impressions": 45,
+        "position": 17.51,
+        "page": "/by-industry/equipment-rental"
+      },
+      {
+        "query": "hvac field service software dispatch analytics",
+        "impressions": 14,
+        "position": 3.14,
+        "page": "/by-industry/hvac"
+      },
+      {
+        "query": "commusoft pricing",
+        "impressions": 4,
+        "position": 1.0,
+        "page": "/compare"
+      },
+      {
+        "query": "field service management software for equipment rental industry",
+        "impressions": 13,
+        "position": 34.85,
+        "page": "/by-industry/equipment-rental"
+      }
+    ]
+  },
+  "semrush_targets": {
+    "tier1_low_kd": [
+      {
+        "kw": "field service management software free",
+        "vol": 590,
+        "kd": 5,
+        "page": "/free"
+      },
+      {
+        "kw": "free field service management software",
+        "vol": 390,
+        "kd": 5,
+        "page": "/free"
+      },
+      {
+        "kw": "field service management software for equipment rental industry",
+        "vol": 50,
+        "kd": 5,
+        "page": "/by-industry/equipment-rental"
+      },
+      {
+        "kw": "field service management software oil and gas",
+        "vol": 90,
+        "kd": 4,
+        "page": "/by-industry/oil-gas"
+      },
+      {
+        "kw": "field service management software refrigeration",
+        "vol": 70,
+        "kd": 5,
+        "page": "/by-industry/refrigeration"
+      },
+      {
+        "kw": "telecom field service management software",
+        "vol": 70,
+        "kd": 6,
+        "page": "/by-industry/telecom"
+      },
+      {
+        "kw": "field service management software healthcare",
+        "vol": 40,
+        "kd": 2,
+        "page": "/by-industry/healthcare"
+      },
+      {
+        "kw": "field service management software for transportation",
+        "vol": 40,
+        "kd": 3,
+        "page": "/by-industry/transportation"
+      }
+    ],
+    "tier2_gaps_no_page": [
+      {
+        "kw": "field service management software quickbooks (+compatible-with +for variants)",
+        "vol": 670,
+        "kd": "15-21",
+        "gap": "no QuickBooks page"
+      },
+      {
+        "kw": "field service software for small business cluster",
+        "vol": 1730,
+        "kd": "13-34",
+        "gap": "/by-size too thin"
+      },
+      {
+        "kw": "what is field service management software",
+        "vol": 390,
+        "kd": 20,
+        "gap": "no definitional guide"
+      },
+      {
+        "kw": "benefits of field service management software",
+        "vol": 390,
+        "kd": 12,
+        "gap": "no guide"
+      },
+      {
+        "kw": "field service management software open source",
+        "vol": 210,
+        "kd": "14-19",
+        "gap": "partially on /free"
+      }
+    ],
+    "tier3_head": [
+      {
+        "kw": "best field service management software",
+        "vol": 1600,
+        "kd": 40,
+        "page": "/compare"
+      },
+      {
+        "kw": "jobber vs housecall pro",
+        "vol": 480,
+        "kd": 17,
+        "page": "/compare/jobber-vs-housecall-pro"
+      },
+      {
+        "kw": "hvac scheduling software",
+        "vol": 1000,
+        "kd": 48,
+        "page": "/by-industry/hvac"
+      }
+    ]
+  },
+  "bing": {
+    "status": "no data; site not verified in Bing Webmaster Tools, nothing indexed",
+    "action": "verify + submit sitemap"
+  }
+}

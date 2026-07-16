@@ -17,14 +17,17 @@ export function ArticleJsonLd({
   slug,
   datePublished,
   dateModified,
-  authorName = 'GlobalEmployGuide Editorial Team',
+  authorName,
+  authorUrl = `${site.url}/author/usama-latif`,
 }: {
   headline: string
   description: string
   slug: string
   datePublished: string
   dateModified?: string
+  /** Person author. Omit to attribute the article to the site Organization. */
   authorName?: string
+  authorUrl?: string
 }) {
   const url = `${site.url}/${slug}`
   return (
@@ -38,11 +41,14 @@ export function ArticleJsonLd({
         url,
         datePublished,
         dateModified: dateModified ?? datePublished,
-        author: { '@type': 'Organization', name: authorName, url: site.url },
+        author: authorName
+          ? { '@type': 'Person', name: authorName, url: authorUrl }
+          : { '@type': 'Organization', name: site.publisher, url: site.url },
         publisher: {
           '@type': 'Organization',
           name: site.publisher,
           url: site.url,
+          logo: { '@type': 'ImageObject', url: `${site.url}/icon.png` },
         },
       }}
     />
@@ -99,6 +105,7 @@ export function OrganizationJsonLd() {
         name: site.name,
         url: site.url,
         description: site.description,
+        logo: { '@type': 'ImageObject', url: `${site.url}/icon.png` },
       }}
     />
   )
@@ -112,6 +119,7 @@ export function WebSiteJsonLd() {
         '@type': 'WebSite',
         name: site.name,
         url: site.url,
+        publisher: { '@type': 'Organization', name: site.name, url: site.url },
       }}
     />
   )
