@@ -11,9 +11,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   const loc = (isLocale(locale) ? locale : defaultLocale) as Locale
   return buildMetadata({
-    title: 'FSM Software by Industry — HVAC, Plumbing, Electrical & More (2026)',
+    title: 'Field Service Software by Industry (2026)',
     description:
-      'Field service management software compared by industry. Find the best FSM software for your trade — HVAC, oil & gas, refrigeration, telecom, and more — with real pricing.',
+      'Field service management software compared by industry. The best FSM tools for HVAC, plumbing, oil and gas, telecom, and more with real pricing.',
     slug: 'by-industry',
     locale: loc,
   })

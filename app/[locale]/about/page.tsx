@@ -7,7 +7,7 @@ import { BreadcrumbJsonLd } from '@/components/JsonLd'
 export const metadata = buildMetadata({
   title: 'About FieldSoftwareGuide',
   description:
-    'FieldSoftwareGuide is an independent resource comparing field service management software by industry and business size. We are not a software vendor. How we research and stay accurate.',
+    'FieldSoftwareGuide is an independent resource comparing field service management software by industry and business size. We are not a software vendor.',
   slug: 'about',
 })
 

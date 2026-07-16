@@ -11,7 +11,7 @@ import { providers } from '@/lib/providers'
 export const metadata = buildMetadata({
   title: 'Best Field Service Management Software (2026)',
   description:
-    'Independent comparison of the best FSM software — Jobber, Housecall Pro, ServiceTitan, Workiz, FieldPulse, Commusoft — by rating, published price, and best use case.',
+    'Independent comparison of the best FSM software: Jobber, Housecall Pro, ServiceTitan, Workiz, FieldPulse, and Commusoft by rating, price, and best use case.',
   slug: 'compare',
 })
 

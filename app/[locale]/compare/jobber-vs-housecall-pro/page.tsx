@@ -20,7 +20,7 @@ import { getProvider } from '@/lib/providers'
 export const metadata = buildMetadata({
   title: 'Jobber vs Housecall Pro — Honest 2026 Comparison',
   description:
-    'Jobber vs Housecall Pro with verified July 2026 pricing on both billing bases, payment fees, QuickBooks support, and the real feature differences — no marketing copy.',
+    'Jobber vs Housecall Pro with verified July 2026 pricing on both billing bases, payment fees, QuickBooks support, and the real feature differences.',
   slug: 'compare/jobber-vs-housecall-pro',
   type: 'article',
   modifiedTime: '2026-07-08',

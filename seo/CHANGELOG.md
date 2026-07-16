@@ -23,4 +23,6 @@ Append one entry per change, every cycle. Format: date, file, change, reason, ex
 | 2026-07-16 | app/[locale]/free/page.tsx | brandSuffix: false (50 chars, text unchanged) | Was 71 with suffix | Same |
 | 2026-07-16 | app/[locale]/by-size/page.tsx | Title to "Field Service Software by Business Size (2026)" (67 with suffix); em dash removed | Bing 70-char flag + house style | Same |
 
+| 2026-07-16 | 6 pages (home, by-industry, compare, free, jobber-vs-hcp, about) | Meta description pass: all trimmed to 144-158 chars (were 165-185); /by-industry title 88 to 62 chars | Bing Live URL flagged descriptions over 160 on /free, /jobber-vs-hcp, /by-industry (plus title over 70 on /by-industry); full audit found home, compare, about also over | No SERP truncation in Google or Bing; keywords preserved, em dashes removed from rewritten lines |
+
 Verification for this cycle: robots.txt, /llms.txt 404, and live titles were checked against production on 2026-07-16 before changes. After deploy, verify https://fieldsoftwareguide.com/llms.txt returns 200, sitemap lastmod shows 2026-07-08 dates, and an industry page's Article JSON-LD shows author @type Person via the Rich Results Test.

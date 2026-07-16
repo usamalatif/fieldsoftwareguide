@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return buildMetadata({
     title: 'Field Service Management Software by Industry | FieldSoftwareGuide',
     description:
-      'Independent field service management (FSM) software comparison by industry and business size. Real, vendor-published pricing for HVAC, plumbing, electrical and more.',
+      'Independent field service management (FSM) software comparison by industry and business size, with real vendor-published pricing for HVAC, plumbing, and more.',
     locale: loc,
   })
 }
