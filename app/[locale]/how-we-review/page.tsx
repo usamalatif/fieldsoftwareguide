@@ -6,7 +6,7 @@ import { AuthorBio } from '@/components/AuthorBio'
 import { BreadcrumbJsonLd } from '@/components/JsonLd'
 
 export const metadata = buildMetadata({
-  title: 'How We Review FSM Software — Our Methodology',
+  title: 'How We Review FSM Software: Our Methodology',
   description:
     'How FieldSoftwareGuide reviews and ranks field service management software: our pricing-confidence standard, scoring criteria, and independence policy.',
   slug: 'how-we-review',

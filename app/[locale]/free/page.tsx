@@ -59,23 +59,8 @@ const faqs = [
   },
 ]
 
-/** Verified 2026-07-08 on each vendor's own site. */
-const rows: {
-  tool: string
-  freePlan: string
-  trial: string
-  paidFrom: string
-  highlight?: boolean
-}[] = [
-  { tool: 'Odoo Field Service', freePlan: 'Yes — free forever, unlimited users (One App Free)', trial: '—', paidFrom: '$7.25/user/mo annual (all apps)', highlight: true },
-  { tool: 'Connecteam', freePlan: 'Yes — up to 10 users (no invoicing/estimates)', trial: '—', paidFrom: 'Paid plans above 10 users', highlight: true },
-  { tool: 'Jobber', freePlan: 'No', trial: '14 days (Grow plan, no card)', paidFrom: '$29/mo annual · $49 month-to-month' },
-  { tool: 'Housecall Pro', freePlan: 'No', trial: '14 days (MAX plan, no card)', paidFrom: '$59/mo annual · $79 month-to-month' },
-  { tool: 'Workiz', freePlan: 'No', trial: '7 days (all features, no card)', paidFrom: 'Custom / request pricing' },
-  { tool: 'ServiceTitan', freePlan: 'No', trial: 'None — demo only', paidFrom: 'Custom / request pricing' },
-  { tool: 'FieldPulse', freePlan: 'No', trial: 'None — demo only (vendor’s own FAQ)', paidFrom: 'Custom / request pricing' },
-  { tool: 'Commusoft', freePlan: 'No', trial: 'None — sales call', paidFrom: 'Custom (12-month licenses; built for 6+ staff)' },
-]
+// Facts shared with /llms.txt + /llms-full.txt — edit in content/free-data.ts only.
+import { freeRows as rows } from '@/content/free-data'
 
 export default function FreePage() {
   return (
