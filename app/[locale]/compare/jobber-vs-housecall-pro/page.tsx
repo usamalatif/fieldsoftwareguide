@@ -18,7 +18,7 @@ import { getProvider } from '@/lib/providers'
  */
 
 export const metadata = buildMetadata({
-  title: 'Jobber vs Housecall Pro — Honest 2026 Comparison',
+  title: 'Jobber vs Housecall Pro: Honest 2026 Comparison',
   description:
     'Jobber vs Housecall Pro with verified July 2026 pricing on both billing bases, payment fees, QuickBooks support, and the real feature differences.',
   slug: 'compare/jobber-vs-housecall-pro',
@@ -84,7 +84,7 @@ export default function JobberVsHousecallProPage() {
   return (
     <>
       <ArticleJsonLd
-        headline="Jobber vs Housecall Pro — Honest 2026 Comparison"
+        headline="Jobber vs Housecall Pro: Honest 2026 Comparison"
         description="Verified pricing on both billing bases, payment fees, QuickBooks support, and the real feature differences between Jobber and Housecall Pro."
         slug="compare/jobber-vs-housecall-pro"
         datePublished="2026-07-08"

@@ -5,7 +5,7 @@ import { BreadcrumbJsonLd } from '@/components/JsonLd'
 import { site } from '@/lib/site'
 
 export const metadata = buildMetadata({
-  title: 'Usama Latif — Author & FSM Software Researcher',
+  title: 'Usama Latif, Author and FSM Software Researcher',
   description:
     'Usama Latif builds software and AI products and researches field service management software hands-on for FieldSoftwareGuide.',
   slug: 'author/usama-latif',

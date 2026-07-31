@@ -2,6 +2,21 @@
 
 Append one entry per change, every cycle. Format: date, file, change, reason, expected effect.
 
+## Cycle: 2026-07-31 (branch apex/llms-txt-seo-fixes, PR only, not deployed)
+
+| Date | File | Change | Reason | Expected effect |
+|---|---|---|---|---|
+| 2026-07-31 | lib/llms.ts (NEW), app/llms.txt/route.ts (NEW), public/llms.txt (REMOVED) | /llms.txt is now generated at build time from lib/providers.ts, lib/industries.ts, and content/free-data.ts instead of a hand-maintained static file | Hand-maintained duplicate copy is how pricing facts drift; the handoff brief's own draft mislabelled $49/$79 as "higher tiers" (they are month-to-month rates of the entry plans), proving the point | llms.txt pricing can never disagree with /compare; adds links to the two new pages (/quickbooks, /for-small-business) |
+| 2026-07-31 | app/llms-full.txt/route.ts (NEW) | Added /llms-full.txt (was 404): inlines the pricing reference, full compare table content, free-plan/trial findings, and every industry page's answer plus ranked picks, generated from the same data modules | llms.txt convention: the -full companion carries inline content so AI engines get complete facts without rendering JS; direct GEO play, equipment-rental section included for the position-15 breakout page | AI answer engines can cite exact verified pricing and rankings |
+| 2026-07-31 | content/free-data.ts (NEW), app/[locale]/free/page.tsx | Moved the /free page's plans/trials table data into a shared module imported by both the page and the llms generators | Single source of truth for the free-tier facts | /free and llms files cannot drift |
+| 2026-07-31 | app/[locale]/author/usama-latif/page.tsx | Title "Usama Latif — Author & FSM Software Researcher" (71 with suffix, em dash) to "Usama Latif, Author and FSM Software Researcher" (69, no dash) | Full-site title/meta audit: only page over 70 chars; house style bans em dashes | No Bing title flag |
+| 2026-07-31 | app/[locale]/how-we-review/page.tsx | Title em dash to colon ("How We Review FSM Software: Our Methodology") | House style | Compliant title |
+| 2026-07-31 | app/[locale]/compare/jobber-vs-housecall-pro/page.tsx | Title + ArticleJsonLd headline em dash to colon ("Jobber vs Housecall Pro: Honest 2026 Comparison") | House style; headline kept in sync with title | Compliant title and schema headline |
+| 2026-07-31 | (audit only, no change) | Full sweep of all 25 routes: titles 35-69 chars, metas 111-159 chars, no em/en dashes remain in any title or meta | Handoff Task 3 asked for a sweep; the 2026-07-16 cycle had already fixed home, compare, industry template, by-size, free | Verified compliant |
+| 2026-07-31 | (audit only, no change) | sitemap.xml verified live: HTTP 200, Content-Type application/xml, opens with <?xml | Handoff Task 4 flagged it as possibly binary; that was the checker's fetch tool, not a site bug | No action needed |
+| 2026-07-31 | lib/seo.ts | buildMetadata now enforces house style at build time: title <=70 chars incl. the brand suffix, description <=160, no em/en dashes in either; a violating page fails `next build` with a named error. Negative-tested (deliberately broken title failed the build with the right message) | Reviewer follow-up: the fixed pages had literal titles, but the layout suffix (+21 chars) and the industry title template are recurrence vectors for future pages; a build gate beats another manual audit | New pages physically cannot ship a too-long or dashed title/meta |
+| 2026-07-31 | app/[locale]/page.tsx | Homepage title marked brandSuffix: false (rendered output unchanged, byte-identical) | Guard exposed a latent quirk: Next's title.template only applies to CHILD segments, so the homepage (same segment as the layout) renders its literal as-is; the embedded suffix was correct but the metadata was mislabelled as templated | Guard measures the homepage title correctly (66 absolute) |
+
 ## Cycle: 2026-07-16 (first APEX cycle; GSC/Bing exports not yet provided, so Phase 1 delta skipped)
 
 | Date | File | Change | Reason | Expected effect |
