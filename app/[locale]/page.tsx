@@ -35,7 +35,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   const loc = (isLocale(locale) ? locale : defaultLocale) as Locale
   return buildMetadata({
+    // Suffix written literally: Next's title.template only applies to CHILD segments,
+    // and this page shares the [locale] segment with the layout that defines it.
+    // brandSuffix: false = guard measures the string as the absolute title it is.
     title: 'Field Service Management Software by Industry | FieldSoftwareGuide',
+    brandSuffix: false,
     description:
       'Independent field service management (FSM) software comparison by industry and business size, with real vendor-published pricing for HVAC, plumbing, and more.',
     locale: loc,
