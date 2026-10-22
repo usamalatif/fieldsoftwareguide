@@ -21,7 +21,6 @@ const criteria = [
   { t: 'Pricing (checked, not guessed)', d: 'We take the lowest plan each vendor publishes on its own pricing page and record the date checked. Custom-priced tools are labelled “Custom” — never a made-up number.' },
   { t: 'Fit for the industry', d: 'A tool is judged against what that trade actually needs — maintenance contracts for HVAC, inspections for oil & gas, asset tracking for rentals — not a generic feature checklist.' },
   { t: 'Core features', d: 'Scheduling, dispatch, work orders, mobile app quality, invoicing/payments, and integrations (especially QuickBooks) are weighed for every tool.' },
-  { t: 'Public reviews', d: 'We factor in aggregate ratings from G2 and Capterra as a signal of real-world satisfaction, alongside our own hands-on evaluation.' },
   { t: 'Independence', d: 'Rankings are set before any affiliate consideration. Commission never moves a tool up or down. We are not a software vendor.' },
 ]
 
@@ -46,10 +45,11 @@ export default function HowWeReviewPage() {
         <div className="mb-10">
           <AnswerBlock>
             <p>
-              FieldSoftwareGuide ranks field service management software on five things: verified
+              FieldSoftwareGuide ranks field service management software on four things: verified
               pricing, fit for your specific industry, core features (scheduling, dispatch, work
-              orders, mobile app, invoicing, integrations), public review ratings from G2 and
-              Capterra, and independence. Every price we publish comes from the vendor’s own current
+              orders, mobile app, invoicing, integrations), and independence. We do not publish
+              star ratings: third-party review scores change often, and we only publish figures we
+              can source and date. Every price we publish comes from the vendor’s own current
               pricing page and is dated; tools that only quote custom pricing are labelled as such,
               never estimated. Rankings are decided on merit before any affiliate relationship is
               considered, and commission never changes a tool’s position. We are not a software

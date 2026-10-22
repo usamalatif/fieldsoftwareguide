@@ -60,7 +60,7 @@ Every price we publish comes from the vendor's own current pricing page with the
 ## Key Resources
 
 - [FSM Software by Industry](${site.url}/by-industry): guides for ${industryNames}
-- [Compare All Tools](${site.url}/compare): the major FSM platforms rated with published pricing
+- [Compare All Tools](${site.url}/compare): the major FSM platforms compared with published pricing
 - [Jobber vs Housecall Pro](${site.url}/compare/jobber-vs-housecall-pro): verified head-to-head comparison
 - [Free FSM Software](${site.url}/free): what is actually free, verified on vendor sites
 - [QuickBooks Compatibility](${site.url}/quickbooks): which FSM tools sync with QuickBooks Online vs Desktop
@@ -95,7 +95,7 @@ export function buildLlmsFullTxt(): string {
   const compareSection = providers
     .map(
       (p) =>
-        `- ${p.name}: rated ${p.rating}/5 (G2 + Capterra aggregate), ${priceLabel(p.publishedFromUsd, p.monthlyBilledUsd)}. ${p.blurb}`,
+        `- ${p.name}: ${priceLabel(p.publishedFromUsd, p.monthlyBilledUsd)}. ${p.blurb}`,
     )
     .join('\n')
 
@@ -113,7 +113,7 @@ export function buildLlmsFullTxt(): string {
           const p = getProvider(ref.slug)
           if (!p) return null
           const price = ref.monthlyFromUsd != null ? `from $${ref.monthlyFromUsd}/mo billed annually` : 'custom quoted'
-          return `${i + 1}. ${p.name} (rated ${p.rating}/5, ${price}): ${ref.positioning}`
+          return `${i + 1}. ${p.name} (${price}): ${ref.positioning}`
         })
         .filter(Boolean)
         .join('\n')

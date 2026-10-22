@@ -7,7 +7,7 @@ import { site } from '@/lib/site'
 export const metadata = buildMetadata({
   title: 'Usama Latif, Author and FSM Software Researcher',
   description:
-    'Usama Latif builds software and AI products and researches field service management software hands-on for FieldSoftwareGuide.',
+    'Usama Latif builds software and AI products and researches field service management software for FieldSoftwareGuide from vendor pricing and documentation.',
   slug: 'author/usama-latif',
 })
 
@@ -30,7 +30,7 @@ function PersonJsonLd() {
           jobTitle: 'Software & AI product builder; FSM software researcher',
           worksFor: { '@type': 'Organization', name: site.name, url: site.url },
           description:
-            'Usama Latif builds software and AI products and writes about business tools, researching field service management platforms hands-on.',
+            'Usama Latif builds software and AI products and writes about business tools, researching field service management platforms from vendor pricing pages and public documentation.',
         }),
       }}
     />
@@ -69,8 +69,8 @@ export default function AuthorPage() {
             is actually checked against each vendor’s own page.
           </p>
           <p>
-            Because he builds and evaluates software directly, the reviews here lean on genuine
-            hands-on experience rather than rewritten marketing copy. Every price is dated, every
+            Because he builds software himself, he reads each vendor’s pricing pages, feature pages,
+            and help documentation closely rather than rewriting marketing copy. Every price is dated, every
             custom-priced tool is labelled as such, and rankings are set on merit — see{' '}
             <Link href="/how-we-review">how we review</Link> for the full method.
           </p>

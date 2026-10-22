@@ -59,6 +59,12 @@ export interface IndustryProviderRef {
    * quotes custom pricing ("Custom / contact sales").
    */
   monthlyFromUsd: number | null
+  /** Optional fit notes; rendered as a per-tool breakdown when any provider has them. Sourced claims only. */
+  fit?: {
+    bestFor: string
+    strengths: string[]
+    limitations: string[]
+  }
 }
 
 export interface IndustryFAQ {
@@ -101,6 +107,8 @@ export interface Industry {
   dataVerified: boolean
   /** Master list of sources used for this industry (URL + date checked). */
   sources?: FieldSource[]
+  /** Vendors researched, when more than the shortlisted `providers` (shown as "5 of 6"). */
+  reviewedCount?: number
 }
 
 // ── Registry ───────────────────────────────────────────────────────

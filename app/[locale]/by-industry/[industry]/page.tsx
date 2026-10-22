@@ -30,7 +30,9 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
   const loc = (isLocale(locale) ? locale : defaultLocale) as Locale
   return buildMetadata({
     title: `Best Field Service Management Software for ${ind.name} (2026)`,
-    description: `The best FSM software for ${ind.name} companies in 2026: real pricing, key features, and top tools compared for ${ind.name} businesses of every size.`,
+    description: ind.slug === 'equipment-rental'
+      ? 'Compare field service software for equipment rental maintenance, dispatch, and inspections. Know when dedicated rental software is required.'
+      : `The best FSM software for ${ind.name} companies in 2026: real pricing, key features, and top tools compared for ${ind.name} businesses of every size.`,
     slug: `by-industry/${ind.slug}`,
     locale: loc,
     type: 'article',
@@ -66,7 +68,7 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
         headline={`Best Field Service Management Software for ${ind.name} (2026)`}
         description={`Real pricing, key features, and the top FSM software for ${ind.name} companies.`}
         slug={`by-industry/${ind.slug}`}
-        datePublished={ind.lastUpdated}
+        datePublished={ind.slug === 'equipment-rental' ? undefined : ind.lastUpdated}
         dateModified={ind.lastUpdated}
         authorName="Usama Latif"
       />
@@ -102,6 +104,54 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
           <IndustryDataCard industry={ind} />
         </div>
 
+        {ind.slug === 'equipment-rental' && (
+          <section className="mx-auto mt-12 max-w-[980px]" aria-labelledby="rental-vs-fsm-heading">
+            <h2 id="rental-vs-fsm-heading" className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
+              Equipment rental software vs field service management software
+            </h2>
+            <p className="mt-3 max-w-[820px] text-[15px] leading-[1.75] text-slate-600 dark:text-slate-300">
+              Choose the system around the work you need to manage. Rental software handles booking
+              and asset availability. FSM software is aimed at dispatching technicians and recording
+              repairs. A rental company might need both, but only after checking integrations.
+            </p>
+            <div className="mt-5 overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800">
+              <table className="w-full min-w-[620px] border-collapse text-left text-sm">
+                <thead className="bg-slate-900 text-white">
+                  <tr>
+                    <th scope="col" className="p-4">Business need</th>
+                    <th scope="col" className="p-4">Where to start</th>
+                    <th scope="col" className="p-4">What to verify</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-200 dark:divide-slate-800">
+                  <tr>
+                    <th scope="row" className="p-4 font-semibold">Equipment reservations and rental contracts</th>
+                    <td className="p-4">Dedicated rental platform</td>
+                    <td className="p-4">Availability, checkout, returns and rental billing</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" className="p-4 font-semibold">Technician visits and maintenance work orders</th>
+                    <td className="p-4">Field service management tool</td>
+                    <td className="p-4">Dispatch, asset history, inspection forms and permissions</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" className="p-4 font-semibold">Bookings plus service operations</th>
+                    <td className="p-4">Rental platform plus FSM if needed</td>
+                    <td className="p-4">Integration, duplicated records and total subscription cost</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-3 text-[13.5px] leading-[1.7] text-slate-500 dark:text-slate-400">
+              Point of Rental, Booqable and Quipli offer rental workflows. The FSM table below is
+              a comparison of service-side candidates, not a ranking of full rental systems.{' '}
+              <Link href={L('/compare')} className="font-semibold text-orange-600 hover:underline">
+                Compare field service tools
+              </Link>.
+            </p>
+          </section>
+        )}
+
         <section className="mx-auto mt-14 max-w-[980px]">
           <h2 className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
             {t.bestSoftware(ind.name)}
@@ -111,6 +161,8 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
           </p>
           <ComparisonTable refs={ind.providers} industryName={ind.name} />
         </section>
+
+        <ProviderFit industry={ind} />
 
         <section className="mx-auto mt-14 max-w-[820px]">
           <h2 className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
@@ -156,10 +208,22 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
 
         <Prose>
           <CalloutBox tone="verdict" title={t.bottomLine(ind.name)}>
-            For most {ind.name} companies, start with {getProvider(ind.providers[0]?.slug ?? '')?.name ?? 'a top pick'} and
-            trial one alternative before committing. Match the tool to your team size and whether you
-            need commercial features — the “best” FSM software for {ind.name} depends on how many
-            technicians you run and your budget.
+            {ind.slug === 'equipment-rental' ? (
+              <>
+                For equipment reservations, availability, and rental contracts, evaluate a dedicated
+                rental platform first. Compare FSM tools only for the field-service side, such as
+                technician dispatch, equipment maintenance, and inspections. FieldPulse is a possible
+                service-side fit, not a substitute for rental booking and contract management.
+                Verify vendor capabilities, integrations, and current prices before purchasing.
+              </>
+            ) : (
+              <>
+                For most {ind.name} companies, start with {getProvider(ind.providers[0]?.slug ?? '')?.name ?? 'a top pick'} and
+                trial one alternative before committing. Match the tool to your team size and whether you
+                need commercial features — the “best” FSM software for {ind.name} depends on how many
+                technicians you run and your budget.
+              </>
+            )}
           </CalloutBox>
           <AuthorBio />
           <SourcesBlock current={ind} title={t.sources} />
@@ -169,6 +233,42 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
         <AdUnit slot="0000000003" format="leaderboard" note="footer" />
       </div>
     </>
+  )
+}
+
+function ProviderFit({ industry: ind }: { industry: Industry }) {
+  const rows = ind.providers
+    .map((r) => ({ ref: r, p: getProvider(r.slug) }))
+    .filter((x) => x.p && x.ref.fit)
+  if (!rows.length) return null
+
+  return (
+    <section className="mx-auto mt-14 max-w-[980px]" aria-labelledby="provider-fit-heading">
+      <h2 id="provider-fit-heading" className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
+        How each shortlisted tool fits {ind.name.toLowerCase()} work
+      </h2>
+      <p className="mt-2 max-w-[760px] text-[15px] leading-[1.7] text-slate-500 dark:text-slate-400">
+        Strengths and limitations below come from vendor pricing, feature, and help pages listed in
+        the sources. None of these tools was verified to handle rental reservations, availability,
+        or rental contracts, so pair any of them with a dedicated rental platform for that side.
+      </p>
+      <div className="mt-5 grid grid-cols-1 gap-3.5 md:grid-cols-2">
+        {rows.map(({ ref, p }) => (
+          <article key={ref.slug} className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
+            <h3 className="text-[17px] font-bold text-slate-900 dark:text-white">{p!.name}</h3>
+            <p className="mt-1 text-[13.5px] font-semibold text-orange-600 dark:text-orange-400">Best fit: {ref.fit!.bestFor}</p>
+            <p className="mt-3 text-[12px] font-bold uppercase tracking-[0.06em] text-slate-400">Useful for rental fleets</p>
+            <ul className="mt-1.5 list-disc space-y-1 pl-5 text-[14px] leading-[1.55] text-slate-700 dark:text-slate-300">
+              {ref.fit!.strengths.map((x) => <li key={x}>{x}</li>)}
+            </ul>
+            <p className="mt-3 text-[12px] font-bold uppercase tracking-[0.06em] text-slate-400">Limitations</p>
+            <ul className="mt-1.5 list-disc space-y-1 pl-5 text-[14px] leading-[1.55] text-slate-700 dark:text-slate-300">
+              {ref.fit!.limitations.map((x) => <li key={x}>{x}</li>)}
+            </ul>
+          </article>
+        ))}
+      </div>
+    </section>
   )
 }
 
@@ -197,8 +297,10 @@ function PricingList({ industry: ind }: { industry: Industry }) {
         ))}
       </dl>
       <p className="border-t border-slate-100 px-6 py-3 text-[12.5px] text-slate-400 dark:border-slate-800">
-        Lowest vendor-published plan with annual billing (checked Jul 2026); month-to-month rates
-        run higher. {isPricePublishable(ind.priceRange) && ind.priceRange.note
+        {ind.slug === 'equipment-rental'
+          ? ''
+          : 'Lowest vendor-published plan with annual billing (checked Jul 2026); month-to-month rates run higher. '}
+        {(isPricePublishable(ind.priceRange) || ind.slug === 'equipment-rental') && ind.priceRange.note
           ? ind.priceRange.note
           : 'Custom-priced tools require a quote; costs scale with technicians and features.'}
       </p>

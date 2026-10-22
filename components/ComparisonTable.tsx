@@ -1,7 +1,6 @@
 import { getProvider } from '@/lib/providers'
 import type { IndustryProviderRef } from '@/lib/industries'
 import { site } from '@/lib/site'
-import { RatingBadge } from './RatingBadge'
 import { ProviderLogo } from './ProviderLogo'
 
 /**
@@ -30,7 +29,7 @@ export function ComparisonTable({
         <table className="tnum w-full border-collapse">
           <thead>
             <tr className="bg-slate-900 text-left">
-              {['Software', 'From / mo', 'Rating', 'Best for', ''].map((h, i) => (
+              {['Software', 'From / mo', 'Best for', ''].map((h, i) => (
                 <th
                   key={i}
                   className="px-4 py-[15px] text-[12px] font-bold uppercase tracking-[0.06em] text-slate-300 first:pl-[22px] last:pr-[22px]"
@@ -55,14 +54,13 @@ export function ComparisonTable({
                         <div className="text-[15.5px] font-bold text-slate-900 dark:text-white">{p.name}</div>
                         {best && (
                           <span className="mt-1 inline-flex items-center gap-1 rounded-full bg-orange-200 px-[7px] py-0.5 text-[10.5px] font-bold uppercase tracking-[0.05em] text-orange-800">
-                            ★ Best overall
+                            ★ {industryName === 'Equipment Rental' ? 'Service-side pick' : 'Best overall'}
                           </span>
                         )}
                       </div>
                     </div>
                   </td>
                   <td className="px-4 py-[18px] text-[15px] font-bold text-slate-900 dark:text-white">{fee(ref.monthlyFromUsd)}</td>
-                  <td className="px-4 py-[18px]"><RatingBadge score={p.rating} /></td>
                   <td className="px-4 py-[18px] text-sm text-slate-600 dark:text-slate-300">{ref.positioning}</td>
                   <td className="py-[18px] pl-4 pr-[22px] text-right">
                     <a
@@ -71,8 +69,8 @@ export function ComparisonTable({
                       rel="sponsored nofollow noopener"
                       className={
                         best
-                          ? 'inline-flex h-[38px] items-center gap-1.5 rounded-[9px] bg-orange-500 px-4 text-[13.5px] font-bold text-white hover:bg-orange-600'
-                          : 'inline-flex h-[38px] items-center rounded-[9px] border border-slate-300 bg-white dark:bg-slate-900 px-4 text-[13.5px] font-bold text-slate-800 dark:text-slate-200 hover:border-orange-300'
+                          ? 'inline-flex h-[38px] items-center whitespace-nowrap gap-1.5 rounded-[9px] bg-orange-500 px-4 text-[13.5px] font-bold text-white hover:bg-orange-600'
+                          : 'inline-flex h-[38px] items-center whitespace-nowrap rounded-[9px] border border-slate-300 bg-white dark:bg-slate-900 px-4 text-[13.5px] font-bold text-slate-800 dark:text-slate-200 hover:border-orange-300'
                       }
                     >
                       {best ? `Visit ${p.name} →` : 'Visit'}
@@ -98,14 +96,13 @@ export function ComparisonTable({
             >
               {best && (
                 <span className="absolute right-3.5 top-3.5 rounded-full bg-orange-200 px-2 py-0.5 text-[9.5px] font-bold uppercase tracking-[0.05em] text-orange-800">
-                  ★ Best overall
+                  ★ {industryName === 'Equipment Rental' ? 'Service-side pick' : 'Best overall'}
                 </span>
               )}
               <div className="flex items-center gap-3">
                 <ProviderLogo name={p.name} logo={p.logo} mono={p.mono} />
                 <div>
                   <div className="text-[15.5px] font-bold text-slate-900 dark:text-white">{p.name}</div>
-                  <RatingBadge score={p.rating} />
                 </div>
               </div>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{ref.positioning}</p>
@@ -119,8 +116,8 @@ export function ComparisonTable({
                   rel="sponsored nofollow noopener"
                   className={
                     best
-                      ? 'inline-flex h-9 items-center rounded-[9px] bg-orange-500 px-4 text-[13px] font-bold text-white'
-                      : 'inline-flex h-9 items-center rounded-[9px] border border-slate-300 bg-white dark:bg-slate-900 px-4 text-[13px] font-bold text-slate-800 dark:text-slate-200'
+                      ? 'inline-flex h-9 items-center whitespace-nowrap rounded-[9px] bg-orange-500 px-4 text-[13px] font-bold text-white'
+                      : 'inline-flex h-9 items-center whitespace-nowrap rounded-[9px] border border-slate-300 bg-white dark:bg-slate-900 px-4 text-[13px] font-bold text-slate-800 dark:text-slate-200'
                   }
                 >
                   Visit {p.name}
@@ -132,9 +129,10 @@ export function ComparisonTable({
       </div>
 
       <p className="mt-3 px-1 text-[12.5px] text-slate-400">
-        Ratings aggregated from G2 and Capterra. Prices are each vendor’s lowest published plan
-        with annual billing (checked Jul 2026) — month-to-month runs higher; “Custom” means the
-        vendor quotes per business. {site.name} may earn a
+        {industryName === 'Equipment Rental'
+          ? 'Jobber and Housecall Pro standard annual-billing entry plans checked October 22, 2026. “Custom” means the vendor quotes per business. '
+          : 'Prices are each vendor’s lowest published plan with annual billing (checked Jul 2026); month-to-month runs higher. “Custom” means the vendor quotes per business. '}
+        {site.name} may earn a
         commission from software links — this never affects our scoring. Verify current pricing for
         your {industryName} business before deciding.
       </p>

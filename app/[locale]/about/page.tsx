@@ -53,8 +53,8 @@ export default function AboutPage() {
               lists. Everything we publish follows one pricing-confidence standard: every price
               comes from the vendor’s own current pricing page and records the date we checked it,
               and tools that only quote custom pricing are labelled as such rather than guessed. The
-              site is run by Usama Latif, who builds software and AI products and evaluates these
-              platforms hands-on. Some links are affiliate links and we may earn a commission, but
+              site is run by Usama Latif, who builds software and AI products and researches these
+              platforms through vendors’ own pricing, feature, and help pages. Some links are affiliate links and we may earn a commission, but
               that never changes a tool’s ranking. This is general information, not purchasing or
               legal advice.
             </p>
