@@ -17,14 +17,17 @@ export function IndustryDataCard({ industry: ind }: { industry: Industry }) {
   const cells: { label: string; value: string; accent?: boolean }[] = [
     { label: 'Industry', value: ind.name },
     { label: 'Category', value: ind.category },
-    { label: 'Top pick', value: topPick?.name ?? '—' },
-    { label: 'Tools compared', value: String(ind.providers.length) },
+    { label: ind.slug === 'equipment-rental' ? 'Top FSM pick' : 'Top pick', value: topPick?.name ?? '—' },
+    {
+      label: ind.reviewedCount ? 'Tools shortlisted' : 'Tools compared',
+      value: ind.reviewedCount ? `${ind.providers.length} of ${ind.reviewedCount}` : String(ind.providers.length),
+    },
   ]
   if (isPricePublishable(ind.priceRange)) {
     cells.push({ label: 'Typical price', value: `${priceShort(ind)} / tech / mo` })
   }
   cells.push({
-    label: 'Most affordable',
+    label: ind.slug === 'equipment-rental' ? 'Lowest listed FSM plan' : 'Most affordable',
     value: cheapest?.p ? `${cheapest.p.name} — $${cheapest.from}/mo` : 'Varies by quote',
     accent: true,
   })

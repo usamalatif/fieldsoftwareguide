@@ -5,7 +5,7 @@ import { site } from '@/lib/site'
 
 /**
  * CLS-safe AdSense slot. Reserves fixed dimensions BEFORE the ad loads.
- * Pre-approval (site.adsenseClient == null) renders the hatch placeholder.
+ * Pre-approval (site.adsenseClient == null) renders nothing.
  */
 type Format = 'leaderboard' | 'rectangle' | 'mpu'
 
@@ -33,7 +33,7 @@ export function AdUnit({
   className?: string
 }) {
   const client = site.adsenseClient
-  const { w, h, label } = dims[format]
+  const { w, h } = dims[format]
 
   useEffect(() => {
     if (!client) return
@@ -44,38 +44,23 @@ export function AdUnit({
     }
   }, [client])
 
+  // Pre-approval: render nothing (matches site.adsenseClient contract), so no empty boxes ship.
+  if (!client) return null
+
   return (
     <div className={`mx-auto my-9 ${className}`} style={{ maxWidth: '100%', width: w }}>
       <div
         style={{ height: h }}
         className="flex w-full max-w-full flex-col items-center justify-center overflow-hidden rounded-[10px]"
       >
-        {client ? (
-          <ins
-            className="adsbygoogle"
-            style={{ display: 'block', width: '100%', height: h }}
-            data-ad-client={client}
-            data-ad-slot={slot}
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          />
-        ) : (
-          <div
-            className="flex h-full w-full flex-col items-center justify-center rounded-[10px] border border-dashed border-slate-300"
-            style={{
-              background:
-                'repeating-linear-gradient(135deg,#FAFBFC,#FAFBFC 10px,#F4F6F9 10px,#F4F6F9 20px)',
-            }}
-          >
-            <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-slate-400">
-              Advertisement
-            </span>
-            <span className="mt-0.5 text-[11px] text-slate-400">
-              {label}
-              {note ? ` · ${note}` : ' · reserved (no layout shift)'}
-            </span>
-          </div>
-        )}
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block', width: '100%', height: h }}
+          data-ad-client={client}
+          data-ad-slot={slot}
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
       </div>
     </div>
   )

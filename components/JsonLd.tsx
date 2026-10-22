@@ -23,7 +23,7 @@ export function ArticleJsonLd({
   headline: string
   description: string
   slug: string
-  datePublished: string
+  datePublished?: string
   dateModified?: string
   /** Person author. Omit to attribute the article to the site Organization. */
   authorName?: string
@@ -39,8 +39,8 @@ export function ArticleJsonLd({
         description,
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
         url,
-        datePublished,
-        dateModified: dateModified ?? datePublished,
+        ...(datePublished ? { datePublished } : {}),
+        ...(dateModified || datePublished ? { dateModified: dateModified ?? datePublished } : {}),
         author: authorName
           ? { '@type': 'Person', name: authorName, url: authorUrl }
           : { '@type': 'Organization', name: site.publisher, url: site.url },

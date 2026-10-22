@@ -113,7 +113,7 @@ export function buildLlmsFullTxt(): string {
           const p = getProvider(ref.slug)
           if (!p) return null
           const price = ref.monthlyFromUsd != null ? `from $${ref.monthlyFromUsd}/mo billed annually` : 'custom quoted'
-          return `${i + 1}. ${p.name} (rated ${p.rating}/5, ${price}): ${ref.positioning}`
+          return `${i + 1}. ${p.name} (${ind.hideRatings ? '' : `rated ${p.rating}/5, `}${price}): ${ref.positioning}`
         })
         .filter(Boolean)
         .join('\n')

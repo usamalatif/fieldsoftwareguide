@@ -3,7 +3,7 @@ export function AuthorBio({
   name = 'Usama Latif',
   initials = 'UL',
   credential = 'Software & AI product builder · FSM software researcher',
-  bio = 'Usama Latif builds software and AI products and writes about business tools. He researches field service management platforms hands-on and checks every price against the vendor’s own pricing page. FieldSoftwareGuide is independent and is not an FSM software vendor.',
+  bio = 'Usama Latif builds software and AI products and writes about business tools. He researches field service management platforms using vendors’ public pricing, feature, and help documentation, and checks every price against the vendor’s own pricing page. FieldSoftwareGuide is independent and is not an FSM software vendor.',
 }: {
   name?: string
   initials?: string

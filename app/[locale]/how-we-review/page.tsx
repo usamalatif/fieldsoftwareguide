@@ -21,7 +21,7 @@ const criteria = [
   { t: 'Pricing (checked, not guessed)', d: 'We take the lowest plan each vendor publishes on its own pricing page and record the date checked. Custom-priced tools are labelled “Custom” — never a made-up number.' },
   { t: 'Fit for the industry', d: 'A tool is judged against what that trade actually needs — maintenance contracts for HVAC, inspections for oil & gas, asset tracking for rentals — not a generic feature checklist.' },
   { t: 'Core features', d: 'Scheduling, dispatch, work orders, mobile app quality, invoicing/payments, and integrations (especially QuickBooks) are weighed for every tool.' },
-  { t: 'Public reviews', d: 'We factor in aggregate ratings from G2 and Capterra as a signal of real-world satisfaction, alongside our own hands-on evaluation.' },
+  { t: 'Public reviews', d: 'We factor in aggregate ratings from G2 and Capterra as a signal of real-world satisfaction, alongside our review of each vendor’s own pricing, feature, and help documentation.' },
   { t: 'Independence', d: 'Rankings are set before any affiliate consideration. Commission never moves a tool up or down. We are not a software vendor.' },
 ]
 
