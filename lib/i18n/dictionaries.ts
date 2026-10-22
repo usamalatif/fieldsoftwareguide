@@ -31,7 +31,7 @@ const en: Dictionary = {
     reviewed: 'Pricing checked against vendor pages',
     updated: 'Updated',
     bestSoftware: (name) => `Best FSM software for ${name} — ranked`,
-    bestSoftwareSub: 'Compared on starting price, rating, and core strength. Prices are the lowest plan each vendor publishes.',
+    bestSoftwareSub: 'Compared on starting price and core strength. Prices are the lowest plan each vendor publishes.',
     featuresTitle: (name) => `Key features ${name} companies need`,
     featuresSub: (name) => `What actually matters when you run field service for a ${name} business.`,
     pricingTitle: (name) => `What ${name} FSM software costs`,

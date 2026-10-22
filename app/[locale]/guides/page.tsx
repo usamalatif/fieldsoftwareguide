@@ -18,7 +18,7 @@ const crumbs = [
 
 const guides = [
   { title: 'FSM software by industry', desc: 'Find the best tool for your trade — HVAC, plumbing, and more.', href: '/by-industry', tag: 'Start here' },
-  { title: 'Best FSM software 2026', desc: 'The major platforms compared on rating and published price.', href: '/compare', tag: 'Compare' },
+  { title: 'Best FSM software 2026', desc: 'The major platforms compared on published price and best fit.', href: '/compare', tag: 'Compare' },
   { title: 'FSM software by business size', desc: 'Solo operator to enterprise — the right fit for your team size.', href: '/by-size', tag: 'By size' },
   { title: 'Free FSM software', desc: 'What you can actually run for free, and where the limits are.', href: '/free', tag: 'Free' },
   { title: 'FSM software for QuickBooks', desc: 'Which tools sync with QuickBooks Online and Desktop, and the plan you need.', href: '/quickbooks', tag: 'QuickBooks' },
@@ -51,8 +51,8 @@ export default function GuidesPage() {
               These guides explain how to choose field service management (FSM) software — the tools
               that run scheduling, dispatch, work orders, invoicing, and payments for service
               businesses. Start with your industry, since the best tool for HVAC is not the best for
-              a rental yard or a telecom crew. From there, compare the major platforms on rating and
-              real published pricing, size the choice to your team, and check what free options can
+              a rental yard or a telecom crew. From there, compare the major platforms on real
+              published pricing and fit, size the choice to your team, and check what free options can
               actually do. Every guide names specific tools and prices, checks figures against each
               vendor’s own pricing page, and stays independent so you can decide quickly.
             </p>

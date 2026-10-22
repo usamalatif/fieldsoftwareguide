@@ -40,8 +40,6 @@ export const equipmentRental: Industry = {
 
   // Six FSM vendors researched in July 2026 (incl. Workiz); five shortlisted below.
   reviewedCount: 6,
-  // Provider ratings have no dated, documented source in this repo, so this page omits them.
-  hideRatings: true,
 
   // Fit notes use only claims backed by the sources below or the July 2026 research.
   providers: [

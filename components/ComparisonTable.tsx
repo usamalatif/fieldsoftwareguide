@@ -1,7 +1,6 @@
 import { getProvider } from '@/lib/providers'
 import type { IndustryProviderRef } from '@/lib/industries'
 import { site } from '@/lib/site'
-import { RatingBadge } from './RatingBadge'
 import { ProviderLogo } from './ProviderLogo'
 
 /**
@@ -13,12 +12,9 @@ import { ProviderLogo } from './ProviderLogo'
 export function ComparisonTable({
   refs,
   industryName,
-  showRatings = true,
 }: {
   refs: IndustryProviderRef[]
   industryName: string
-  /** Hide the rating column + note where ratings lack a dated, documented source. */
-  showRatings?: boolean
 }) {
   const rows = refs
     .map((r) => ({ ref: r, p: getProvider(r.slug) }))
@@ -33,7 +29,7 @@ export function ComparisonTable({
         <table className="tnum w-full border-collapse">
           <thead>
             <tr className="bg-slate-900 text-left">
-              {['Software', 'From / mo', ...(showRatings ? ['Rating'] : []), 'Best for', ''].map((h, i) => (
+              {['Software', 'From / mo', 'Best for', ''].map((h, i) => (
                 <th
                   key={i}
                   className="px-4 py-[15px] text-[12px] font-bold uppercase tracking-[0.06em] text-slate-300 first:pl-[22px] last:pr-[22px]"
@@ -65,7 +61,6 @@ export function ComparisonTable({
                     </div>
                   </td>
                   <td className="px-4 py-[18px] text-[15px] font-bold text-slate-900 dark:text-white">{fee(ref.monthlyFromUsd)}</td>
-                  {showRatings && <td className="px-4 py-[18px]"><RatingBadge score={p.rating} /></td>}
                   <td className="px-4 py-[18px] text-sm text-slate-600 dark:text-slate-300">{ref.positioning}</td>
                   <td className="py-[18px] pl-4 pr-[22px] text-right">
                     <a
@@ -108,7 +103,6 @@ export function ComparisonTable({
                 <ProviderLogo name={p.name} logo={p.logo} mono={p.mono} />
                 <div>
                   <div className="text-[15.5px] font-bold text-slate-900 dark:text-white">{p.name}</div>
-                  {showRatings && <RatingBadge score={p.rating} />}
                 </div>
               </div>
               <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{ref.positioning}</p>
@@ -135,7 +129,6 @@ export function ComparisonTable({
       </div>
 
       <p className="mt-3 px-1 text-[12.5px] text-slate-400">
-        {showRatings && <>Ratings aggregated from G2 and Capterra.{' '}</>}
         {industryName === 'Equipment Rental'
           ? 'Jobber and Housecall Pro standard annual-billing entry plans checked October 22, 2026. “Custom” means the vendor quotes per business. '
           : 'Prices are each vendor’s lowest published plan with annual billing (checked Jul 2026); month-to-month runs higher. “Custom” means the vendor quotes per business. '}

@@ -109,8 +109,6 @@ export interface Industry {
   sources?: FieldSource[]
   /** Vendors researched, when more than the shortlisted `providers` (shown as "5 of 6"). */
   reviewedCount?: number
-  /** Omit provider ratings on this page (no dated, documented rating source yet). */
-  hideRatings?: boolean
 }
 
 // ── Registry ───────────────────────────────────────────────────────

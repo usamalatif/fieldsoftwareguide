@@ -188,7 +188,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className="cta-band flex flex-col items-start justify-between gap-6 rounded-[22px] p-10 md:flex-row md:items-center md:p-12">
           <div>
             <h2 className="text-[28px] font-extrabold tracking-[-0.02em] text-white md:text-[30px]">Compare every FSM tool side by side</h2>
-            <p className="mt-2.5 max-w-[460px] text-base text-slate-300">Ratings, published prices, and best-fit use case for the major field service platforms.</p>
+            <p className="mt-2.5 max-w-[460px] text-base text-slate-300">Published prices, key features, and best-fit use case for the major field service platforms.</p>
           </div>
           <Link
             href={L('/compare')}

@@ -157,11 +157,9 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
             {t.bestSoftware(ind.name)}
           </h2>
           <p className="mb-1 mt-2 max-w-[720px] text-[15px] text-slate-500 dark:text-slate-400">
-            {ind.hideRatings
-              ? 'Compared on starting price and service-side strengths. Prices are the lowest plan each vendor publishes.'
-              : t.bestSoftwareSub}
+            {t.bestSoftwareSub}
           </p>
-          <ComparisonTable refs={ind.providers} industryName={ind.name} showRatings={!ind.hideRatings} />
+          <ComparisonTable refs={ind.providers} industryName={ind.name} />
         </section>
 
         <ProviderFit industry={ind} />
