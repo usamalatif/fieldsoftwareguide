@@ -34,7 +34,7 @@ export interface SearchMeta {
   cpc: number | null
 }
 
-/** A typical software price range for this industry, in USD per technician / month. */
+/** Published plan price range for this industry, in USD per month (plan price, not per technician). */
 export interface PriceRange {
   min: number | null
   max: number | null
@@ -90,7 +90,7 @@ export interface Industry {
   /** The features companies in this industry specifically need. */
   keyFeatures: string[]
 
-  /** Typical price range for FSM software in this industry, per tech / month. */
+  /** Published plan price range for FSM software in this industry, per month. */
   priceRange: PriceRange
 
   /** Prioritization data from Semrush (used for build ordering / reporting). */

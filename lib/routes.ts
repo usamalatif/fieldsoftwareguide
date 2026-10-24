@@ -10,12 +10,12 @@
  * route's date only when you actually change that page's content.
  */
 export const staticRouteLastmod: Record<string, string> = {
-  '/': '2026-10-22',
-  '/by-industry': '2026-10-22',
+  '/': '2026-10-24',
+  '/by-industry': '2026-10-24',
   '/by-size': '2026-07-08',
-  '/compare': '2026-10-22',
+  '/compare': '2026-10-24',
   '/compare/jobber-vs-housecall-pro': '2026-07-08',
-  '/free': '2026-07-08',
+  '/free': '2026-10-24',
   '/quickbooks': '2026-10-24',
   '/for-small-business': '2026-10-24',
   '/guides': '2026-10-22',
