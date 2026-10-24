@@ -209,7 +209,9 @@ export default function QuickBooksPage() {
             team: Jobber Connect at $99/month billed annually is the cheapest published path, and
             our <Link href="/compare/jobber-vs-housecall-pro">Jobber vs Housecall Pro comparison</Link>{' '}
             covers the rest of that decision. QuickBooks Desktop plus a small team: Housecall Pro
-            Essentials at $149/month billed annually is the cheapest published path. Larger or
+            Essentials at $149/month billed annually is the cheapest published path (our{' '}
+            <Link href="/pricing/housecall-pro">Housecall Pro pricing</Link> guide shows what each
+            plan includes). Larger or
             commercial operations on either version: ServiceTitan supports both and is built for
             scale, with Workiz and FieldPulse as mid-market alternatives, all custom-quoted. Small
             teams weighing price against features can use our{' '}

@@ -108,7 +108,7 @@ export const refrigeration: Industry = {
     {
       question: 'Can it manage recurring maintenance agreements?',
       answer:
-        'Yes. ServiceTitan, Commusoft, and Housecall Pro (from $59/month billed annually) let you attach recurring maintenance agreements to grocery and restaurant accounts and schedule preventive maintenance visits.',
+        'Yes. ServiceTitan and Commusoft let you attach recurring maintenance agreements to grocery and restaurant accounts and schedule preventive maintenance visits. On Housecall Pro, Recurring Service Plans are part of the MAX plan ($299/month billed annually), not the $59 Basic plan.',
     },
   ],
 

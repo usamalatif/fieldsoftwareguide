@@ -17,6 +17,7 @@ export const staticRouteLastmod: Record<string, string> = {
   '/compare/jobber-vs-housecall-pro': '2026-07-08',
   '/free': '2026-10-24',
   '/quickbooks': '2026-10-24',
+  '/pricing/housecall-pro': '2026-10-24',
   '/for-small-business': '2026-10-24',
   '/guides': '2026-10-22',
   '/about': '2026-10-22',
