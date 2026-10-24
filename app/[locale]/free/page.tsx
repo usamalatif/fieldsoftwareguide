@@ -160,8 +160,8 @@ export default function FreePage() {
             <strong>Odoo Field Service (One App Free)</strong> — Odoo’s cloud plan makes your first
             app free forever with unlimited users, and Field Service qualifies. It covers
             scheduling, tasks, worksheets, and invoicing hooks, and you pay only when you add a
-            second Odoo app (Odoo’s Standard plan showed US$8.95 and US$11.20 per user per month on
-            October 24, 2026, with a discount valid for the first 12 months). The catch: it’s an ERP module, not a trades-focused product — expect more
+            second Odoo app; paid plans are billed per user, so check Odoo’s pricing page for the current
+            rate and billing terms. The catch: it’s an ERP module, not a trades-focused product — expect more
             setup than Jobber or Housecall Pro and no flat-rate pricebooks or trade workflows.
           </p>
           <p>
