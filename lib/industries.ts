@@ -34,7 +34,7 @@ export interface SearchMeta {
   cpc: number | null
 }
 
-/** A typical software price range for this industry, in USD per technician / month. */
+/** Published plan price range for this industry, in USD per month (plan price, not per technician). */
 export interface PriceRange {
   min: number | null
   max: number | null
@@ -90,7 +90,7 @@ export interface Industry {
   /** The features companies in this industry specifically need. */
   keyFeatures: string[]
 
-  /** Typical price range for FSM software in this industry, per tech / month. */
+  /** Published plan price range for FSM software in this industry, per month. */
   priceRange: PriceRange
 
   /** Prioritization data from Semrush (used for build ordering / reporting). */
@@ -107,6 +107,16 @@ export interface Industry {
   dataVerified: boolean
   /** Master list of sources used for this industry (URL + date checked). */
   sources?: FieldSource[]
+  /** Page-specific meta description (falls back to the shared template). Keep <=160 chars. */
+  metaDescription?: string
+  /** Original publish date for Article schema; omit when unknown (falls back to lastUpdated). */
+  datePublished?: string
+  /** "Which software should you choose?" rows, by business size. Sourced claims only. */
+  bySize?: { size: string; pick: string; why: string }[]
+  /** Extra H2 sections. Paragraphs may contain [label](/internal-path) links. */
+  extraSections?: { id: string; heading: string; paragraphs: string[] }[]
+  /** Industry-specific buying mistakes. */
+  mistakes?: string[]
   /** Vendors researched, when more than the shortlisted `providers` (shown as "5 of 6"). */
   reviewedCount?: number
 }

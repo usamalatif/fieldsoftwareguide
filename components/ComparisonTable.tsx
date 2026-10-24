@@ -12,9 +12,12 @@ import { ProviderLogo } from './ProviderLogo'
 export function ComparisonTable({
   refs,
   industryName,
+  pricesChecked = 'Jul 2026',
 }: {
   refs: IndustryProviderRef[]
   industryName: string
+  /** Month the published prices were last checked, e.g. "Oct 2026". */
+  pricesChecked?: string
 }) {
   const rows = refs
     .map((r) => ({ ref: r, p: getProvider(r.slug) }))
@@ -131,7 +134,7 @@ export function ComparisonTable({
       <p className="mt-3 px-1 text-[12.5px] text-slate-400">
         {industryName === 'Equipment Rental'
           ? 'Jobber and Housecall Pro standard annual-billing entry plans checked October 22, 2026. “Custom” means the vendor quotes per business. '
-          : 'Prices are each vendor’s lowest published plan with annual billing (checked Jul 2026); month-to-month runs higher. “Custom” means the vendor quotes per business. '}
+          : `Prices are each vendor’s lowest published plan with annual billing (checked ${pricesChecked}); month-to-month runs higher. “Custom” means the vendor quotes per business. `}
         {site.name} may earn a
         commission from software links — this never affects our scoring. Verify current pricing for
         your {industryName} business before deciding.

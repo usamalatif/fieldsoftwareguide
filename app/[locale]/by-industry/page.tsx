@@ -86,7 +86,7 @@ export default async function ByIndustryPage({ params }: { params: Promise<{ loc
                 </h2>
                 <p className="mt-1 text-[13.5px] text-slate-500 dark:text-slate-400">
                   {ind.slug === 'equipment-rental' ? 'Service-side pick' : 'Top pick'}: {top?.name ?? '—'}
-                  {isPricePublishable(ind.priceRange) ? ` · ${priceShort(ind)}/tech/mo` : ''}
+                  {isPricePublishable(ind.priceRange) ? ` · plans ${priceShort(ind)}/mo` : ''}
                 </p>
               </Link>
             )

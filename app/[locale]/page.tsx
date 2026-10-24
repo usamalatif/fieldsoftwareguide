@@ -148,7 +148,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   </div>
                   <div className="text-[13px] text-slate-500 dark:text-slate-400">
                     {top?.name ?? '—'}
-                    {isPricePublishable(ind.priceRange) ? ` · ${priceShort(ind)}/tech/mo` : ''}
+                    {isPricePublishable(ind.priceRange) ? ` · plans ${priceShort(ind)}/mo` : ''}
                   </div>
                 </div>
               </Link>

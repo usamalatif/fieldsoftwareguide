@@ -24,7 +24,7 @@ export function IndustryDataCard({ industry: ind }: { industry: Industry }) {
     },
   ]
   if (isPricePublishable(ind.priceRange)) {
-    cells.push({ label: 'Typical price', value: `${priceShort(ind)} / tech / mo` })
+    cells.push({ label: 'Published plans', value: `${priceShort(ind)} / mo` })
   }
   cells.push({
     label: ind.slug === 'equipment-rental' ? 'Lowest listed FSM plan' : 'Most affordable',

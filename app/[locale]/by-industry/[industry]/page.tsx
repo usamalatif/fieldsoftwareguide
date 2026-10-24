@@ -30,9 +30,9 @@ export async function generateMetadata({ params }: { params: Promise<Params> }) 
   const loc = (isLocale(locale) ? locale : defaultLocale) as Locale
   return buildMetadata({
     title: `Best Field Service Management Software for ${ind.name} (2026)`,
-    description: ind.slug === 'equipment-rental'
-      ? 'Compare field service software for equipment rental maintenance, dispatch, and inspections. Know when dedicated rental software is required.'
-      : `The best FSM software for ${ind.name} companies in 2026: real pricing, key features, and top tools compared for ${ind.name} businesses of every size.`,
+    description:
+      ind.metaDescription ??
+      `The best FSM software for ${ind.name} companies in 2026: real pricing, key features, and top tools compared for ${ind.name} businesses of every size.`,
     slug: `by-industry/${ind.slug}`,
     locale: loc,
     type: 'article',
@@ -68,7 +68,7 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
         headline={`Best Field Service Management Software for ${ind.name} (2026)`}
         description={`Real pricing, key features, and the top FSM software for ${ind.name} companies.`}
         slug={`by-industry/${ind.slug}`}
-        datePublished={ind.slug === 'equipment-rental' ? undefined : ind.lastUpdated}
+        datePublished={ind.slug === 'equipment-rental' ? undefined : (ind.datePublished ?? ind.lastUpdated)}
         dateModified={ind.lastUpdated}
         authorName="Usama Latif"
       />
@@ -159,10 +159,12 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
           <p className="mb-1 mt-2 max-w-[720px] text-[15px] text-slate-500 dark:text-slate-400">
             {t.bestSoftwareSub}
           </p>
-          <ComparisonTable refs={ind.providers} industryName={ind.name} />
+          <ComparisonTable refs={ind.providers} industryName={ind.name} pricesChecked={fmtChecked(ind.priceRange.source?.checked)} />
         </section>
 
         <ProviderFit industry={ind} />
+
+        <BySize industry={ind} />
 
         <section className="mx-auto mt-14 max-w-[820px]">
           <h2 className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
@@ -186,6 +188,19 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
           </div>
         </section>
 
+        {ind.extraSections?.map((sec) => (
+          <section key={sec.id} id={sec.id} className="mx-auto mt-14 max-w-[820px]">
+            <h2 className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
+              {sec.heading}
+            </h2>
+            {sec.paragraphs.map((para, i) => (
+              <p key={i} className="mt-3 text-[15px] leading-[1.75] text-slate-600 dark:text-slate-300">
+                <LinkedText text={para} L={L} />
+              </p>
+            ))}
+          </section>
+        ))}
+
         <AdUnit slot="0000000002" format="rectangle" note="in-content" />
 
         <section className="mx-auto mt-14 max-w-[820px]">
@@ -197,6 +212,17 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
           </p>
           <PricingList industry={ind} />
         </section>
+
+        {ind.mistakes?.length ? (
+          <section className="mx-auto mt-14 max-w-[820px]" aria-labelledby="mistakes-heading">
+            <h2 id="mistakes-heading" className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
+              Common mistakes when choosing {ind.name} software
+            </h2>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-[15px] leading-[1.7] text-slate-600 dark:text-slate-300">
+              {ind.mistakes.map((m) => <li key={m}>{m}</li>)}
+            </ul>
+          </section>
+        ) : null}
 
         <section className="mx-auto mt-14 max-w-[820px]">
           <h2 className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
@@ -272,6 +298,60 @@ function ProviderFit({ industry: ind }: { industry: Industry }) {
   )
 }
 
+function BySize({ industry: ind }: { industry: Industry }) {
+  if (!ind.bySize?.length) return null
+  return (
+    <section className="mx-auto mt-14 max-w-[980px]" aria-labelledby="by-size-heading">
+      <h2 id="by-size-heading" className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
+        Which {ind.name} software should you choose?
+      </h2>
+      <p className="mt-2 max-w-[760px] text-[15px] leading-[1.7] text-slate-500 dark:text-slate-400">
+        Start from your team size. Published prices are annual-billing rates from each vendor’s own
+        pricing page; see the sources at the end of this page.
+      </p>
+      <div className="mt-5 overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800">
+        <table className="w-full min-w-[640px] border-collapse text-left text-sm">
+          <thead className="bg-slate-900 text-white">
+            <tr>
+              <th scope="col" className="p-4">Business size</th>
+              <th scope="col" className="p-4">Start with</th>
+              <th scope="col" className="p-4">Why</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-200 text-slate-700 dark:divide-slate-800 dark:text-slate-300">
+            {ind.bySize.map((r) => (
+              <tr key={r.size}>
+                <th scope="row" className="p-4 font-semibold text-slate-900 dark:text-white">{r.size}</th>
+                <td className="p-4">{r.pick}</td>
+                <td className="p-4">{r.why}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  )
+}
+
+/** Renders plain text with [label](/path) internal links (locale-aware). */
+function LinkedText({ text, L }: { text: string; L: (p: string) => string }) {
+  const parts = text.split(/(\[[^\]]+\]\(\/[^)]*\))/g)
+  return (
+    <>
+      {parts.map((part, i) => {
+        const m = part.match(/^\[([^\]]+)\]\((\/[^)]*)\)$/)
+        return m ? (
+          <Link key={i} href={L(m[2])} className="font-semibold text-orange-600 hover:underline dark:text-orange-400">
+            {m[1]}
+          </Link>
+        ) : (
+          part
+        )
+      })}
+    </>
+  )
+}
+
 function PricingList({ industry: ind }: { industry: Industry }) {
   const rows = ind.providers
     .map((r) => ({ ref: r, p: getProvider(r.slug) }))
@@ -299,7 +379,7 @@ function PricingList({ industry: ind }: { industry: Industry }) {
       <p className="border-t border-slate-100 px-6 py-3 text-[12.5px] text-slate-400 dark:border-slate-800">
         {ind.slug === 'equipment-rental'
           ? ''
-          : 'Lowest vendor-published plan with annual billing (checked Jul 2026); month-to-month rates run higher. '}
+          : `Lowest vendor-published plan with annual billing (checked ${fmtChecked(ind.priceRange.source?.checked)}); month-to-month rates run higher. `}
         {(isPricePublishable(ind.priceRange) || ind.slug === 'equipment-rental') && ind.priceRange.note
           ? ind.priceRange.note
           : 'Custom-priced tools require a quote; costs scale with technicians and features.'}
@@ -335,6 +415,12 @@ function RelatedLinks({ t, L }: { t: Dictionary['industry']; L: (p: string) => s
       <Link href={L('/by-industry')} className="text-orange-600 hover:text-orange-800">{t.keepExploring.all}</Link>
     </div>
   )
+}
+
+/** "Oct 2026" from an ISO check date; pages without a dated price source keep the July 2026 research date. */
+function fmtChecked(iso?: string): string {
+  const d = new Date(iso ?? '2026-07-08')
+  return d.toLocaleDateString('en-US', { month: 'short', year: 'numeric', timeZone: 'UTC' })
 }
 
 function fmtUpdated(iso: string): string {
