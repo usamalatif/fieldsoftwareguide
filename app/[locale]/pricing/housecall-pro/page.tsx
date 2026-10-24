@@ -22,8 +22,8 @@ import { articleDates } from '@/content/articles'
  * Jobber QuickBooks gating from the July 2026 research (see /quickbooks).
  */
 
-// Dates live in content/articles.ts (shared with the sitemap). firstPublished stays
-// undefined until the article is actually live.
+// Dates live in content/articles.ts (shared with the sitemap). firstPublished is the
+// first production publish date and must not change afterwards.
 const { firstPublished, contentUpdated } = articleDates['/pricing/housecall-pro']
 
 export const metadata = buildMetadata({
