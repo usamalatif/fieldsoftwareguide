@@ -15,6 +15,7 @@ import { BreadcrumbJsonLd, FAQJsonLd, ArticleJsonLd } from '@/components/JsonLd'
  * Every integration claim verified 2026-07-16 against vendor docs (sources at bottom).
  * Jobber and Housecall Pro plan gating verified 2026-07-08 on their pricing pages.
  * Do not edit the support matrix without re-verifying.
+ * Housecall Pro pricing page rechecked 2026-10-24: QuickBooks Online sync starts on Essentials.
  */
 
 export const metadata = buildMetadata({
@@ -23,7 +24,7 @@ export const metadata = buildMetadata({
     'Which FSM tools sync with QuickBooks Online and Desktop, verified July 2026: Jobber, Housecall Pro, ServiceTitan, Workiz, FieldPulse, and Commusoft.',
   slug: 'quickbooks',
   type: 'article',
-  modifiedTime: '2026-07-16',
+  modifiedTime: '2026-10-24',
   // 61-char keyword title; the template suffix would push it past Bing's 70-char limit.
   brandSuffix: false,
 })
@@ -55,6 +56,21 @@ const faqs = [
       'Verified as of July 2026: Housecall Pro, ServiceTitan, Workiz, and FieldPulse all document QuickBooks Desktop sync. Jobber supports QuickBooks Online only, and Commusoft lists a QuickBooks Online integration only.',
   },
   {
+    question: 'Does Housecall Pro integrate with QuickBooks?',
+    answer:
+      'Yes, with both QuickBooks Online and QuickBooks Desktop, starting on the Essentials plan ($149/month billed annually for up to 5 users). The $59/month Basic plan does not include QuickBooks sync.',
+  },
+  {
+    question: 'Does FieldPulse work with QuickBooks?',
+    answer:
+      'Yes. FieldPulse documents separate sync guides for QuickBooks Online and QuickBooks Desktop. FieldPulse is custom-quoted, so ask which plan includes the accounting integration when you request pricing.',
+  },
+  {
+    question: 'Does ServiceTitan work with QuickBooks Online?',
+    answer:
+      'Yes. ServiceTitan maintains help documentation for both QuickBooks Online and QuickBooks Desktop integrations. Pricing is custom-quoted, so confirm the integration is included in your quote.',
+  },
+  {
     question: 'What actually syncs between FSM software and QuickBooks?',
     answer:
       'Typically customers, invoices, and payments flow from the FSM tool into QuickBooks so you never enter them twice. Exact behavior varies: some tools sync products and services or two-way customer edits, others push one way only. Check the vendor help docs for your specific workflow before committing.',
@@ -79,7 +95,7 @@ export default function QuickBooksPage() {
         description="Which FSM tools sync with QuickBooks Online and Desktop, verified July 2026, including the minimum plan each vendor requires for the sync."
         slug="quickbooks"
         datePublished="2026-07-16"
-        dateModified="2026-07-16"
+        dateModified="2026-10-24"
         authorName="Usama Latif"
       />
       <BreadcrumbJsonLd items={crumbs} />
@@ -195,8 +211,12 @@ export default function QuickBooksPage() {
             covers the rest of that decision. QuickBooks Desktop plus a small team: Housecall Pro
             Essentials at $149/month billed annually is the cheapest published path. Larger or
             commercial operations on either version: ServiceTitan supports both and is built for
-            scale, with Workiz and FieldPulse as mid-market alternatives, all custom-quoted. For
-            trade-specific picks, start from your industry in the{' '}
+            scale, with Workiz and FieldPulse as mid-market alternatives, all custom-quoted. Small
+            teams weighing price against features can use our{' '}
+            <Link href="/for-small-business">small business guide</Link>, and HVAC shops can see
+            how QuickBooks fits into{' '}
+            <Link href="/by-industry/hvac#hvac-small-business">HVAC software for small business</Link>.
+            For other trade-specific picks, start from your industry in the{' '}
             <Link href="/by-industry">industry guides</Link>.
           </p>
         </div>
@@ -230,6 +250,7 @@ export default function QuickBooksPage() {
               {[
                 { name: 'Jobber pricing (Connect plan, QuickBooks Online)', url: 'https://www.getjobber.com/pricing/', checked: '2026-07-08' },
                 { name: 'Housecall Pro QuickBooks (Online + Desktop, Essentials plan)', url: 'https://www.housecallpro.com/quickbooks/', checked: '2026-07-08' },
+                { name: 'Housecall Pro pricing (QuickBooks Online sync from Essentials)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-24' },
                 { name: 'ServiceTitan QuickBooks Online docs', url: 'https://help.servicetitan.com/v1/docs/quickbooks-online-1', checked: '2026-07-16' },
                 { name: 'ServiceTitan QuickBooks Desktop docs', url: 'https://help.servicetitan.com/docs/quickbooks-desktop-1', checked: '2026-07-16' },
                 { name: 'Workiz QuickBooks Online integration', url: 'https://www.workiz.com/integrations/quickbooks/', checked: '2026-07-16' },

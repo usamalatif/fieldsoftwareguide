@@ -13,6 +13,9 @@ import { BreadcrumbJsonLd, FAQJsonLd, ArticleJsonLd } from '@/components/JsonLd'
  * "best field service management software for small business" (480, KD 13),
  * "small business field service management software" (260, KD 34).
  * All pricing verified 2026-07-08 on vendor pricing pages; QuickBooks gating same source.
+ * Housecall Pro plans (Basic $59/$79, Essentials $149 for 5 users) rechecked 2026-10-24.
+ * Jobber's pricing page showed a time-limited promotion on 2026-10-24, so Jobber figures
+ * keep their July check date.
  */
 
 export const metadata = buildMetadata({
@@ -21,7 +24,7 @@ export const metadata = buildMetadata({
     'The best field service management software for small businesses in 2026: verified entry pricing from $29 per month, what small teams need, and what to skip.',
   slug: 'for-small-business',
   type: 'article',
-  modifiedTime: '2026-07-16',
+  modifiedTime: '2026-10-24',
   // 54-char keyword title; template suffix would exceed Bing's 70-char limit.
   brandSuffix: false,
 })
@@ -77,7 +80,7 @@ export default function ForSmallBusinessPage() {
         description="The best field service management software for small businesses, with verified entry pricing, five-user pricing, and what small teams actually need."
         slug="for-small-business"
         datePublished="2026-07-16"
-        dateModified="2026-07-16"
+        dateModified="2026-10-24"
         authorName="Usama Latif"
       />
       <BreadcrumbJsonLd items={crumbs} />
@@ -97,7 +100,7 @@ export default function ForSmallBusinessPage() {
       </section>
 
       <div className="mx-auto max-w-[900px] px-5 py-14 md:px-10">
-        <AnswerBlock lastUpdated="July 2026">
+        <AnswerBlock lastUpdated="October 2026">
           <p>
             The best field service management software for small businesses in 2026 is{' '}
             <strong>Jobber</strong> (from $29/month billed annually; $49 month-to-month) or{' '}
@@ -120,8 +123,9 @@ export default function ForSmallBusinessPage() {
             Small business pricing, verified
           </h2>
           <p className="mb-4 mt-1.5 text-[15px] text-slate-500 dark:text-slate-400">
-            Lowest published plan per team size with annual billing, checked on each vendor&rsquo;s
-            pricing page July 2026. Month-to-month runs higher.
+            Lowest published plan per team size with annual billing, from each vendor&rsquo;s
+            pricing page: Housecall Pro rechecked October 24, 2026; other vendors checked July
+            2026. Month-to-month runs higher.
           </p>
           <div className="overflow-x-auto rounded-[18px] border border-slate-200 dark:border-slate-800">
             <table className="tnum w-full min-w-[640px] border-collapse text-left">
@@ -186,6 +190,18 @@ export default function ForSmallBusinessPage() {
             <Link href="/quickbooks">QuickBooks compatibility guide</Link>.
           </p>
 
+          <h2>Small business software by trade</h2>
+          <p>
+            The two published-price tools cover most trades, but the right pick shifts with the
+            work. HVAC shops also need maintenance agreements and equipment history per site, so
+            start with our <Link href="/by-industry/hvac#hvac-small-business">HVAC software for
+            small business</Link> section. Plumbers should read the{' '}
+            <Link href="/by-industry/plumbing">plumbing software guide</Link>, electrical
+            contractors the <Link href="/by-industry/electrical">electrical guide</Link>, and pest
+            control operators the <Link href="/by-industry/pest-control">pest control guide</Link>.
+            Each guide lists published prices and the features that trade needs.
+          </p>
+
           <h2>When to skip the small-business tools</h2>
           <p>
             If you are already running 10 or more technicians, doing commercial work with complex
@@ -227,18 +243,18 @@ export default function ForSmallBusinessPage() {
             <p className="text-sm font-semibold text-slate-900 dark:text-white">Sources</p>
             <ul className="mt-2 space-y-1 text-xs text-slate-500 dark:text-slate-400">
               {[
-                { name: 'Jobber pricing (Core, Connect, trial terms)', url: 'https://www.getjobber.com/pricing/' },
-                { name: 'Housecall Pro pricing (Basic, Essentials, trial terms)', url: 'https://www.housecallpro.com/pricing/' },
-                { name: 'Workiz pricing (custom quote)', url: 'https://www.workiz.com/pricing-plans/' },
-                { name: 'FieldPulse pricing (custom quote, demo-first)', url: 'https://www.fieldpulse.com/pricing' },
-                { name: 'ServiceTitan pricing (custom quote)', url: 'https://www.servicetitan.com/pricing' },
-                { name: 'Commusoft plans (license model, 6+ staff)', url: 'https://www.commusoft.com/en-us/plans/' },
+                { name: 'Jobber pricing (Core, Connect, trial terms)', url: 'https://www.getjobber.com/pricing/', checked: '2026-07-08' },
+                { name: 'Housecall Pro pricing (Basic, Essentials, trial terms)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-24' },
+                { name: 'Workiz pricing (custom quote)', url: 'https://www.workiz.com/pricing-plans/', checked: '2026-07-08' },
+                { name: 'FieldPulse pricing (custom quote, demo-first)', url: 'https://www.fieldpulse.com/pricing', checked: '2026-07-08' },
+                { name: 'ServiceTitan pricing (custom quote)', url: 'https://www.servicetitan.com/pricing', checked: '2026-07-08' },
+                { name: 'Commusoft plans (license model, 6+ staff)', url: 'https://www.commusoft.com/en-us/plans/', checked: '2026-07-08' },
               ].map((s) => (
                 <li key={s.url}>
                   <a href={s.url} target="_blank" rel="nofollow noopener" className="hover:text-orange-600">
                     {s.name}
                   </a>{' '}
-                  <span className="text-slate-400">· checked 2026-07-08</span>
+                  <span className="text-slate-400">· checked {s.checked}</span>
                 </li>
               ))}
             </ul>

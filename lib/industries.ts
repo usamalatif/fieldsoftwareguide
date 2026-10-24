@@ -107,6 +107,16 @@ export interface Industry {
   dataVerified: boolean
   /** Master list of sources used for this industry (URL + date checked). */
   sources?: FieldSource[]
+  /** Page-specific meta description (falls back to the shared template). Keep <=160 chars. */
+  metaDescription?: string
+  /** Original publish date for Article schema; omit when unknown (falls back to lastUpdated). */
+  datePublished?: string
+  /** "Which software should you choose?" rows, by business size. Sourced claims only. */
+  bySize?: { size: string; pick: string; why: string }[]
+  /** Extra H2 sections. Paragraphs may contain [label](/internal-path) links. */
+  extraSections?: { id: string; heading: string; paragraphs: string[] }[]
+  /** Industry-specific buying mistakes. */
+  mistakes?: string[]
   /** Vendors researched, when more than the shortlisted `providers` (shown as "5 of 6"). */
   reviewedCount?: number
 }
