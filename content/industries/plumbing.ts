@@ -56,7 +56,7 @@ export const plumbing: Industry = {
 
   bySize: [
     { size: 'Solo plumber', pick: 'Jobber Core ($29/mo)', why: 'Lowest published price. No dedicated flat-rate pricebook and no QuickBooks sync on Core.' },
-    { size: 'Small shop, 2–5 users', pick: 'Housecall Pro Essentials ($149/mo, up to 5 users)', why: 'Native price book, plus QuickBooks Online and Desktop sync from this plan. Prebuilt flat-rate plumbing books via Profit Rhino cost about $199/mo extra.' },
+    { size: 'Small shop, 2–5 users', pick: 'Housecall Pro Essentials ($149/mo, up to 5 users)', why: 'Native price book and flat-rate pricing, plus QuickBooks Online sync from this plan (confirm the plan for Desktop). Prebuilt flat-rate plumbing books via Profit Rhino cost about $199/mo extra.' },
     { size: 'Growing shop, up to 8 users', pick: 'Housecall Pro MAX ($299/mo, up to 8 users)', why: 'Highest published plan in this comparison; extra users are $35/mo each.' },
     { size: 'Mid-size, multiple crews', pick: 'FieldPulse or Workiz (custom quote)', why: 'Both ship flat-rate pricebooks; Workiz Price Book Pro includes ready-made plumbing catalogs.' },
     { size: 'Large residential or commercial', pick: 'ServiceTitan (custom quote)', why: 'Deepest native flat-rate pricebook, plus the Pricebook Pro add-on with pre-built plumbing services.' },
@@ -89,7 +89,7 @@ export const plumbing: Industry = {
     {
       question: 'What is the best plumbing software for a small business?',
       answer:
-        'For a solo plumber, Jobber Core ($29/month billed annually) is the cheapest published option but has no dedicated flat-rate pricebook. For a small shop that prices by flat rate or needs QuickBooks, Housecall Pro Essentials ($149/month billed annually for up to 5 users) includes a native price book and QuickBooks Online and Desktop sync.',
+        'For a solo plumber, Jobber Core ($29/month billed annually) is the cheapest published option but has no dedicated flat-rate pricebook. For a small shop that prices by flat rate or needs QuickBooks, Housecall Pro Essentials ($149/month billed annually for up to 5 users) includes flat-rate pricing and QuickBooks Online sync; Housecall Pro also supports QuickBooks Desktop, but confirm which plan includes it.',
     },
     {
       question: 'Which plumbing software has flat-rate price books?',
@@ -109,7 +109,7 @@ export const plumbing: Industry = {
     {
       question: 'Does plumbing FSM software integrate with QuickBooks?',
       answer:
-        'Yes. Jobber, Housecall Pro, ServiceTitan, and Workiz all offer QuickBooks integration, but not on every plan: Jobber needs Connect (QuickBooks Online only) and Housecall Pro needs Essentials (Online and Desktop). Confirm QuickBooks Online vs Desktop support for your setup.',
+        'Yes. Jobber, Housecall Pro, ServiceTitan, and Workiz all offer QuickBooks integration, but not on every plan: Jobber needs Connect (QuickBooks Online only) and Housecall Pro needs Essentials for QuickBooks Online (confirm the plan for Desktop). Confirm QuickBooks Online vs Desktop support for your setup.',
     },
   ],
 

@@ -16,6 +16,7 @@ import { BreadcrumbJsonLd, FAQJsonLd, ArticleJsonLd } from '@/components/JsonLd'
  * Jobber and Housecall Pro plan gating verified 2026-07-08 on their pricing pages.
  * Do not edit the support matrix without re-verifying.
  * Housecall Pro pricing page rechecked 2026-10-24: QuickBooks Online sync starts on Essentials.
+ * Its QuickBooks page lists Desktop support but names no plan, so no Desktop plan is claimed.
  */
 
 export const metadata = buildMetadata({
@@ -43,12 +44,12 @@ const faqs = [
   {
     question: 'What is the cheapest FSM software with QuickBooks sync?',
     answer:
-      'For QuickBooks Online, Jobber Connect at $99/month billed annually is the cheapest published plan that includes the sync. For QuickBooks Desktop, Housecall Pro Essentials at $149/month billed annually is the cheapest published option. ServiceTitan, Workiz, and FieldPulse also sync with both but are custom-quoted.',
+      'For QuickBooks Online, Jobber Connect at $99/month billed annually is the cheapest published plan that includes the sync. For QuickBooks Desktop, Housecall Pro is the only published-price option that supports it, but it does not publish which plan includes Desktop sync, so confirm the plan with Housecall Pro. ServiceTitan, Workiz, and FieldPulse also sync with both but are custom-quoted.',
   },
   {
     question: 'Do the entry plans of Jobber and Housecall Pro include QuickBooks?',
     answer:
-      'No, and this catches many buyers. Jobber Core ($29/month annual) and Housecall Pro Basic ($59/month annual) both exclude QuickBooks sync. On both platforms you must step up a tier: Jobber Connect for QuickBooks Online, Housecall Pro Essentials for QuickBooks Online or Desktop.',
+      'No, and this catches many buyers. Jobber Core ($29/month annual) and Housecall Pro Basic ($59/month annual) both exclude QuickBooks sync. On both platforms you must step up a tier for QuickBooks Online: Jobber Connect or Housecall Pro Essentials. For QuickBooks Desktop, confirm the required plan with Housecall Pro.',
   },
   {
     question: 'Which FSM tools support QuickBooks Desktop?',
@@ -58,7 +59,7 @@ const faqs = [
   {
     question: 'Does Housecall Pro integrate with QuickBooks?',
     answer:
-      'Yes, with both QuickBooks Online and QuickBooks Desktop, starting on the Essentials plan ($149/month billed annually for up to 5 users). The $59/month Basic plan does not include QuickBooks sync.',
+      'Yes. QuickBooks Online sync is included from the Essentials plan ($149/month billed annually for up to 5 users), not on the $59/month Basic plan. Housecall Pro also supports QuickBooks Desktop but does not publish which plan includes it, so confirm with Housecall Pro.',
   },
   {
     question: 'Does FieldPulse work with QuickBooks?',
@@ -80,7 +81,7 @@ const faqs = [
 /** Verified 2026-07-16 against vendor docs; Jobber/HCP plan gating verified 2026-07-08. */
 const matrix: { tool: string; online: string; desktop: string; minPlan: string; highlight?: boolean }[] = [
   { tool: 'Jobber', online: 'Yes', desktop: 'No', minPlan: 'Connect, $99/mo annual' },
-  { tool: 'Housecall Pro', online: 'Yes', desktop: 'Yes', minPlan: 'Essentials, $149/mo annual', highlight: true },
+  { tool: 'Housecall Pro', online: 'Yes', desktop: 'Yes', minPlan: 'Online: Essentials, $149/mo annual. Desktop: plan not published, confirm with vendor', highlight: true },
   { tool: 'ServiceTitan', online: 'Yes', desktop: 'Yes', minPlan: 'Custom / contact sales' },
   { tool: 'Workiz', online: 'Yes', desktop: 'Yes', minPlan: 'Custom / contact sales' },
   { tool: 'FieldPulse', online: 'Yes', desktop: 'Yes', minPlan: 'Custom / contact sales' },
@@ -123,11 +124,11 @@ export default function QuickBooksPage() {
             FieldPulse. Jobber is QuickBooks Online only, and Commusoft lists an Online integration
             only. The bigger catch is plan gating: neither entry plan of the two published-price
             vendors includes the sync. Jobber needs its Connect plan ($99/month billed annually,
-            QuickBooks Online only) and Housecall Pro needs Essentials ($149/month billed annually,
-            Online and Desktop). So the cheapest published route to QuickBooks Online sync is
-            Jobber Connect at $99/month, and the cheapest published route to Desktop sync is
-            Housecall Pro Essentials at $149/month. ServiceTitan, Workiz, and FieldPulse support
-            both versions but quote pricing per business.
+            QuickBooks Online only) and Housecall Pro needs Essentials ($149/month billed annually)
+            for QuickBooks Online. So the cheapest published route to QuickBooks Online sync is
+            Jobber Connect at $99/month. Housecall Pro also supports QuickBooks Desktop but does not
+            publish which plan includes it, so confirm the plan with Housecall Pro. ServiceTitan,
+            Workiz, and FieldPulse support both versions but quote pricing per business.
           </p>
         </AnswerBlock>
 
@@ -193,8 +194,9 @@ export default function QuickBooksPage() {
           <h2>QuickBooks Desktop: the real dividing line</h2>
           <p>
             Desktop support is where tools drop off the list. Verified against vendor
-            documentation: <strong>Housecall Pro</strong> syncs with QuickBooks Desktop from its
-            Essentials plan, <strong>ServiceTitan</strong> maintains full QuickBooks Desktop
+            documentation: <strong>Housecall Pro</strong> lists QuickBooks Desktop integration (its
+            pages do not name the plan required, so confirm it before buying),{' '}
+            <strong>ServiceTitan</strong> maintains full QuickBooks Desktop
             documentation alongside Online, <strong>Workiz</strong> documents a QuickBooks Desktop
             connection in its help center, and <strong>FieldPulse</strong> documents a dedicated
             QuickBooks Desktop sync. <strong>Jobber does not support QuickBooks Desktop</strong>{' '}
@@ -208,8 +210,8 @@ export default function QuickBooksPage() {
             Start from your QuickBooks version, then your team size. QuickBooks Online plus a small
             team: Jobber Connect at $99/month billed annually is the cheapest published path, and
             our <Link href="/compare/jobber-vs-housecall-pro">Jobber vs Housecall Pro comparison</Link>{' '}
-            covers the rest of that decision. QuickBooks Desktop plus a small team: Housecall Pro
-            Essentials at $149/month billed annually is the cheapest published path (our{' '}
+            covers the rest of that decision. QuickBooks Desktop plus a small team: Housecall Pro is
+            the published-price option to check, but confirm which plan includes Desktop sync (our{' '}
             <Link href="/pricing/housecall-pro">Housecall Pro pricing</Link> guide shows what each
             plan includes). Larger or
             commercial operations on either version: ServiceTitan supports both and is built for
@@ -251,7 +253,7 @@ export default function QuickBooksPage() {
             <ul className="mt-2 space-y-1 text-xs text-slate-500 dark:text-slate-400">
               {[
                 { name: 'Jobber pricing (Connect plan, QuickBooks Online)', url: 'https://www.getjobber.com/pricing/', checked: '2026-07-08' },
-                { name: 'Housecall Pro QuickBooks (Online + Desktop, Essentials plan)', url: 'https://www.housecallpro.com/quickbooks/', checked: '2026-07-08' },
+                { name: 'Housecall Pro QuickBooks (Online + Desktop; plan not named)', url: 'https://www.housecallpro.com/quickbooks/', checked: '2026-10-24' },
                 { name: 'Housecall Pro pricing (QuickBooks Online sync from Essentials)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-24' },
                 { name: 'ServiceTitan QuickBooks Online docs', url: 'https://help.servicetitan.com/v1/docs/quickbooks-online-1', checked: '2026-07-16' },
                 { name: 'ServiceTitan QuickBooks Desktop docs', url: 'https://help.servicetitan.com/docs/quickbooks-desktop-1', checked: '2026-07-16' },

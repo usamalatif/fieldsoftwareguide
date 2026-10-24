@@ -6,6 +6,7 @@ import { FAQSection } from '@/components/FAQSection'
 import { CalloutBox } from '@/components/CalloutBox'
 import { AuthorBio } from '@/components/AuthorBio'
 import { BreadcrumbJsonLd, FAQJsonLd, ArticleJsonLd } from '@/components/JsonLd'
+import { articleDates } from '@/content/articles'
 
 /**
  * /pricing/housecall-pro — Week 1 article. Target "housecall pro pricing" / "housecall pro
@@ -21,8 +22,9 @@ import { BreadcrumbJsonLd, FAQJsonLd, ArticleJsonLd } from '@/components/JsonLd'
  * Jobber QuickBooks gating from the July 2026 research (see /quickbooks).
  */
 
-// Planned publish date; replace with the actual deployment date if published later.
-const PUBLISHED = '2026-10-24'
+// Dates live in content/articles.ts (shared with the sitemap). firstPublished stays
+// undefined until the article is actually live.
+const { firstPublished, contentUpdated } = articleDates['/pricing/housecall-pro']
 
 export const metadata = buildMetadata({
   title: 'Housecall Pro Pricing (2026): Plans, Costs & Features',
@@ -30,7 +32,7 @@ export const metadata = buildMetadata({
     'Housecall Pro pricing for 2026: Basic $59, Essentials $149, and MAX $299 per month billed annually, with user limits, add-ons, payment fees, and QuickBooks.',
   slug: 'pricing/housecall-pro',
   type: 'article',
-  modifiedTime: PUBLISHED,
+  modifiedTime: contentUpdated,
   // 52-char keyword title; the template suffix would push it past Bing's 70-char limit.
   brandSuffix: false,
 })
@@ -115,8 +117,8 @@ export default function HousecallProPricingPage() {
         headline="Housecall Pro Pricing (2026): Plans, Costs & Features"
         description="Housecall Pro's 2026 plans and prices on annual and monthly billing, user limits, add-ons, payment processing fees, and QuickBooks support, from Housecall Pro's own pages."
         slug="pricing/housecall-pro"
-        datePublished={PUBLISHED}
-        dateModified={PUBLISHED}
+        datePublished={firstPublished}
+        dateModified={contentUpdated}
         authorName="Usama Latif"
       />
       <BreadcrumbJsonLd items={crumbs} />

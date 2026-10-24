@@ -1,3 +1,5 @@
+import { articleDates } from '@/content/articles'
+
 /**
  * Single source of truth for static, indexable routes.
  *
@@ -14,10 +16,10 @@ export const staticRouteLastmod: Record<string, string> = {
   '/by-industry': '2026-10-24',
   '/by-size': '2026-07-08',
   '/compare': '2026-10-24',
-  '/compare/jobber-vs-housecall-pro': '2026-07-08',
+  '/compare/jobber-vs-housecall-pro': '2026-10-24',
   '/free': '2026-10-24',
   '/quickbooks': '2026-10-24',
-  '/pricing/housecall-pro': '2026-10-24',
+  '/pricing/housecall-pro': articleDates['/pricing/housecall-pro'].contentUpdated,
   '/for-small-business': '2026-10-24',
   '/guides': '2026-10-22',
   '/about': '2026-10-22',

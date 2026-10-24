@@ -64,7 +64,7 @@ const prosCons: { name: string; pros: string[]; cons: string[] }[] = [
   },
   {
     name: 'Housecall Pro',
-    pros: ['Published plans: Basic $59, Essentials $149 (up to 5 users), MAX $299 (up to 8 users), billed annually', 'QuickBooks Online and Desktop sync from Essentials'],
+    pros: ['Published plans: Basic $59, Essentials $149 (up to 5 users), MAX $299 (up to 8 users), billed annually', 'QuickBooks Online sync from Essentials; Desktop also supported (confirm the plan)'],
     cons: ['No QuickBooks sync on Basic', 'Mobile app documents offline viewing only, not editing'],
   },
   {

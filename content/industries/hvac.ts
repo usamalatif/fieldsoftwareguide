@@ -51,7 +51,7 @@ export const hvac: Industry = {
 
   bySize: [
     { size: 'Solo HVAC technician', pick: 'Jobber Core ($29/mo)', why: 'Lowest published entry price. QuickBooks sync starts on the higher Connect plan, so budget more if you need it.' },
-    { size: 'Small shop, 2–5 users', pick: 'Housecall Pro Essentials ($149/mo, up to 5 users)', why: 'Includes QuickBooks Online sync, and Housecall Pro documents QuickBooks Desktop sync from this plan.' },
+    { size: 'Small shop, 2–5 users', pick: 'Housecall Pro Essentials ($149/mo, up to 5 users)', why: 'Includes QuickBooks Online sync. Housecall Pro also supports QuickBooks Desktop; confirm which plan includes it.' },
     { size: 'Growing shop, up to 8 users', pick: 'Housecall Pro MAX ($299/mo, up to 8 users)', why: 'Highest published plan in this comparison; extra users are $35/mo each.' },
     { size: 'Mid-size, multiple crews', pick: 'Workiz or FieldPulse (custom quote)', why: 'Neither publishes a price. Get quotes for your technician count and compare them with Housecall Pro MAX.' },
     { size: 'Commercial or high-volume', pick: 'ServiceTitan (custom quote)', why: 'Built for larger commercial and high-volume residential operations; expect a sales-led demo and quote.' },
@@ -63,7 +63,7 @@ export const hvac: Industry = {
       heading: 'Best HVAC software for small business',
       paragraphs: [
         'For a small HVAC business, the practical shortlist is Jobber and Housecall Pro. They are the two vendors in this comparison that publish prices, and both offer a 14-day free trial with no credit card. Jobber Core is the cheapest way in at $29/month billed annually for one user. Housecall Pro Basic is $59/month billed annually and includes review tools and online booking on the entry plan.',
-        'The catch for HVAC shops is accounting: neither entry plan includes QuickBooks sync. If you need it, compare Jobber Connect (QuickBooks Online only) with Housecall Pro Essentials (Online and Desktop) in our guide to [FSM software that works with QuickBooks](/quickbooks). For the head-to-head decision, read [Jobber vs Housecall Pro](/compare/jobber-vs-housecall-pro). Running a different trade too? See [field service software for small business](/for-small-business).',
+        'The catch for HVAC shops is accounting: neither entry plan includes QuickBooks sync. If you need it, compare Jobber Connect (QuickBooks Online only) with Housecall Pro Essentials (QuickBooks Online; confirm the plan for Desktop) in our guide to [FSM software that works with QuickBooks](/quickbooks). For the head-to-head decision, read [Jobber vs Housecall Pro](/compare/jobber-vs-housecall-pro). Running a different trade too? See [field service software for small business](/for-small-business).',
       ],
     },
   ],
@@ -99,7 +99,7 @@ export const hvac: Industry = {
     {
       question: 'Does HVAC field service software integrate with QuickBooks?',
       answer:
-        'Yes. Jobber, Housecall Pro, ServiceTitan, and Workiz all offer QuickBooks integration, but not always on the entry plan: Jobber needs Connect (QuickBooks Online only) and Housecall Pro needs Essentials (Online and Desktop). Confirm Online vs Desktop support for your setup.',
+        'Yes. Jobber, Housecall Pro, ServiceTitan, and Workiz all offer QuickBooks integration, but not always on the entry plan: Jobber needs Connect (QuickBooks Online only) and Housecall Pro needs Essentials for QuickBooks Online (confirm the plan for Desktop). Confirm Online vs Desktop support for your setup.',
     },
     {
       question: 'Is there free field service software for HVAC businesses?',

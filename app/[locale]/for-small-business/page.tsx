@@ -53,7 +53,7 @@ const faqs = [
   {
     question: 'Do small business plans include QuickBooks sync?',
     answer:
-      'Not at the cheapest tier. Jobber Core ($29/month annual) and Housecall Pro Basic ($59/month annual) both exclude QuickBooks sync. You need Jobber Connect ($99/month annual, QuickBooks Online only) or Housecall Pro Essentials ($149/month annual, QuickBooks Online and Desktop). See our QuickBooks compatibility guide for the full matrix.',
+      'Not at the cheapest tier. Jobber Core ($29/month annual) and Housecall Pro Basic ($59/month annual) both exclude QuickBooks sync. You need Jobber Connect ($99/month annual, QuickBooks Online only) or Housecall Pro Essentials ($149/month annual, QuickBooks Online; Housecall Pro also supports Desktop, but confirm which plan includes it). See our QuickBooks compatibility guide for the full matrix.',
   },
   {
     question: 'Is there free field service software for small businesses?',
@@ -185,7 +185,8 @@ export default function ForSmallBusinessPage() {
             (Grow and up). On <strong>Housecall Pro Basic</strong> ($59/month annual) you get
             review management and customer texting, but QuickBooks starts on Essentials. If
             accounting sync matters, the honest entry prices are $99/month (Jobber Connect,
-            QuickBooks Online only) and $149/month (Housecall Pro Essentials, Online and Desktop).
+            QuickBooks Online only) and $149/month (Housecall Pro Essentials, QuickBooks Online; confirm
+            the plan for Desktop with Housecall Pro).
             The full version-by-version breakdown is in our{' '}
             <Link href="/quickbooks">QuickBooks compatibility guide</Link>.
           </p>
