@@ -13,6 +13,8 @@ export const equipmentRental: Industry = {
   name: 'Equipment Rental',
   icon: '🏗️',
   category: 'Specialized',
+  metaDescription:
+    'Compare field service software for equipment rental maintenance, dispatch, and inspections. Know when dedicated rental software is required.',
 
   answer:
     'Field service management software for equipment rental companies helps manage equipment maintenance, technician dispatch, delivery and pickup service work, and inspections. However, most rental businesses also need dedicated rental management software for reservations, equipment availability, rental contracts, and billing. For rental bookings and inventory management, platforms such as Point of Rental, Booqable, EZRentOut, and Quipli are worth evaluating. For field maintenance operations, FieldPulse and ServiceTitan are service-side options, but neither should be assumed to replace a dedicated rental platform. Smaller rental-and-repair businesses can also compare Jobber and Housecall Pro for scheduling, invoicing, and technician management. As of October 2026, Jobber starts at $29/month and Housecall Pro at $59/month with annual billing, while FieldPulse offers custom pricing. Confirm current prices, rental-specific capabilities, and integrations directly with vendors before choosing a solution.',

@@ -23,7 +23,7 @@ export const metadata = buildMetadata({
     'Jobber vs Housecall Pro with verified July 2026 pricing on both billing bases, payment fees, QuickBooks support, and the real feature differences.',
   slug: 'compare/jobber-vs-housecall-pro',
   type: 'article',
-  modifiedTime: '2026-07-08',
+  modifiedTime: '2026-10-24',
 })
 
 const crumbs = [
@@ -46,7 +46,7 @@ const faqs = [
   {
     question: 'Do Jobber and Housecall Pro integrate with QuickBooks?',
     answer:
-      'Both — with one real difference. Jobber syncs with QuickBooks Online only, from the Connect plan up. Housecall Pro syncs with both QuickBooks Online and Desktop, from the Essentials plan up. If you run QuickBooks Desktop, Housecall Pro is the only one of the two that supports it.',
+      'Both — with one real difference. Jobber syncs with QuickBooks Online only, from the Connect plan up. Housecall Pro syncs with QuickBooks Online from the Essentials plan up and also supports QuickBooks Desktop, though it does not publish which plan includes Desktop, so confirm that with Housecall Pro. If you run QuickBooks Desktop, Housecall Pro is the only one of the two that supports it.',
   },
   {
     question: 'Do Jobber and Housecall Pro offer free trials?',
@@ -68,7 +68,7 @@ const quick: { label: string; jobber: string; hcp: string }[] = [
   { label: 'Top published plan (annual)', jobber: '$529/mo (Plus, 15 users)', hcp: '$299/mo (MAX, 8 users; +$35/extra user)' },
   { label: 'Card processing', jobber: '2.9% + 30¢ flat', hcp: '2.59% in person · 2.99% online · 3.49% keyed/Amex' },
   { label: 'ACH / bank payment', jobber: '1%', hcp: '1%' },
-  { label: 'QuickBooks', jobber: 'Online only (Connect plan +)', hcp: 'Online AND Desktop (Essentials +)' },
+  { label: 'QuickBooks', jobber: 'Online only (Connect plan +)', hcp: 'Online (Essentials +) and Desktop (plan not published)' },
   { label: 'Review management', jobber: 'Add-on ($79/mo Marketing Suite) or Plus', hcp: 'Included on Basic' },
   { label: 'Two-way SMS', jobber: 'Grow and Plus only', hcp: 'Customer communication incl. from Basic' },
   { label: 'Online booking', jobber: 'All plans (incl. Core)', hcp: 'All plans + Reserve with Google' },
@@ -88,7 +88,7 @@ export default function JobberVsHousecallProPage() {
         description="Verified pricing on both billing bases, payment fees, QuickBooks support, and the real feature differences between Jobber and Housecall Pro."
         slug="compare/jobber-vs-housecall-pro"
         datePublished="2026-07-08"
-        dateModified="2026-07-08"
+        dateModified="2026-10-24"
         authorName="Usama Latif"
       />
       <BreadcrumbJsonLd items={crumbs} />
@@ -176,7 +176,9 @@ export default function JobberVsHousecallProPage() {
             users), and MAX $299/month annual ($329 month-to-month, up to 8 users, extra users
             $35/month). MAX bundles the Sales Proposal Tool and Recurring Service Plans; other
             add-ons (Payroll, Voice, HCP Assist, Profit Rhino, Websites, vehicle GPS) are priced by
-            quote. No long-term contracts required.
+            quote. No long-term contracts required. For every Housecall Pro plan, fee, and add-on
+            in one place, see our <Link href="/pricing/housecall-pro">Housecall Pro pricing</Link>{' '}
+            guide.
           </p>
           <p>
             The practical read: Jobber is cheaper at 1 user ($29 vs $59 annual), the two tie at 5
@@ -221,7 +223,8 @@ export default function JobberVsHousecallProPage() {
           <p>
             <strong>QuickBooks:</strong> the cleanest difference in the whole comparison. Jobber
             syncs with QuickBooks Online only, from Connect up. Housecall Pro syncs with QuickBooks
-            Online <em>and</em> Desktop, from Essentials up.
+            Online from Essentials up and also supports Desktop; confirm the plan for Desktop with
+            Housecall Pro.
           </p>
           <p>
             <strong>Customer communication &amp; reviews:</strong> Housecall Pro includes review

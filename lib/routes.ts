@@ -1,3 +1,5 @@
+import { articleDates } from '@/content/articles'
+
 /**
  * Single source of truth for static, indexable routes.
  *
@@ -10,21 +12,22 @@
  * route's date only when you actually change that page's content.
  */
 export const staticRouteLastmod: Record<string, string> = {
-  '/': '2026-07-08',
-  '/by-industry': '2026-07-08',
+  '/': '2026-10-24',
+  '/by-industry': '2026-10-24',
   '/by-size': '2026-07-08',
-  '/compare': '2026-07-08',
-  '/compare/jobber-vs-housecall-pro': '2026-07-08',
-  '/free': '2026-07-08',
-  '/quickbooks': '2026-07-16',
-  '/for-small-business': '2026-07-16',
-  '/guides': '2026-07-08',
-  '/about': '2026-07-08',
+  '/compare': '2026-10-24',
+  '/compare/jobber-vs-housecall-pro': '2026-10-24',
+  '/free': '2026-10-24',
+  '/quickbooks': '2026-10-24',
+  '/pricing/housecall-pro': articleDates['/pricing/housecall-pro'].contentUpdated,
+  '/for-small-business': '2026-10-24',
+  '/guides': '2026-10-22',
+  '/about': '2026-10-22',
   '/contact': '2026-07-08',
   '/privacy': '2026-07-08',
   '/terms': '2026-07-08',
-  '/how-we-review': '2026-07-08',
-  '/author/usama-latif': '2026-07-08',
+  '/how-we-review': '2026-10-22',
+  '/author/usama-latif': '2026-10-22',
 }
 
 export const staticRoutes: readonly string[] = Object.keys(staticRouteLastmod)

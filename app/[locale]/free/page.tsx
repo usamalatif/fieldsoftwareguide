@@ -15,12 +15,13 @@ import { BreadcrumbJsonLd, FAQJsonLd } from '@/components/JsonLd'
  * NONE of the six major FSM vendors offers a free plan; FieldPulse and ServiceTitan
  * offer no self-serve trial at all; the only real free-forever FSM tier is Odoo's
  * One App Free (unlimited users). Connecteam is free to 10 users but has no invoicing.
+ * 2026-10-24: Odoo, Connecteam, Jobber, Housecall Pro and Workiz free/trial terms rechecked.
  */
 
 export const metadata = buildMetadata({
   title: 'Best Free Field Service Management Software (2026)',
   description:
-    'What is actually free in FSM software, verified July 2026: no major vendor has a free plan. Real free tiers (Odoo, Connecteam) and exact trial lengths.',
+    'Compare genuinely free field service software with limited free plans and vendor trials. See the free tiers that exist and their limits before signing up.',
   slug: 'free',
   // 50-char keyword title + suffix would hit 71 chars (Bing limit 70); emit as-is.
   brandSuffix: false,
@@ -53,6 +54,11 @@ const faqs = [
       'Jobber and Housecall Pro offer 14-day trials and Workiz a 7-day trial, all without a credit card. ServiceTitan and FieldPulse offer no self-serve trial at all — demo only (FieldPulse’s own pricing FAQ says so explicitly) — and Commusoft uses a sales-call motion with no self-serve trial.',
   },
   {
+    question: 'What is the best free field service software for a small business?',
+    answer:
+      'It depends on what you need to do for free. Connecteam is free for up to 10 users but covers scheduling and time tracking, not invoicing. Odoo One App Free gives you Field Service with unlimited users until you add a second Odoo app. If you need quotes, invoices, and payments, a 14-day no-card trial of Jobber or Housecall Pro is the practical free start.',
+  },
+  {
     question: 'Is there open-source field service management software?',
     answer:
       'Partly. Odoo Community is open source and free to self-host, but Odoo’s own Field Service app is Enterprise-only — community FSM modules come from third parties (OCA). ERPNext is fully open source and free to self-host, but covers field service only indirectly through assets and maintenance visits. For most teams, Odoo’s cloud One App Free tier is the more practical free path.',
@@ -81,7 +87,7 @@ export default function FreePage() {
       </section>
 
       <div className="mx-auto max-w-[900px] px-5 py-14 md:px-10">
-        <AnswerBlock lastUpdated="July 2026">
+        <AnswerBlock lastUpdated="October 2026">
           <p>
             Here is the honest state of free FSM software in 2026: <strong>none of the six major
             vendors — Jobber, Housecall Pro, ServiceTitan, Workiz, FieldPulse, or Commusoft — offers
@@ -105,7 +111,8 @@ export default function FreePage() {
             Free plans and trials, verified
           </h2>
           <p className="mb-4 mt-1.5 text-[15px] text-slate-500 dark:text-slate-400">
-            Checked on each vendor’s own pricing page, July 8, 2026.
+            Checked on each vendor’s own pricing page July 8, 2026; Odoo, Connecteam, Jobber,
+            Housecall Pro, and Workiz rechecked October 24, 2026.
           </p>
           <div className="overflow-x-auto rounded-[18px] border border-slate-200 dark:border-slate-800">
             <table className="tnum w-full min-w-[640px] border-collapse text-left">
@@ -153,8 +160,8 @@ export default function FreePage() {
             <strong>Odoo Field Service (One App Free)</strong> — Odoo’s cloud plan makes your first
             app free forever with unlimited users, and Field Service qualifies. It covers
             scheduling, tasks, worksheets, and invoicing hooks, and you pay only when you add a
-            second Odoo app (then the all-apps plan is $7.25/user/month billed annually, $8.95
-            monthly). The catch: it’s an ERP module, not a trades-focused product — expect more
+            second Odoo app; paid plans are billed per user, so check Odoo’s pricing page for the current
+            rate and billing terms. The catch: it’s an ERP module, not a trades-focused product — expect more
             setup than Jobber or Housecall Pro and no flat-rate pricebooks or trade workflows.
           </p>
           <p>
@@ -184,13 +191,29 @@ export default function FreePage() {
             week, that narrows the field to Jobber, Housecall Pro, and Workiz.
           </p>
 
+          <h2>Free field service software for small business: which path fits?</h2>
+          <p>
+            <strong>You only need scheduling and time tracking for up to 10 people:</strong>{' '}
+            Connecteam’s free Small Business Plan covers that, but you will still need a separate
+            tool for invoices and estimates. <strong>You will put up with ERP-style setup to pay
+            nothing:</strong> Odoo’s One App Free gives you Field Service with unlimited users until
+            you add a second app. <strong>You need quotes, invoices, and payments now:</strong> use
+            a 14-day trial of Jobber or Housecall Pro on real jobs, then compare the cheapest paid
+            plans in our{' '}
+            <Link href="/for-small-business">field service software for small business</Link>{' '}
+            guide. To see how all six major platforms differ beyond price, use the{' '}
+            <Link href="/compare">full FSM software comparison</Link>.
+          </p>
+
           <h2>Free vs paid — what you give up</h2>
           <p>
             The free tiers cap the exact things a growing field service business needs: Connecteam
             stops at 10 users and has no invoicing; Odoo’s free tier ends the moment you need a
             second app (inventory, CRM, accounting). Paid entry plans are genuinely cheap at the
             solo end — Jobber Core is $29/month billed annually — and bring scheduling, dispatch,
-            quoting, invoicing, payments, and QuickBooks sync in one place. The realistic path for
+            quoting, invoicing, and payments in one place. QuickBooks sync costs more: it starts on
+            Jobber Connect and Housecall Pro Essentials (see our{' '}
+            <Link href="/quickbooks">QuickBooks compatibility guide</Link>). The realistic path for
             most: run a 14-day trial on real jobs, start on a $29–$79/month single-user plan, and
             revisit as you add techs. See the{' '}
             <Link href="/by-size">FSM software by business size</Link> guide for what matters at
@@ -225,21 +248,21 @@ export default function FreePage() {
             <p className="text-sm font-semibold text-slate-900 dark:text-white">Sources</p>
             <ul className="mt-2 space-y-1 text-xs text-slate-500 dark:text-slate-400">
               {[
-                { name: 'Jobber pricing (trial + plans)', url: 'https://www.getjobber.com/pricing/' },
-                { name: 'Housecall Pro pricing (trial + plans)', url: 'https://www.housecallpro.com/pricing/' },
-                { name: 'Workiz pricing (7-day trial FAQ)', url: 'https://www.workiz.com/pricing-plans/' },
-                { name: 'ServiceTitan pricing (demo only)', url: 'https://www.servicetitan.com/pricing' },
-                { name: 'FieldPulse pricing (no-trial FAQ)', url: 'https://www.fieldpulse.com/pricing' },
-                { name: 'Commusoft plans (license model)', url: 'https://www.commusoft.com/en-us/plans/' },
-                { name: 'Odoo Field Service (One App Free)', url: 'https://www.odoo.com/app/field-service' },
-                { name: 'Odoo pricing', url: 'https://www.odoo.com/pricing' },
-                { name: 'Connecteam pricing (free Small Business Plan)', url: 'https://connecteam.com/pricing/' },
+                { name: 'Jobber pricing (trial + plans)', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-24' },
+                { name: 'Housecall Pro pricing (trial + plans)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-24' },
+                { name: 'Workiz pricing (7-day trial FAQ)', url: 'https://www.workiz.com/pricing-plans/', checked: '2026-10-24' },
+                { name: 'ServiceTitan pricing (demo only)', url: 'https://www.servicetitan.com/pricing', checked: '2026-07-08' },
+                { name: 'FieldPulse pricing (no-trial FAQ)', url: 'https://www.fieldpulse.com/pricing', checked: '2026-07-08' },
+                { name: 'Commusoft plans (license model)', url: 'https://www.commusoft.com/en-us/plans/', checked: '2026-07-08' },
+                { name: 'Odoo Field Service (One App Free)', url: 'https://www.odoo.com/app/field-service', checked: '2026-07-08' },
+                { name: 'Odoo pricing', url: 'https://www.odoo.com/pricing', checked: '2026-10-24' },
+                { name: 'Connecteam pricing (free Small Business Plan)', url: 'https://connecteam.com/pricing/', checked: '2026-10-24' },
               ].map((s) => (
                 <li key={s.url}>
                   <a href={s.url} target="_blank" rel="nofollow noopener" className="hover:text-orange-600">
                     {s.name}
                   </a>{' '}
-                  <span className="text-slate-400">· checked 2026-07-08</span>
+                  <span className="text-slate-400">· checked {s.checked}</span>
                 </li>
               ))}
             </ul>
