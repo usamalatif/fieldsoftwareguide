@@ -181,7 +181,10 @@ export default async function BySizePage({ params }: { params: Promise<{ locale:
           </h2>
           <p className="mb-4 mt-1.5 text-[15px] text-slate-500 dark:text-slate-400">
             Monthly price with annual billing, from each vendor&rsquo;s pricing page, checked
-            October 27, 2026. Standard rates, not introductory offers; month-to-month runs higher.
+            October 27, 2026. These are standard rates. Jobber&rsquo;s page currently shows a
+            12-month introductory price on annual plans (for example, Core $21/month for the first
+            12 months, then $29) in an offer it says ends October 30, 2026; the table uses the
+            price after that period. Month-to-month runs higher.
           </p>
           <div className="overflow-x-auto rounded-[18px] border border-slate-200 dark:border-slate-800">
             <table className="tnum w-full min-w-[640px] border-collapse text-left">
@@ -207,7 +210,9 @@ export default async function BySizePage({ params }: { params: Promise<{ locale:
             </table>
           </div>
           <p className="mt-3 text-[13px] text-slate-500 dark:text-slate-400">
-            Jobber Core is 1 user only. Jobber Plus starts at $399/month for 5 users. Housecall
+            Jobber Core is 1 user only. Jobber also sells each plan month-to-month (Core $49) or
+            with a 1-year commitment billed monthly (Core $39). Jobber Plus starts at $399/month
+            for 5 users, billed annually. Housecall
             Pro publishes the $35 extra-user price for MAX only. ServiceTitan, FieldPulse, Workiz,
             and Commusoft do not publish prices.
           </p>

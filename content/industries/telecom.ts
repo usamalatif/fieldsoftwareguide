@@ -24,7 +24,7 @@ export const telecom: Industry = {
   datePublished: '2026-07-08',
 
   answer:
-    'No major vendor sells telecom field service management software as a dedicated telecom product (rechecked October 2026), so telecom installers and ISP subcontractors pick the tool whose dispatch, offline mode, and field forms fit their work. FieldPulse (custom-quoted) is the strongest fit for crews at remote sites: its app switches to offline mode automatically, keeps forms and photos, and supports progress invoices. ServiceTitan (custom-quoted) suits large dispersed operations, and Workiz (custom-quoted) markets an alarm and security vertical close to low-voltage work. Small install teams can start on Jobber (from $29/month billed annually), whose app keeps timers, job forms, and notes working offline. Housecall Pro (from $59/month billed annually) lets techs view jobs offline but not edit them. These are dispatch and work-order tools, not network design or telecom project management software.',
+    'No major vendor sells telecom field service management software as a dedicated telecom product (rechecked October 2026), so telecom installers and ISP subcontractors pick the tool whose dispatch, offline editing, field forms, and billing fit their work. FieldPulse (custom-quoted) ranks first on documented evidence: its help docs list the widest offline editing for a field job (notes, photos, forms, estimates, invoices, and clock-ins), and it adds custom forms with signatures, progress invoices, asset records, and fire, security, and A/V solutions close to low-voltage work. ServiceTitan (custom-quoted) is a close second for large dispersed operations, with most job actions available offline. Small install teams can start on Jobber (from $29/month billed annually), whose app keeps timers, job forms, and notes working offline. Housecall Pro (from $59/month billed annually) lets techs view previously opened jobs offline but not edit them. These are dispatch and work-order tools, not network design or telecom project management software.',
 
   intro:
     'Telecom field work spans fiber and drop installs, line and tower repairs, and broadband maintenance, often at remote or rural sites with poor coverage. The right field service software dispatches technicians to each ticket, keeps a record of the equipment at every site, captures photos and test readings on forms, and keeps working when the signal drops. Longer builds add a billing problem: if you bill a carrier or general contractor in stages, you need progress invoicing, which most of these tools now support with different limits.',
@@ -49,8 +49,8 @@ export const telecom: Industry = {
   search: { monthlyVolume: 70, kd: 6, cpc: 34.06 },
 
   providers: [
-    { slug: 'fieldpulse', positioning: 'Best for remote sites: automatic offline mode, custom forms, progress invoices', monthlyFromUsd: null },
-    { slug: 'servicetitan', positioning: 'Alarm + audio-visual verticals; best for large dispersed operations', monthlyFromUsd: null },
+    { slug: 'fieldpulse', positioning: 'Best documented offline editing, plus custom forms, progress invoices, and asset records', monthlyFromUsd: null },
+    { slug: 'servicetitan', positioning: 'Close second for large dispersed operations: most job actions offline, progress billing', monthlyFromUsd: null },
     { slug: 'workiz', positioning: 'Closest vertical fit: markets to alarm & security / low-voltage', monthlyFromUsd: null },
     { slug: 'jobber', positioning: 'Lowest published plan; timers, job forms, and notes work offline', monthlyFromUsd: 29 },
     { slug: 'housecall-pro', positioning: 'Published pricing for small install teams; offline viewing only', monthlyFromUsd: 59 },
@@ -59,7 +59,7 @@ export const telecom: Industry = {
   bySize: [
     { size: 'Solo installer', pick: 'Jobber Core ($29/mo)', why: 'Lowest published plan. Timers, job forms, notes, and attachments work offline and sync later. No QuickBooks sync on Core.' },
     { size: 'Small crew, 2–5 users', pick: 'Jobber Connect ($149/mo for 5 users)', why: 'Adds checklists and QuickBooks Online sync. Housecall Pro Essentials costs the same for 5 users but cannot edit jobs offline.' },
-    { size: 'Multiple crews at remote sites', pick: 'FieldPulse (custom quote)', why: 'Switches to offline mode automatically and keeps notes, photos, forms, estimates, and invoices. You cannot create jobs or take payments offline.' },
+    { size: 'Multiple crews at remote sites', pick: 'FieldPulse (custom quote)', why: 'Offline, techs can still edit notes, photos, forms, estimates, and invoices and clock in or out. You cannot create jobs or take payments offline.' },
     { size: 'Large dispersed operation', pick: 'ServiceTitan (custom quote)', why: 'Most job actions work offline, plus progress billing on projects. Built and priced for larger companies.' },
   ],
 
@@ -76,8 +76,8 @@ export const telecom: Industry = {
       id: 'telecom-offline',
       heading: 'What actually works offline in each app',
       paragraphs: [
-        '“Works offline” means different things in each app. FieldPulse switches to offline mode automatically and keeps job notes, photos, forms, estimates, invoices, and clock-ins, but you cannot create new jobs or customers or take payments until you reconnect. ServiceTitan says you can take most actions within a job offline, though directions, location history, and automated timesheets need a connection. Jobber keeps timers, job forms, notes, and attachments working offline and syncs them later. Workiz says techs can update job information with limited or no connectivity.',
-        'Housecall Pro is the exception: techs can view a job offline if they opened it while connected, but editing without cell service or Wi-Fi is not supported. For rural fiber routes or tower sites, test offline mode in a trial with the phone in airplane mode before you buy.',
+        '“Works offline” means different things in each app, and the difference is what techs can edit, not whether the app opens. FieldPulse switches to offline mode when it loses signal and keeps job notes, photos, forms, estimates, invoices, and clock-ins editable, but you cannot create new jobs or customers or take payments until you reconnect. ServiceTitan says you can take most actions within a job offline, though directions, location history, and automated timesheets need a connection. Jobber keeps timers, job forms, notes, and attachments working offline and syncs them later. Workiz says techs can update job information with limited or no connectivity.',
+        'Housecall Pro is the exception: techs can view a job offline if they opened it while connected, but editing without cell service or Wi-Fi is not supported. We rank FieldPulse first because its documentation lists the widest offline editing alongside the other telecom needs (custom forms with signatures, progress invoices, asset records); ServiceTitan is close behind but is built and priced for larger companies. Neither ranking is based on hands-on testing, so for rural fiber routes or tower sites, test offline mode in a trial with the phone in airplane mode before you buy.',
       ],
     },
     {
@@ -101,7 +101,7 @@ export const telecom: Industry = {
     {
       question: 'What is the best telecom field service management software?',
       answer:
-        'No major FSM vendor markets a telecom vertical (rechecked October 2026). For crews at remote sites, FieldPulse is the strongest fit because its app goes offline automatically and keeps forms and photos. ServiceTitan suits large operations and Workiz markets an alarm and security vertical close to low-voltage work; all three are custom-quoted. Small install teams can start on Jobber (from $29/month billed annually).',
+        'No major FSM vendor markets a telecom vertical (rechecked October 2026). For crews at remote sites, FieldPulse ranks first because its help docs list the widest offline editing (notes, photos, forms, estimates, invoices) alongside custom forms, progress invoices, and asset records. ServiceTitan is a close second for large operations and Workiz markets an alarm and security vertical close to low-voltage work; all three are custom-quoted. Small install teams can start on Jobber (from $29/month billed annually).',
     },
     {
       question: 'Is telecom field service software the same as telecom project management software?',
@@ -111,7 +111,7 @@ export const telecom: Industry = {
     {
       question: 'Does telecom field software work offline at remote sites?',
       answer:
-        'Mostly, with limits. FieldPulse switches to offline mode automatically (no new jobs or payments offline), ServiceTitan supports most job actions offline, Jobber keeps timers, job forms, notes, and attachments working offline, and Workiz says techs can update jobs with limited connectivity. Housecall Pro lets techs view previously opened jobs offline but not edit them.',
+        'Mostly, with limits on what techs can edit. FieldPulse keeps notes, photos, forms, estimates, and invoices editable offline (no new jobs or payments), ServiceTitan supports most job actions offline, Jobber keeps timers, job forms, notes, and attachments working offline, and Workiz says techs can update jobs with limited connectivity. Housecall Pro lets techs view previously opened jobs offline but not edit them.',
     },
     {
       question: 'Can it handle multi-day telecom installs and progress billing?',
