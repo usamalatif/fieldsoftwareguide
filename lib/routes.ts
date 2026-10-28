@@ -22,7 +22,7 @@ export const staticRouteLastmod: Record<string, string> = {
   '/pricing/housecall-pro': articleDates['/pricing/housecall-pro'].contentUpdated,
   '/pricing/jobber': articleDates['/pricing/jobber'].contentUpdated,
   '/for-small-business': '2026-10-24',
-  '/guides': '2026-10-22',
+  '/guides': '2026-10-28',
   '/about': '2026-10-22',
   '/contact': '2026-07-08',
   '/privacy': '2026-07-08',

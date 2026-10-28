@@ -46,26 +46,30 @@ const crumbs = [
 
 /** Standard monthly rates per billing option, checked 2026-10-28. */
 const plans: { plan: string; annual: string; commit: string; monthly: string; users: string; highlight?: boolean }[] = [
-  { plan: 'Core', annual: '$29', commit: '$39', monthly: '$49', users: '1 user' },
+  { plan: 'Core', annual: '$29', commit: '$39', monthly: '$49', users: '1 user (one extra seat allowed)' },
   { plan: 'Connect', annual: '$99', commit: '$119', monthly: '$139', users: '1 user (5, 10, 15 user bands)' },
   { plan: 'Grow', annual: '$149', commit: '$169', monthly: '$199', users: '1 user (5, 10, 15 user bands)', highlight: true },
   { plan: 'Plus', annual: '$399', commit: '$439', monthly: '$499', users: 'From 5 users (5, 10, 15 user bands)' },
 ]
 
-/** Annual prepaid / no commitment, per month. Core is sold for 1 user; Plus starts at 5. */
+/**
+ * Annual prepaid / no commitment, per month. Core: 1 user plus at most one extra seat (help
+ * center: "you can add one additional seat. To add more, upgrade to Connect"). Plus has no
+ * public 1-user price (configurator shows "Let's chat"); 16+ is contact sales on every plan.
+ */
 const bands: { users: string; core: string; connect: string; grow: string; plus: string }[] = [
-  { users: '1 user', core: '$29 / $49', connect: '$99 / $139', grow: '$149 / $199', plus: 'Contact sales' },
-  { users: '5 users', core: 'Contact sales', connect: '$149 / $199', grow: '$229 / $299', plus: '$399 / $499' },
-  { users: '10 users', core: 'Contact sales', connect: '$229 / $299', grow: '$299 / $399', plus: '$449 / $599' },
-  { users: '15 users', core: 'Contact sales', connect: '$299 / $399', grow: '$399 / $499', plus: '$529 / $699' },
-  { users: '16+ users', core: 'Contact sales', connect: 'Contact sales', grow: 'Contact sales', plus: 'Contact sales' },
+  { users: '1 user', core: '$29 / $49', connect: '$99 / $139', grow: '$149 / $199', plus: 'Not publicly offered' },
+  { users: '5 users', core: 'Not available (2-user max)', connect: '$149 / $199', grow: '$229 / $299', plus: '$399 / $499' },
+  { users: '10 users', core: 'Not available', connect: '$229 / $299', grow: '$299 / $399', plus: '$449 / $599' },
+  { users: '15 users', core: 'Not available', connect: '$299 / $399', grow: '$399 / $499', plus: '$529 / $699' },
+  { users: '16+ users', core: 'Not available', connect: 'Contact sales', grow: 'Contact sales', plus: 'Contact sales' },
 ]
 
 const addOns: { name: string; price: string; detail: string }[] = [
   { name: 'Marketing Suite', price: '$99/mo', detail: 'Campaigns, reviews, referrals, job showcase, social posting, and a marketing plan. Included on Plus.' },
-  { name: 'AI Receptionist', price: '$29/mo', detail: '30 conversations per billing cycle, then $0.79 per conversation, or pause at the limit. Included on Plus with unlimited usage.' },
+  { name: 'AI Receptionist', price: '$29/mo', detail: 'Jobber’s Receptionist help article says 30 conversations per billing cycle, then $0.79 per conversation, or pause at the limit; its general add-ons article says 100 a month (see note). Included on Plus with unlimited usage.' },
   { name: 'Sales Pipeline', price: '$49/mo', detail: 'One view of every request and quote moving toward a booked job. Included on Plus.' },
-  { name: 'Extra user', price: '$29/mo', detail: 'Per user added to any plan band.' },
+  { name: 'Extra user (seat)', price: '$29/mo', detail: 'Listed on every plan card. Bought in bulk under Manage Seats; Core allows only one extra seat.' },
 ]
 
 const fees: { method: string; rate: string }[] = [
@@ -115,7 +119,7 @@ const faqs = [
   {
     question: 'How much does Jobber charge for extra users?',
     answer:
-      'Jobber lists extra users at $29/month each. Because each plan is also sold in 5, 10, and 15 user bands, a band is usually cheaper than adding many single users: 5 users on Connect cost $149/month as a band versus $215 for one user plus four extra seats.',
+      'Jobber lists extra users at $29/month each, bought as seats in your account. Core allows only one extra seat; for more users you need Connect or higher. Because Connect, Grow, and Plus are also sold in 5, 10, and 15 user bands, a band is usually cheaper than adding many seats: 5 users on Connect cost $149/month as a band versus $215 for one user plus four extra seats.',
   },
   {
     question: 'What are Jobber’s payment processing fees?',
@@ -130,7 +134,7 @@ const faqs = [
   {
     question: 'Is the Jobber AI Receptionist included?',
     answer:
-      'Only on Plus, where it is included with unlimited usage. On other plans it is a $29/month add-on with 30 conversations per billing cycle and $0.79 per extra conversation, or you can pause it at the limit. Jobber AI Voice and Chat are different features, available on all plans with access set by user role.',
+      'Only on Plus, where it is included with unlimited usage. On other plans it is a $29/month add-on. Jobber’s Receptionist help article says that covers 30 conversations per billing cycle, then $0.79 per extra conversation or a pause at the limit, while its general add-ons article says 100 a month, so confirm the allowance in your account. Jobber AI Voice and Chat are different features, available on all plans with access set by user role.',
   },
 ]
 
@@ -138,6 +142,7 @@ const sources = [
   { name: 'Jobber pricing (plans, team-size bands, billing options, promotion terms, feature table, add-ons, payment fees, FAQ)', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-28' },
   { name: 'Receptionist powered by Jobber AI (help center)', url: 'https://help.getjobber.com/en/articles/receptionistpowered-by-jobber-ai/', checked: '2026-10-28' },
   { name: 'Add-on features to your Jobber plan (help center)', url: 'https://help.getjobber.com/en/articles/add-on-features-to-your-jobber-plan-subscription/', checked: '2026-10-28' },
+  { name: 'Manage Team: buying extra seats, Core one-seat limit (help center)', url: 'https://help.getjobber.com/en/articles/manage-teamhow-to-add-manage-and-deactivate-team-members/', checked: '2026-10-28' },
   { name: 'Jobber AI Voice and Chat (help center)', url: 'https://help.getjobber.com/en/articles/jobber-ai-voice-and-chat-beta/', checked: '2026-10-28' },
   { name: 'Jobber Payments payout window (help center)', url: 'https://help.getjobber.com/en/articles/jobber-payments-payout-window/', checked: '2026-10-28' },
   { name: 'Bank payments (ACH) (help center)', url: 'https://help.getjobber.com/hc/en-us/articles/1500004781762-Bank-Payments-ACH', checked: '2026-10-28' },
@@ -227,8 +232,9 @@ export default function JobberPricingPage() {
           </div>
           <p className="mt-3 text-[13px] text-slate-500 dark:text-slate-400">
             Grow is highlighted because it is the plan Jobber&rsquo;s 14-day free trial runs on.
-            Core is shown for one user; for larger teams Jobber&rsquo;s configurator lists Core as
-            &ldquo;contact sales&rdquo;. Plus starts at 5 users.
+            Core is a one-user plan; Jobber&rsquo;s help center says Core accounts can add one
+            extra seat and must upgrade to Connect for more. Plus has no public one-user price
+            and starts at 5 users.
           </p>
         </section>
 
@@ -279,8 +285,8 @@ export default function JobberPricingPage() {
         <section className="mt-12">
           <h2 className={H2}>Jobber price by team size</h2>
           <p className={SUB}>
-            Monthly price as annual prepaid / no commitment. Extra users are $29/month each on top
-            of any band.
+            Monthly price as annual prepaid / no commitment. Extra users are listed at $29/month
+            each on top of any band (Core: one extra seat at most).
           </p>
           <div className={TABLE_WRAP}>
             <table className="tnum w-full min-w-[680px] border-collapse text-left">
@@ -370,9 +376,11 @@ export default function JobberPricingPage() {
             </table>
           </div>
           <p className="mt-3 text-[13px] text-slate-500 dark:text-slate-400">
-            Jobber&rsquo;s general add-ons help article lists 100 Receptionist conversations a
-            month, while its dedicated Receptionist article lists 30 per billing cycle for the $29
-            add-on. We use the dedicated article; confirm the allowance on your billing page.
+            Jobber&rsquo;s own help articles disagree on the Receptionist allowance: the dedicated
+            Receptionist article says 30 conversations per billing cycle for the $29 add-on, and
+            the general add-ons article says 100 a month. Until Jobber resolves it, our cost
+            examples assume 30, the lower figure; confirm the allowance on your billing page
+            before you rely on it.
           </p>
         </section>
 
@@ -419,8 +427,11 @@ export default function JobberPricingPage() {
         <section className="mt-12">
           <h2 className={H2}>Real-world cost examples</h2>
           <p className={SUB}>
-            Our arithmetic on Jobber&rsquo;s standard annual-prepaid rates (per month). Confirm
-            how seats are added at checkout for your account.
+            Our arithmetic on Jobber&rsquo;s standard annual-prepaid rates (per month). Every
+            configuration below can be bought: Jobber lists extra users at $29/month on each
+            Connect, Grow, and Plus card, and its help center says admins buy extra seats in bulk
+            under Manage Seats. Jobber does not publish a different seat price by billing option,
+            so confirm how seats are billed on annual prepaid at checkout.
           </p>
 
           <h3 className="mt-6 text-[18px] font-bold text-slate-900 dark:text-white">
@@ -487,7 +498,7 @@ export default function JobberPricingPage() {
             <p>
               The three add-ons cost $177/month together ($99 + $29 + $49). If you want all three,
               Plus is cheaper at every band and also includes unlimited Receptionist usage instead
-              of 30 conversations, plus crew scheduling, profit alerts, and Premium Support. If you
+              of a capped allowance, plus crew scheduling, profit alerts, and Premium Support. If you
               only want one add-on, Grow plus that add-on is far cheaper: Grow for 5 users with
               Receptionist is $258/month.
             </p>
@@ -557,7 +568,7 @@ export default function JobberPricingPage() {
 
           <h2>Which Jobber plan should you choose?</h2>
           <ul>
-            <li><strong>Core</strong> if you work alone and do not need accounting sync or automated reminders.</li>
+            <li><strong>Core</strong> if you work alone (or with one helper on its single extra seat) and do not need accounting sync or automated reminders.</li>
             <li><strong>Connect</strong> if you need QuickBooks Online, checklists, routing, or automatic payments.</li>
             <li><strong>Grow</strong> if you need job costing, two-way texting, or quotes with optional add-on items.</li>
             <li><strong>Plus</strong> if you run crews and want Marketing Suite, Pipeline, and Receptionist anyway.</li>
