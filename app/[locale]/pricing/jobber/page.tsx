@@ -119,7 +119,7 @@ const faqs = [
   {
     question: 'How much does Jobber charge for extra users?',
     answer:
-      'Jobber lists extra users at $29/month each, bought as seats in your account. Core allows only one extra seat; for more users you need Connect or higher. Because Connect, Grow, and Plus are also sold in 5, 10, and 15 user bands, a band is usually cheaper than adding many seats: 5 users on Connect cost $149/month as a band versus $215 for one user plus four extra seats.',
+      'Jobber lists extra users at $29/month each, bought as seats in your account. Core allows only one extra seat; for more users you need Connect or higher. Because Connect, Grow, and Plus are also sold in 5, 10, and 15 user bands, a band is usually cheaper than adding many seats. Based on published prices, 5 users on Connect cost $149/month as a band versus $215 for one user plus four extra seats; confirm seat pricing for your billing option at checkout.',
   },
   {
     question: 'What are Jobber’s payment processing fees?',
@@ -376,11 +376,16 @@ export default function JobberPricingPage() {
             </table>
           </div>
           <p className="mt-3 text-[13px] text-slate-500 dark:text-slate-400">
-            Jobber&rsquo;s own help articles disagree on the Receptionist allowance: the dedicated
-            Receptionist article says 30 conversations per billing cycle for the $29 add-on, and
-            the general add-ons article says 100 a month. Until Jobber resolves it, our cost
-            examples assume 30, the lower figure; confirm the allowance on your billing page
-            before you rely on it.
+            Jobber&rsquo;s own help articles disagree on the Receptionist allowance: the dedicated{' '}
+            <a href="https://help.getjobber.com/en/articles/receptionistpowered-by-jobber-ai/" target="_blank" rel="nofollow noopener" className="underline hover:text-orange-600">
+              Receptionist article
+            </a>{' '}
+            says 30 conversations per billing cycle for the $29 add-on, and the general{' '}
+            <a href="https://help.getjobber.com/en/articles/add-on-features-to-your-jobber-plan-subscription/" target="_blank" rel="nofollow noopener" className="underline hover:text-orange-600">
+              add-ons article
+            </a>{' '}
+            says 100 a month. Until Jobber resolves it, our cost examples assume 30, the lower
+            figure; confirm the allowance on your billing page before you rely on it.
           </p>
         </section>
 
@@ -427,15 +432,16 @@ export default function JobberPricingPage() {
         <section className="mt-12">
           <h2 className={H2}>Real-world cost examples</h2>
           <p className={SUB}>
-            Our arithmetic on Jobber&rsquo;s standard annual-prepaid rates (per month). Every
-            configuration below can be bought: Jobber lists extra users at $29/month on each
-            Connect, Grow, and Plus card, and its help center says admins buy extra seats in bulk
-            under Manage Seats. Jobber does not publish a different seat price by billing option,
-            so confirm how seats are billed on annual prepaid at checkout.
+            Calculations based on Jobber&rsquo;s published standard annual-prepaid prices (per
+            month), not quotes. Jobber lists extra users at $29/month on each Connect, Grow, and
+            Plus card, and its help center says admins buy extra seats in bulk under Manage Seats.
+            Jobber does not say whether extra seats are billed on the same terms for annual
+            prepaid and monthly subscriptions, so confirm seat pricing at checkout before relying
+            on these totals.
           </p>
 
           <h3 className="mt-6 text-[18px] font-bold text-slate-900 dark:text-white">
-            One user plus extra seats vs a team-size band
+            One user plus extra seats vs a team-size band (calculated)
           </h3>
           <div className={`${TABLE_WRAP} mt-3`}>
             <table className="tnum w-full min-w-[620px] border-collapse text-left">
@@ -471,7 +477,7 @@ export default function JobberPricingPage() {
           </div>
 
           <h3 className="mt-8 text-[18px] font-bold text-slate-900 dark:text-white">
-            Grow plus three add-ons vs Plus
+            Grow plus three add-ons vs Plus (calculated)
           </h3>
           <div className={`${TABLE_WRAP} mt-3`}>
             <table className="tnum w-full min-w-[560px] border-collapse text-left">
