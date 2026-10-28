@@ -318,7 +318,9 @@ export default function HousecallProPricingPage() {
             For a single user, Jobber is cheaper to start: its Core plan is $29/month billed
             annually, against $59 for Housecall Pro Basic. Neither entry plan includes QuickBooks
             sync, and Jobber syncs with QuickBooks Online only, while Housecall Pro also lists
-            Desktop support. The full side-by-side, including fees and features, is in our{' '}
+            Desktop support. Every Jobber plan and team-size price is in our{' '}
+            <Link href="/pricing/jobber">Jobber pricing</Link> guide. The full side-by-side,
+            including fees and features, is in our{' '}
             <Link href="/compare/jobber-vs-housecall-pro">Jobber vs Housecall Pro</Link>{' '}
             comparison, and the{' '}
             <Link href="/compare">full FSM software comparison</Link> covers the other major

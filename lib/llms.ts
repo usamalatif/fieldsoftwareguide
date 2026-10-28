@@ -65,6 +65,7 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [Free FSM Software](${site.url}/free): what is actually free, verified on vendor sites
 - [QuickBooks Compatibility](${site.url}/quickbooks): which FSM tools sync with QuickBooks Online vs Desktop
 - [Housecall Pro Pricing](${site.url}/pricing/housecall-pro): Housecall Pro plans, user limits, add-ons, payment fees, and QuickBooks support
+- [Jobber Pricing](${site.url}/pricing/jobber): Jobber plans and standard prices by team size and billing option, add-ons, and payment fees
 - [Best for Small Business](${site.url}/for-small-business): verified 1-user and 5-user pricing
 - [By Business Size](${site.url}/by-size): solo operator to enterprise
 - [How We Review](${site.url}/how-we-review): our pricing-confidence standard

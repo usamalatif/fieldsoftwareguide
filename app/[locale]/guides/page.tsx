@@ -22,6 +22,7 @@ const guides = [
   { title: 'FSM software by business size', desc: 'Solo operator to enterprise — the right fit for your team size.', href: '/by-size', tag: 'By size' },
   { title: 'Free FSM software', desc: 'What you can actually run for free, and where the limits are.', href: '/free', tag: 'Free' },
   { title: 'Housecall Pro pricing (2026)', desc: 'Every Housecall Pro plan, user limit, add-on, and payment fee, from its own pages.', href: '/pricing/housecall-pro', tag: 'Pricing' },
+  { title: 'Jobber pricing (2026)', desc: 'Every Jobber plan by team size and billing option, plus add-ons and payment fees.', href: '/pricing/jobber', tag: 'Pricing' },
   { title: 'FSM software for QuickBooks', desc: 'Which tools sync with QuickBooks Online and Desktop, and the plan you need.', href: '/quickbooks', tag: 'QuickBooks' },
   { title: 'FSM software for small business', desc: 'What a solo operator or small crew should buy, with verified entry pricing.', href: '/for-small-business', tag: 'Small business' },
   { title: 'How we review', desc: 'Our pricing-confidence standard and how rankings are decided.', href: '/how-we-review', tag: 'Methodology' },
