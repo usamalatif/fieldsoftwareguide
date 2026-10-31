@@ -7,7 +7,8 @@ import { ArticleJsonLd, BreadcrumbJsonLd, FAQJsonLd } from '@/components/JsonLd'
 import { localizePath, isLocale, defaultLocale, type Locale } from '@/lib/i18n/config'
 
 /**
- * Prices verified 2026-10-27 on each vendor's pricing page.
+ * Prices verified 2026-10-27 on each vendor's pricing page; Jobber and Housecall Pro rechecked
+ * 2026-10-31 after Jobber's introductory offer ended (standard rates unchanged, promo note removed).
  * Jobber prices now vary by plan AND team size (1 / 5 / 10 / 15 users; 16+ is "contact sales";
  * Core is 1 user only); extra users $29/mo each. Figures below are the STANDARD annual-billing
  * rates ("then $X/mo"), not the 12-month introductory offer shown during promotions.
@@ -16,7 +17,7 @@ import { localizePath, isLocale, defaultLocale, type Locale } from '@/lib/i18n/c
  * ServiceTitan (per-technician) and FieldPulse (seat-based) publish no prices; Workiz and
  * Commusoft publish none either.
  */
-const MODIFIED = '2026-10-27'
+const MODIFIED = '2026-10-31'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -63,7 +64,7 @@ const sizes = [
   },
 ]
 
-/** Standard annual-billing rates per month, checked 2026-10-27. */
+/** Standard annual-billing rates per month, checked 2026-10-31. */
 const costRows: { users: string; jobberConnect: string; jobberGrow: string; hcp: string }[] = [
   { users: '1 user', jobberConnect: '$99 (Core $29, no QuickBooks)', jobberGrow: '$149', hcp: '$59 Basic (no QuickBooks); $149 Essentials' },
   { users: '5 users', jobberConnect: '$149', jobberGrow: '$229', hcp: '$149 Essentials' },
@@ -72,7 +73,7 @@ const costRows: { users: string; jobberConnect: string; jobberGrow: string; hcp:
   { users: '16+ users', jobberConnect: 'Contact sales', jobberGrow: 'Contact sales', hcp: 'MAX + $35 per extra user' },
 ]
 
-/** Where each feature starts, from each vendor's pricing page (checked 2026-10-27). */
+/** Where each feature starts, from each vendor's pricing page (checked 2026-10-31). */
 const gateRows: { feature: string; jobber: string; hcp: string }[] = [
   { feature: 'QuickBooks Online sync', jobber: 'Connect and up', hcp: 'Essentials and up' },
   { feature: 'Checklists', jobber: 'Connect and up', hcp: 'Essentials and up' },
@@ -180,11 +181,9 @@ export default async function BySizePage({ params }: { params: Promise<{ locale:
             What it costs as your team grows
           </h2>
           <p className="mb-4 mt-1.5 text-[15px] text-slate-500 dark:text-slate-400">
-            Monthly price with annual billing, from each vendor&rsquo;s pricing page, checked
-            October 27, 2026. These are standard rates. Jobber&rsquo;s page currently shows a
-            12-month introductory price on annual plans (for example, Core $21/month for the first
-            12 months, then $29) in an offer it says ends October 30, 2026; the table uses the
-            price after that period. Month-to-month runs higher.
+            Standard monthly price with annual billing, from each vendor&rsquo;s pricing page,
+            checked October 31, 2026. Temporary introductory discounts are not used in this table;
+            month-to-month billing runs higher.
           </p>
           <div className="overflow-x-auto rounded-[18px] border border-slate-200 dark:border-slate-800">
             <table className="tnum w-full min-w-[640px] border-collapse text-left">
@@ -298,8 +297,8 @@ export default async function BySizePage({ params }: { params: Promise<{ locale:
         <div className="mt-10 border-t border-slate-200 pt-6 text-[13px] text-slate-500 dark:border-slate-800 dark:text-slate-400">
           <p className="font-semibold text-slate-900 dark:text-white">Sources</p>
           <ul className="mt-2 space-y-1">
-            <li><a href="https://www.getjobber.com/pricing/" target="_blank" rel="noopener noreferrer" className="underline">Jobber pricing</a> (checked Oct 27, 2026)</li>
-            <li><a href="https://www.housecallpro.com/pricing/" target="_blank" rel="noopener noreferrer" className="underline">Housecall Pro pricing</a> (checked Oct 27, 2026)</li>
+            <li><a href="https://www.getjobber.com/pricing/" target="_blank" rel="noopener noreferrer" className="underline">Jobber pricing</a> (checked Oct 31, 2026)</li>
+            <li><a href="https://www.housecallpro.com/pricing/" target="_blank" rel="noopener noreferrer" className="underline">Housecall Pro pricing</a> (checked Oct 31, 2026)</li>
             <li><a href="https://www.servicetitan.com/pricing" target="_blank" rel="noopener noreferrer" className="underline">ServiceTitan pricing</a> (checked Oct 27, 2026)</li>
             <li><a href="https://www.fieldpulse.com/pricing" target="_blank" rel="noopener noreferrer" className="underline">FieldPulse pricing</a> (checked Oct 27, 2026)</li>
             <li><a href="https://www.workiz.com/pricing/" target="_blank" rel="noopener noreferrer" className="underline">Workiz pricing</a> (checked Oct 27, 2026)</li>
