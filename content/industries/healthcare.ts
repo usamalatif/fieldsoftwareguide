@@ -2,7 +2,7 @@ import type { Industry } from '@/lib/industries'
 
 /**
  * Healthcare (medical equipment / DME field service) — VERIFIED (researched 2026-07-08).
- * No FSM vendor markets a healthcare/medical vertical. Functionally closest picks are the
+ * None of the six FSM platforms reviewed markets a healthcare/medical vertical. Closest picks are the
  * tools with verified per-asset records: FieldPulse, ServiceTitan, Commusoft (and Workiz).
  * Jobber has NO native asset tracking.
  * Only Jobber and Housecall Pro publish starting prices (annual-billing rates).
@@ -10,7 +10,7 @@ import type { Industry } from '@/lib/industries'
  * BAA statement on Jobber, Housecall Pro, ServiceTitan, FieldPulse, or Commusoft (absence is
  * NOT a claim of non-compliance); Workiz's terms say it is not acting as a customer's Business
  * Associate. Asset records rechecked (Workiz Equipment tracking is Ultimate-only; Housecall
- * Pro property profiles hold make/model/serial). No vendor documents calibration features.
+ * Pro property profiles hold make/model/serial). None of the six documents calibration features.
  * 2026-10-31: Housecall Pro qualified consistently: its HVAC page lists equipment tracking on
  * Essentials and MAX; the property-profile help article names no plan and the pricing page is
  * silent, so we do NOT say Basic lacks it. Market claim narrowed to the six platforms reviewed.
@@ -29,7 +29,7 @@ export const healthcare: Industry = {
     'None of the six platforms we review sells medical equipment field service management software as a healthcare product (rechecked October 2026), so biomed and DME service teams choose general field service tools with strong per-asset records. FieldPulse (asset records with warranties and barcode scanning), ServiceTitan (installed-equipment history), and Commusoft (multi-site asset history with barcodes or QR codes) are the closest fits, all custom-quoted. Smaller in-home equipment providers can look at Housecall Pro, which lists equipment tracking from its Essentials plan ($149/month billed annually; Basic starts at $59) and stores make, model, and serial numbers in property profiles, or Jobber (from $29/month billed annually), which has no native asset tracking. Treat these tools as equipment-service systems, not clinical software. Workiz’s terms say it does not act as a customer’s business associate under HIPAA. For Jobber, Housecall Pro, ServiceTitan, FieldPulse, and Commusoft we found no public HIPAA or business associate agreement (BAA) documentation, which is not evidence of non-compliance, so ask in writing and keep patient data out until a vendor confirms.',
 
   intro:
-    'Healthcare field service covers biomedical equipment maintenance in hospitals and clinics, servicing of imaging, lab, and sterilization equipment, and delivery and repair of durable medical equipment (DME) in patients’ homes. Uptime and traceability define the work: a missed preventive-maintenance visit can take a device out of service, and every repair needs a dated record against the right serial number. None of the major field service tools is built for healthcare, so the honest evaluation is capability-based: per-asset history, recurring maintenance scheduling, and mobile documentation, with patient-linked data kept out of the system.',
+    'Healthcare field service covers biomedical equipment maintenance in hospitals and clinics, servicing of imaging, lab, and sterilization equipment, and delivery and repair of durable medical equipment (DME) in patients’ homes. Uptime and traceability define the work: a missed preventive-maintenance visit can take a device out of service, and every repair needs a dated record against the right serial number. None of the six platforms reviewed here is built specifically for healthcare, so the honest evaluation is capability-based: per-asset history, recurring maintenance scheduling, and mobile documentation, with patient-linked data kept out of the system.',
 
   keyFeatures: [
     'Per-asset service history: make, model, serial, and warranty per device',
