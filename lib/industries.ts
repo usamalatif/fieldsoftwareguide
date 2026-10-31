@@ -173,7 +173,8 @@ export function getAllIndustries(): Industry[] {
 export function priceShort(i: Industry): string {
   const p = i.priceRange
   if (p.structured && p.min != null) {
-    return p.max != null && p.max !== p.min ? `$${p.min}-$${p.max}` : `$${p.min}`
+    if (p.max == null) return `from $${p.min}`
+    return p.max !== p.min ? `$${p.min}-$${p.max}` : `$${p.min}`
   }
   return 'Varies'
 }

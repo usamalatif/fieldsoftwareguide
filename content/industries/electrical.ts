@@ -13,6 +13,8 @@ import type { Industry } from '@/lib/industries'
  * and QuickBooks Online from Connect; Housecall Pro pricing page lists job costing from Basic
  * and Recurring Service Plans on MAX. Page now separates service FSM from electrical CAD /
  * design and construction takeoff software.
+ * 2026-10-31: removed the $299 "ceiling" (Jobber publishes Grow/Plus tiers above it); pricing
+ * now stated as starting prices plus labelled team-size examples.
  */
 export const electrical: Industry = {
   slug: 'electrical',
@@ -41,9 +43,10 @@ export const electrical: Industry = {
 
   priceRange: {
     min: 29,
-    max: 299,
-    note: 'Published plans run $29/mo (Jobber Core, annual billing; $49 month-to-month) to $299/mo (Housecall Pro MAX, annual billing; $329 month-to-month). ServiceTitan, Workiz, FieldPulse, and Commusoft are custom-quoted.',
-    source: { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-27' },
+    // No ceiling: Jobber publishes tiers above $299 (e.g. Grow 15 users $399, Plus 15 users $529).
+    max: null,
+    note: 'Published plans start at $29/mo (Jobber Core, 1 user, annual billing; $49 month-to-month) and $59/mo (Housecall Pro Basic, 1 user). Prices rise with team size and features, for example Housecall Pro MAX at $299/mo for up to 8 users and Jobber Plus at $529/mo for 15 users (annual billing). ServiceTitan, Workiz, FieldPulse, and Commusoft are custom-quoted.',
+    source: { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-31' },
     structured: true,
   },
 
@@ -120,7 +123,7 @@ export const electrical: Industry = {
     {
       question: 'How much does electrical contractor software cost?',
       answer:
-        'Published plans run from $29/month (Jobber Core, 1 user, billed annually; $49 month-to-month) to $299/month (Housecall Pro MAX, up to 8 users, billed annually; $329 month-to-month). ServiceTitan, Workiz, FieldPulse, and Commusoft are quote-based and scale with technicians.',
+        'Published plans start at $29/month for Jobber Core (1 user, billed annually; $49 month-to-month) and $59/month for Housecall Pro Basic (1 user). Cost rises with team size and features: Housecall Pro MAX is $299/month for up to 8 users, and Jobber’s 15-user tiers run up to $529/month on Plus, both billed annually. ServiceTitan, Workiz, FieldPulse, and Commusoft are quote-based and scale with technicians.',
     },
     {
       question: 'Does electrical FSM software integrate with QuickBooks?',
@@ -129,7 +132,7 @@ export const electrical: Industry = {
     },
   ],
 
-  lastUpdated: '2026-10-27',
+  lastUpdated: '2026-10-31',
   dataVerified: true,
   sources: [
     { name: 'Jobber electrical contractor software', url: 'https://www.getjobber.com/industries/electrical-contractor-software/', checked: '2026-10-27' },
@@ -141,8 +144,8 @@ export const electrical: Industry = {
     { name: 'Commusoft permit tracking + NEC checklists', url: 'https://www.commusoft.com/en-us/campaigns/electrician-software/', checked: '2026-10-27' },
     { name: 'ServiceTitan electrical estimating', url: 'https://www.servicetitan.com/industries/electrical-software/estimating', checked: '2026-10-27' },
     { name: 'iPermit for ServiceTitan (marketplace)', url: 'https://marketplace.servicetitan.com/partner/ipermit', checked: '2026-10-27' },
-    { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-27' },
-    { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-27' },
+    { name: 'Jobber pricing (team-size tiers up to $529/mo)', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-31' },
+    { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-31' },
     { name: 'Housecall Pro job costing reports', url: 'https://help.housecallpro.com/en/articles/6596631-job-costing-reports', checked: '2026-10-27' },
     { name: 'Workiz technician labor rates in job costing', url: 'https://help.workiz.com/hc/en-us/articles/27408705930769', checked: '2026-10-27' },
     { name: 'ServiceTitan memberships', url: 'https://help.servicetitan.com/docs/memberships', checked: '2026-10-27' },
