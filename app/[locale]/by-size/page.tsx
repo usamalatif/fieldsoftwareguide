@@ -282,9 +282,10 @@ export default async function BySizePage({ params }: { params: Promise<{ locale:
             <Link href={L('/by-industry')}>other industry guides</Link>. If you are a solo
             operator or small crew, our{' '}
             <Link href={L('/for-small-business')}>field service software for small business</Link>{' '}
-            guide goes deeper on what a small team needs on day one, and{' '}
-            <Link href={L('/pricing/housecall-pro')}>Housecall Pro pricing</Link> breaks down every
-            Housecall Pro plan and fee.
+            guide goes deeper on what a small team needs on day one, and our{' '}
+            <Link href={L('/pricing/jobber')}>Jobber pricing</Link> and{' '}
+            <Link href={L('/pricing/housecall-pro')}>Housecall Pro pricing</Link> guides break down
+            every plan and fee for the two published-price tools.
           </p>
         </div>
 

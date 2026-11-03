@@ -178,7 +178,8 @@ export default function JobberVsHousecallProPage() {
             add-ons (Payroll, Voice, HCP Assist, Profit Rhino, Websites, vehicle GPS) are priced by
             quote. No long-term contracts required. For every Housecall Pro plan, fee, and add-on
             in one place, see our <Link href="/pricing/housecall-pro">Housecall Pro pricing</Link>{' '}
-            guide.
+            guide, and for every Jobber plan, team-size band, and add-on, our{' '}
+            <Link href="/pricing/jobber">Jobber pricing</Link> guide.
           </p>
           <p>
             The practical read: Jobber is cheaper at 1 user ($29 vs $59 annual), the two tie at 5
