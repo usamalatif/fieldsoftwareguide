@@ -15,13 +15,12 @@ import { articleDates } from '@/content/articles'
  * trial". Keep "jobber vs housecall pro" on /compare/jobber-vs-housecall-pro, QuickBooks
  * intent on /quickbooks, and cross-vendor team-size intent on /by-size.
  *
- * Every figure verified 2026-10-28 on Jobber's own pages: the pricing page rendered in a
- * browser (plans x team size x billing option, promotion terms, feature table, add-ons,
- * payment fees, FAQ) and the help center (Receptionist, Jobber AI, Tap to Pay, bank payments,
- * payout window). Standard rates only: the 12-month / 3-month introductory prices of the offer
- * ending 2026-10-30 are excluded. Card-reader rates are NOT published on these pages, so the
- * article does not state them. Cost examples are arithmetic on the published standard rates.
- * RECHECK every price and the promotion wording after 2026-10-30 before publishing.
+ * Every figure verified 2026-11-03 on Jobber's own pages: the pricing page (plans x team
+ * size x billing option, feature table, add-ons, payment fees, FAQ) and the help center
+ * (Receptionist, add-ons, Manage Team, Jobber AI, Tap to Pay, bank payments, payout window).
+ * The introductory offer that ended 2026-10-30 is gone; the pricing page now shows only
+ * "Save up to 25% with annual billing". Card-reader rates are NOT published on these pages,
+ * so the article does not state them. Cost examples are arithmetic on the published rates.
  */
 
 // Dates live in content/articles.ts (shared with the sitemap). firstPublished stays
@@ -44,7 +43,7 @@ const crumbs = [
   { name: 'Jobber Pricing', href: '/pricing/jobber' },
 ]
 
-/** Standard monthly rates per billing option, checked 2026-10-28. */
+/** Standard monthly rates per billing option, checked 2026-11-03. */
 const plans: { plan: string; annual: string; commit: string; monthly: string; users: string; highlight?: boolean }[] = [
   { plan: 'Core', annual: '$29', commit: '$39', monthly: '$49', users: '1 user (one extra seat allowed)' },
   { plan: 'Connect', annual: '$99', commit: '$119', monthly: '$139', users: '1 user (5, 10, 15 user bands)' },
@@ -139,15 +138,15 @@ const faqs = [
 ]
 
 const sources = [
-  { name: 'Jobber pricing (plans, team-size bands, billing options, promotion terms, feature table, add-ons, payment fees, FAQ)', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-28' },
-  { name: 'Receptionist powered by Jobber AI (help center)', url: 'https://help.getjobber.com/en/articles/receptionistpowered-by-jobber-ai/', checked: '2026-10-28' },
-  { name: 'Add-on features to your Jobber plan (help center)', url: 'https://help.getjobber.com/en/articles/add-on-features-to-your-jobber-plan-subscription/', checked: '2026-10-28' },
-  { name: 'Manage Team: buying extra seats, Core one-seat limit (help center)', url: 'https://help.getjobber.com/en/articles/manage-teamhow-to-add-manage-and-deactivate-team-members/', checked: '2026-10-28' },
-  { name: 'Jobber AI Voice and Chat (help center)', url: 'https://help.getjobber.com/en/articles/jobber-ai-voice-and-chat-beta/', checked: '2026-10-28' },
-  { name: 'Jobber Payments payout window (help center)', url: 'https://help.getjobber.com/en/articles/jobber-payments-payout-window/', checked: '2026-10-28' },
-  { name: 'Bank payments (ACH) (help center)', url: 'https://help.getjobber.com/hc/en-us/articles/1500004781762-Bank-Payments-ACH', checked: '2026-10-28' },
-  { name: 'Tap to Pay (help center)', url: 'https://help.getjobber.com/hc/en-us/articles/34647042014615-Tap-to-Pay', checked: '2026-10-28' },
-  { name: 'Housecall Pro pricing (for the short price comparison)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-27' },
+  { name: 'Jobber pricing (plans, team-size bands, billing options, current offers, feature table, add-ons, payment fees, FAQ)', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-03' },
+  { name: 'Receptionist powered by Jobber AI (help center)', url: 'https://help.getjobber.com/en/articles/receptionistpowered-by-jobber-ai/', checked: '2026-11-03' },
+  { name: 'Add-on features to your Jobber plan (help center)', url: 'https://help.getjobber.com/en/articles/add-on-features-to-your-jobber-plan-subscription/', checked: '2026-11-03' },
+  { name: 'Manage Team: buying extra seats, Core one-seat limit (help center)', url: 'https://help.getjobber.com/en/articles/manage-teamhow-to-add-manage-and-deactivate-team-members/', checked: '2026-11-03' },
+  { name: 'Jobber AI Voice and Chat (help center)', url: 'https://help.getjobber.com/en/articles/jobber-ai-voice-and-chat-beta/', checked: '2026-11-03' },
+  { name: 'Jobber Payments payout window (help center)', url: 'https://help.getjobber.com/en/articles/jobber-payments-payout-window/', checked: '2026-11-03' },
+  { name: 'Bank payments (ACH) (help center)', url: 'https://help.getjobber.com/hc/en-us/articles/1500004781762-Bank-Payments-ACH', checked: '2026-11-03' },
+  { name: 'Tap to Pay (help center)', url: 'https://help.getjobber.com/hc/en-us/articles/34647042014615-Tap-to-Pay', checked: '2026-11-03' },
+  { name: 'Housecall Pro pricing (for the short price comparison)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-03' },
 ]
 
 const H2 = 'text-[26px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white'
@@ -180,31 +179,31 @@ export default function JobberPricingPage() {
           </h1>
           <p className="mt-5 max-w-[660px] text-[17px] leading-[1.6] text-slate-300 md:text-[19px]">
             Every plan, team-size price, billing option, add-on, and payment fee, taken from
-            Jobber&rsquo;s own pricing page and help center on October 28, 2026.
+            Jobber&rsquo;s own pricing page and help center on November 3, 2026.
           </p>
         </div>
       </section>
 
       <div className="mx-auto max-w-[900px] px-5 py-14 md:px-10">
-        <AnswerBlock lastUpdated="October 2026">
+        <AnswerBlock lastUpdated="November 2026">
           <p>
             Jobber has four plans, and the price depends on the plan, your team size, and how you
             pay. At standard annual-prepaid rates, <strong>Core</strong> costs $29/month for one
             user, <strong>Connect</strong> $99/month, <strong>Grow</strong> $149/month, and{' '}
             <strong>Plus</strong> $399/month for five users. Teams buy bands of 5, 10, or 15 users:
             Grow is $229 for 5 users, $299 for 10, and $399 for 15. Monthly billing costs more, at
-            $49 for Core with no commitment. Annual prices are paid upfront for the full year, and
-            the lower first-year prices Jobber is advertising until October 30, 2026 are a
-            promotion, not the standard rate. QuickBooks Online sync starts on Connect, job costing
-            on Grow, and card payments cost 2.9% + 30¢ online.
+            $49 for Core with no commitment. Annual prices are paid upfront for the full year.
+            Jobber&rsquo;s introductory offer ended on October 30, 2026, so these are the prices
+            new customers pay. QuickBooks Online sync starts on Connect, job costing on Grow, and
+            card payments cost 2.9% + 30¢ online.
           </p>
         </AnswerBlock>
 
         <section className="mt-12">
           <h2 className={H2}>Jobber plans and standard prices</h2>
           <p className={SUB}>
-            Monthly price in USD, excluding sales tax, from Jobber&rsquo;s pricing page on October
-            28, 2026. Standard rates only; introductory offers are covered below.
+            Monthly price in USD, excluding sales tax, from Jobber&rsquo;s pricing page on November
+            3, 2026. No introductory offer was running; promotions are covered below.
           </p>
           <div className={TABLE_WRAP}>
             <table className="tnum w-full min-w-[680px] border-collapse text-left">
@@ -241,17 +240,17 @@ export default function JobberPricingPage() {
         <div className="prose-body mt-12">
           <h2>Standard prices vs promotional prices</h2>
           <p>
-            Jobber&rsquo;s pricing page often shows two numbers for the same plan. During the offer
-            running when we checked, annual-prepaid plans showed a lower price for the first 12
-            months (Core $21/month, then $29), and monthly plans showed a lower price for the first
-            3 months. Jobber&rsquo;s terms say the offer applies to new customers who subscribe to
-            Core, Connect, Grow, or Plus before October 30, 2026 at 11:59 p.m. PT, and that the
-            savings are calculated against the no-commitment monthly list price.
+            When we checked on November 3, 2026, Jobber&rsquo;s pricing page showed no
+            introductory offer. The only saving it advertised was &ldquo;Save up to 25% with annual
+            billing&rdquo;, which is the gap between the annual-prepaid and monthly columns above,
+            not a temporary discount.
           </p>
           <p>
-            Every price in this article is the standard rate, the &ldquo;then&rdquo; price you pay
-            after any introductory period. If you sign up during a promotion, budget for the
-            standard rate from year two.
+            Jobber does run limited-time offers for new customers. The most recent one, which
+            ended on October 30, 2026 at 11:59 p.m. PT, lowered the first 12 months of
+            annual-prepaid plans (Core $21/month, then $29) and the first 3 months of monthly
+            plans. If a new offer is running when you sign up, the &ldquo;then&rdquo; price is the
+            standard rate shown in this article, so budget for it after the introductory period.
           </p>
 
           <h2>Annual prepaid vs monthly billing</h2>
@@ -556,7 +555,7 @@ export default function JobberPricingPage() {
           <ul>
             <li>QuickBooks sync starts on Connect, and job costing on Grow.</li>
             <li>Annual prepaid is paid upfront and non-refundable.</li>
-            <li>Promotional first-year prices make the standard rate easy to miss.</li>
+            <li>Limited-time introductory prices can make the standard rate easy to miss.</li>
             <li>Marketing Suite, Receptionist, and Pipeline cost extra below Plus.</li>
             <li>No QuickBooks Desktop sync is listed, and teams of 16 or more must contact sales.</li>
           </ul>
@@ -601,7 +600,7 @@ export default function JobberPricingPage() {
           <CalloutBox tone="verdict" title="Bottom line on Jobber pricing">
             Budget $29/month for a solo operator on Core, $99 for one user who needs QuickBooks
             Online, $149 for one user who needs job costing, and the 5, 10, or 15 user bands for
-            teams, all at standard annual-prepaid rates paid upfront. Ignore first-year promotional
+            teams, all at standard annual-prepaid rates paid upfront. Ignore any introductory
             prices when you compare, add 2.9% + 30¢ for online card payments, and price Plus
             against Grow if you want more than one add-on.
           </CalloutBox>

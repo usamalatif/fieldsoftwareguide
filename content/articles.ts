@@ -10,5 +10,5 @@
  */
 export const articleDates: Record<string, { firstPublished?: string; contentUpdated: string }> = {
   '/pricing/housecall-pro': { firstPublished: '2026-10-26', contentUpdated: '2026-10-26' },
-  '/pricing/jobber': { firstPublished: undefined, contentUpdated: '2026-10-28' },
+  '/pricing/jobber': { firstPublished: undefined, contentUpdated: '2026-11-03' },
 }
