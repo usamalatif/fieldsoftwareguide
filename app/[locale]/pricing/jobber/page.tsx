@@ -23,8 +23,8 @@ import { articleDates } from '@/content/articles'
  * so the article does not state them. Cost examples are arithmetic on the published rates.
  */
 
-// Dates live in content/articles.ts (shared with the sitemap). firstPublished stays
-// undefined until the article is actually live.
+// Dates live in content/articles.ts (shared with the sitemap). firstPublished is the
+// first production publish date and must not change afterwards.
 const { firstPublished, contentUpdated } = articleDates['/pricing/jobber']
 
 export const metadata = buildMetadata({
