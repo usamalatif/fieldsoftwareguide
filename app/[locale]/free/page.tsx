@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import { buildMetadata } from '@/lib/seo'
+import { staticRouteLastmod } from '@/lib/routes'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import { AnswerBlock } from '@/components/AnswerBlock'
 import { FAQSection } from '@/components/FAQSection'
 import { CalloutBox } from '@/components/CalloutBox'
 import { AuthorBio } from '@/components/AuthorBio'
 import { AdUnit } from '@/components/AdUnit'
-import { BreadcrumbJsonLd, FAQJsonLd } from '@/components/JsonLd'
+import { ArticleJsonLd, BreadcrumbJsonLd, FAQJsonLd } from '@/components/JsonLd'
 
 /**
  * /free/ — deep page. Target: "field service management software free" (590 vol, KD 5),
@@ -71,6 +72,15 @@ import { freeRows as rows } from '@/content/free-data'
 export default function FreePage() {
   return (
     <>
+      <ArticleJsonLd
+        headline="Best Free Field Service Management Software (2026)"
+        description="Compare genuinely free field service software with limited free plans and vendor trials. See the free tiers that exist and their limits before signing up."
+        slug="free"
+        // First production deploy 7d7f574 (2026-07-08) shipped this page; lastmod in lib/routes.ts.
+        datePublished="2026-07-08"
+        dateModified={staticRouteLastmod['/free']}
+        authorName="Usama Latif"
+      />
       <BreadcrumbJsonLd items={crumbs} />
       <FAQJsonLd items={faqs} />
       <section className="hero-band">

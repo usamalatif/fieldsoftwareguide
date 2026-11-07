@@ -118,6 +118,8 @@ export default function ComparePage() {
         headline="Best Field Service Management Software (2026)"
         description="Independent comparison of the major FSM platforms by published price, features, and best use case, with sourced strengths and limitations."
         slug="compare"
+        // First production deploy 7d7f574 (2026-07-08) shipped this page.
+        datePublished="2026-07-08"
         dateModified="2026-10-24"
         authorName="Usama Latif"
       />

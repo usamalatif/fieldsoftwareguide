@@ -6,6 +6,8 @@ import type { Industry } from '@/lib/industries'
  * plans rechecked 2026-10-24, Jobber Core standard annual rate rechecked 2026-10-22.
  * Only Jobber and Housecall Pro publish starting prices; ServiceTitan, Workiz,
  * FieldPulse are custom/quote and recorded as null (never guessed).
+ * 2026-11-07: removed the $299 "ceiling" (Jobber publishes Grow/Plus tiers above it, e.g.
+ * Plus 15 users $529); Jobber, Housecall Pro, Workiz and FieldPulse pricing rechecked.
  */
 export const hvac: Industry = {
   slug: 'hvac',
@@ -17,7 +19,7 @@ export const hvac: Industry = {
   datePublished: '2026-07-08',
 
   answer:
-    'The best HVAC field service management software depends on how many technicians you run. Small HVAC businesses usually start with Housecall Pro (Basic from $59/month billed annually; $79 month-to-month) or Jobber (Core from $29/month billed annually; $49 month-to-month). Both publish their prices and cover scheduling, dispatch, invoicing, and payments. Larger commercial HVAC operations that need dispatch and reporting at scale typically evaluate ServiceTitan, which is custom-quoted. Workiz and FieldPulse are mid-market alternatives, also quote-based. Before you buy, check three HVAC needs: maintenance-agreement tracking, equipment history per customer site, and QuickBooks sync, which neither Jobber Core nor Housecall Pro Basic includes. Published plans run from $29/month to $299/month (Housecall Pro MAX, up to 8 users) with annual billing; ServiceTitan is quoted separately.',
+    'The best HVAC field service management software depends on how many technicians you run. Small HVAC businesses usually start with Housecall Pro (Basic from $59/month billed annually; $79 month-to-month) or Jobber (Core from $29/month billed annually; $49 month-to-month). Both publish their prices and cover scheduling, dispatch, invoicing, and payments. Larger commercial HVAC operations that need dispatch and reporting at scale typically evaluate ServiceTitan, which is custom-quoted. Workiz and FieldPulse are mid-market alternatives, also quote-based. Before you buy, check three HVAC needs: maintenance-agreement tracking, equipment history per customer site, and QuickBooks sync, which neither Jobber Core nor Housecall Pro Basic includes. Published plans start at $29/month (Jobber Core) and $59/month (Housecall Pro Basic) with annual billing and rise with team size, up to $529/month for Jobber Plus with 15 users; ServiceTitan is quoted separately.',
 
   intro:
     'HVAC companies live and die by scheduling and recurring maintenance contracts. The right FSM software has to handle seasonal demand spikes, track equipment and warranty history per site, manage maintenance agreements, and get invoices out the same day a tech leaves the job. QuickBooks sync is non-negotiable for most shops, and a fast mobile app matters because your techs are on rooftops, not at desks.',
@@ -33,9 +35,10 @@ export const hvac: Industry = {
 
   priceRange: {
     min: 29,
-    max: 299,
-    note: 'Published plans run $29/mo (Jobber Core, annual billing; $49 month-to-month) to $299/mo (Housecall Pro MAX, up to 8 users, annual billing; $329 month-to-month). ServiceTitan, Workiz, and FieldPulse are custom-quoted.',
-    source: { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-24' },
+    // No ceiling: Jobber publishes tiers above $299 (e.g. Grow 15 users $399, Plus 15 users $529).
+    max: null,
+    note: 'Published plans start at $29/mo (Jobber Core, 1 user, annual billing; $49 month-to-month) and $59/mo (Housecall Pro Basic, 1 user). Prices rise with team size and features, for example Housecall Pro MAX at $299/mo for up to 8 users and Jobber Plus at $529/mo for 15 users (annual billing). ServiceTitan, Workiz, and FieldPulse are custom-quoted.',
+    source: { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-07' },
     structured: true,
   },
 
@@ -52,7 +55,7 @@ export const hvac: Industry = {
   bySize: [
     { size: 'Solo HVAC technician', pick: 'Jobber Core ($29/mo)', why: 'Lowest published entry price. QuickBooks sync starts on the higher Connect plan, so budget more if you need it.' },
     { size: 'Small shop, 2–5 users', pick: 'Housecall Pro Essentials ($149/mo, up to 5 users)', why: 'Includes QuickBooks Online sync. Housecall Pro also supports QuickBooks Desktop; confirm which plan includes it.' },
-    { size: 'Growing shop, up to 8 users', pick: 'Housecall Pro MAX ($299/mo, up to 8 users)', why: 'Highest published plan in this comparison; extra users are $35/mo each.' },
+    { size: 'Growing shop, up to 8 users', pick: 'Housecall Pro MAX ($299/mo, up to 8 users)', why: 'Housecall Pro’s largest published plan; extra users are $35/mo each. For bigger teams, Jobber publishes 10- and 15-user prices, up to $529/mo for Plus with 15 users (annual billing).' },
     { size: 'Mid-size, multiple crews', pick: 'Workiz or FieldPulse (custom quote)', why: 'Neither publishes a price. Get quotes for your technician count and compare them with Housecall Pro MAX.' },
     { size: 'Commercial or high-volume', pick: 'ServiceTitan (custom quote)', why: 'Built for larger commercial and high-volume residential operations; expect a sales-led demo and quote.' },
   ],
@@ -89,7 +92,7 @@ export const hvac: Industry = {
     {
       question: 'How much does HVAC field service software cost?',
       answer:
-        'Published plans run from $29/month (Jobber Core, 1 user, billed annually; $49 month-to-month) to $299/month (Housecall Pro MAX, up to 8 users, billed annually; $329 month-to-month). ServiceTitan, Workiz, and FieldPulse are quote-based and scale with the number of technicians.',
+        'Published plans start at $29/month for Jobber Core (1 user, billed annually; $49 month-to-month) and $59/month for Housecall Pro Basic (1 user). Cost rises with team size and features: Housecall Pro MAX is $299/month for up to 8 users ($329 month-to-month), and Jobber’s 15-user tiers run up to $529/month on Plus, both billed annually. ServiceTitan, Workiz, and FieldPulse are quote-based and scale with the number of technicians.',
     },
     {
       question: 'Is ServiceTitan worth it for a small HVAC company?',
@@ -108,14 +111,14 @@ export const hvac: Industry = {
     },
   ],
 
-  lastUpdated: '2026-10-24',
+  lastUpdated: '2026-11-07',
   dataVerified: true,
   sources: [
-    { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-22' },
-    { name: 'Housecall Pro pricing (plans, users, Basic features)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-24' },
+    { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-07' },
+    { name: 'Housecall Pro pricing (plans, users, Basic features)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-07' },
     { name: 'Housecall Pro QuickBooks (Online + Desktop)', url: 'https://www.housecallpro.com/quickbooks/', checked: '2026-07-08' },
     { name: 'ServiceTitan pricing', url: 'https://www.servicetitan.com/pricing', checked: '2026-07-08' },
-    { name: 'Workiz pricing', url: 'https://www.workiz.com/pricing-plans/', checked: '2026-07-08' },
-    { name: 'FieldPulse pricing', url: 'https://www.fieldpulse.com/pricing', checked: '2026-07-08' },
+    { name: 'Workiz pricing (request pricing only)', url: 'https://www.workiz.com/pricing-plans/', checked: '2026-11-07' },
+    { name: 'FieldPulse pricing (custom quote)', url: 'https://www.fieldpulse.com/pricing', checked: '2026-11-07' },
   ],
 }
