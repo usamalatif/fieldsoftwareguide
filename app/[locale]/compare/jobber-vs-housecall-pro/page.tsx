@@ -8,6 +8,7 @@ import { AuthorBio } from '@/components/AuthorBio'
 import { AdUnit } from '@/components/AdUnit'
 import { BreadcrumbJsonLd, FAQJsonLd, ArticleJsonLd } from '@/components/JsonLd'
 import { getProvider } from '@/lib/providers'
+import { staticRouteLastmod } from '@/lib/routes'
 
 /**
  * /compare/jobber-vs-housecall-pro — target "jobber vs housecall pro" (480 vol, KD 17).
@@ -15,6 +16,9 @@ import { getProvider } from '@/lib/providers'
  * from the live pricing configurator (Jobber now sells team-size bands: Just me / 2-5 /
  * 6-10 / 11-15 / 16+). Housecall Pro from its pricing page. Fees from each vendor's
  * published rates. Do not edit numbers without re-verifying.
+ * 2026-11-07: Jobber offline support corrected from its help center (timers, checklists,
+ * notes, attachments work offline and sync later; team info and location-based timers
+ * need a connection). Marketing Suite corrected to $99/mo (Jobber pricing page, 2026-11-07).
  */
 
 export const metadata = buildMetadata({
@@ -23,7 +27,7 @@ export const metadata = buildMetadata({
     'Jobber vs Housecall Pro with verified July 2026 pricing on both billing bases, payment fees, QuickBooks support, and the real feature differences.',
   slug: 'compare/jobber-vs-housecall-pro',
   type: 'article',
-  modifiedTime: '2026-10-24',
+  modifiedTime: staticRouteLastmod['/compare/jobber-vs-housecall-pro'],
 })
 
 const crumbs = [
@@ -69,12 +73,12 @@ const quick: { label: string; jobber: string; hcp: string }[] = [
   { label: 'Card processing', jobber: '2.9% + 30¢ flat', hcp: '2.59% in person · 2.99% online · 3.49% keyed/Amex' },
   { label: 'ACH / bank payment', jobber: '1%', hcp: '1%' },
   { label: 'QuickBooks', jobber: 'Online only (Connect plan +)', hcp: 'Online (Essentials +) and Desktop (plan not published)' },
-  { label: 'Review management', jobber: 'Add-on ($79/mo Marketing Suite) or Plus', hcp: 'Included on Basic' },
+  { label: 'Review management', jobber: 'Add-on ($99/mo Marketing Suite) or Plus', hcp: 'Included on Basic' },
   { label: 'Two-way SMS', jobber: 'Grow and Plus only', hcp: 'Customer communication incl. from Basic' },
   { label: 'Online booking', jobber: 'All plans (incl. Core)', hcp: 'All plans + Reserve with Google' },
   { label: 'Website builder', jobber: 'Included on every plan', hcp: 'Paid add-on (Websites)' },
   { label: 'Consumer financing', jobber: 'Wisetack (3.9% contractor cost)', hcp: 'Wisetack (from 3.9%)' },
-  { label: 'Offline mode (mobile)', jobber: 'Not documented', hcp: 'Documented (view-only)' },
+  { label: 'Offline mode (mobile)', jobber: 'Documented: timers, checklists, notes, attachments; syncs when back online', hcp: 'Documented (view-only)' },
   { label: 'Free trial', jobber: '14 days, Grow plan, no card', hcp: '14 days, MAX plan, no card' },
 ]
 
@@ -88,7 +92,7 @@ export default function JobberVsHousecallProPage() {
         description="Verified pricing on both billing bases, payment fees, QuickBooks support, and the real feature differences between Jobber and Housecall Pro."
         slug="compare/jobber-vs-housecall-pro"
         datePublished="2026-07-08"
-        dateModified="2026-10-24"
+        dateModified={staticRouteLastmod['/compare/jobber-vs-housecall-pro']}
         authorName="Usama Latif"
       />
       <BreadcrumbJsonLd items={crumbs} />
@@ -108,7 +112,7 @@ export default function JobberVsHousecallProPage() {
       </section>
 
       <div className="mx-auto max-w-[900px] px-5 py-14 md:px-10">
-        <AnswerBlock lastUpdated="July 2026">
+        <AnswerBlock lastUpdated="November 2026">
           <p>
             <strong>For solo operators and price-sensitive small teams, Jobber wins</strong> — Core
             is $29/month billed annually ($49 month-to-month) vs Housecall Pro Basic at $59/$79, and
@@ -116,7 +120,7 @@ export default function JobberVsHousecallProPage() {
             <strong>For teams that live in QuickBooks Desktop, want review management cheap, or
             need a bigger phone-and-office stack, Housecall Pro wins</strong> — it is the only one
             of the two with QuickBooks Desktop sync, it bundles review management into its $59
-            Basic plan (Jobber charges $79/month extra below Plus), and it offers payroll, VoIP,
+            Basic plan (Jobber charges $99/month for Marketing Suite below Plus), and it offers payroll, VoIP,
             and human call-answering add-ons Jobber doesn’t have. At 5 users the prices converge:
             $149/month annual on both (Jobber Connect vs Housecall Pro Essentials). Both run
             14-day full-feature trials with no credit card — trial both on real jobs before
@@ -167,7 +171,7 @@ export default function JobberVsHousecallProPage() {
             users; not sold for 1 user). Month-to-month runs higher — Core $49, Connect $139–$399,
             Grow $199–$499, Plus $499–$699. There is a middle option: a 12-month commitment billed
             monthly (e.g. Core $39). Extra users are $29/month each, and 16+ teams are quoted by
-            sales. Add-ons: Marketing Suite $79/month, AI Receptionist $29/month, Pipeline
+            sales. Add-ons: Marketing Suite $99/month, AI Receptionist $29/month, Pipeline
             $49/month — all included free on Plus.
           </p>
           <p>
@@ -231,7 +235,7 @@ export default function JobberVsHousecallProPage() {
             <strong>Customer communication &amp; reviews:</strong> Housecall Pro includes review
             management (Google + Facebook dashboard) and customer communication in its $59 Basic
             plan. On Jobber, two-way SMS requires Grow or Plus, and review management requires the
-            $79/month Marketing Suite or the Plus plan — the clearest Housecall Pro value win at the
+            $99/month Marketing Suite or the Plus plan — the clearest Housecall Pro value win at the
             entry level.
           </p>
           <p>
@@ -242,7 +246,12 @@ export default function JobberVsHousecallProPage() {
           <p>
             <strong>Mobile app:</strong> Housecall Pro documents offline viewing (schedule and job
             details, no editing) and shows 4.5-star App Store and Google Play ratings on its site.
-            Jobber doesn’t document an offline mode and publishes no app-store ratings on its site.
+            Jobber’s help center says its app keeps working without a connection: you can start and
+            stop timers, fill out checklists (formerly called job forms), and add notes or
+            attachments, and entries save on the device and sync automatically once you are back
+            online. Current team information may not show offline, and location-based timers and
+            reports need a connection. Checklists start on Jobber’s Connect plan. Jobber publishes
+            no app-store ratings on its site.
           </p>
 
           <h2>What one has that the other doesn’t</h2>
@@ -343,12 +352,13 @@ export default function JobberVsHousecallProPage() {
                 { name: 'Housecall Pro review management', url: 'https://www.housecallpro.com/features/review-management/' },
                 { name: 'Housecall Pro online booking (Reserve with Google)', url: 'https://www.housecallpro.com/features/online-booking/' },
                 { name: 'Housecall Pro mobile app (offline, ratings)', url: 'https://www.housecallpro.com/features/mobile-app/' },
-              ].map((s) => (
+                { name: 'Jobber app troubleshooting (offline use and syncing)', url: 'https://help.getjobber.com/hc/en-us/articles/360037203234-Troubleshooting-Tips-How-to-Help-Us-Help-You', checked: '2026-11-07' },
+              ].map((s: { name: string; url: string; checked?: string }) => (
                 <li key={s.url}>
                   <a href={s.url} target="_blank" rel="nofollow noopener" className="hover:text-orange-600">
                     {s.name}
                   </a>{' '}
-                  <span className="text-slate-400">· checked 2026-07-08</span>
+                  <span className="text-slate-400">· checked {s.checked ?? '2026-07-08'}</span>
                 </li>
               ))}
             </ul>

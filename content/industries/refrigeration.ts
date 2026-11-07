@@ -7,6 +7,8 @@ import type { Industry } from '@/lib/industries'
  * tracking verified for ServiceTitan, Commusoft, Workiz, Housecall Pro, FieldPulse —
  * NOT Jobber. EPA 608 logging is a buildable-custom-fields claim, not a named feature.
  * Only Jobber and Housecall Pro publish starting prices (annual-billing rates).
+ * 2026-11-07: removed the $299 "ceiling" (Jobber Plus 15 users $529); Jobber and Housecall Pro
+ * pricing rechecked; "only major FSM vendors" narrowed to the six platforms reviewed.
  * 2026-10-24: Housecall Pro plans rechecked. Refrigerant rules from epa.gov: Section 608
  * (40 CFR 82 Subpart F) for ozone-depleting refrigerants, 50+ lb; AIM Act ER&R (40 CFR 84
  * Subpart C) for HFCs/substitutes with GWP > 53, 15+ lb, leak repair from 2026-01-01;
@@ -23,7 +25,7 @@ export const refrigeration: Industry = {
   datePublished: '2026-07-08',
 
   answer:
-    'The best refrigeration service management software in 2026 starts with the two vendors that market refrigeration-specific products: ServiceTitan (dedicated refrigeration vertical) and Commusoft (commercial refrigeration software with asset tracking and job costing), both custom-quoted. Smaller refrigeration shops can start on Housecall Pro (from $59/month billed annually) or Jobber (from $29/month billed annually), though both market to HVAC rather than refrigeration, and Jobber has no native per-asset tracking. Workiz is a mid-market option with per-unit equipment tracking, also custom-priced. Refrigeration teams need fast emergency dispatch for warm-box calls, maintenance-agreement tracking for grocery and restaurant accounts, per-asset history with refrigerant details, and a way to record refrigerant added for EPA leak repair and recordkeeping rules. Published plans run $29–$299/month with annual billing; ServiceTitan and Commusoft are quoted separately.',
+    'The best refrigeration service management software in 2026 starts with the two vendors that market refrigeration-specific products: ServiceTitan (dedicated refrigeration vertical) and Commusoft (commercial refrigeration software with asset tracking and job costing), both custom-quoted. Smaller refrigeration shops can start on Housecall Pro (from $59/month billed annually) or Jobber (from $29/month billed annually), though both market to HVAC rather than refrigeration, and Jobber has no native per-asset tracking. Workiz is a mid-market option with per-unit equipment tracking, also custom-priced. Refrigeration teams need fast emergency dispatch for warm-box calls, maintenance-agreement tracking for grocery and restaurant accounts, per-asset history with refrigerant details, and a way to record refrigerant added for EPA leak repair and recordkeeping rules. Published plans start at $29/month (Jobber Core, 1 user) and $59/month (Housecall Pro Basic, 1 user) with annual billing and rise with team size, for example $299/month for Housecall Pro MAX (up to 8 users) and $529/month for Jobber Plus (15 users); ServiceTitan and Commusoft are quoted separately.',
 
   intro:
     'Commercial refrigeration is unforgiving: a warm walk-in can spoil thousands of dollars of inventory in hours, so response speed and reliable service history define the business. The right FSM software has to route emergency "warm-box" calls fast, keep per-unit history (make, model, refrigerant type) for every cooler and ice machine, manage recurring maintenance agreements that keep grocery and restaurant accounts compliant, and support EPA 608 refrigerant record-keeping. Techs need a mobile app that logs readings and captures parts on site, and same-day invoicing keeps recurring-contract cash flowing.',
@@ -41,7 +43,7 @@ export const refrigeration: Industry = {
     min: 29,
     max: null,
     note: 'The refrigeration-specific platforms (ServiceTitan, Commusoft) are custom-quoted and scale with technicians and contracts. Jobber publishes plans from $29/mo and Housecall Pro from $59/mo (annual billing) for smaller refrigeration shops.',
-    source: { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-22' },
+    source: { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-07' },
     structured: false,
   },
 
@@ -85,7 +87,7 @@ export const refrigeration: Industry = {
     {
       question: 'What FSM software do commercial refrigeration companies use?',
       answer:
-        'ServiceTitan and Commusoft are the only major FSM vendors with dedicated commercial-refrigeration products (both custom-quoted). Smaller refrigeration shops often look at Housecall Pro (from $59/month billed annually) or Jobber (from $29/month billed annually), which market to HVAC but cover scheduling, dispatch, and invoicing.',
+        'Of the six platforms we review, ServiceTitan and Commusoft are the only two with dedicated commercial-refrigeration products (both custom-quoted). Smaller refrigeration shops often look at Housecall Pro (from $59/month billed annually) or Jobber (from $29/month billed annually), which market to HVAC but cover scheduling, dispatch, and invoicing.',
     },
     {
       question: 'Can it handle 24/7 emergency and warm-box calls?',
@@ -114,11 +116,11 @@ export const refrigeration: Industry = {
     },
   ],
 
-  lastUpdated: '2026-10-24',
+  lastUpdated: '2026-11-07',
   dataVerified: true,
   sources: [
-    { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-22' },
-    { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-24' },
+    { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-07' },
+    { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-07' },
     { name: 'EPA Section 608 leak repair requirements', url: 'https://www.epa.gov/section608/stationary-refrigeration-leak-repair-requirements', checked: '2026-10-24' },
     { name: 'EPA Section 608 recordkeeping and reporting', url: 'https://www.epa.gov/section608/recordkeeping-and-reporting-requirements-stationary-refrigeration', checked: '2026-10-24' },
     { name: 'EPA AIM Act Emissions Reduction and Reclamation fact sheet (HFC leak repair, ALD)', url: 'https://www.epa.gov/system/files/documents/2024-09/err-fact-sheet.pdf', checked: '2026-10-24' },
