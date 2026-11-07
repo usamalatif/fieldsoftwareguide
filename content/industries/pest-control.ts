@@ -9,7 +9,9 @@ import type { Industry } from '@/lib/industries'
  * Chemical tracking: Jobber's chemical-tracking page documents chemical + registration-number
  * capture (help center: "select plans", recorded on jobber.com, not the mobile app);
  * ServiceTitan documents chemical tracking for pest/lawn/pool accounts (limited rollout,
- * no registration-number field listed); FieldPulse has treatment-log checklists.
+ * requires the Purchasing module and account configuration, no registration-number field
+ * listed); FieldPulse has treatment-log checklists. Jobber route optimization is run on
+ * jobber.com, not in the mobile app (the app shows the optimized order).
  * 2026-11-07: Jobber route optimization is Connect, Grow and Plus (help center), so the solo
  * pick moved from Core to Connect; removed the $299 "ceiling" (Jobber Plus 15 users $529).
  * NONE of the six documents state pesticide-use reporting — that's pest-specific
@@ -29,7 +31,7 @@ export const pestControl: Industry = {
   datePublished: '2026-07-08',
 
   answer:
-    'Pest control is where generalist FSM software hits its limits, so the honest answer depends on your compliance burden. Among the six major FSM vendors, Jobber is the strongest generalist fit. Its chemical tracking page says it records the chemicals and pesticides used on each job with their registration numbers and target pests, and route optimization and automatic payments start on Connect ($99/month billed annually for one user; Core at $29/month does not include route optimization). Housecall Pro (from $59/month billed annually) covers scheduling and dispatch, with route optimization and Recurring Service Plans listed on MAX ($299/month for up to 8 users). FieldPulse handles monthly and seasonal service agreements with treatment-log checklists (custom-quoted). ServiceTitan hands pest control to FieldRoutes, its pest-specific platform, and Workiz and Commusoft have no pest-control product page at all. Critically, none of the six generates state pesticide-use reports. If you file California, Arizona, or New York reports, use a pest-specific platform: PestPac (EPA-number database plus state reports, quote-based) or GorillaDesk (published pricing from $49/month per route).',
+    'Pest control is where generalist FSM software hits its limits, so the honest answer depends on your compliance burden. Among the six major FSM vendors, Jobber is the strongest generalist fit. Its chemical tracking page says it records the chemicals and pesticides used on each job with their registration numbers and target pests, and route optimization and automatic payments start on Connect ($99/month billed annually for one user; Core at $29/month does not include route optimization). Jobber runs route optimization on jobber.com rather than in its mobile app. Housecall Pro (from $59/month billed annually) covers scheduling and dispatch, with route optimization and Recurring Service Plans listed on MAX ($299/month for up to 8 users). FieldPulse handles monthly and seasonal service agreements with treatment-log checklists (custom-quoted). ServiceTitan hands pest control to FieldRoutes, its pest-specific platform, and Workiz and Commusoft have no pest-control product page at all. Critically, none of the six generates state pesticide-use reports. If you file California, Arizona, or New York reports, use a pest-specific platform: PestPac (EPA-number database plus state reports, quote-based) or GorillaDesk (published pricing from $49/month per route).',
 
   intro:
     'Pest control runs on dense recurring routes and regulatory record-keeping. Every stop needs the treatment plan, the products applied — with registration numbers — and the bait-station checks documented, and in states like California, Arizona, and New York that record feeds mandatory pesticide-use reports. The right software has to automate quarterly and monthly recurrences, charge cards on file for commercial accounts, optimize tightly packed residential routes, and keep chemical records audit-ready. Generalist FSM tools cover the scheduling and billing side well; the compliance side is where pest-specific platforms earn their keep.',
@@ -62,7 +64,7 @@ export const pestControl: Industry = {
   ],
 
   bySize: [
-    { size: 'Solo operator, no state reporting', pick: 'Jobber Connect ($99/mo, 1 user)', why: 'Route optimization starts on Connect, and Jobber documents chemical tracking with registration numbers (on select plans, recorded on jobber.com rather than the mobile app). Core ($29/mo) is cheaper but has no route optimization.' },
+    { size: 'Solo operator, no state reporting', pick: 'Jobber Connect ($99/mo, 1 user)', why: 'Route optimization starts on Connect (run on jobber.com, not in the mobile app), and Jobber documents chemical tracking with registration numbers (on select plans, recorded on jobber.com rather than the mobile app). Core ($29/mo) is cheaper but has no route optimization.' },
     { size: 'Pest-only business with 1–3 routes', pick: 'GorillaDesk Basic ($49/mo for the first route)', why: 'Pest-specific tool with published per-route pricing; on Basic, routes 2 and 3 add $50/mo each.' },
     { size: 'Recurring commercial accounts', pick: 'Housecall Pro or FieldPulse', why: 'Housecall Pro lists Recurring Service Plans and route optimization on MAX ($299/mo, up to 8 users); FieldPulse handles service agreements with treatment-log checklists (custom quote).' },
     { size: 'Operation filing state pesticide-use reports', pick: 'PestPac (custom quote)', why: 'Builds in California, Arizona, and New York reports and an EPA-number chemical database; none of the six generalist FSM tools documents this.' },
@@ -95,12 +97,12 @@ export const pestControl: Industry = {
     {
       question: 'What is the best pest control software for a small business?',
       answer:
-        'A solo operator without state reporting can start on Jobber Connect ($99/month billed annually for one user), the first Jobber plan with route optimization; Jobber also documents chemical tracking on select plans. Jobber Core ($29/month) is cheaper but has no route optimization. A pest-only business that wants a pest-specific tool can compare GorillaDesk, which starts at $49/month for the first route. If you file California, Arizona, or New York pesticide-use reports, look at PestPac.',
+        'A solo operator without state reporting can start on Jobber Connect ($99/month billed annually for one user), the first Jobber plan with route optimization, which you run on jobber.com rather than in the mobile app; Jobber also documents chemical tracking on select plans. Jobber Core ($29/month) is cheaper but has no route optimization. A pest-only business that wants a pest-specific tool can compare GorillaDesk, which starts at $49/month for the first route. If you file California, Arizona, or New York pesticide-use reports, look at PestPac.',
     },
     {
       question: 'Can FSM software track chemicals and application rates?',
       answer:
-        'Partially. Jobber’s chemical tracking page says it records chemicals and pesticides with their registration numbers and target pests, but its help center says the feature is on select plans and is entered on jobber.com, not in the mobile app. ServiceTitan documents chemical tracking for pest, lawn, and pool accounts (product, amount, dilution, and technician license number, logged in its mobile app), currently rolling out to a limited number of pest control accounts. FieldPulse supports treatment-log checklists. PestPac keeps a chemical database in which every chemical carries its EPA registration number, concentration, and quantity, auto-populated from the mobile app.',
+        'Partially. Jobber’s chemical tracking page says it records chemicals and pesticides with their registration numbers and target pests, but its help center says the feature is on select plans and is entered on jobber.com, not in the mobile app. ServiceTitan documents chemical tracking for pest, lawn, and pool accounts (product, amount, dilution, and technician license number, logged in its mobile app), but the feature is currently rolling out to a limited number of pest control accounts and requires ServiceTitan’s Purchasing module plus account configuration. FieldPulse supports treatment-log checklists. PestPac keeps a chemical database in which every chemical carries its EPA registration number, concentration, and quantity, auto-populated from the mobile app.',
     },
     {
       question: 'Does any FSM software generate state pesticide-use reports?',
@@ -133,8 +135,8 @@ export const pestControl: Industry = {
     { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-07' },
     { name: 'Jobber chemical tracking (registration numbers, target pests)', url: 'https://www.getjobber.com/features/chemical-tracking/', checked: '2026-11-07' },
     { name: 'Jobber help: chemical tracking (select plans, jobber.com only)', url: 'https://help.getjobber.com/en/articles/chemical-tracking/', checked: '2026-11-07' },
-    { name: 'Jobber help: route optimization (Connect, Grow, Plus)', url: 'https://help.getjobber.com/en/articles/route-optimization-new-schedule/', checked: '2026-11-07' },
-    { name: 'ServiceTitan chemical tracking overview', url: 'https://help.servicetitan.com/docs/chemical-tracking-overview', checked: '2026-11-07' },
+    { name: 'Jobber help: route optimization (Connect, Grow, Plus; run on jobber.com)', url: 'https://help.getjobber.com/en/articles/route-optimization-new-schedule/', checked: '2026-11-07' },
+    { name: 'ServiceTitan chemical tracking overview (limited rollout, Purchasing module required)', url: 'https://help.servicetitan.com/v1/docs/chemical-tracking-overview', checked: '2026-11-07' },
     { name: 'Housecall Pro pricing (route optimization and Recurring Service Plans on MAX)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-07' },
   ],
 }

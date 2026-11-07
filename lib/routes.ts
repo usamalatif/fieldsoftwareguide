@@ -16,7 +16,7 @@ export const staticRouteLastmod: Record<string, string> = {
   '/by-industry': '2026-10-24',
   '/by-size': '2026-10-31',
   '/compare': '2026-10-24',
-  '/compare/jobber-vs-housecall-pro': '2026-10-24',
+  '/compare/jobber-vs-housecall-pro': '2026-11-07',
   '/free': '2026-10-24',
   '/quickbooks': '2026-10-24',
   '/pricing/housecall-pro': articleDates['/pricing/housecall-pro'].contentUpdated,

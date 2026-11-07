@@ -136,8 +136,8 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
                   </tr>
                   <tr>
                     <th scope="row" className="p-4 font-semibold">Technician visits at customer sites</th>
-                    <td className="p-4">Field service management tool</td>
-                    <td className="p-4">Dispatch, routing, asset history, inspection forms and permissions</td>
+                    <td className="p-4">Rental platform’s field-service tools first; add an FSM tool if they fall short</td>
+                    <td className="p-4">Dispatch, routing, on-site invoicing and payments, asset history and inspection forms</td>
                   </tr>
                   <tr>
                     <th scope="row" className="p-4 font-semibold">Bookings plus service operations</th>
