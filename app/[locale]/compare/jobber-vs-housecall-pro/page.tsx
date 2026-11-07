@@ -18,7 +18,7 @@ import { staticRouteLastmod } from '@/lib/routes'
  * published rates. Do not edit numbers without re-verifying.
  * 2026-11-07: Jobber offline support corrected from its help center (timers, checklists,
  * notes, attachments work offline and sync later; team info and location-based timers
- * need a connection).
+ * need a connection). Marketing Suite corrected to $99/mo (Jobber pricing page, 2026-11-07).
  */
 
 export const metadata = buildMetadata({
@@ -73,7 +73,7 @@ const quick: { label: string; jobber: string; hcp: string }[] = [
   { label: 'Card processing', jobber: '2.9% + 30¢ flat', hcp: '2.59% in person · 2.99% online · 3.49% keyed/Amex' },
   { label: 'ACH / bank payment', jobber: '1%', hcp: '1%' },
   { label: 'QuickBooks', jobber: 'Online only (Connect plan +)', hcp: 'Online (Essentials +) and Desktop (plan not published)' },
-  { label: 'Review management', jobber: 'Add-on ($79/mo Marketing Suite) or Plus', hcp: 'Included on Basic' },
+  { label: 'Review management', jobber: 'Add-on ($99/mo Marketing Suite) or Plus', hcp: 'Included on Basic' },
   { label: 'Two-way SMS', jobber: 'Grow and Plus only', hcp: 'Customer communication incl. from Basic' },
   { label: 'Online booking', jobber: 'All plans (incl. Core)', hcp: 'All plans + Reserve with Google' },
   { label: 'Website builder', jobber: 'Included on every plan', hcp: 'Paid add-on (Websites)' },
@@ -120,7 +120,7 @@ export default function JobberVsHousecallProPage() {
             <strong>For teams that live in QuickBooks Desktop, want review management cheap, or
             need a bigger phone-and-office stack, Housecall Pro wins</strong> — it is the only one
             of the two with QuickBooks Desktop sync, it bundles review management into its $59
-            Basic plan (Jobber charges $79/month extra below Plus), and it offers payroll, VoIP,
+            Basic plan (Jobber charges $99/month for Marketing Suite below Plus), and it offers payroll, VoIP,
             and human call-answering add-ons Jobber doesn’t have. At 5 users the prices converge:
             $149/month annual on both (Jobber Connect vs Housecall Pro Essentials). Both run
             14-day full-feature trials with no credit card — trial both on real jobs before
@@ -171,7 +171,7 @@ export default function JobberVsHousecallProPage() {
             users; not sold for 1 user). Month-to-month runs higher — Core $49, Connect $139–$399,
             Grow $199–$499, Plus $499–$699. There is a middle option: a 12-month commitment billed
             monthly (e.g. Core $39). Extra users are $29/month each, and 16+ teams are quoted by
-            sales. Add-ons: Marketing Suite $79/month, AI Receptionist $29/month, Pipeline
+            sales. Add-ons: Marketing Suite $99/month, AI Receptionist $29/month, Pipeline
             $49/month — all included free on Plus.
           </p>
           <p>
@@ -235,7 +235,7 @@ export default function JobberVsHousecallProPage() {
             <strong>Customer communication &amp; reviews:</strong> Housecall Pro includes review
             management (Google + Facebook dashboard) and customer communication in its $59 Basic
             plan. On Jobber, two-way SMS requires Grow or Plus, and review management requires the
-            $79/month Marketing Suite or the Plus plan — the clearest Housecall Pro value win at the
+            $99/month Marketing Suite or the Plus plan — the clearest Housecall Pro value win at the
             entry level.
           </p>
           <p>
