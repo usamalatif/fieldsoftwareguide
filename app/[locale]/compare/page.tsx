@@ -257,6 +257,8 @@ export default function ComparePage() {
             score. We do not publish star ratings. See{' '}
             <Link href="/how-we-review" className="font-semibold text-orange-600 dark:text-orange-400">how we review</Link>{' '}
             for the full method, our{' '}
+            <Link href="/pricing" className="font-semibold text-orange-600 dark:text-orange-400">field service software pricing</Link>{' '}
+            guide, our{' '}
             <Link href="/pricing/housecall-pro" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro pricing</Link>{' '}
             breakdown, or the head-to-head{' '}
             <Link href="/compare/jobber-vs-housecall-pro" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs Housecall Pro</Link>{' '}

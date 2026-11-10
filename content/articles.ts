@@ -9,6 +9,7 @@
  * for a redeploy.
  */
 export const articleDates: Record<string, { firstPublished?: string; contentUpdated: string }> = {
+  '/pricing': { contentUpdated: '2026-11-10' },
   '/pricing/housecall-pro': { firstPublished: '2026-10-26', contentUpdated: '2026-10-26' },
   '/pricing/jobber': { firstPublished: '2026-11-03', contentUpdated: '2026-11-03' },
 }

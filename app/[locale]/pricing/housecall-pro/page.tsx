@@ -39,6 +39,7 @@ export const metadata = buildMetadata({
 
 const crumbs = [
   { name: 'Home', href: '/' },
+  { name: 'Pricing', href: '/pricing' },
   { name: 'Housecall Pro Pricing', href: '/pricing/housecall-pro' },
 ]
 
@@ -356,6 +357,7 @@ export default function HousecallProPricingPage() {
           <div className="mt-8 flex flex-wrap gap-4 border-t border-slate-200 pt-6 text-sm font-semibold dark:border-slate-800">
             <Link href="/compare/jobber-vs-housecall-pro" className="text-orange-600 hover:text-orange-800">Jobber vs Housecall Pro →</Link>
             <Link href="/quickbooks" className="text-orange-600 hover:text-orange-800">QuickBooks compatibility →</Link>
+            <Link href="/pricing" className="text-orange-600 hover:text-orange-800">All FSM software pricing →</Link>
             <Link href="/compare" className="text-orange-600 hover:text-orange-800">Compare all FSM software →</Link>
           </div>
           <div className="mt-10 border-t border-slate-200 pt-6 dark:border-slate-800">
