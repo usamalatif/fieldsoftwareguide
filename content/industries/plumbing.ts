@@ -10,6 +10,8 @@ import type { Industry } from '@/lib/industries'
  * Housecall Pro's prebuilt flat-rate plumbing books come via Profit Rhino at $199/mo extra.
  * Only Jobber and Housecall Pro publish starting prices (annual-billing rates).
  * 2026-10-24: Housecall Pro plans rechecked (Basic $59, Essentials $149 / 5 users, MAX $299 / 8 users).
+ * 2026-11-07: removed the $299 "ceiling" (Jobber publishes tiers above it, e.g. Plus 15 users
+ * $529); Profit Rhino $199/mo confirmed in Housecall Pro's help center (updated 2026-08-06).
  */
 export const plumbing: Industry = {
   slug: 'plumbing',
@@ -37,9 +39,10 @@ export const plumbing: Industry = {
 
   priceRange: {
     min: 29,
-    max: 299,
-    note: 'Published plans run $29/mo (Jobber Core, annual billing; $49 month-to-month) to $299/mo (Housecall Pro MAX, annual billing; $329 month-to-month). ServiceTitan, Workiz, FieldPulse, and Commusoft are custom-quoted. Prebuilt flat-rate books (e.g. Profit Rhino for Housecall Pro) run ~$199/mo extra.',
-    source: { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-24' },
+    // No ceiling: Jobber publishes tiers above $299 (e.g. Grow 15 users $399, Plus 15 users $529).
+    max: null,
+    note: 'Published plans start at $29/mo (Jobber Core, 1 user, annual billing; $49 month-to-month) and $59/mo (Housecall Pro Basic, 1 user). Prices rise with team size and features, for example Housecall Pro MAX at $299/mo for up to 8 users and Jobber Plus at $529/mo for 15 users (annual billing). ServiceTitan, Workiz, FieldPulse, and Commusoft are custom-quoted. Prebuilt flat-rate books (Profit Rhino for Housecall Pro) cost $199/mo extra.',
+    source: { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-07' },
     structured: true,
   },
 
@@ -57,7 +60,7 @@ export const plumbing: Industry = {
   bySize: [
     { size: 'Solo plumber', pick: 'Jobber Core ($29/mo)', why: 'Lowest published price. No dedicated flat-rate pricebook and no QuickBooks sync on Core.' },
     { size: 'Small shop, 2–5 users', pick: 'Housecall Pro Essentials ($149/mo, up to 5 users)', why: 'Native price book and flat-rate pricing, plus QuickBooks Online sync from this plan (confirm the plan for Desktop). Prebuilt flat-rate plumbing books via Profit Rhino cost about $199/mo extra.' },
-    { size: 'Growing shop, up to 8 users', pick: 'Housecall Pro MAX ($299/mo, up to 8 users)', why: 'Highest published plan in this comparison; extra users are $35/mo each.' },
+    { size: 'Growing shop, up to 8 users', pick: 'Housecall Pro MAX ($299/mo, up to 8 users)', why: 'Housecall Pro’s largest published plan; extra users are $35/mo each. For bigger teams, Jobber publishes 10- and 15-user prices, up to $529/mo for Plus with 15 users (annual billing).' },
     { size: 'Mid-size, multiple crews', pick: 'FieldPulse or Workiz (custom quote)', why: 'Both ship flat-rate pricebooks; Workiz Price Book Pro includes ready-made plumbing catalogs.' },
     { size: 'Large residential or commercial', pick: 'ServiceTitan (custom quote)', why: 'Deepest native flat-rate pricebook, plus the Pricebook Pro add-on with pre-built plumbing services.' },
   ],
@@ -99,7 +102,7 @@ export const plumbing: Industry = {
     {
       question: 'How much does plumbing field service software cost?',
       answer:
-        'Published plans run from $29/month (Jobber Core, 1 user, billed annually; $49 month-to-month) to $299/month (Housecall Pro MAX, up to 8 users, billed annually; $329 month-to-month). ServiceTitan, Workiz, FieldPulse, and Commusoft are quote-based and scale with technicians.',
+        'Published plans start at $29/month for Jobber Core (1 user, billed annually; $49 month-to-month) and $59/month for Housecall Pro Basic (1 user). Cost rises with team size and features: Housecall Pro MAX is $299/month for up to 8 users ($329 month-to-month), and Jobber’s 15-user tiers run up to $529/month on Plus, both billed annually. ServiceTitan, Workiz, FieldPulse, and Commusoft are quote-based and scale with technicians.',
     },
     {
       question: 'Can plumbers invoice and take payment on site?',
@@ -113,7 +116,7 @@ export const plumbing: Industry = {
     },
   ],
 
-  lastUpdated: '2026-10-24',
+  lastUpdated: '2026-11-07',
   dataVerified: true,
   sources: [
     { name: 'Jobber plumbing software', url: 'https://www.getjobber.com/industries/plumbing-software/', checked: '2026-07-08' },
@@ -126,8 +129,9 @@ export const plumbing: Industry = {
     { name: 'Housecall Pro flat-rate pricing (plumbing)', url: 'https://www.housecallpro.com/industries/plumbing-software/flat-rate-pricing/', checked: '2026-07-08' },
     { name: 'FieldPulse flat-rate pricebook', url: 'https://www.fieldpulse.com/features/pricebook', checked: '2026-07-08' },
     { name: 'Workiz Price Book Pro', url: 'https://www.workiz.com/features/price-book-pro/', checked: '2026-07-08' },
-    { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-22' },
-    { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-24' },
+    { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-07' },
+    { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-07' },
+    { name: 'Profit Rhino with Housecall Pro ($199 a month, help center)', url: 'https://help.housecallpro.com/en/articles/8754493-profit-rhino-with-housecall-pro-a-complete-guide', checked: '2026-11-07' },
     { name: 'Housecall Pro QuickBooks (Online + Desktop)', url: 'https://www.housecallpro.com/quickbooks/', checked: '2026-07-08' },
   ],
 }

@@ -6,6 +6,7 @@ import { FAQSection } from '@/components/FAQSection'
 import { ArticleJsonLd, BreadcrumbJsonLd, FAQJsonLd } from '@/components/JsonLd'
 import { ProviderLogo } from '@/components/ProviderLogo'
 import { providers } from '@/lib/providers'
+import { staticRouteLastmod } from '@/lib/routes'
 
 export const metadata = buildMetadata({
   title: 'Best Field Service Management Software (2026)',
@@ -60,7 +61,7 @@ const prosCons: { name: string; pros: string[]; cons: string[] }[] = [
   {
     name: 'Jobber',
     pros: ['Lowest published entry plan: Core at $29/month billed annually', '14-day free trial with no credit card'],
-    cons: ['No QuickBooks sync on Core, and QuickBooks Online only (no Desktop)', 'No documented offline mode and no dedicated flat-rate pricebook'],
+    cons: ['No QuickBooks sync on Core, and QuickBooks Online only (no Desktop)', 'Offline use limited to timers, job forms, notes, and attachments (synced on reconnect); no dedicated flat-rate pricebook'],
   },
   {
     name: 'Housecall Pro',
@@ -106,6 +107,7 @@ const sources = [
   { name: 'Commusoft commercial refrigeration', url: 'https://www.commusoft.com/en-us/industries/refrigeration-software/', checked: '2026-07-08' },
   { name: 'Commusoft digital forms', url: 'https://www.commusoft.com/en-gb/features/digital-forms-software/', checked: '2026-07-08' },
   { name: 'Commusoft asset maintenance', url: 'https://www.commusoft.com/en-us/features/asset-maintenance-software/', checked: '2026-07-08' },
+  { name: 'Jobber app troubleshooting (offline use and syncing)', url: 'https://help.getjobber.com/hc/en-us/articles/360037203234-Troubleshooting-Tips-How-to-Help-Us-Help-You', checked: '2026-11-10' },
   { name: 'Jobber plumbing software (line items, no flat-rate pricebook)', url: 'https://www.getjobber.com/industries/plumbing-software/', checked: '2026-07-08' },
 ]
 
@@ -118,7 +120,9 @@ export default function ComparePage() {
         headline="Best Field Service Management Software (2026)"
         description="Independent comparison of the major FSM platforms by published price, features, and best use case, with sourced strengths and limitations."
         slug="compare"
-        dateModified="2026-10-24"
+        // First production deploy 7d7f574 (2026-07-08) shipped this page.
+        datePublished="2026-07-08"
+        dateModified={staticRouteLastmod['/compare']}
         authorName="Usama Latif"
       />
       <BreadcrumbJsonLd items={crumbs} />

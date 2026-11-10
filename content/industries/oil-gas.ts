@@ -2,8 +2,11 @@ import type { Industry } from '@/lib/industries'
 
 /**
  * Oil & Gas — VERIFIED (researched 2026-07-08).
- * No major FSM vendor markets an oil & gas vertical (checked against each vendor's
- * industries page) — picks are framed as "adaptable", never "built for O&G".
+ * None of the six FSM platforms reviewed markets an oil & gas vertical (checked against each
+ * vendor's industries page) — picks are framed as "adaptable", never "built for O&G".
+ * 2026-11-07: market claims narrowed to the six reviewed platforms (Workiz industries page
+ * rechecked; no O&G page found for the others); Jobber offline support corrected per its
+ * help center (timers, checklists, notes, attachments sync later); $299 ceiling removed.
  * Offline mode and custom safety-form claims verified against vendor docs.
  * Only Jobber and Housecall Pro publish starting prices (annual-billing rates);
  * ServiceTitan, Workiz, FieldPulse, Commusoft are custom/quote → null (never guessed).
@@ -22,7 +25,7 @@ export const oilGas: Industry = {
   datePublished: '2026-07-08',
 
   answer:
-    'No major field service management vendor markets a dedicated oil & gas vertical (checked July 2026), so the best field service and dispatch software for oil and gas service contractors is the tool whose verified capabilities fit the work: offline mobile access, buildable safety-inspection forms, and equipment tracking. By that measure, FieldPulse and ServiceTitan are the strongest fits for well servicing, tank cleaning, and valve and pump repair crews; both are custom-quoted. Smaller service contractors can start on Jobber (from $29/month billed annually; $49 month-to-month) or Housecall Pro (from $59/month billed annually; $79 month-to-month) for scheduling, work orders, and same-day invoicing, but check offline needs first: Jobber does not document an offline mode. Workiz and Commusoft are mid-market options, also custom-priced. Published plans run $29–$299/month with annual billing; quote-based platforms are priced separately.',
+    'None of the six platforms we review (Jobber, Housecall Pro, ServiceTitan, Workiz, FieldPulse, Commusoft) markets a dedicated oil & gas vertical (rechecked November 2026), so the best field service and dispatch software for oil and gas service contractors is the tool whose verified capabilities fit the work: offline mobile access, buildable safety-inspection forms, and equipment tracking. By that measure, FieldPulse and ServiceTitan are the strongest fits for well servicing, tank cleaning, and valve and pump repair crews; both are custom-quoted. Smaller service contractors can start on Jobber (from $29/month billed annually; $49 month-to-month) or Housecall Pro (from $59/month billed annually; $79 month-to-month) for scheduling, work orders, and same-day invoicing, but check offline needs first: Jobber keeps timers, checklists (formerly called job forms), notes, and attachments working offline and syncs them later; checklists start on its Connect plan, while Housecall Pro documents offline viewing only. Workiz and Commusoft are mid-market options, also custom-priced. Published plans start at $29/month (Jobber Core) and $59/month (Housecall Pro Basic) with annual billing and rise with team size, up to $529/month for Jobber Plus with 15 users; quote-based platforms are priced separately.',
 
   intro:
     'Oil & gas field service runs on compliance, safety, and asset accountability across sites that often have no cell coverage. The right FSM software has to capture inspection and JSA (job safety analysis) checklists, track equipment by serial and location, keep a defensible audit trail for regulators, and work offline so crews at remote wellsites can log work and sync later. Because jobs are high-value and hazard-prone, upfront quoting, purchase-order handling, and integration with accounting matter as much as raw scheduling.',
@@ -40,7 +43,7 @@ export const oilGas: Industry = {
     min: 29,
     max: null,
     note: 'Most platforms suited to oil & gas work (ServiceTitan, FieldPulse, Workiz, Commusoft) are custom-quoted and scale with crews and assets. Jobber publishes plans from $29/mo and Housecall Pro from $59/mo (annual billing) for smaller service contractors.',
-    source: { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-22' },
+    source: { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-07' },
     structured: false,
   },
 
@@ -55,7 +58,7 @@ export const oilGas: Industry = {
   ],
 
   bySize: [
-    { size: 'Small contractor, mostly in cell coverage', pick: 'Jobber Core ($29/mo) or Housecall Pro Basic ($59/mo)', why: 'Published prices and 14-day free trials. Jobber does not document an offline mode; Housecall Pro documents offline viewing only (no editing).' },
+    { size: 'Small contractor, mostly in cell coverage', pick: 'Jobber Core ($29/mo) or Housecall Pro Basic ($59/mo)', why: 'Published prices and 14-day free trials. Jobber keeps timers, checklists, notes, and attachments working offline (checklists start on Connect, $99/mo); Housecall Pro documents offline viewing only (no editing).' },
     { size: 'Crews at no-signal sites', pick: 'FieldPulse or Workiz (custom quote)', why: 'Both document offline use that syncs when crews reconnect; FieldPulse switches to offline mode automatically.' },
     { size: 'Asset-heavy service work', pick: 'FieldPulse (custom quote)', why: 'Asset Management with serial numbers, warranties, and barcode scanning, plus custom forms for inspections.' },
     { size: 'Large operator, many crews', pick: 'ServiceTitan (custom quote)', why: 'Enterprise dispatch and reporting; its mobile app works offline with limits (real-time pricing and directions need signal).' },
@@ -66,15 +69,15 @@ export const oilGas: Industry = {
       id: 'oil-gas-dispatch',
       heading: 'Dispatch software for oil and gas service crews',
       paragraphs: [
-        'Dispatching oil and gas crews differs from dispatching home-service technicians in one way that decides most shortlists: connectivity. Wellsites and pads often have no cell signal, so the dispatch tool has to let a crew open the job, record work offline, and sync when it reconnects. FieldPulse, Workiz, and ServiceTitan document offline use. Housecall Pro documents offline viewing only, and Jobber does not document an offline mode.',
+        'Dispatching oil and gas crews differs from dispatching home-service technicians in one way that decides most shortlists: connectivity. Wellsites and pads often have no cell signal, so the dispatch tool has to let a crew open the job, record work offline, and sync when it reconnects. FieldPulse, Workiz, and ServiceTitan document offline use, and Jobber keeps timers, checklists (formerly called job forms), notes, and attachments working offline and syncs them later; checklists start on its Connect plan. Housecall Pro documents offline viewing only.',
         'In a demo, send a test job to a phone in airplane mode and check what the crew can still do: open the work order, complete a safety checklist, capture photos and signatures, and look up equipment by serial number. Then reconnect and confirm nothing is lost or duplicated. For a cross-trade view of scheduling and dispatch tools, see the [full FSM software comparison](/compare). If your crews also run trucking or fleet logistics, the [transportation guide](/by-industry/transportation) covers that side.',
       ],
     },
   ],
 
   mistakes: [
-    'Shortlisting a tool for remote wellsites without checking its offline mode. Jobber does not document one, and Housecall Pro documents offline viewing only.',
-    'Expecting a ready-made JSA template. None of the major FSM tools ships a named JSA template; you build JSA-style checklists with their custom form builders.',
+    'Shortlisting a tool for remote wellsites without checking what works offline. Jobber’s offline support covers timers, checklists, notes, and attachments, and Housecall Pro documents offline viewing only.',
+    'Expecting a ready-made JSA template. None of the six platforms we review documents a named JSA template; you build JSA-style checklists with their custom form builders.',
     'Mixing up product names. Baker Hughes launched an unrelated production-analytics tool called FieldPulse in 2016; the FieldPulse in this guide is the field service platform at fieldpulse.com.',
     'Comparing quotes that cover different scopes. Custom-quoted tools scale with crews and assets, so ask every vendor to price the same number of users and the same modules.',
   ],
@@ -83,7 +86,7 @@ export const oilGas: Industry = {
     {
       question: 'What field service software do oil & gas companies use?',
       answer:
-        'No major FSM vendor markets an oil & gas vertical (checked July 2026). Service contractors typically adapt FieldPulse or ServiceTitan (both custom-quoted) for offline work, custom safety forms, and asset tracking, while smaller crews start on Jobber (from $29/month billed annually) or Housecall Pro (from $59/month billed annually).',
+        'None of the six platforms we review markets an oil & gas vertical (rechecked November 2026). Service contractors typically adapt FieldPulse or ServiceTitan (both custom-quoted) for offline work, custom safety forms, and asset tracking, while smaller crews start on Jobber (from $29/month billed annually) or Housecall Pro (from $59/month billed annually).',
     },
     {
       question: 'What is the best dispatch software for oil and gas service companies?',
@@ -93,7 +96,7 @@ export const oilGas: Industry = {
     {
       question: 'Does oil & gas FSM software work offline at remote sites?',
       answer:
-        'Some does. FieldPulse switches to offline mode automatically out of cell range, Workiz lets crews update jobs with no connectivity, and ServiceTitan’s mobile app works offline with some limits (real-time pricing and directions need signal). All three sync when crews reconnect. Housecall Pro documents offline viewing only, and Jobber does not document an offline mode.',
+        'Some does. FieldPulse switches to offline mode automatically out of cell range, Workiz lets crews update jobs with no connectivity, and ServiceTitan’s mobile app works offline with some limits (real-time pricing and directions need signal). All three sync when crews reconnect. Jobber keeps timers, checklists, notes, and attachments working offline and syncs them later (checklists start on Connect), while location-based timers need a connection. Housecall Pro documents offline viewing only.',
     },
     {
       question: 'How much does oil & gas field service software cost?',
@@ -103,7 +106,7 @@ export const oilGas: Industry = {
     {
       question: 'Can it handle safety (JSA) and compliance inspections?',
       answer:
-        'None of the major FSM tools ships a named JSA template, but FieldPulse, ServiceTitan, and Commusoft all include custom form builders with photo and signature capture, so you can build JSA-style safety checklists and inspections that produce exportable records.',
+        'None of the six platforms we review documents a named JSA template, but FieldPulse, ServiceTitan, and Commusoft all include custom form builders with photo and signature capture, so you can build JSA-style safety checklists and inspections that produce exportable records.',
     },
     {
       question: 'Is ServiceTitan or FieldPulse better for oil & gas?',
@@ -112,11 +115,13 @@ export const oilGas: Industry = {
     },
   ],
 
-  lastUpdated: '2026-10-24',
+  lastUpdated: '2026-11-07',
   dataVerified: true,
   sources: [
-    { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-22' },
-    { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-24' },
+    { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-07' },
+    { name: 'Jobber app troubleshooting (offline use)', url: 'https://help.getjobber.com/hc/en-us/articles/360037203234-Troubleshooting-Tips-How-to-Help-Us-Help-You', checked: '2026-11-07' },
+    { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-07' },
+    { name: 'Workiz industries (no oil & gas)', url: 'https://www.workiz.com/industries/', checked: '2026-11-07' },
     { name: 'Housecall Pro mobile app (offline viewing)', url: 'https://www.housecallpro.com/features/mobile-app/', checked: '2026-07-08' },
     { name: 'FieldPulse asset management', url: 'https://www.fieldpulse.com/features/asset-management', checked: '2026-10-22' },
     { name: 'Baker Hughes FieldPulse launch (unrelated product)', url: 'https://worldoil.com/news/2016/4/12/baker-hughes-introduces-model-based-predictive-analytics-software', checked: '2026-10-24' },
