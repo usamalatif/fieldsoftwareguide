@@ -11,7 +11,8 @@ import { staticRouteLastmod } from '@/lib/routes'
  * Prices verified 2026-10-27 on each vendor's pricing page; Jobber and Housecall Pro rechecked
  * 2026-10-31 after Jobber's introductory offer ended (standard rates unchanged, promo note removed).
  * Jobber prices now vary by plan AND team size (1 / 5 / 10 / 15 users; 16+ is "contact sales";
- * Core is 1 user only); extra users $29/mo each. Figures below are the STANDARD annual-billing
+ * Core includes 1 user and allows 1 additional paid seat, then Connect, per Jobber's Manage
+ * Team help article, updated 2026-10-28, checked 2026-11-10); extra users $29/mo each. Figures below are the STANDARD annual-billing
  * rates ("then $X/mo"), not the 12-month introductory offer shown during promotions.
  * Housecall Pro: Basic 1 user, Essentials 5 users, MAX 8 users; $35/mo per extra user is
  * published for MAX only, so 10- and 15-user Housecall Pro figures are MAX + extra users.
@@ -212,7 +213,8 @@ export default async function BySizePage({ params }: { params: Promise<{ locale:
             </table>
           </div>
           <p className="mt-3 text-[13px] text-slate-500 dark:text-slate-400">
-            Jobber Core is 1 user only. Jobber also sells each plan month-to-month (Core $49) or
+            Jobber Core includes 1 user and allows 1 additional paid seat. For more users, upgrade
+            to Connect. Jobber also sells each plan month-to-month (Core $49) or
             with a 1-year commitment billed monthly (Core $39). Jobber Plus starts at $399/month
             for 5 users, billed annually. Housecall
             Pro publishes the $35 extra-user price for MAX only and does not say whether it differs
@@ -305,6 +307,7 @@ export default async function BySizePage({ params }: { params: Promise<{ locale:
           <p className="font-semibold text-slate-900 dark:text-white">Sources</p>
           <ul className="mt-2 space-y-1">
             <li><a href="https://www.getjobber.com/pricing/" target="_blank" rel="noopener noreferrer" className="underline">Jobber pricing</a> (checked Oct 31, 2026)</li>
+            <li><a href="https://help.getjobber.com/en/articles/manage-teamhow-to-add-manage-and-deactivate-team-members/" target="_blank" rel="noopener noreferrer" className="underline">Jobber help: Manage Team (Core seat limit)</a> (checked Nov 10, 2026)</li>
             <li><a href="https://www.housecallpro.com/pricing/" target="_blank" rel="noopener noreferrer" className="underline">Housecall Pro pricing</a> (checked Oct 31, 2026)</li>
             <li><a href="https://www.servicetitan.com/pricing" target="_blank" rel="noopener noreferrer" className="underline">ServiceTitan pricing</a> (checked Oct 27, 2026)</li>
             <li><a href="https://www.fieldpulse.com/pricing" target="_blank" rel="noopener noreferrer" className="underline">FieldPulse pricing</a> (checked Oct 27, 2026)</li>
