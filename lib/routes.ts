@@ -14,7 +14,7 @@ import { articleDates } from '@/content/articles'
 export const staticRouteLastmod: Record<string, string> = {
   '/': '2026-10-24',
   '/by-industry': '2026-10-24',
-  '/by-size': '2026-10-31',
+  '/by-size': '2026-11-10',
   '/compare': '2026-11-10',
   '/compare/jobber-vs-housecall-pro': '2026-11-07',
   '/free': '2026-11-10',

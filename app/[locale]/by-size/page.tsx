@@ -5,6 +5,7 @@ import { AnswerBlock } from '@/components/AnswerBlock'
 import { FAQSection } from '@/components/FAQSection'
 import { ArticleJsonLd, BreadcrumbJsonLd, FAQJsonLd } from '@/components/JsonLd'
 import { localizePath, isLocale, defaultLocale, type Locale } from '@/lib/i18n/config'
+import { staticRouteLastmod } from '@/lib/routes'
 
 /**
  * Prices verified 2026-10-27 on each vendor's pricing page; Jobber and Housecall Pro rechecked
@@ -14,10 +15,12 @@ import { localizePath, isLocale, defaultLocale, type Locale } from '@/lib/i18n/c
  * rates ("then $X/mo"), not the 12-month introductory offer shown during promotions.
  * Housecall Pro: Basic 1 user, Essentials 5 users, MAX 8 users; $35/mo per extra user is
  * published for MAX only, so 10- and 15-user Housecall Pro figures are MAX + extra users.
+ * 2026-11-10: those figures are labelled illustrative estimates, because Housecall Pro does
+ * not say whether the $35 rate differs between annual and monthly billing.
  * ServiceTitan (per-technician) and FieldPulse (seat-based) publish no prices; Workiz and
  * Commusoft publish none either.
  */
-const MODIFIED = '2026-10-31'
+const MODIFIED = staticRouteLastmod['/by-size']
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -68,8 +71,8 @@ const sizes = [
 const costRows: { users: string; jobberConnect: string; jobberGrow: string; hcp: string }[] = [
   { users: '1 user', jobberConnect: '$99 (Core $29, no QuickBooks)', jobberGrow: '$149', hcp: '$59 Basic (no QuickBooks); $149 Essentials' },
   { users: '5 users', jobberConnect: '$149', jobberGrow: '$229', hcp: '$149 Essentials' },
-  { users: '10 users', jobberConnect: '$229', jobberGrow: '$299', hcp: '$369 (MAX $299 + 2 × $35)' },
-  { users: '15 users', jobberConnect: '$299', jobberGrow: '$399', hcp: '$544 (MAX $299 + 7 × $35)' },
+  { users: '10 users', jobberConnect: '$229', jobberGrow: '$299', hcp: '$369 (estimate: MAX $299 + 2 × $35)' },
+  { users: '15 users', jobberConnect: '$299', jobberGrow: '$399', hcp: '$544 (estimate: MAX $299 + 7 × $35)' },
   { users: '16+ users', jobberConnect: 'Contact sales', jobberGrow: 'Contact sales', hcp: 'MAX + $35 per extra user' },
 ]
 
@@ -92,7 +95,7 @@ const faqs = [
   {
     question: 'How much does field service software cost for 10 technicians?',
     answer:
-      'With annual billing, Jobber is $229/month for 10 users on Connect or $299/month on Grow. Housecall Pro MAX includes 8 users for $299/month, so 10 users is $369/month with two extra users at $35 each. ServiceTitan, FieldPulse, Workiz, and Commusoft are custom-quoted.',
+      'With annual billing, Jobber is $229/month for 10 users on Connect or $299/month on Grow. Housecall Pro MAX includes 8 users for $299/month, so 10 users is an estimated $369/month: MAX plus two extra users at $35 each, assuming that rate applies to annual billing. Confirm the billing terms with Housecall Pro. ServiceTitan, FieldPulse, Workiz, and Commusoft are custom-quoted.',
   },
   {
     question: 'What is the best field service software for a one-person business?',
@@ -107,7 +110,7 @@ const faqs = [
   {
     question: 'Is per-user or per-plan pricing cheaper as a team grows?',
     answer:
-      'It depends on the step. At 5 users, Jobber Connect and Housecall Pro Essentials are both $149/month billed annually. At 15 users, Jobber Connect is $299/month while Housecall Pro MAX with 7 extra users is $544/month. Compare the exact plan you need, since job costing and recurring plans sit on different tiers.',
+      'It depends on the step. At 5 users, Jobber Connect and Housecall Pro Essentials are both $149/month billed annually. At 15 users, Jobber Connect is $299/month while Housecall Pro MAX with 7 extra users is an estimated $544/month ($299 plus 7 × $35, assuming the $35 rate applies to annual billing; confirm with Housecall Pro). Compare the exact plan you need, since job costing and recurring plans sit on different tiers.',
   },
 ]
 
@@ -147,7 +150,7 @@ export default async function BySizePage({ params }: { params: Promise<{ locale:
       </section>
 
       <div className="mx-auto max-w-[900px] px-5 py-14 md:px-10">
-        <AnswerBlock lastUpdated="October 2026">
+        <AnswerBlock lastUpdated="November 2026">
           <p>
             The right field service software by business size comes down to how many users you
             pay for and which features each plan unlocks. Solo operators can start on Jobber Core
@@ -212,7 +215,10 @@ export default async function BySizePage({ params }: { params: Promise<{ locale:
             Jobber Core is 1 user only. Jobber also sells each plan month-to-month (Core $49) or
             with a 1-year commitment billed monthly (Core $39). Jobber Plus starts at $399/month
             for 5 users, billed annually. Housecall
-            Pro publishes the $35 extra-user price for MAX only. ServiceTitan, FieldPulse, Workiz,
+            Pro publishes the $35 extra-user price for MAX only and does not say whether it differs
+            between annual and monthly billing, so its 10- and 15-user figures are illustrative
+            estimates (MAX at $299 plus $35 per extra user); confirm billing terms with Housecall
+            Pro. ServiceTitan, FieldPulse, Workiz,
             and Commusoft do not publish prices.
           </p>
         </section>
