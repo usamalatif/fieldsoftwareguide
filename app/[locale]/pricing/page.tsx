@@ -97,16 +97,16 @@ const teamSize: { users: string; jobber: string; hcp: string }[] = [
   { users: '1 user', jobber: 'Core: $29 / $49', hcp: 'Basic: $59 / $79' },
   { users: '1 user with QuickBooks Online sync', jobber: 'Connect: $99 / $139', hcp: 'Essentials: $149 / $189' },
   { users: '5 users', jobber: 'Connect (5-user plan): $149 / $199', hcp: 'Essentials (up to 5): $149 / $189' },
-  { users: '10 users', jobber: 'Connect (10-user plan): $229 / $299', hcp: 'MAX + 2 extra users: $369 / $399*' },
-  { users: '15 users', jobber: 'Connect (15-user plan): $299 / $399', hcp: 'MAX + 7 extra users: $544 / $574*' },
+  { users: '10 users', jobber: 'Connect (10-user plan): $229 / $299', hcp: 'MAX + 2 extra users: $369 / $399 (estimate*)' },
+  { users: '15 users', jobber: 'Connect (15-user plan): $299 / $399', hcp: 'MAX + 7 extra users: $544 / $574 (estimate*)' },
 ]
 
 /** Twelve months of subscription only: annual billing vs no commitment / month-to-month. */
 const firstYear: { users: string; jobber: string; hcp: string }[] = [
   { users: '1 user', jobber: '$348 vs $588 (Core)', hcp: '$708 vs $948 (Basic)' },
   { users: '5 users', jobber: '$1,788 vs $2,388 (Connect)', hcp: '$1,788 vs $2,268 (Essentials)' },
-  { users: '10 users', jobber: '$2,748 vs $3,588 (Connect)', hcp: '$4,428 vs $4,788 (MAX + 2)*' },
-  { users: '15 users', jobber: '$3,588 vs $4,788 (Connect)', hcp: '$6,528 vs $6,888 (MAX + 7)*' },
+  { users: '10 users', jobber: '$2,748 vs $3,588 (Connect)', hcp: '$4,428 vs $4,788 (MAX + 2, estimate*)' },
+  { users: '15 users', jobber: '$3,588 vs $4,788 (Connect)', hcp: '$6,528 vs $6,888 (MAX + 7, estimate*)' },
 ]
 
 /** Fee on one $1,000 card or bank payment at the published standard rate. */
@@ -128,7 +128,7 @@ const faqs = [
   {
     question: 'How much does field service software cost per user?',
     answer:
-      'Jobber and Housecall Pro price by plan and team size rather than a flat per-user rate, so the cost per user falls as the team grows. On annual billing, a 10-user team works out to about $22.90 per user per month on Jobber Connect ($229) and $36.90 on Housecall Pro MAX with two extra users ($369). Extra users cost $29/month each at Jobber and $35/month each on Housecall Pro MAX. ServiceTitan says its pricing is per technician but does not publish the rate.',
+      'Jobber and Housecall Pro price by plan and team size rather than a flat per-user rate, so the cost per user falls as the team grows. On annual billing, a 10-user team works out to about $22.90 per user per month on Jobber Connect ($229) and an estimated $36.90 on Housecall Pro MAX with two extra users ($369, assuming its listed $35 extra-user rate applies to annual billing). Extra users cost $29/month each at Jobber and $35/month each on Housecall Pro MAX. ServiceTitan says its pricing is per technician but does not publish the rate.',
   },
   {
     question: 'Why doesn’t ServiceTitan publish its prices?',
@@ -324,9 +324,11 @@ export default function PricingHubPage() {
           />
           <div className="prose-body mt-4">
             <p>
-              * Housecall Pro lists $35/month for each user over eight on MAX but does not say
-              whether that rate differs between annual and monthly billing. The 10- and 15-user
-              figures assume it applies to both; confirm it before you buy.
+              * Illustrative estimate. Housecall Pro lists $35/month for each user over eight on
+              MAX but does not say whether that rate differs between annual and monthly billing.
+              The Housecall Pro 10- and 15-user figures here and in the first-year table below
+              assume it applies to both, so treat them as estimates and confirm the rate with
+              Housecall Pro before you buy.
             </p>
             <p>
               <strong>The same headcount does not buy the same features.</strong> Jobber Connect
@@ -349,7 +351,7 @@ export default function PricingHubPage() {
           </div>
 
           <h3 className="mt-8 text-[19px] font-bold text-slate-900 dark:text-white">First-year subscription cost</h3>
-          <p className={SUB}>Twelve months on the plans above, annual billing vs month-to-month. Excludes add-ons, payment fees and tax.</p>
+          <p className={SUB}>Twelve months on the plans above, annual billing vs month-to-month. Excludes add-ons, payment fees and tax. Housecall Pro 10- and 15-user totals are illustrative estimates (see the note above).</p>
           <Table
             head={['Team size', 'Jobber', 'Housecall Pro']}
             rows={firstYear.map((r) => [r.users, r.jobber, r.hcp])}
@@ -505,7 +507,8 @@ export default function PricingHubPage() {
         <div className="mx-auto max-w-[820px]">
           <CalloutBox tone="verdict" title="Bottom line on field service software pricing">
             Only Jobber and Housecall Pro publish prices: from $29 and $59 a month for one user,
-            $149 for five users on either, and $229 to $369 for ten, all billed annually. For
+            $149 for five users on either, and $229 for ten on Jobber, all billed annually. For ten
+            users on Housecall Pro, an estimated $369 assumes its listed $35 extra-user rate applies. For
             ServiceTitan, Workiz, FieldPulse, and Commusoft, get a written quote covering seats,
             onboarding, contract terms, and payment processing, then compare the first-year total
             rather than the monthly headline.
