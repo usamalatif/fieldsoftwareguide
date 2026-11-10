@@ -319,7 +319,6 @@ export default function PricingHubPage() {
             no-commitment option).
           </p>
           <Table
-            minWidth="min-w-[620px]"
             head={['Team size', 'Jobber', 'Housecall Pro']}
             rows={teamSize.map((r) => [r.users, r.jobber, r.hcp])}
           />
@@ -352,7 +351,6 @@ export default function PricingHubPage() {
           <h3 className="mt-8 text-[19px] font-bold text-slate-900 dark:text-white">First-year subscription cost</h3>
           <p className={SUB}>Twelve months on the plans above, annual billing vs month-to-month. Excludes add-ons, payment fees and tax.</p>
           <Table
-            minWidth="min-w-[620px]"
             head={['Team size', 'Jobber', 'Housecall Pro']}
             rows={firstYear.map((r) => [r.users, r.jobber, r.hcp])}
           />
@@ -423,7 +421,6 @@ export default function PricingHubPage() {
             payments, with no surcharge passed to the customer.
           </p>
           <Table
-            minWidth="min-w-[620px]"
             head={['How the customer pays', 'Jobber', 'Housecall Pro']}
             rows={invoice.map((r) => [r.method, r.jobber, r.hcp])}
           />
