@@ -71,7 +71,7 @@ const prosCons: { name: string; pros: string[]; cons: string[] }[] = [
   {
     name: 'ServiceTitan',
     pros: ['Documented QuickBooks Online and Desktop integrations', 'Native flat-rate pricebook and installed-equipment records'],
-    cons: ['Custom quote only', 'No self-serve trial; demo only'],
+    cons: ['Custom quote only', 'No trial listed; demo only'],
   },
   {
     name: 'Workiz',
@@ -81,12 +81,12 @@ const prosCons: { name: string; pros: string[]; cons: string[] }[] = [
   {
     name: 'FieldPulse',
     pros: ['Switches to offline mode automatically out of cell range', 'Asset Management with serials, warranties, and barcode scanning'],
-    cons: ['Custom quote only', 'No self-serve trial; demo only, per its own pricing FAQ'],
+    cons: ['Custom quote only', 'Free demo; current trial terms not confirmed'],
   },
   {
     name: 'Commusoft',
     pros: ['Asset maintenance records and digital forms', 'Dedicated commercial refrigeration product'],
-    cons: ['Lists a QuickBooks Online integration only', '12-month licenses built for 6+ staff; no self-serve trial'],
+    cons: ['Lists a QuickBooks Online integration only', '12-month licenses built for 6+ staff; free trial advertised without published terms'],
   },
 ]
 
@@ -96,13 +96,13 @@ const sources = [
   { name: 'Housecall Pro mobile app (offline viewing)', url: 'https://www.housecallpro.com/features/mobile-app/', checked: '2026-07-08' },
   { name: 'Workiz pricing (7-day trial, request pricing)', url: 'https://www.workiz.com/pricing-plans/', checked: '2026-10-24' },
   { name: 'Workiz mobile app (offline access)', url: 'https://www.workiz.com/features/mobile-app/', checked: '2026-07-08' },
-  { name: 'ServiceTitan pricing (demo only)', url: 'https://www.servicetitan.com/pricing', checked: '2026-07-08' },
+  { name: 'ServiceTitan pricing (demos; no trial listed)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-10' },
   { name: 'ServiceTitan QuickBooks Desktop docs', url: 'https://help.servicetitan.com/docs/quickbooks-desktop-1', checked: '2026-07-16' },
   { name: 'ServiceTitan installed equipment', url: 'https://help.servicetitan.com/docs/installed-equipment-landing-page', checked: '2026-07-08' },
   { name: 'FieldPulse offline mode', url: 'https://help.fieldpulse.com/en/articles/4063488-offline-mode', checked: '2026-07-08' },
   { name: 'FieldPulse asset management', url: 'https://www.fieldpulse.com/features/asset-management', checked: '2026-10-22' },
-  { name: 'FieldPulse pricing (no-trial FAQ)', url: 'https://www.fieldpulse.com/pricing', checked: '2026-07-08' },
-  { name: 'Commusoft plans (license model)', url: 'https://www.commusoft.com/en-us/plans/', checked: '2026-07-08' },
+  { name: 'FieldPulse pricing (free demo; trial terms not confirmed)', url: 'https://www.fieldpulse.com/pricing', checked: '2026-11-10' },
+  { name: 'Commusoft plans (license model; free trial advertised)', url: 'https://www.commusoft.com/en-us/plans/', checked: '2026-11-10' },
   { name: 'Commusoft QuickBooks Online integration', url: 'https://www.commusoft.com/en-us/integrations/quickbook-online/', checked: '2026-07-16' },
   { name: 'Commusoft commercial refrigeration', url: 'https://www.commusoft.com/en-us/industries/refrigeration-software/', checked: '2026-07-08' },
   { name: 'Commusoft digital forms', url: 'https://www.commusoft.com/en-gb/features/digital-forms-software/', checked: '2026-07-08' },

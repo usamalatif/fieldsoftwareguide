@@ -81,14 +81,14 @@ const vendors: { name: string; published: string; entry: string; model: string; 
     published: 'No (custom quote)',
     entry: 'Not published',
     model: 'Seat-based, plus optional premium products',
-    trial: 'Free demo; no trial terms on the pricing page',
+    trial: 'Free demo; current trial terms not confirmed',
   },
   {
     name: 'Commusoft',
     published: 'No',
     entry: 'Not published',
     model: 'Per licence on a 12-month contract; built for businesses with 6 or more staff',
-    trial: 'Free trial offered; length not stated',
+    trial: 'Free trial advertised; signup, length and eligibility not stated',
   },
 ]
 
@@ -452,8 +452,8 @@ export default function PricingHubPage() {
             <li><strong>Housecall Pro:</strong> 14-day free trial with MAX features, no credit card. No long-term contract; downgrades apply at the end of the billing period.</li>
             <li><strong>ServiceTitan:</strong> demo only. Contract terms not published.</li>
             <li><strong>Workiz:</strong> 7-day free trial, no credit card. Contract terms not stated on the pricing page.</li>
-            <li><strong>FieldPulse:</strong> free demo. Trial and contract terms not stated on the pricing page.</li>
-            <li><strong>Commusoft:</strong> 12-month contract that renews annually, for businesses with six or more staff. Its plans page offers a free trial but gives no length or terms.</li>
+            <li><strong>FieldPulse:</strong> free demo; current trial terms not confirmed. Contract terms not stated on the pricing page.</li>
+            <li><strong>Commusoft:</strong> 12-month contract that renews annually, for businesses with six or more staff. Its plans page advertises a free trial but does not say how to sign up, how long it lasts, or who is eligible.</li>
           </ul>
 
           <h2 id="quote-checklist">How to get a comparable quote</h2>
