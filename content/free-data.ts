@@ -21,7 +21,7 @@ export const freeRows: FreeRow[] = [
   { tool: 'Jobber', freePlan: 'No', trial: '14 days (Grow plan, no card)', paidFrom: '$29/mo annual · $49 month-to-month' },
   { tool: 'Housecall Pro', freePlan: 'No', trial: '14 days (MAX plan, no card)', paidFrom: '$59/mo annual · $79 month-to-month' },
   { tool: 'Workiz', freePlan: 'No', trial: '7 days (all features, no card)', paidFrom: 'Custom / request pricing' },
-  { tool: 'ServiceTitan', freePlan: 'No', trial: 'None — demo only', paidFrom: 'Custom / request pricing' },
-  { tool: 'FieldPulse', freePlan: 'No', trial: 'None — demo only (vendor’s own FAQ)', paidFrom: 'Custom / request pricing' },
-  { tool: 'Commusoft', freePlan: 'No', trial: 'None — sales call', paidFrom: 'Custom (12-month licenses; built for 6+ staff)' },
+  { tool: 'ServiceTitan', freePlan: 'No', trial: 'None listed — demo only', paidFrom: 'Custom / request pricing' },
+  { tool: 'FieldPulse', freePlan: 'No', trial: 'Free demo; current trial terms not confirmed', paidFrom: 'Custom / request pricing' },
+  { tool: 'Commusoft', freePlan: 'No', trial: 'Free trial advertised; signup, length and eligibility not stated', paidFrom: 'Custom (12-month licenses; built for 6+ staff)' },
 ]

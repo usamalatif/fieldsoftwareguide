@@ -13,10 +13,13 @@ import { ArticleJsonLd, BreadcrumbJsonLd, FAQJsonLd } from '@/components/JsonLd'
  * /free/ — deep page. Target: "field service management software free" (590 vol, KD 5),
  * "free field service management software" (390 vol, KD 5).
  * Every fact verified 2026-07-08 on the vendor's own site. The citable original finding:
- * NONE of the six major FSM vendors offers a free plan; FieldPulse and ServiceTitan
- * offer no self-serve trial at all; the only real free-forever FSM tier is Odoo's
+ * NONE of the six major FSM vendors offers a free plan; the only real free-forever FSM tier is Odoo's
  * One App Free (unlimited users). Connecteam is free to 10 users but has no invoicing.
  * 2026-10-24: Odoo, Connecteam, Jobber, Housecall Pro and Workiz free/trial terms rechecked.
+ * 2026-11-10: ServiceTitan, FieldPulse and Commusoft trial wording corrected. ServiceTitan's
+ * pricing page lists demos and no trial. FieldPulse offers a free demo; its pricing FAQ answer
+ * on trials could not be read, so current trial terms are unconfirmed. Commusoft's plans page
+ * advertises a free trial without stating signup, length or eligibility.
  */
 
 export const metadata = buildMetadata({
@@ -52,7 +55,7 @@ const faqs = [
   {
     question: 'Which FSM tools have free trials — and which don’t?',
     answer:
-      'Jobber and Housecall Pro offer 14-day trials and Workiz a 7-day trial, all without a credit card. ServiceTitan and FieldPulse offer no self-serve trial at all — demo only (FieldPulse’s own pricing FAQ says so explicitly) — and Commusoft uses a sales-call motion with no self-serve trial.',
+      'Jobber and Housecall Pro offer 14-day trials and Workiz a 7-day trial, all without a credit card. ServiceTitan’s pricing page offers demos and lists no trial. FieldPulse offers a free demo; its current trial terms are not confirmed. Commusoft advertises a free trial, but its plans page does not state how to sign up, how long it lasts, or who is eligible.',
   },
   {
     question: 'What is the best free field service software for a small business?',
@@ -97,7 +100,7 @@ export default function FreePage() {
       </section>
 
       <div className="mx-auto max-w-[900px] px-5 py-14 md:px-10">
-        <AnswerBlock lastUpdated="October 2026">
+        <AnswerBlock lastUpdated="November 2026">
           <p>
             Here is the honest state of free FSM software in 2026: <strong>none of the six major
             vendors — Jobber, Housecall Pro, ServiceTitan, Workiz, FieldPulse, or Commusoft — offers
@@ -106,8 +109,9 @@ export default function FreePage() {
             users until you add a second Odoo app). <strong>Connecteam</strong> is free for life for
             up to 10 users, but it covers scheduling and time tracking only — no invoicing,
             estimates, or payments. For everyone else, “free” means a trial: Jobber and Housecall
-            Pro give 14 days (no credit card), Workiz 7 days, while ServiceTitan and FieldPulse
-            offer no trial at all — demo only. Paid entry points: Jobber from $29/month billed
+            Pro give 14 days (no credit card), Workiz 7 days. ServiceTitan lists demos rather than a
+            trial, FieldPulse offers a free demo (current trial terms not confirmed), and Commusoft
+            advertises a free trial without published terms. Paid entry points: Jobber from $29/month billed
             annually ($49 month-to-month), Housecall Pro from $59/month billed annually ($79
             month-to-month).
           </p>
@@ -194,11 +198,13 @@ export default function FreePage() {
           <p>
             <strong>Jobber — 14 days</strong>, full access to the top-tier Grow plan, no credit card
             required. <strong>Housecall Pro — 14 days</strong>, full access to its MAX plan, no
-            credit card. <strong>Workiz — 7 days</strong>, all features, no credit card. And the
-            honest flip side: <strong>ServiceTitan and FieldPulse offer no self-serve trial at
-            all</strong> — both are demo-first (FieldPulse’s own pricing FAQ states it plainly), and
-            Commusoft runs a scheduled sales call. If you want to test software on real jobs this
-            week, that narrows the field to Jobber, Housecall Pro, and Workiz.
+            credit card. <strong>Workiz — 7 days</strong>, all features, no credit card. The other
+            three are less clear. <strong>ServiceTitan</strong>&rsquo;s pricing page offers demos and
+            lists no trial. <strong>FieldPulse</strong> offers a free demo, and its current trial
+            terms are not confirmed. <strong>Commusoft</strong> advertises a free trial, but its plans
+            page does not say how to sign up, how long it lasts, or who is eligible (it is built for
+            businesses with six or more staff). If you want to test software on real jobs this week,
+            Jobber, Housecall Pro, and Workiz are the confirmed no-card trials.
           </p>
 
           <h2>Free field service software for small business: which path fits?</h2>
@@ -261,9 +267,9 @@ export default function FreePage() {
                 { name: 'Jobber pricing (trial + plans)', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-24' },
                 { name: 'Housecall Pro pricing (trial + plans)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-24' },
                 { name: 'Workiz pricing (7-day trial FAQ)', url: 'https://www.workiz.com/pricing-plans/', checked: '2026-10-24' },
-                { name: 'ServiceTitan pricing (demo only)', url: 'https://www.servicetitan.com/pricing', checked: '2026-07-08' },
-                { name: 'FieldPulse pricing (no-trial FAQ)', url: 'https://www.fieldpulse.com/pricing', checked: '2026-07-08' },
-                { name: 'Commusoft plans (license model)', url: 'https://www.commusoft.com/en-us/plans/', checked: '2026-07-08' },
+                { name: 'ServiceTitan pricing (demos; no trial listed)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-10' },
+                { name: 'FieldPulse pricing (free demo; trial terms not confirmed)', url: 'https://www.fieldpulse.com/pricing', checked: '2026-11-10' },
+                { name: 'Commusoft plans (license model; free trial advertised)', url: 'https://www.commusoft.com/en-us/plans/', checked: '2026-11-10' },
                 { name: 'Odoo Field Service (One App Free)', url: 'https://www.odoo.com/app/field-service', checked: '2026-07-08' },
                 { name: 'Odoo pricing', url: 'https://www.odoo.com/pricing', checked: '2026-10-24' },
                 { name: 'Connecteam pricing (free Small Business Plan)', url: 'https://connecteam.com/pricing/', checked: '2026-10-24' },
