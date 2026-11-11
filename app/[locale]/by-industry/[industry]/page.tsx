@@ -164,7 +164,11 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
 
         <section className="mx-auto mt-14 max-w-[980px]">
           <h2 className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
-            {ind.slug === 'equipment-rental' ? 'Field Service Software Options for Equipment Rental' : t.bestSoftware(ind.name)}
+            {ind.slug === 'equipment-rental'
+              ? 'Field Service Software Options for Equipment Rental'
+              : ind.slug === 'oil-gas'
+                ? 'Field Service Software Options for Oil & Gas'
+                : t.bestSoftware(ind.name)}
           </h2>
           <p className="mb-1 mt-2 max-w-[720px] text-[15px] text-slate-500 dark:text-slate-400">
             {t.bestSoftwareSub}
@@ -251,6 +255,21 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
                 technician dispatch, equipment maintenance, and inspections. FieldPulse is a possible
                 service-side fit, not a substitute for rental booking and contract management.
                 Verify vendor capabilities, integrations, and current prices before purchasing.
+              </>
+            ) : ind.slug === 'oil-gas' ? (
+              <>
+                None of the six platforms we review markets an oil &amp; gas vertical, so choose on
+                documented capabilities and test them in a demo. For crews at no-signal sites, start
+                with FieldPulse, which switches to offline mode automatically and documents custom
+                forms with signatures and asset management with barcode scanning, and compare Workiz,
+                which documents offline job updates. Larger service operations can add ServiceTitan;
+                its mobile app handles most job actions offline, but directions, service location
+                history, and Dynamic Pricing need a connection (Static Pricing works offline). Small
+                contractors who mostly work in coverage can start with Jobber (from $29/month) or
+                Housecall Pro (from $59/month), billed annually, but Housecall Pro documents offline
+                viewing only. FieldPulse, Workiz, and ServiceTitan are custom-quoted, so ask each
+                vendor to price the same crews and modules. No reviewed platform documents oil &amp;
+                gas regulatory compliance features; confirm record-keeping needs with your safety team.
               </>
             ) : (
               <>

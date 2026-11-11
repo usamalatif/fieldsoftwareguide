@@ -17,7 +17,7 @@ export function IndustryDataCard({ industry: ind }: { industry: Industry }) {
   const cells: { label: string; value: string; accent?: boolean }[] = [
     { label: 'Industry', value: ind.name },
     { label: 'Category', value: ind.category },
-    { label: ind.slug === 'equipment-rental' ? 'Top FSM pick' : 'Top pick', value: topPick?.name ?? '—' },
+    { label: ind.slug === 'equipment-rental' ? 'Top FSM pick' : ind.slug === 'oil-gas' ? 'Closest documented fit' : 'Top pick', value: topPick?.name ?? '—' },
     {
       label: ind.reviewedCount ? 'Tools shortlisted' : 'Tools compared',
       value: ind.reviewedCount ? `${ind.providers.length} of ${ind.reviewedCount}` : String(ind.providers.length),
