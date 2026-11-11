@@ -164,7 +164,7 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
 
         <section className="mx-auto mt-14 max-w-[980px]">
           <h2 className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
-            {t.bestSoftware(ind.name)}
+            {ind.slug === 'equipment-rental' ? 'Field Service Software Options for Equipment Rental' : t.bestSoftware(ind.name)}
           </h2>
           <p className="mb-1 mt-2 max-w-[720px] text-[15px] text-slate-500 dark:text-slate-400">
             {t.bestSoftwareSub}
