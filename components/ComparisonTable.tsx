@@ -57,7 +57,7 @@ export function ComparisonTable({
                         <div className="text-[15.5px] font-bold text-slate-900 dark:text-white">{p.name}</div>
                         {best && (
                           <span className="mt-1 inline-flex items-center gap-1 rounded-full bg-orange-200 px-[7px] py-0.5 text-[10.5px] font-bold uppercase tracking-[0.05em] text-orange-800">
-                            ★ {industryName === 'Equipment Rental' ? 'Service-side pick' : 'Best overall'}
+                            ★ {industryName === 'Equipment Rental' ? 'Service-side pick' : industryName === 'Oil & Gas' ? 'Documented fit' : 'Best overall'}
                           </span>
                         )}
                       </div>
@@ -99,7 +99,7 @@ export function ComparisonTable({
             >
               {best && (
                 <span className="absolute right-3.5 top-3.5 rounded-full bg-orange-200 px-2 py-0.5 text-[9.5px] font-bold uppercase tracking-[0.05em] text-orange-800">
-                  ★ {industryName === 'Equipment Rental' ? 'Service-side pick' : 'Best overall'}
+                  ★ {industryName === 'Equipment Rental' ? 'Service-side pick' : industryName === 'Oil & Gas' ? 'Documented fit' : 'Best overall'}
                 </span>
               )}
               <div className="flex items-center gap-3">
@@ -135,7 +135,7 @@ export function ComparisonTable({
         {industryName === 'Equipment Rental'
           ? 'Jobber and Housecall Pro standard annual-billing entry plans checked November 7, 2026. “Custom” means the vendor quotes per business. '
           : `Prices are each vendor’s lowest published plan with annual billing (checked ${pricesChecked}); month-to-month runs higher. “Custom” means the vendor quotes per business. `}
-        {industryName === 'Equipment Rental' ? (
+        {industryName === 'Equipment Rental' || industryName === 'Oil & Gas' ? (
           <>{site.name} may earn a commission from some software links. Compare documented features, pricing, and vendor terms before deciding.</>
         ) : (
           <>

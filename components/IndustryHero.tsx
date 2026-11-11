@@ -13,7 +13,7 @@ export function IndustryHero({ industry: ind, dict }: { industry: Industry; dict
   const startPrice = cheapest != null ? `$${cheapest}/mo` : isPricePublishable(ind.priceRange) ? priceShort(ind) : 'Varies'
 
   const kpis: { label: string; value: string; accent?: boolean }[] = [
-    { label: ind.slug === 'equipment-rental' ? 'Top FSM pick' : 'Top pick', value: topPick?.name ?? '—' },
+    { label: ind.slug === 'equipment-rental' ? 'Top FSM pick' : ind.slug === 'oil-gas' ? 'Closest documented fit' : 'Top pick', value: topPick?.name ?? '—' },
     { label: ind.slug === 'equipment-rental' ? 'Lowest FSM plan' : 'Starts at', value: startPrice, accent: true },
     {
       label: ind.reviewedCount ? 'Tools shortlisted' : 'Tools compared',
