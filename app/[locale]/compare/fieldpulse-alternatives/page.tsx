@@ -60,7 +60,7 @@ const rows: Row[] = [
   {
     name: 'FieldPulse (for reference)',
     price: 'Not published; seat-based custom quote',
-    trial: 'Demo; its own guide says no free trial or free version',
+    trial: 'Free demo; no standard free trial listed as of November 2026',
     offline: 'Switches to offline mode automatically; forms, notes and photos editable; syncs on reconnect; no payments offline',
     equipment: 'Asset Management with warranty info, maintenance history and barcode scanning',
     fit: 'Teams that want offline work and asset records and are comfortable with a demo-led quote',
@@ -99,11 +99,11 @@ const rows: Row[] = [
   },
   {
     name: 'Commusoft',
-    price: 'Not published; 12-month contract for businesses with 6 or more staff',
+    price: 'Not published; contracted licences on a 12-month term that renews annually',
     trial: 'Free trial advertised; length and eligibility not stated',
     offline: 'Job details, notes, photos, forms and asset histories offline; auto-syncs on reconnect',
     equipment: 'Asset maintenance records with QR or barcode lookup',
-    fit: 'Teams of six or more running planned maintenance contracts',
+    fit: 'Teams running planned maintenance contracts; Commusoft says it is designed for businesses with 6 or more staff',
   },
 ]
 
@@ -129,7 +129,7 @@ const bySize: { size: string; options: string; note: string }[] = [
   {
     size: '6 to 15 users',
     options: 'Jobber Connect (10 users $229/mo, 15 users $299/mo), Housecall Pro MAX, Workiz, or Commusoft',
-    note: 'MAX is $299/mo for 8 users plus $35/mo per extra user. Workiz and Commusoft quote; Commusoft is built for 6 or more staff.',
+    note: 'MAX is $299/mo for 8 users plus $35/mo per extra user. Workiz and Commusoft quote; Commusoft says it is designed for businesses with 6 or more staff.',
   },
   {
     size: 'Larger, multi-crew',
@@ -152,7 +152,7 @@ const faqs = [
   {
     question: 'Does FieldPulse have a free trial?',
     answer:
-      'FieldPulse’s own HVAC dispatch guide, updated November 2026, says FieldPulse is demo-led with no free trial and no free version, and that pricing is finalised in a demo. Its pricing page offers a free demo. Jobber and Housecall Pro offer 14-day free trials and Workiz a 7-day trial, all without a credit card.',
+      'Not as a standard offer, as of November 2026. FieldPulse’s AI information page lists “Flexible subscription pricing (no free trial)”, and its HVAC dispatch guide, updated November 2026, describes it as demo-led with no free trial or free version; its pricing page offers a free demo instead. Trial terms can change, so ask FieldPulse sales about any current offer. Jobber and Housecall Pro offer 14-day free trials and Workiz a 7-day trial, all without a credit card.',
   },
   {
     question: 'Is there a free alternative to FieldPulse?',
@@ -173,6 +173,7 @@ const faqs = [
 
 const sources = [
   { name: 'FieldPulse pricing (seat-based, custom quote, premium products)', url: 'https://www.fieldpulse.com/pricing', checked: '2026-11-11' },
+  { name: 'FieldPulse AI information page (“Flexible subscription pricing (no free trial)”)', url: 'https://www.fieldpulse.com/ai-info-page', checked: '2026-11-11' },
   { name: 'FieldPulse: Best HVAC dispatch software (demo-led, no free trial; packages; field-only seats)', url: 'https://www.fieldpulse.com/articles/best-hvac-dispatch-software/', checked: '2026-11-11' },
   { name: 'FieldPulse help: offline mode', url: 'https://help.fieldpulse.com/en/articles/4063488-offline-mode', checked: '2026-11-11' },
   { name: 'FieldPulse asset management', url: 'https://www.fieldpulse.com/features/asset-management', checked: '2026-11-11' },
@@ -187,7 +188,7 @@ const sources = [
   { name: 'ServiceTitan pricing (per-technician, request pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-10' },
   { name: 'ServiceTitan Field Mobile App FAQ (offline)', url: 'https://help.servicetitan.com/faq/servicetitan-field-mobile-app-faq', checked: '2026-11-11' },
   { name: 'ServiceTitan installed equipment', url: 'https://help.servicetitan.com/docs/installed-equipment-landing-page', checked: '2026-07-08' },
-  { name: 'Commusoft plans (12-month contract, 6+ staff)', url: 'https://www.commusoft.com/en-us/plans/', checked: '2026-11-10' },
+  { name: 'Commusoft plans (designed for 6+ staff; 12-month contracted licences, annual renewal; no stated licence minimum)', url: 'https://www.commusoft.com/en-us/plans/', checked: '2026-11-11' },
   { name: 'Commusoft mobile workforce app (offline, auto-sync)', url: 'https://www.commusoft.com/en-us/features/mobile-workforce-management-software/', checked: '2026-11-11' },
   { name: 'Commusoft asset maintenance (QR / barcode lookup)', url: 'https://www.commusoft.com/en-us/features/asset-maintenance-software/', checked: '2026-11-11' },
   { name: 'Commusoft service contract management (PPM)', url: 'https://www.commusoft.com/en-us/features/service-contract-management-software/', checked: '2026-11-11' },
@@ -232,8 +233,8 @@ export default function FieldPulseAlternativesPage() {
             Jobber (from $29/month) and Housecall Pro (from $59/month), both for one user billed
             annually, publish prices and offer 14-day free trials. For crews that lose signal, Workiz,
             ServiceTitan, and Commusoft document offline job work, while Housecall Pro offers offline
-            viewing only. ServiceTitan suits larger operations, and Commusoft is built for teams of
-            six or more.
+            viewing only. ServiceTitan suits larger operations, and Commusoft says it is designed for
+            businesses with six or more staff.
           </p>
         </AnswerBlock>
 
@@ -241,10 +242,11 @@ export default function FieldPulseAlternativesPage() {
           <h2 id="why-switch">Why teams look beyond FieldPulse</h2>
           <p>
             FieldPulse does not publish prices. Its pricing page says it “is seat-based and pricing is
-            built around what your team needs” and offers a custom quote or a free demo. Its own HVAC
-            dispatch guide, updated November 2026, says FieldPulse is demo-led with no free trial and
-            no free version, sells three packages (Essentials, Professional, and Enterprise), and
-            finalises pricing in a demo. Premium products such as Engage, Operator AI, Pricebook, Fleet
+            built around what your team needs” and offers a custom quote or a free demo. As of November
+            2026, FieldPulse’s AI information page lists “Flexible subscription pricing (no free
+            trial)”, and its HVAC dispatch guide, updated November 2026, describes FieldPulse as
+            demo-led with no free trial or free version. That guide also names three packages
+            (Essentials, Professional, and Enterprise) and says pricing is finalised in a demo. Premium products such as Engage, Operator AI, Pricebook, Fleet
             Tracking, and Custom Forms are optional, so ask how each is priced; see{' '}
             <Link href="/pricing#fieldpulse-pricing" className={A}>FieldPulse pricing</Link> for the
             detail.
@@ -362,13 +364,15 @@ export default function FieldPulseAlternativesPage() {
 
           <h3 id="commusoft">Commusoft</h3>
           <p>
-            <strong>Best fit:</strong> teams of six or more that run planned maintenance contracts.
-            Commusoft sells licences on a 12-month contract for businesses with six or more staff. Its
+            <strong>Best fit:</strong> teams that run planned maintenance contracts. Commusoft says it
+            is designed for businesses with six or more staff, and its standard plans use licences on a
+            12-month contract that renews annually; its plans page states no minimum number of
+            licences. Its
             engineer app gives access to job details, notes, photos, digital forms, and asset histories
             without a signal and syncs automatically when it reconnects. It schedules planned
             preventive maintenance (PPM) jobs under service contracts and keeps asset maintenance
-            records with QR or barcode lookup. <strong>Limitation:</strong> no published price, and it
-            is not designed for very small teams.
+            records with QR or barcode lookup. <strong>Limitation:</strong> no published price, and a
+            12-month commitment, so check the fit carefully if you are a team of one to five.
           </p>
 
           <h2 id="by-team-size">Which alternative fits your team size</h2>
@@ -409,8 +413,8 @@ export default function FieldPulseAlternativesPage() {
               they support for customers, jobs, invoices, and equipment records before you commit.
             </li>
             <li>
-              <strong>Check contract terms.</strong> Commusoft runs on a 12-month contract that renews
-              annually, and Jobber’s annual prepaid plans are non-refundable.
+              <strong>Check contract terms.</strong> Commusoft’s contracted licences run for 12 months and
+              renew annually, and Jobber’s annual prepaid plans are non-refundable.
             </li>
             <li>
               <strong>Compare payment processing, not just the subscription.</strong> A $1,000 card
