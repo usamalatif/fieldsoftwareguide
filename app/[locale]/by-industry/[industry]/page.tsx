@@ -262,8 +262,9 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
                 documented capabilities and test them in a demo. For crews at no-signal sites, start
                 with FieldPulse, which switches to offline mode automatically and documents custom
                 forms with signatures and asset management with barcode scanning, and compare Workiz,
-                which documents offline job updates. Large operators can add ServiceTitan; its mobile
-                app works offline, though directions and item pricing need a connection. Small
+                which documents offline job updates. Larger service operations can add ServiceTitan;
+                its mobile app handles most job actions offline, but directions, service location
+                history, and Dynamic Pricing need a connection (Static Pricing works offline). Small
                 contractors who mostly work in coverage can start with Jobber (from $29/month) or
                 Housecall Pro (from $59/month), billed annually, but Housecall Pro documents offline
                 viewing only. FieldPulse, Workiz, and ServiceTitan are custom-quoted, so ask each
