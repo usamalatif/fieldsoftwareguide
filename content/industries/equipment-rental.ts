@@ -96,7 +96,7 @@ export const equipmentRental: Industry = {
   priceRange: {
     min: 29,
     max: null,
-    note: 'This comparison covers field-service tools, not a full rental booking system. Jobber Core starts at $29/mo and Housecall Pro Basic at $59/mo on annual billing (standard rates checked November 7, 2026). FieldPulse requires a custom quote. Prices vary with plan and team size. Dedicated rental software is priced separately.',
+    note: 'This comparison covers field-service tools, not a full rental booking system. Jobber Core starts at $29/mo and Housecall Pro Basic at $59/mo on annual billing (standard rates checked November 7, 2026). FieldPulse requires a custom quote. Prices vary with plan and team size; [field service software pricing](/pricing) shows costs by team size and payment fees for each FSM tool. Dedicated rental software is priced separately.',
     structured: false,
   },
 

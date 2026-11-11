@@ -492,8 +492,9 @@ export default function PricingHubPage() {
             rather than what it costs, use our{' '}
             <Link href="/compare">comparison of the best field service management software</Link>,{' '}
             <Link href="/by-size">software by business size</Link>, or a trade guide such as{' '}
-            <Link href="/by-industry/hvac">HVAC</Link> or{' '}
-            <Link href="/by-industry/plumbing">plumbing</Link>. Our{' '}
+            <Link href="/by-industry/hvac">HVAC</Link>,{' '}
+            <Link href="/by-industry/plumbing">plumbing</Link>, or{' '}
+            <Link href="/by-industry/oil-gas">oil and gas</Link>. Our{' '}
             <Link href="/how-we-review">review method</Link> explains why we never estimate prices a
             vendor has not published.
           </p>

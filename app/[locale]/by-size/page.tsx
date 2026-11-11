@@ -285,14 +285,17 @@ export default async function BySizePage({ params }: { params: Promise<{ locale:
             <Link href={L('/by-industry/hvac')}>HVAC</Link>,{' '}
             <Link href={L('/by-industry/plumbing')}>plumbing</Link>,{' '}
             <Link href={L('/by-industry/electrical')}>electrical</Link>,{' '}
-            <Link href={L('/by-industry/pest-control')}>pest control</Link>, and the{' '}
+            <Link href={L('/by-industry/pest-control')}>pest control</Link>,{' '}
+            <Link href={L('/by-industry/oil-gas')}>oil and gas</Link>, and the{' '}
             <Link href={L('/by-industry')}>other industry guides</Link>. If you are a solo
             operator or small crew, our{' '}
             <Link href={L('/for-small-business')}>field service software for small business</Link>{' '}
             guide goes deeper on what a small team needs on day one, and our{' '}
             <Link href={L('/pricing/jobber')}>Jobber pricing</Link> and{' '}
             <Link href={L('/pricing/housecall-pro')}>Housecall Pro pricing</Link> guides break down
-            every plan and fee for the two published-price tools.
+            every plan and fee for the two published-price tools. Our{' '}
+            <Link href={L('/pricing')}>field service software pricing</Link> guide puts all six
+            vendors’ plans, billing terms, and payment fees on one page.
           </p>
         </div>
 

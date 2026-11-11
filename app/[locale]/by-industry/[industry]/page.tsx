@@ -226,7 +226,7 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
           <p className="mb-5 mt-1.5 max-w-[700px] text-[15px] text-slate-500 dark:text-slate-400">
             {t.pricingSub(ind.name)}
           </p>
-          <PricingList industry={ind} />
+          <PricingList industry={ind} L={L} />
         </section>
 
         {ind.mistakes?.length ? (
@@ -515,7 +515,7 @@ function LinkedText({ text, L }: { text: string; L: (p: string) => string }) {
   )
 }
 
-function PricingList({ industry: ind }: { industry: Industry }) {
+function PricingList({ industry: ind, L }: { industry: Industry; L: (p: string) => string }) {
   const rows = ind.providers
     .map((r) => ({ ref: r, p: getProvider(r.slug) }))
     .filter((x): x is { ref: (typeof ind.providers)[number]; p: NonNullable<ReturnType<typeof getProvider>> } => !!x.p)
@@ -544,7 +544,7 @@ function PricingList({ industry: ind }: { industry: Industry }) {
           ? ''
           : `Lowest vendor-published plan with annual billing (checked ${fmtChecked(ind.priceRange.source?.checked)}); month-to-month rates run higher. `}
         {(isPricePublishable(ind.priceRange) || ind.slug === 'equipment-rental') && ind.priceRange.note
-          ? ind.priceRange.note
+          ? <LinkedText text={ind.priceRange.note} L={L} />
           : 'Custom-priced tools require a quote; costs scale with technicians and features.'}
       </p>
     </div>
