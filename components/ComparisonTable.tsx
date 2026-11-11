@@ -133,7 +133,7 @@ export function ComparisonTable({
 
       <p className="mt-3 px-1 text-[12.5px] text-slate-400">
         {industryName === 'Equipment Rental'
-          ? 'Jobber and Housecall Pro standard annual-billing entry plans checked October 22, 2026. “Custom” means the vendor quotes per business. '
+          ? 'Jobber and Housecall Pro standard annual-billing entry plans checked November 7, 2026. “Custom” means the vendor quotes per business. '
           : `Prices are each vendor’s lowest published plan with annual billing (checked ${pricesChecked}); month-to-month runs higher. “Custom” means the vendor quotes per business. `}
         {site.name} may earn a
         commission from software links — this never affects our scoring. Verify current pricing for

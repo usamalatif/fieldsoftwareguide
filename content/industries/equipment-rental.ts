@@ -11,7 +11,65 @@ import type { Industry } from '@/lib/industries'
  * (Point of Rental Work Orders, EZRentOut maintenance, Quipli service and repair, Booqable
  * downtime, Wynne mobile work orders); title, H1, URL and keyword targeting unchanged;
  * Jobber and Housecall Pro rates rechecked. datePublished stays omitted (no verified date).
+ * 2026-11-11: added the rental-platform comparison table (rentalPlatforms below), built only
+ * from each vendor's own feature and pricing pages checked that day; "Not stated" means the
+ * cited page does not say, not that the feature is missing. Opening answer shortened.
  */
+
+/** One row of the rental-platform comparison. Every cell comes from the cited vendor pages. */
+export type RentalPlatformRow = {
+  name: string
+  workOrders: string
+  scheduling: string
+  mobile: string
+  customerEquipment: string
+  price: string
+}
+
+export const rentalPlatformsChecked = 'November 11, 2026'
+
+export const rentalPlatforms: RentalPlatformRow[] = [
+  {
+    name: 'Point of Rental',
+    workOrders: 'Work Orders in POR One (mobile), part of the Advanced feature tier: internal repair, maintenance and service orders',
+    scheduling: 'Not stated on the cited page',
+    mobile: 'Mobile (POR One); offline use not stated for Work Orders',
+    customerEquipment: 'Yes: external work orders for customer-owned equipment',
+    price: 'Not published; pricing by quote',
+  },
+  {
+    name: 'EZRentOut',
+    workOrders: 'Work orders with deadlines, instructions and assignees; Work Orders are listed on the Premium plan',
+    scheduling: 'Recurring maintenance by time interval or usage meters',
+    mobile: 'Mobile app; work logs can be added offline and sync later',
+    customerEquipment: 'Service Workshop features list maintenance on customer assets; plan not confirmed',
+    price: 'Growth $399/mo, Premium $499/mo (billed annually)',
+  },
+  {
+    name: 'Quipli',
+    workOrders: 'Work orders with photos and documents, soft-down and hard-down status, and repair cost tracking',
+    scheduling: 'By machine hours, time interval or number of rentals',
+    mobile: 'Service tickets from desktop or mobile; offline not stated',
+    customerEquipment: 'Yes: customer-owned equipment gets full work orders',
+    price: 'Core $6,000 per year per location; Plus $10,000',
+  },
+  {
+    name: 'Booqable',
+    workOrders: 'No work orders mentioned; downtime blocks mark items unavailable for maintenance or repairs (Grow plan and up)',
+    scheduling: 'Scheduled downtime periods',
+    mobile: 'Not stated for maintenance',
+    customerEquipment: 'Not stated',
+    price: 'Grow $69/mo billed yearly ($87 monthly)',
+  },
+  {
+    name: 'Wynne Systems',
+    workOrders: 'Native iOS and Android work-order app for field technicians and mechanics, tied to its rental system',
+    scheduling: 'Scheduled maintenance and ad-hoc repairs; triggers not stated',
+    mobile: 'Runs offline and syncs when back in signal',
+    customerEquipment: 'Not stated on the cited page',
+    price: 'No price published on its website',
+  },
+]
 export const equipmentRental: Industry = {
   slug: 'equipment-rental',
   name: 'Equipment Rental',
@@ -21,7 +79,7 @@ export const equipmentRental: Industry = {
     'Compare field service software for equipment rental maintenance, dispatch, and inspections. Know when dedicated rental software is required.',
 
   answer:
-    'Field service management software for equipment rental companies helps manage equipment maintenance, technician dispatch, delivery and pickup service work, and inspections. However, most rental businesses also need dedicated rental management software for reservations, equipment availability, rental contracts, and billing, and many rental platforms now include maintenance work orders as well. For rental bookings and inventory management, platforms such as Point of Rental, Booqable, EZRentOut, and Quipli are worth evaluating. For field maintenance operations, FieldPulse and ServiceTitan are service-side options, but neither should be assumed to replace a dedicated rental platform. Smaller rental-and-repair businesses can also compare Jobber and Housecall Pro for scheduling, invoicing, and technician management. As of November 2026, Jobber starts at $29/month and Housecall Pro at $59/month with annual billing, while FieldPulse offers custom pricing. Confirm current prices, rental-specific capabilities, and integrations directly with vendors before choosing a solution.',
+    'Most equipment rental companies need rental management software first: Point of Rental, Booqable, EZRentOut, and Quipli handle reservations, availability, rental contracts, and billing, and many now include maintenance work orders. Field service management (FSM) software adds technician dispatch, delivery and pickup service work, equipment maintenance, and inspections. FieldPulse and ServiceTitan (custom pricing) are service-side options, and smaller rental-and-repair shops can compare Jobber (from $29/month) and Housecall Pro (from $59/month), both with annual billing as of November 2026. No FSM tool should be assumed to replace a rental platform, so confirm prices, rental features, and integrations with each vendor.',
 
   intro:
     'Equipment rental combines asset availability, reservations, delivery, inspections, and maintenance. Dedicated rental software usually manages availability, rental contracts, and rental billing. Field service management (FSM) software focuses on scheduling technicians, tracking service work, and documenting asset maintenance. A rental operator may use both categories when the service workload justifies it, but integrations, condition-inspection workflows, and total software cost should be verified before adopting a second platform.',
@@ -149,7 +207,7 @@ export const equipmentRental: Industry = {
     },
   ],
 
-  lastUpdated: '2026-11-07',
+  lastUpdated: '2026-11-11',
   dataVerified: true,
   sources: [
     { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-07' },
@@ -163,10 +221,14 @@ export const equipmentRental: Industry = {
     { name: 'Booqable rental bookings and contracts', url: 'https://booqable.com/', checked: '2026-10-22' },
     { name: 'Quipli equipment rental workflows', url: 'https://www.quipli.com/', checked: '2026-10-22' },
     { name: 'ServiceTitan industries (no rental vertical)', url: 'https://www.servicetitan.com/industries', checked: '2026-07-08' },
-    { name: 'Point of Rental: Work Orders for Point of Rental One (Advanced tier)', url: 'https://www.point-of-rental.com/press-release/point-of-rental-elite-introduces-work-orders-for-por-one/', checked: '2026-11-07' },
-    { name: 'EZRentOut maintenance management', url: 'https://ezo.io/ezrentout/solutions/maintenance-management/', checked: '2026-11-07' },
-    { name: 'Quipli service and repair', url: 'https://www.quipli.com/solutions/equipment-rental-maintenance-software/', checked: '2026-11-07' },
-    { name: 'Booqable downtime scheduling (Dec 3, 2025)', url: 'https://booqable.com/whats-new/december_03_2025/', checked: '2026-11-07' },
-    { name: 'Wynne Systems field service for rental equipment', url: 'https://wynnesystems.com/field-service-management-for-all-your-rental-equipment/', checked: '2026-11-07' },
+    { name: 'Point of Rental: Work Orders for Point of Rental One (Advanced tier)', url: 'https://www.point-of-rental.com/press-release/point-of-rental-elite-introduces-work-orders-for-por-one/', checked: '2026-11-11' },
+    { name: 'EZRentOut maintenance management', url: 'https://ezo.io/ezrentout/solutions/maintenance-management/', checked: '2026-11-11' },
+    { name: 'Quipli service and repair', url: 'https://www.quipli.com/solutions/equipment-rental-maintenance-software/', checked: '2026-11-11' },
+    { name: 'Booqable downtime scheduling (Dec 3, 2025)', url: 'https://booqable.com/whats-new/december_03_2025/', checked: '2026-11-11' },
+    { name: 'Wynne Systems field service for rental equipment', url: 'https://wynnesystems.com/field-service-management-for-all-your-rental-equipment/', checked: '2026-11-11' },
+    { name: 'Point of Rental pricing (quote only)', url: 'https://www.point-of-rental.com/pricing/', checked: '2026-11-11' },
+    { name: 'EZRentOut pricing', url: 'https://ezo.io/ezrentout/pricing/', checked: '2026-11-11' },
+    { name: 'Quipli pricing', url: 'https://www.quipli.com/pricing', checked: '2026-11-11' },
+    { name: 'Booqable pricing', url: 'https://booqable.com/pricing/', checked: '2026-11-11' },
   ],
 }
