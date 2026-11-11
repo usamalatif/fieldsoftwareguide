@@ -12,4 +12,6 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/pricing': { firstPublished: '2026-11-10', contentUpdated: '2026-11-10' },
   '/pricing/housecall-pro': { firstPublished: '2026-10-26', contentUpdated: '2026-10-26' },
   '/pricing/jobber': { firstPublished: '2026-11-03', contentUpdated: '2026-11-03' },
+  // Draft: firstPublished is set on the day it first goes live.
+  '/compare/fieldpulse-alternatives': { contentUpdated: '2026-11-11' },
 }
