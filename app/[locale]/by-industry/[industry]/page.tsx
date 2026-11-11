@@ -4,6 +4,7 @@ import { buildMetadata } from '@/lib/seo'
 import { getIndustryData, getAllIndustrySlugs, isPricePublishable, type Industry } from '@/lib/industries'
 import { getProvider } from '@/lib/providers'
 import { rentalPlatforms, rentalPlatformsChecked, type RentalPlatformRow } from '@/content/industries/equipment-rental'
+import { oilfieldTools, oilfieldToolsChecked, type OilfieldToolRow } from '@/content/industries/oil-gas'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import { IndustryHero } from '@/components/IndustryHero'
 import { AnswerBlock } from '@/components/AnswerBlock'
@@ -212,6 +213,7 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
                 <LinkedText text={para} L={L} />
               </p>
             ))}
+            {sec.id === 'oilfield-specific-software' && <OilfieldToolsTable />}
           </section>
         ))}
 
@@ -354,6 +356,72 @@ function RentalPlatformTable() {
         vary by plan and prices change, so confirm what your tier includes before you buy.
       </p>
     </section>
+  )
+}
+
+/** Oil & gas only: oilfield-specific tools as described on their own pages. */
+function OilfieldToolsTable() {
+  const cols: { key: keyof Omit<OilfieldToolRow, 'name'>; label: string }[] = [
+    { key: 'builtFor', label: 'Built for' },
+    { key: 'tickets', label: 'Field tickets and approvals' },
+    { key: 'dispatch', label: 'Dispatch and work orders' },
+    { key: 'capture', label: 'Field data capture' },
+    { key: 'integrations', label: 'Integrations named' },
+    { key: 'price', label: 'Published price' },
+  ]
+  return (
+    <div className="mt-6">
+      <h3 className="text-[19px] font-bold text-slate-900 dark:text-white">
+        Oilfield ticketing tools: documented capabilities
+      </h3>
+      <p className="mt-1.5 text-[14.5px] leading-[1.7] text-slate-600 dark:text-slate-300">
+        Summarised from each vendor’s own pages. These tools were not tested or ranked, and
+        “not stated” means the cited page does not say, not that the feature is missing.
+      </p>
+
+      {/* Desktop table */}
+      <div className="mt-4 hidden overflow-x-auto rounded-xl border border-slate-200 lg:block dark:border-slate-800">
+        <table className="w-full border-collapse text-left text-[13px] leading-[1.5]">
+          <thead className="bg-slate-900 text-white">
+            <tr>
+              <th scope="col" className="p-3">Tool</th>
+              {cols.map((c) => <th key={c.key} scope="col" className="p-3">{c.label}</th>)}
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-200 text-slate-700 dark:divide-slate-800 dark:text-slate-300">
+            {oilfieldTools.map((r) => (
+              <tr key={r.name} className="align-top">
+                <th scope="row" className="p-3 font-semibold text-slate-900 dark:text-white">{r.name}</th>
+                {cols.map((c) => <td key={c.key} className="p-3">{r[c.key]}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Mobile cards */}
+      <div className="mt-4 space-y-3.5 lg:hidden">
+        {oilfieldTools.map((r) => (
+          <article key={r.name} className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
+            <h4 className="text-[17px] font-bold text-slate-900 dark:text-white">{r.name}</h4>
+            <dl className="mt-2 space-y-2 text-[14px] leading-[1.55]">
+              {cols.map((c) => (
+                <div key={c.key}>
+                  <dt className="text-[12px] font-bold uppercase tracking-[0.06em] text-slate-400">{c.label}</dt>
+                  <dd className="text-slate-700 dark:text-slate-300">{r[c.key]}</dd>
+                </div>
+              ))}
+            </dl>
+          </article>
+        ))}
+      </div>
+
+      <p className="mt-3 text-[13.5px] leading-[1.7] text-slate-500 dark:text-slate-400">
+        Checked {oilfieldToolsChecked} against the vendor pages listed in the sources. Features vary
+        by subscription, so confirm what your plan includes and which systems your operator
+        customers require.
+      </p>
+    </div>
   )
 }
 

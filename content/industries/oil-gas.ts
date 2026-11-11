@@ -19,7 +19,53 @@ import type { Industry } from '@/lib/industries'
  * to what each official page states (ServiceTitan forms page does not mention signatures;
  * FieldPulse asset page no longer mentions serial numbers); neutral positioning labels; offline,
  * forms, asset, Commusoft service-contract and Workiz comms claims rechecked on vendor pages.
+ * 2026-11-11 (PR #13): added the generic-FSM vs oilfield-specific section and oilfieldTools
+ * table. Enverus web pages return 403 to automated checks, so OpenTicket facts come only
+ * from Enverus's own App Store listing (seller Drillinginfo, Inc). Recommendations unchanged.
  */
+/** Oilfield-specific tools, from each vendor's own pages (checked 2026-11-11). Not tested or ranked. */
+export type OilfieldToolRow = {
+  name: string
+  builtFor: string
+  tickets: string
+  dispatch: string
+  capture: string
+  integrations: string
+  price: string
+}
+
+export const oilfieldToolsChecked = 'November 11, 2026'
+
+export const oilfieldTools: OilfieldToolRow[] = [
+  {
+    name: 'Enverus OpenTicket Mobile',
+    builtFor: 'Service companies’ field crews and billing teams submitting tickets to operators that use OpenTicket',
+    tickets: 'Create field tickets; ticket comments and cost splits across AFE and cost-center combinations; price-book ranges flag out-of-range tickets',
+    dispatch: 'Not stated in the app listing',
+    capture: 'GPS route and location data; with an OSS subscription, labor, equipment, materials, customer signatures, and photo scan of paper tickets. Offline use not stated',
+    integrations: 'Not stated in cited app listing',
+    price: 'App free and requires an OpenTicket account; several features need an Enverus OSS subscription (no price listed)',
+  },
+  {
+    name: 'Pandell Jobutrax',
+    builtFor: 'Oilfield service companies billing producers',
+    tickets: 'Create, approve, and submit field tickets; secure electronic approval; audit log; autofills customer service codes and pricing',
+    dispatch: 'Equipment maintenance work orders; dispatch not described on its features page',
+    capture: 'Works in any web browser or offline with sync later; safety meetings and JSAs; timesheets built from tickets',
+    integrations: 'QuickBooks, Sage Accounting, Pandell AP, Pandell VP',
+    price: 'Not published; pricing by demo request',
+  },
+  {
+    name: 'Cleargistix',
+    builtFor: 'Oil and gas service companies and the operators who approve their tickets',
+    tickets: 'Digital service tickets and forms with workflow and routing; operators can review, approve, and code tickets digitally',
+    dispatch: 'Job management, dispatch, and crew management modules',
+    capture: 'Digital information capture and asset management; mobile and offline use not stated',
+    integrations: 'Integration with back-end systems (none named on its home page)',
+    price: 'Not published',
+  },
+]
+
 export const oilGas: Industry = {
   slug: 'oil-gas',
   name: 'Oil & Gas',
@@ -76,6 +122,14 @@ export const oilGas: Industry = {
       paragraphs: [
         'Dispatching oil and gas crews differs from dispatching home-service technicians in one way that decides most shortlists: connectivity. Wellsites and pads often have no cell signal, so the dispatch tool has to let a crew open the job, record work offline, and sync when it reconnects. FieldPulse, Workiz, and ServiceTitan document offline use, and Jobber keeps timers, checklists (formerly called job forms), notes, and attachments working offline and syncs them later; checklists start on its Connect plan. Housecall Pro documents offline viewing only.',
         'In a demo, send a test job to a phone in airplane mode and check what the crew can still do: open the work order, complete a safety checklist, capture photos and signatures, and look up equipment by serial number. Then reconnect and confirm nothing is lost or duplicated. For a cross-trade view of scheduling and dispatch tools, see the [full FSM software comparison](/compare). If your crews also run trucking or fleet logistics, the [transportation guide](/by-industry/transportation) covers that side.',
+      ],
+    },
+    {
+      id: 'oilfield-specific-software',
+      heading: 'Generic FSM software vs oilfield-specific software',
+      paragraphs: [
+        'The field service tools above schedule crews, record the work, and invoice the customer. Much oilfield service billing runs on field tickets instead: a record of the labor, equipment, and materials used on a job that the operator reviews, codes to its own cost accounts, and approves before paying. Oilfield ticketing tools are built around that approval loop. We found no operator field-ticket approval workflow documented by the six FSM platforms we review.',
+        'A generic FSM tool is usually enough when your customers accept a standard invoice and what you need is scheduling, dispatch, offline forms, and equipment history. Look at oilfield-specific software when operator customers ask for tickets through a system such as Enverus OpenTicket, or need tickets coded to their AFE or cost centers. Some service companies run both, so check whether tickets and invoices sync to your accounting system before adding a second product.',
       ],
     },
   ],
@@ -136,6 +190,11 @@ export const oilGas: Industry = {
     { name: 'FieldPulse custom forms', url: 'https://www.fieldpulse.com/features/custom-forms', checked: '2026-11-11' },
     { name: 'ServiceTitan custom forms', url: 'https://help.servicetitan.com/docs/forms', checked: '2026-11-11' },
     { name: 'Commusoft digital forms', url: 'https://www.commusoft.com/en-gb/features/digital-forms-software/', checked: '2026-11-11' },
+    { name: 'Enverus OpenTicket Mobile (App Store listing by Drillinginfo, Inc)', url: 'https://apps.apple.com/us/app/enverus-openticket-mobile/id1642864911', checked: '2026-11-11' },
+    { name: 'Pandell Jobutrax field ticketing features', url: 'https://www.pandell.com/energy/pandelljobutrax/features/', checked: '2026-11-11' },
+    { name: 'Pandell Jobutrax product summary (PDF)', url: 'https://www.pandell.com/pdf/brochure_pandelljobutrax.pdf', checked: '2026-11-11' },
+    { name: 'Cleargistix oil and gas modules', url: 'https://cleargistix.com/', checked: '2026-11-11' },
+    { name: 'Cleargistix: operator ticket review and approval (Oct 15, 2020)', url: 'https://cleargistix.com/what-do-oilfield-operators-think-of-cleargistix/', checked: '2026-11-11' },
     { name: 'Commusoft service contract management (PPM)', url: 'https://www.commusoft.com/en-us/features/service-contract-management-software/', checked: '2026-11-11' },
   ],
 }
