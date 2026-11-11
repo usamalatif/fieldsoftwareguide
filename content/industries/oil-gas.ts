@@ -43,8 +43,8 @@ export const oilfieldTools: OilfieldToolRow[] = [
     tickets: 'Create field tickets; ticket comments and cost splits across AFE and cost-center combinations; price-book ranges flag out-of-range tickets',
     dispatch: 'Not stated in the app listing',
     capture: 'GPS route and location data; with an OSS subscription, labor, equipment, materials, customer signatures, and photo scan of paper tickets. Offline use not stated',
-    integrations: 'Requires an OpenTicket account',
-    price: 'App free; several features need an Enverus OSS subscription (no price listed)',
+    integrations: 'Not stated in cited app listing',
+    price: 'App free and requires an OpenTicket account; several features need an Enverus OSS subscription (no price listed)',
   },
   {
     name: 'Pandell Jobutrax',
