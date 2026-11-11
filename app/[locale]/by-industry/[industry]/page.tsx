@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { buildMetadata } from '@/lib/seo'
 import { getIndustryData, getAllIndustrySlugs, isPricePublishable, type Industry } from '@/lib/industries'
 import { getProvider } from '@/lib/providers'
+import { rentalPlatforms, rentalPlatformsChecked, type RentalPlatformRow } from '@/content/industries/equipment-rental'
 import { Breadcrumb } from '@/components/Breadcrumb'
 import { IndustryHero } from '@/components/IndustryHero'
 import { AnswerBlock } from '@/components/AnswerBlock'
@@ -110,9 +111,11 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
               Equipment rental software vs field service management software
             </h2>
             <p className="mt-3 max-w-[820px] text-[15px] leading-[1.75] text-slate-600 dark:text-slate-300">
-              Choose the system around the work you need to manage. Rental software handles booking
-              and asset availability. FSM software is aimed at dispatching technicians and recording
-              repairs. A rental company might need both, but only after checking integrations.
+              Choose the system around the work you need to manage. Rental management software runs
+              the rental itself: what is available, who has booked it, the rental contract, and the
+              rental invoice. Field service management (FSM) software runs service work: sending
+              technicians to jobs, recording repairs and inspections, and invoicing for that work. A
+              rental company might need both, but only after checking integrations.
             </p>
             <div className="mt-5 overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800">
               <table className="w-full min-w-[620px] border-collapse text-left text-sm">
@@ -157,9 +160,11 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
           </section>
         )}
 
+        {ind.slug === 'equipment-rental' && <RentalPlatformTable />}
+
         <section className="mx-auto mt-14 max-w-[980px]">
           <h2 className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
-            {t.bestSoftware(ind.name)}
+            {ind.slug === 'equipment-rental' ? 'Field Service Software Options for Equipment Rental' : t.bestSoftware(ind.name)}
           </h2>
           <p className="mb-1 mt-2 max-w-[720px] text-[15px] text-slate-500 dark:text-slate-400">
             {t.bestSoftwareSub}
@@ -264,6 +269,72 @@ export default async function IndustryPage({ params }: { params: Promise<Params>
         <AdUnit slot="0000000003" format="leaderboard" note="footer" />
       </div>
     </>
+  )
+}
+
+/** Equipment rental only: maintenance features of five rental platforms, from vendor pages. */
+function RentalPlatformTable() {
+  const cols: { key: keyof Omit<RentalPlatformRow, 'name'>; label: string }[] = [
+    { key: 'workOrders', label: 'Maintenance work orders' },
+    { key: 'scheduling', label: 'Maintenance scheduling' },
+    { key: 'mobile', label: 'Mobile and offline' },
+    { key: 'customerEquipment', label: 'Customer-owned equipment' },
+    { key: 'price', label: 'Published price' },
+  ]
+  return (
+    <section className="mx-auto mt-14 max-w-[980px]" aria-labelledby="rental-platforms-heading">
+      <h2 id="rental-platforms-heading" className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
+        Maintenance features in five rental platforms
+      </h2>
+      <p className="mt-2 max-w-[820px] text-[15px] leading-[1.7] text-slate-600 dark:text-slate-300">
+        All five handle rentals. This table compares only how they handle service and maintenance,
+        using each vendor’s own feature and pricing pages. It is a feature summary, not a test or a
+        ranking. “Not stated” means the cited vendor page does not say; it does not mean the feature
+        is missing.
+      </p>
+
+      {/* Desktop table */}
+      <div className="mt-5 hidden overflow-x-auto rounded-xl border border-slate-200 lg:block dark:border-slate-800">
+        <table className="w-full border-collapse text-left text-[13.5px] leading-[1.5]">
+          <thead className="bg-slate-900 text-white">
+            <tr>
+              <th scope="col" className="p-3.5">Platform</th>
+              {cols.map((c) => <th key={c.key} scope="col" className="p-3.5">{c.label}</th>)}
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-200 text-slate-700 dark:divide-slate-800 dark:text-slate-300">
+            {rentalPlatforms.map((r) => (
+              <tr key={r.name} className="align-top">
+                <th scope="row" className="p-3.5 font-semibold text-slate-900 dark:text-white">{r.name}</th>
+                {cols.map((c) => <td key={c.key} className="p-3.5">{r[c.key]}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Mobile cards */}
+      <div className="mt-5 space-y-3.5 lg:hidden">
+        {rentalPlatforms.map((r) => (
+          <article key={r.name} className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
+            <h3 className="text-[17px] font-bold text-slate-900 dark:text-white">{r.name}</h3>
+            <dl className="mt-2 space-y-2 text-[14px] leading-[1.55]">
+              {cols.map((c) => (
+                <div key={c.key}>
+                  <dt className="text-[12px] font-bold uppercase tracking-[0.06em] text-slate-400">{c.label}</dt>
+                  <dd className="text-slate-700 dark:text-slate-300">{r[c.key]}</dd>
+                </div>
+              ))}
+            </dl>
+          </article>
+        ))}
+      </div>
+
+      <p className="mt-3 text-[13.5px] leading-[1.7] text-slate-500 dark:text-slate-400">
+        Checked {rentalPlatformsChecked} against the vendor pages listed in the sources. Features
+        vary by plan and prices change, so confirm what your tier includes before you buy.
+      </p>
+    </section>
   )
 }
 
