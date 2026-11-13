@@ -262,6 +262,8 @@ export default function ComparePage() {
             <Link href="/pricing/housecall-pro" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro pricing</Link>{' '}
             breakdown, or the head-to-head{' '}
             <Link href="/compare/jobber-vs-housecall-pro" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs Housecall Pro</Link>{' '}
+            comparison. If you&rsquo;re considering moving away from FieldPulse, see our{' '}
+            <Link href="/compare/fieldpulse-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">FieldPulse alternatives</Link>{' '}
             comparison.
           </p>
         </section>
