@@ -301,7 +301,10 @@ export default function HousecallProPricingPage() {
           <h2>Pros and cons of Housecall Pro&rsquo;s pricing</h2>
           <p><strong>Pros</strong></p>
           <ul>
-            <li>All three plans have published prices, unlike quote-only tools such as ServiceTitan.</li>
+            <li>
+              All three plans have published prices, unlike quote-only tools such as ServiceTitan (see{' '}
+              <Link href="/compare/housecall-pro-vs-servicetitan">Housecall Pro vs ServiceTitan</Link>).
+            </li>
             <li>No long-term contract is required, and the 14-day trial covers every MAX feature.</li>
             <li>Essentials covers up to five users for one price, which is good value for a small crew.</li>
             <li>Review management and online booking are included from Basic.</li>
