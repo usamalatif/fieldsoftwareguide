@@ -182,7 +182,8 @@ export default function HousecallProVsServiceTitanPage() {
             user and reach $299/month for eight, billed annually. <strong>ServiceTitan</strong> fits
             operations ready for a larger rollout: it prices per technician by quote, typically signs
             new customers to 12 to 36 month agreements with separately invoiced onboarding, and
-            documents deeper dispatch, capacity planning and offline mobile work. If your technicians
+            documents capacity planning, add-on dispatch automation
+            and offline mobile work. If your technicians
             often lose signal, that last point matters: Housecall Pro’s offline mode is view-only.
           </p>
         </AnswerBlock>
