@@ -24,6 +24,7 @@ const guides = [
   { title: 'Field service software pricing (2026)', desc: 'Published prices, 1 to 15 user costs, add-ons, and payment fees for six platforms.', href: '/pricing', tag: 'Pricing' },
   { title: 'Housecall Pro pricing (2026)', desc: 'Every Housecall Pro plan, user limit, add-on, and payment fee, from its own pages.', href: '/pricing/housecall-pro', tag: 'Pricing' },
   { title: 'Jobber pricing (2026)', desc: 'Every Jobber plan by team size and billing option, plus add-ons and payment fees.', href: '/pricing/jobber', tag: 'Pricing' },
+  { title: 'Refrigerant tracking software (2026)', desc: 'Seven refrigerant compliance tools compared on leak-rate math, EPA and CARB reports, and pricing.', href: '/guides/refrigerant-tracking-software', tag: 'Compliance' },
   { title: 'FSM software for QuickBooks', desc: 'Which tools sync with QuickBooks Online and Desktop, and the plan you need.', href: '/quickbooks', tag: 'QuickBooks' },
   { title: 'FSM software for small business', desc: 'What a solo operator or small crew should buy, with verified entry pricing.', href: '/for-small-business', tag: 'Small business' },
   { title: 'How we review', desc: 'Our pricing-confidence standard and how rankings are decided.', href: '/how-we-review', tag: 'Methodology' },

@@ -13,4 +13,5 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/pricing/housecall-pro': { firstPublished: '2026-10-26', contentUpdated: '2026-10-26' },
   '/pricing/jobber': { firstPublished: '2026-11-03', contentUpdated: '2026-11-03' },
   '/compare/fieldpulse-alternatives': { firstPublished: '2026-11-11', contentUpdated: '2026-11-11' },
+  '/guides/refrigerant-tracking-software': { firstPublished: '2026-11-18', contentUpdated: '2026-11-18' },
 }
