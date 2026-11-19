@@ -62,6 +62,9 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [FSM Software by Industry](${site.url}/by-industry): guides for ${industryNames}
 - [Compare All Tools](${site.url}/compare): the major FSM platforms compared with published pricing
 - [Jobber vs Housecall Pro](${site.url}/compare/jobber-vs-housecall-pro): verified head-to-head comparison
+- [Housecall Pro vs ServiceTitan](${site.url}/compare/housecall-pro-vs-servicetitan): published vs quote-only pricing, contracts, onboarding, dispatch and offline use, from vendor documents
+- [FieldPulse Alternatives](${site.url}/compare/fieldpulse-alternatives): FieldPulse alternatives compared on published pricing and fit
+- [Refrigerant Tracking Software](${site.url}/guides/refrigerant-tracking-software): seven refrigerant compliance tools compared, with EPA leak repair rules checked against eCFR
 - [Free FSM Software](${site.url}/free): what is actually free, verified on vendor sites
 - [QuickBooks Compatibility](${site.url}/quickbooks): which FSM tools sync with QuickBooks Online vs Desktop
 - [Field Service Software Pricing](${site.url}/pricing): published prices, 1 to 15 user costs, billing terms, add-ons and payment fees for six FSM platforms; which tools are quote-only

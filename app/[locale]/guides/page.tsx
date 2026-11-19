@@ -28,6 +28,8 @@ const guides = [
   { title: 'FSM software for QuickBooks', desc: 'Which tools sync with QuickBooks Online and Desktop, and the plan you need.', href: '/quickbooks', tag: 'QuickBooks' },
   { title: 'FSM software for small business', desc: 'What a solo operator or small crew should buy, with verified entry pricing.', href: '/for-small-business', tag: 'Small business' },
   { title: 'How we review', desc: 'Our pricing-confidence standard and how rankings are decided.', href: '/how-we-review', tag: 'Methodology' },
+  { title: 'HVAC dispatch software (2026)', desc: 'Seven HVAC dispatch and scheduling tools compared on which plan includes routing, GPS and maintenance visits.', href: '/guides/hvac-dispatch-software', tag: 'Dispatch' },
+  { title: 'Commercial HVAC software (2026)', desc: 'Seven tools for commercial HVAC contractors compared on multi-site accounts, PM agreements and progress billing.', href: '/guides/commercial-hvac-software', tag: 'Commercial' },
   { title: 'HVAC software guide', desc: 'The highest-demand trade guide — real pricing and top picks.', href: '/by-industry/hvac', tag: 'Popular' },
 ]
 

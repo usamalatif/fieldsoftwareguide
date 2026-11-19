@@ -206,8 +206,9 @@ export default function HousecallProPricingPage() {
             <strong>MAX ($299/month billed annually, up to 8 users)</strong> adds a sales proposal
             tool (which Housecall Pro values at $40/month), Recurring Service Plans, route
             optimization, open API access, a dedicated onboarding specialist, and escalated phone
-            support. If you sell maintenance memberships, note that Recurring Service Plans are a
-            MAX feature.
+            support. If you sell maintenance memberships, note that Recurring Service Plans are
+            included in MAX; Housecall Pro lists Service Plans as a paid add-on on some other plans,
+            at a price it does not publish.
           </p>
           <p>
             <strong>Every plan</strong> includes live phone and chat support, the iOS and Android
@@ -312,7 +313,7 @@ export default function HousecallProPricingPage() {
           <p><strong>Cons</strong></p>
           <ul>
             <li>QuickBooks sync is not on Basic, so accounting-minded solo operators pay $149, not $59.</li>
-            <li>Recurring Service Plans and route optimization are MAX-only.</li>
+            <li>On the standard plan grid, Recurring Service Plans and route optimization are included only in MAX. Housecall Pro says Service Plans can be a paid add-on on some plans, but does not publish that price.</li>
             <li>Add-on prices are not published on the pricing page.</li>
             <li>Keyed-in, saved, and American Express card payments cost 3.49%.</li>
           </ul>
