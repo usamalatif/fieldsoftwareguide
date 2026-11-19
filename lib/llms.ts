@@ -148,7 +148,7 @@ ${compareSection}
 
 ## Free FSM software (${site.url}/free)
 
-The honest state of free FSM software in 2026: none of the six major vendors (${providers.map((p) => p.name).join(', ')}) offers a free plan. The only verified free-forever FSM tier is Odoo Field Service (One App Free, unlimited users). Connecteam is free for up to 10 users but has no invoicing or estimates. ServiceTitan and FieldPulse offer no self-serve trial at all (demo only). Facts checked ${FREE_FACTS_CHECKED} on each vendor's own site.
+Free FSM software in 2026: none of the six major vendors (${providers.map((p) => p.name).join(', ')}) offers a free plan. Verified free plans: Zoho FSM (up to 20 users, 30 appointments a month), ServiceM8 (1 user, 30 jobs a month), Odoo One App Free (unlimited users while Field Service is your only Odoo app), and Connecteam (up to 10 users, no invoicing or estimates). ServiceTitan and FieldPulse offer no self-serve trial (demo only). Facts checked ${FREE_FACTS_CHECKED} on each vendor's own site.
 
 ${freeSection}
 

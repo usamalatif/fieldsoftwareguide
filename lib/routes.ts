@@ -20,12 +20,12 @@ export const staticRouteLastmod: Record<string, string> = {
   '/compare/fieldpulse-alternatives': articleDates['/compare/fieldpulse-alternatives'].contentUpdated,
   '/compare/housecall-pro-vs-servicetitan': articleDates['/compare/housecall-pro-vs-servicetitan'].contentUpdated,
   '/compare/servicetitan-vs-jobber': articleDates['/compare/servicetitan-vs-jobber'].contentUpdated,
-  '/free': '2026-11-10',
+  '/free': '2026-11-19', // set to the actual merge day (held until after the Dec 9 GSC review)
   '/quickbooks': '2026-10-24',
   '/pricing': articleDates['/pricing'].contentUpdated,
   '/pricing/housecall-pro': articleDates['/pricing/housecall-pro'].contentUpdated,
   '/pricing/jobber': articleDates['/pricing/jobber'].contentUpdated,
-  '/for-small-business': '2026-10-24',
+  '/for-small-business': '2026-11-19', // set to the actual merge day (held until after the Dec 9 GSC review)
   '/guides': '2026-11-10',
   '/guides/refrigerant-tracking-software': articleDates['/guides/refrigerant-tracking-software'].contentUpdated,
   '/guides/hvac-dispatch-software': articleDates['/guides/hvac-dispatch-software'].contentUpdated,

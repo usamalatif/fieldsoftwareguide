@@ -58,7 +58,7 @@ const faqs = [
   {
     question: 'Is there free field service software for small businesses?',
     answer:
-      'No major FSM vendor offers a free plan as of July 2026. The only verified free-forever FSM tier is Odoo Field Service (One App Free), and Connecteam is free up to 10 users but has no invoicing. For most small businesses the realistic path is a 14-day no-card trial of Jobber or Housecall Pro, then a $29 to $79 per month single-user plan.',
+      'No major FSM vendor offers a free plan (checked November 2026). Smaller tools do: ServiceM8 is free for 1 user and 30 jobs a month, Zoho FSM for up to 20 users and 30 appointments a month, and Odoo with unlimited users while Field Service is your only Odoo app. Most small businesses still start with a 14-day no-card trial of Jobber or Housecall Pro.',
   },
 ]
 
@@ -80,7 +80,8 @@ export default function ForSmallBusinessPage() {
         description="The best field service management software for small businesses, with verified entry pricing, five-user pricing, and what small teams actually need."
         slug="for-small-business"
         datePublished="2026-07-16"
-        dateModified="2026-10-24"
+        // Set to the actual merge day, matching /for-small-business in lib/routes.ts.
+        dateModified="2026-11-19"
         authorName="Usama Latif"
       />
       <BreadcrumbJsonLd items={crumbs} />
