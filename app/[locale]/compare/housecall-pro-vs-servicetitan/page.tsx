@@ -403,7 +403,8 @@ export default function HousecallProVsServiceTitanPage() {
         <div className="prose-body mt-8">
           <p>
             Comparing Housecall Pro with a cheaper option instead? Read{' '}
-            <Link href="/compare/jobber-vs-housecall-pro" className={A}>Jobber vs Housecall Pro</Link>,
+            <Link href="/compare/jobber-vs-housecall-pro" className={A}>Jobber vs Housecall Pro</Link>{' '}
+            or <Link href="/compare/servicetitan-vs-jobber" className={A}>ServiceTitan vs Jobber</Link>,
             or see all six major platforms in our{' '}
             <Link href="/compare" className={A}>field service software comparison</Link>.
           </p>
