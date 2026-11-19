@@ -56,7 +56,7 @@ const quick: { label: string; st: string; jb: string }[] = [
   { label: 'Onboarding', st: 'Implementation consultant; onboarding and training fees generally invoiced separately (10-K)', jb: 'Dedicated onboarding and Premium Support included on Plus' },
   { label: 'Scheduling and dispatch', st: 'Dispatch Board, Optimize Technician Route and Adjust Capacity Planning; Dispatch Pro add-on for automated assignment', jb: 'Drag-and-drop schedule; route optimization listed on Connect, Grow and Plus in the help center' },
   { label: 'Online booking', st: 'Scheduling Pro add-on', jb: 'Online booking from Core' },
-  { label: 'GPS', st: 'Technician locations on the dispatch map; live vehicle GPS with the Fleet Pro add-on', jb: 'GPS waypoints logged when app timers start or stop; real-time GPS tracking described on its scheduling page (plan not stated)' },
+  { label: 'GPS', st: 'Technician locations on the dispatch map; live vehicle GPS with the Fleet Pro add-on', jb: 'GPS waypoints (on select plans) pin where team members clock in or complete visits; live tracking through fleet partner devices' },
   { label: 'Offline mobile', st: 'Most job work offline (status, time, signatures, notes, photos, estimates); purchase orders, financing, contracts, inventory availability and dynamic pricing need a connection', jb: 'Day’s schedule (view), timers, notes with photos, checklists and visit completion offline; no invoicing offline; Tap to Pay needs a connection' },
   { label: 'Reporting', st: 'Dashboards, scorecards and custom reports; custom reports depend on your package; Advanced Reporting in The Works', jb: 'Built-in reporting from Core; Custom Report Builder on Plus only' },
   { label: 'Progress billing', st: 'Progress billing applications and project budgets for long-term projects', jb: 'Payment schedules and progress invoicing on all plans' },
@@ -136,8 +136,8 @@ const sources = [
   { name: 'Jobber help: use the Jobber app offline (updated November 17, 2026)', url: 'https://help.getjobber.com/en/articles/use-the-jobber-app-offline/', checked: '2026-11-19' },
   { name: 'Jobber help: Tap to Pay (needs an internet connection)', url: 'https://help.getjobber.com/en/articles/tap-to-pay/', checked: '2026-11-19' },
   { name: 'Jobber help: route optimization (plan availability)', url: 'https://help.getjobber.com/en/articles/route-optimization-new-schedule/', checked: '2026-11-19' },
-  { name: 'Jobber help: timesheets and GPS waypoints', url: 'https://help.getjobber.com/en/articles/timesheets/', checked: '2026-11-19' },
-  { name: 'Jobber scheduling software (drag-and-drop calendar, GPS tracking)', url: 'https://www.getjobber.com/features/scheduling/', checked: '2026-11-19' },
+  { name: 'Jobber help: GPS waypoint tracking (select plans)', url: 'https://help.getjobber.com/en/articles/gps-waypoint-tracking/', checked: '2026-11-19' },
+  { name: 'Jobber scheduling software (drag-and-drop calendar)', url: 'https://www.getjobber.com/features/scheduling/', checked: '2026-11-19' },
   { name: 'Jobber help: Custom Report Builder (Plus plan)', url: 'https://help.getjobber.com/en/articles/create-a-custom-report-with-jobber-ai/', checked: '2026-11-19' },
   { name: 'Jobber help: payment schedules and progress invoicing (all plans)', url: 'https://help.getjobber.com/en/articles/progress-invoicing/', checked: '2026-11-19' },
   { name: 'ServiceTitan pricing (packages, per-technician, request pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-17' },
@@ -349,10 +349,11 @@ export default function ServiceTitanVsJobberPage() {
           <p>
             Jobber uses a drag-and-drop calendar for all crews and includes online booking from Core.
             Its help center lists route optimization on Connect, Grow and Plus; it reorders anytime
-            visits by actual driving distance and runs on the web app, not the mobile app. Jobber logs
-            GPS waypoints each time a timer starts or stops in its app, and its scheduling page
-            describes real-time GPS tracking of your crew; confirm which plan includes it before you
-            buy.
+            visits by actual driving distance, runs on the web app rather than the mobile app, and only
+            admins can run it. On select plans, Jobber’s GPS waypoint tracking pins where team members
+            are when they clock in or complete a visit; for live vehicle tracking, its pricing page
+            points to tracking devices from fleet partners. Confirm which plan includes waypoints
+            before you buy.
           </p>
 
           <h2 id="offline">Offline mobile use</h2>
