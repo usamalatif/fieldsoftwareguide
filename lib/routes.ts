@@ -27,6 +27,7 @@ export const staticRouteLastmod: Record<string, string> = {
   '/for-small-business': '2026-10-24',
   '/guides': '2026-11-10',
   '/guides/refrigerant-tracking-software': articleDates['/guides/refrigerant-tracking-software'].contentUpdated,
+  '/guides/hvac-dispatch-software': articleDates['/guides/hvac-dispatch-software'].contentUpdated,
   '/guides/commercial-hvac-software': articleDates['/guides/commercial-hvac-software'].contentUpdated,
   '/about': '2026-10-22',
   '/contact': '2026-07-08',
