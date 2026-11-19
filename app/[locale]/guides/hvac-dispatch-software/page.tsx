@@ -25,6 +25,9 @@ import { articleDates } from '@/content/articles'
  * pages, checked 2026-11-19 (ServiceTitan pricing and offline facts reuse the 2026-11-17 checks).
  * Only Housecall Pro, Jobber and Service Fusion publish prices. No third-party estimates, no
  * ratings, nothing tested hands-on.
+ * 2026-11-20: added Housecall Pro's separate HVAC package (its /industries/hvac-software/ page,
+ * modified 2026-10-28, rechecked 2026-11-20): Basic $79, Essentials $229 for 1 user / $299 for 5,
+ * MAX $649 for 8 (FAQ says $399 for one user; card shows $349). Billing basis not labeled.
  */
 
 const PATH = '/guides/hvac-dispatch-software'
@@ -64,12 +67,12 @@ type Tool = {
 const tools: Tool[] = [
   {
     name: 'Housecall Pro',
-    price: 'Published: Basic $59 (1 user), Essentials $149 (5 users), Max $299 (8 users) per month billed annually; $79, $189, $329 monthly',
+    price: 'Published: Basic $59 (1 user), Essentials $149 (5 users), Max $299 (8 users) per month billed annually; $79, $189, $329 monthly. Its HVAC page shows a separate HVAC package at higher prices',
     dispatch: 'Scheduling and dispatch on every plan; drag and drop to reschedule or reassign; color-coded job statuses',
     routing: 'Routes (group and sequence jobs) from Essentials; one-click route optimization with live traffic on Max',
     gps: 'Phone-based employee GPS from Essentials; vehicle GPS and dashcams are an add-on (price not published)',
     booking: 'Online booking from Basic; CSR AI call and chat answering is an add-on',
-    maintenance: 'Recurring Service Plans included on Max; listed as a paid add-on on some other plans (price not published)',
+    maintenance: 'Recurring Service Plans included on Max; listed as a paid add-on on some other plans (price not published). The HVAC package lists membership plans on Essentials',
   },
   {
     name: 'Jobber',
@@ -142,7 +145,7 @@ const gating: { feature: string; where: string }[] = [
   { feature: 'Vehicle GPS', where: 'Add-on at Housecall Pro, ServiceTitan (Fleet Pro), FieldPulse and Service Fusion; fleet partner devices at Jobber' },
   { feature: 'Automated or AI technician assignment', where: 'ServiceTitan Dispatch Pro add-on; Workiz Genius Scheduling on Pro and Ultimate' },
   { feature: '24/7 online booking', where: 'Included at Housecall Pro, Jobber and Workiz; ServiceTitan through Scheduling Pro' },
-  { feature: 'Maintenance agreements', where: 'Housecall Pro Max (or a paid add-on); Workiz Ultimate; FieldEdge Advanced on Premier and Elite' },
+  { feature: 'Maintenance agreements', where: 'Housecall Pro Max (or a paid add-on; Essentials in its HVAC package); Workiz Ultimate; FieldEdge Advanced on Premier and Elite' },
 ]
 
 const buyers: { who: string; pick: string; why: string }[] = [
@@ -177,7 +180,7 @@ const faqs = [
   {
     question: 'How much does HVAC dispatch software cost?',
     answer:
-      'Among the tools here, only three publish prices. Jobber starts at $29/month for one user, Housecall Pro at $59/month for one user and $149 for five, and Service Fusion at $220/month with unlimited users, all billed annually. ServiceTitan, Workiz, FieldPulse and FieldEdge price by quote.',
+      'Among the tools here, only three publish prices. Jobber starts at $29/month for one user, Housecall Pro at $59/month for one user and $149 for five, and Service Fusion at $220/month with unlimited users, all billed annually. Housecall Pro’s HVAC page also shows a higher-priced HVAC package. ServiceTitan, Workiz, FieldPulse and FieldEdge price by quote.',
   },
   {
     question: 'Which HVAC software has route optimization?',
@@ -203,6 +206,7 @@ const faqs = [
 
 const sources = [
   { name: 'Housecall Pro pricing (plans, users, routes, GPS, route optimization, add-ons, trial)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-19' },
+  { name: 'Housecall Pro HVAC software (separate HVAC package and FAQ prices)', url: 'https://www.housecallpro.com/industries/hvac-software/', checked: '2026-11-20' },
   { name: 'Housecall Pro dispatching software (drag and drop, statuses)', url: 'https://www.housecallpro.com/features/dispatching-software/', checked: '2026-11-19' },
   { name: 'Housecall Pro LLM info page (Service Plans as a paid add-on on some plans)', url: 'https://www.housecallpro.com/llm-info/', checked: '2026-11-19' },
   { name: 'Jobber pricing (plans, team bands, add-ons, fleet partners)', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-19' },
@@ -399,6 +403,15 @@ export default function HvacDispatchSoftwarePage() {
             as a paid add-on on some plans without publishing the price. Vehicle GPS with dashcams and
             CSR AI call answering are add-ons. Full plan detail is in our{' '}
             <Link href="/pricing/housecall-pro" className={A}>Housecall Pro pricing</Link> guide.
+          </p>
+          <p>
+            One catch for HVAC buyers: Housecall Pro’s HVAC software page shows a separate HVAC
+            package priced above the plans above. It lists Basic at $79/month, Essentials at $229
+            for one user or $299 with 5 users, and MAX at $649 with 8 users; for MAX with one user,
+            its FAQ says $399 while its plan card shows $349. That package lists membership plans,
+            equipment tracking and flat-rate pricing on Essentials, and the page does not say
+            whether its prices are billed annually or monthly. Ask Housecall Pro which package your
+            quote is based on, and get the included dispatch and maintenance features in writing.
           </p>
 
           <h3>Jobber</h3>
