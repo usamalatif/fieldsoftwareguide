@@ -15,4 +15,6 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/compare/fieldpulse-alternatives': { firstPublished: '2026-11-11', contentUpdated: '2026-11-11' },
   '/guides/refrigerant-tracking-software': { firstPublished: '2026-11-18', contentUpdated: '2026-11-18' },
   '/compare/housecall-pro-vs-servicetitan': { firstPublished: '2026-11-18', contentUpdated: '2026-11-18' },
+  // Draft: firstPublished is set on the day it first goes live.
+  '/compare/servicetitan-vs-jobber': { contentUpdated: '2026-11-19' },
 }
