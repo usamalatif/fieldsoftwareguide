@@ -430,23 +430,28 @@ function ProviderFit({ industry: ind }: { industry: Industry }) {
     .map((r) => ({ ref: r, p: getProvider(r.slug) }))
     .filter((x) => x.p && x.ref.fit)
   if (!rows.length) return null
+  const isRental = ind.slug === 'equipment-rental'
 
   return (
     <section className="mx-auto mt-14 max-w-[980px]" aria-labelledby="provider-fit-heading">
       <h2 id="provider-fit-heading" className="text-[28px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white">
-        How each shortlisted tool fits {ind.name.toLowerCase()} work
+        How each shortlisted tool fits {ind.name === ind.name.toUpperCase() ? ind.name : ind.name.toLowerCase()} work
       </h2>
       <p className="mt-2 max-w-[760px] text-[15px] leading-[1.7] text-slate-500 dark:text-slate-400">
         Strengths and limitations below come from vendor pricing, feature, and help pages listed in
-        the sources. None of these tools was verified to handle rental reservations, availability,
-        or rental contracts, so pair any of them with a dedicated rental platform for that side.
+        the sources.{isRental && (
+          <>
+            {' '}None of these tools was verified to handle rental reservations, availability,
+            or rental contracts, so pair any of them with a dedicated rental platform for that side.
+          </>
+        )}
       </p>
       <div className="mt-5 grid grid-cols-1 gap-3.5 md:grid-cols-2">
         {rows.map(({ ref, p }) => (
           <article key={ref.slug} className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900">
             <h3 className="text-[17px] font-bold text-slate-900 dark:text-white">{p!.name}</h3>
             <p className="mt-1 text-[13.5px] font-semibold text-orange-600 dark:text-orange-400">Best fit: {ref.fit!.bestFor}</p>
-            <p className="mt-3 text-[12px] font-bold uppercase tracking-[0.06em] text-slate-400">Useful for rental fleets</p>
+            <p className="mt-3 text-[12px] font-bold uppercase tracking-[0.06em] text-slate-400">{isRental ? 'Useful for rental fleets' : 'Strengths'}</p>
             <ul className="mt-1.5 list-disc space-y-1 pl-5 text-[14px] leading-[1.55] text-slate-700 dark:text-slate-300">
               {ref.fit!.strengths.map((x) => <li key={x}>{x}</li>)}
             </ul>
