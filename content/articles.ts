@@ -16,4 +16,5 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/guides/refrigerant-tracking-software': { firstPublished: '2026-11-18', contentUpdated: '2026-11-18' },
   '/compare/housecall-pro-vs-servicetitan': { firstPublished: '2026-11-18', contentUpdated: '2026-11-18' },
   '/guides/hvac-dispatch-software': { firstPublished: '2026-11-19', contentUpdated: '2026-11-19' },
+  '/guides/commercial-hvac-software': { firstPublished: '2026-11-19', contentUpdated: '2026-11-19' },
 }
