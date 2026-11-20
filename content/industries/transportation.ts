@@ -13,6 +13,8 @@ import type { Industry } from '@/lib/industries'
  * the contractor's OWN vehicles. Page now separates FSM from trucking dispatch / TMS.
  * 2026-10-31: Housecall Pro equipment tracking qualified as listed from Essentials (HVAC page);
  * $20/vehicle GPS add-on rechecked and unchanged. Market claim narrowed to the six platforms.
+ * 2026-11-20: corrected. "Equipment tracking from Essentials" came from Housecall Pro's separate
+ * HVAC package (Essentials $229+), not the $149 main grid. Now described by property profiles only.
  */
 export const transportation: Industry = {
   slug: 'transportation',
@@ -25,7 +27,7 @@ export const transportation: Industry = {
   datePublished: '2026-07-08',
 
   answer:
-    'Transportation field service software schedules and documents repair work on vehicles: mobile mechanics, mobile fleet repair, trailer and reefer service, and roadside jobs. None of the six platforms we review markets a transportation vertical (rechecked October 2026), so pick by vehicle records and dispatch. ServiceTitan, FieldPulse, Commusoft, and Workiz keep service history per unit, and Housecall Pro lists equipment tracking from Essentials ($149/month billed annually; Basic starts at $59) and stores equipment details in property profiles. Jobber (from $29/month billed annually) is the cheapest published plan but has no native asset tracking. For your own service vans, Housecall Pro sells Force Fleet Tracking at $20 per vehicle per month, ServiceTitan offers Fleet Pro, and Commusoft includes fleet tracking. None of these replaces trucking dispatch or a transportation management system (TMS), which plan loads, drivers, and freight.',
+    'Transportation field service software schedules and documents repair work on vehicles: mobile mechanics, mobile fleet repair, trailer and reefer service, and roadside jobs. None of the six platforms we review markets a transportation vertical (rechecked October 2026), so pick by vehicle records and dispatch. ServiceTitan, FieldPulse, Commusoft, and Workiz keep service history per unit, and Housecall Pro (from $59/month billed annually) stores make, model and serial numbers in property profiles. Jobber (from $29/month billed annually) is the cheapest published plan but has no native asset tracking. For your own service vans, Housecall Pro sells Force Fleet Tracking at $20 per vehicle per month, ServiceTitan offers Fleet Pro, and Commusoft includes fleet tracking. None of these replaces trucking dispatch or a transportation management system (TMS), which plan loads, drivers, and freight.',
 
   intro:
     'Transportation field service is about keeping customers’ vehicles on the road. Mobile mechanics and fleet-repair contractors drive to the truck, yard, or roadside, so the software has to dispatch the nearest tech, open the right unit by VIN or unit number, record the repair with photos and parts, and invoice the same day. Two kinds of vehicle data get mixed up here: the customer’s vehicles you repair, which live in asset records, and your own service vans, which GPS add-ons track. Freight dispatch and load planning are a separate software category.',
@@ -59,7 +61,7 @@ export const transportation: Industry = {
 
   bySize: [
     { size: 'Solo mobile mechanic', pick: 'Jobber Core ($29/mo)', why: 'Lowest published plan for scheduling, quotes, and invoices. No native asset tracking, so vehicle history lives in notes and custom fields.' },
-    { size: 'Small fleet-repair team, 2–5 users', pick: 'Housecall Pro Essentials ($149/mo, up to 5 users)', why: 'Equipment tracking, checklists, and employee GPS on the plan; add Force Fleet Tracking at $20 per van per month.' },
+    { size: 'Small fleet-repair team, 2–5 users', pick: 'Housecall Pro Essentials ($149/mo, up to 5 users)', why: 'Checklists and employee GPS on the plan. Property profiles store equipment details, but the help article names no plan, so confirm them in the trial. Add Force Fleet Tracking at $20 per van per month.' },
     { size: 'Growing shop with van stock', pick: 'Commusoft or FieldPulse (custom quote)', why: 'Both track inventory across vans and job sites and keep service history per asset.' },
     { size: 'Large multi-location operation', pick: 'ServiceTitan (custom quote)', why: 'Truck inventory with min/max replenishment, installed-equipment history, and the Fleet Pro add-on for your own vehicles.' },
   ],
@@ -77,7 +79,7 @@ export const transportation: Industry = {
       id: 'customer-vehicles-vs-your-vans',
       heading: 'Customer vehicles vs your own service vans',
       paragraphs: [
-        'Customer vehicles belong in asset records. ServiceTitan installed equipment shows every completed job for an item, Commusoft keeps a complete job history per asset, FieldPulse tracks maintenance history, Workiz stores model numbers, serial numbers, and service history (equipment tracking is on its Ultimate plan), and Housecall Pro keeps equipment on property profiles, with equipment tracking listed from Essentials. Jobber has no native asset tracking. We found no vendor that documents preventive maintenance on customer vehicles triggered by mileage or engine hours; recurring visits are scheduled by date.',
+        'Customer vehicles belong in asset records. ServiceTitan installed equipment shows every completed job for an item, Commusoft keeps a complete job history per asset, FieldPulse tracks maintenance history, Workiz stores model numbers, serial numbers, and service history (equipment tracking is on its Ultimate plan), and Housecall Pro keeps make, model and serial numbers on property profiles (its help article names no plan). Jobber has no native asset tracking. We found no vendor that documents preventive maintenance on customer vehicles triggered by mileage or engine hours; recurring visits are scheduled by date.',
         'Your own vans are a different feature. Housecall Pro sells Force Fleet Tracking at $20 per vehicle per month, ServiceTitan Fleet Pro adds geofences and maintenance alerts based on odometer readings, engine hours, and fault codes, and Commusoft fleet tracking is built in with reminders based on time or mileage. FieldPulse fleet tracking runs through its Azuga partnership (price on request), Jobber connects to FleetSharp and Force, and Workiz connects to Linxup. If you need full mileage-based maintenance for a large customer fleet, compare dedicated fleet-maintenance software too.',
       ],
     },
@@ -122,7 +124,7 @@ export const transportation: Industry = {
     {
       question: 'Can it keep service history per vehicle?',
       answer:
-        'Yes, through asset records: ServiceTitan installed equipment, FieldPulse asset management, Commusoft asset maintenance, Workiz equipment tracking (Ultimate plan), and Housecall Pro property profiles (equipment tracking listed from Essentials). Jobber has no native asset tracking and relies on checklists and custom fields.',
+        'Yes, through asset records: ServiceTitan installed equipment, FieldPulse asset management, Commusoft asset maintenance, Workiz equipment tracking (Ultimate plan), and Housecall Pro property profiles (no plan named in its help article). Jobber has no native asset tracking and relies on checklists and custom fields.',
     },
     {
       question: 'How much does fleet repair field service software cost?',
@@ -131,14 +133,13 @@ export const transportation: Industry = {
     },
   ],
 
-  lastUpdated: '2026-10-31',
+  lastUpdated: '2026-11-20',
   dataVerified: true,
   sources: [
     { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-27' },
     { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-27' },
     { name: 'Housecall Pro vehicle GPS tracking (Force Fleet Tracking)', url: 'https://www.housecallpro.com/features/vehicle-gps-tracking/', checked: '2026-10-31' },
-    { name: 'Housecall Pro HVAC page (equipment tracking on Essentials and MAX)', url: 'https://www.housecallpro.com/industries/hvac-software/', checked: '2026-10-31' },
-    { name: 'Housecall Pro property profiles', url: 'https://help.housecallpro.com/en/articles/3703307-property-profile', checked: '2026-10-31' },
+    { name: 'Housecall Pro property profiles (make, model, serial; no plan named)', url: 'https://help.housecallpro.com/en/articles/3703307-property-profile', checked: '2026-11-20' },
     { name: 'ServiceTitan Fleet Pro', url: 'https://www.servicetitan.com/features/pro/fleet', checked: '2026-10-27' },
     { name: 'ServiceTitan installed equipment', url: 'https://help.servicetitan.com/docs/installed-equipment-landing-page', checked: '2026-10-27' },
     { name: 'ServiceTitan truck inventory replenishment', url: 'https://help.servicetitan.com/docs/truck-inventory-replenishment-overview', checked: '2026-10-27' },

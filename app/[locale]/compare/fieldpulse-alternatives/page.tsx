@@ -78,7 +78,7 @@ const rows: Row[] = [
     price: '$59/mo (Basic, 1 user) billed annually; $79/mo month-to-month',
     trial: '14 days with MAX features, no credit card',
     offline: 'Job and schedule viewing only; no offline editing',
-    equipment: 'Equipment tracking on Essentials and MAX, not Basic',
+    equipment: 'Property profiles store make, model and serial; no plan named',
     fit: 'Small teams that mostly work in cell coverage',
   },
   {
@@ -119,12 +119,12 @@ const bySize: { size: string; options: string; note: string }[] = [
   {
     size: 'Solo operator',
     options: 'Jobber Core ($29/mo) or Housecall Pro Basic ($59/mo)',
-    note: 'Both are 1-user plans billed annually. Housecall Pro Basic does not include equipment tracking.',
+    note: 'Both are 1-user plans billed annually. Housecall Pro does not name the plan for property profiles, so confirm equipment records in the trial.',
   },
   {
     size: '2 to 5 users',
     options: 'Jobber Connect 5-user plan or Housecall Pro Essentials, both $149/mo',
-    note: 'Annual billing. Essentials covers up to 5 users and adds equipment tracking; Jobber checklists start on Connect.',
+    note: 'Annual billing. Essentials covers up to 5 users; Jobber checklists start on Connect.',
   },
   {
     size: '6 to 15 users',
@@ -162,7 +162,7 @@ const faqs = [
   {
     question: 'Which FieldPulse alternatives track equipment?',
     answer:
-      'ServiceTitan keeps Installed Equipment records, Commusoft keeps asset maintenance records with QR or barcode lookup, Housecall Pro lists equipment tracking on its Essentials and MAX plans, and Workiz on its Ultimate plan. Jobber does not document built-in equipment records.',
+      'ServiceTitan keeps Installed Equipment records, Commusoft keeps asset maintenance records with QR or barcode lookup, Housecall Pro stores make, model and serial numbers in property profiles (its help article names no plan), and Workiz offers equipment tracking on its Ultimate plan. Jobber does not document built-in equipment records.',
   },
   {
     question: 'Is ServiceTitan or FieldPulse better for larger teams?',
@@ -181,7 +181,7 @@ const sources = [
   { name: 'Jobber pricing (plans, team sizes, billing, trial)', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-10' },
   { name: 'Jobber help: offline use (timers, checklists, notes, attachments)', url: 'https://help.getjobber.com/hc/en-us/articles/360037203234-Troubleshooting-Tips-How-to-Help-Us-Help-You', checked: '2026-11-07' },
   { name: 'Housecall Pro pricing (plans, users, trial)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-11' },
-  { name: 'Housecall Pro HVAC software (equipment tracking on Essentials and MAX)', url: 'https://www.housecallpro.com/industries/hvac-software/', checked: '2026-11-11' },
+  { name: 'Housecall Pro property profiles (make, model, serial; no plan named)', url: 'https://help.housecallpro.com/en/articles/3703307-property-profile', checked: '2026-11-20' },
   { name: 'Housecall Pro mobile app (offline viewing only)', url: 'https://www.housecallpro.com/features/mobile-app/', checked: '2026-11-11' },
   { name: 'Workiz pricing (request pricing, 7-day trial, equipment tracking on Ultimate)', url: 'https://www.workiz.com/pricing-plans/', checked: '2026-11-11' },
   { name: 'Workiz mobile app (offline, calls and messaging)', url: 'https://www.workiz.com/features/mobile-app/', checked: '2026-11-11' },
@@ -335,7 +335,8 @@ export default function FieldPulseAlternativesPage() {
             <strong>Best fit:</strong> small teams that mostly work in cell coverage. Basic costs
             $59/month for one user billed annually ($79 month-to-month), Essentials $149/month for up
             to five users, and MAX $299/month for eight users plus $35/month per extra user, with a
-            14-day free trial. Housecall Pro lists equipment tracking on Essentials and MAX.{' '}
+            14-day free trial. Its property profiles store make, model and serial numbers; the help
+            article names no plan.{' '}
             <strong>Limitation:</strong> its mobile app documents offline viewing only, with no
             offline editing, so it is a weaker swap for crews used to FieldPulse’s offline mode. See{' '}
             <Link href="/pricing/housecall-pro" className={A}>Housecall Pro pricing</Link> or{' '}
@@ -447,8 +448,8 @@ export default function FieldPulseAlternativesPage() {
         <div className="mx-auto max-w-[820px]">
           <CalloutBox tone="verdict" title="Bottom line on FieldPulse alternatives">
             If you want a published price and a free trial, start with Jobber ($29/month) or Housecall
-            Pro ($59/month), billed annually for one user; Housecall Pro adds equipment tracking from
-            Essentials but documents offline viewing only. If offline work and equipment records are
+            Pro ($59/month), billed annually for one user; Housecall Pro stores equipment details in
+            property profiles but documents offline viewing only. If offline work and equipment records are
             why you chose FieldPulse, compare Workiz, ServiceTitan, and Commusoft, which document
             offline job work, and get written quotes for the same seats and modules. Our{' '}
             <Link href="/how-we-review" className={A}>review method</Link> explains why we show only
