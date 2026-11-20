@@ -18,4 +18,10 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/guides/hvac-dispatch-software': { firstPublished: '2026-11-19', contentUpdated: '2026-11-20' },
   '/guides/commercial-hvac-software': { firstPublished: '2026-11-19', contentUpdated: '2026-11-19' },
   '/compare/servicetitan-vs-jobber': { firstPublished: '2026-11-19', contentUpdated: '2026-11-19' },
+  // Batch 1 (2026-11-20 drafts): set firstPublished and contentUpdated to the merge day when published.
+  '/guides/field-service-invoicing-software': { contentUpdated: '2026-11-20' },
+  '/guides/field-service-quoting-software': { contentUpdated: '2026-11-20' },
+  '/guides/hvac-maintenance-agreement-software': { contentUpdated: '2026-11-20' },
+  '/guides/open-source-field-service-software': { contentUpdated: '2026-11-20' },
+  '/compare/fieldedge-alternatives': { contentUpdated: '2026-11-20' },
 }
