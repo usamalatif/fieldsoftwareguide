@@ -264,8 +264,8 @@ export default function JobberVsHousecallProPage() {
             <strong>Only Housecall Pro:</strong> QuickBooks Desktop sync, native Payroll, a VoIP
             phone system (Voice), human call answering (HCP Assist), a human bookkeeping service
             (Accounting), Profit Rhino flat-rate price books, Reserve with Google, BNPL options,
-            vehicle GPS/dashcam add-on, and commissions + customer equipment tracking from
-            Essentials.
+            vehicle GPS/dashcam add-on, commissions from Essentials, and customer equipment details
+            in property profiles.
           </p>
         </div>
 
