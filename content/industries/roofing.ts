@@ -16,7 +16,7 @@ import type { Industry } from '@/lib/industries'
  * shortlisted. Roofing-specific: Roofr publishes prices (pricing page, 2026-11-21; Measure+ figures
  * conflict on the page, so not quoted; Black Friday promo not mentioned); AccuLynx Pro and Elite are
  * quote only; JobNimbus pricing returned 403.
- * datePublished: set to the merge day when published.
+ *
  */
 export const roofing: Industry = {
   slug: 'roofing',

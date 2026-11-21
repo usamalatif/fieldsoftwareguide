@@ -15,7 +15,7 @@ import type { Industry } from '@/lib/industries'
  * monthly after a one-time onboarding fee; Aspire Crew Control publishes $39 and $59 a month per crew
  * (billing basis not stated); Aspire and PropertyIntel publish no prices. Service Autopilot and
  * Yardbook could not be read. No vendor confirmed chemical or fertilizer application records.
- * Black Friday promotions are not mentioned. datePublished: set to the merge day when published.
+ * Black Friday promotions are not mentioned.
  */
 export const landscaping: Industry = {
   slug: 'landscaping',

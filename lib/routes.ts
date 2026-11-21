@@ -12,7 +12,6 @@ import { articleDates } from '@/content/articles'
  * route's date only when you actually change that page's content.
  */
 export const staticRouteLastmod: Record<string, string> = {
-  // Batch 3: the homepage and /by-industry list the new industries; set to the merge day.
   '/': '2026-11-21',
   '/by-industry': '2026-11-21',
   '/by-size': '2026-11-10',

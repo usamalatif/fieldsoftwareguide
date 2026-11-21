@@ -15,7 +15,7 @@ import type { Industry } from '@/lib/industries'
  * checklists and service plans on Ultimate. Cleaning-specific pricing pages: ZenMaid $19/$39/$49
  * month to month (a team-size calculator suggests the price can change with headcount; rate not
  * confirmed), Swept from $150/$225 for up to 15 locations, BookingKoala from $27/$57/$197 by
- * provider count, Launch27 $75/$150/$299 flat. datePublished: set to the merge day when published.
+ * provider count, Launch27 $75/$150/$299 flat.
  */
 export const cleaning: Industry = {
   slug: 'cleaning',
