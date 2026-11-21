@@ -23,10 +23,9 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/guides/hvac-maintenance-agreement-software': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
   '/guides/open-source-field-service-software': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
   '/compare/fieldedge-alternatives': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
-  // Batch 2 drafts: set firstPublished and contentUpdated to the merge day when published.
-  '/compare/servicetitan-alternatives': { contentUpdated: '2026-11-21' },
-  '/compare/jobber-alternatives': { contentUpdated: '2026-11-21' },
-  '/compare/housecall-pro-alternatives': { contentUpdated: '2026-11-21' },
-  '/compare/workiz-alternatives': { contentUpdated: '2026-11-21' },
-  '/compare/jobber-vs-workiz': { contentUpdated: '2026-11-21' },
+  '/compare/servicetitan-alternatives': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
+  '/compare/jobber-alternatives': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
+  '/compare/housecall-pro-alternatives': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
+  '/compare/workiz-alternatives': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
+  '/compare/jobber-vs-workiz': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
 }
