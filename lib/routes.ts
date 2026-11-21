@@ -15,8 +15,8 @@ export const staticRouteLastmod: Record<string, string> = {
   '/': '2026-10-24',
   '/by-industry': '2026-10-24',
   '/by-size': '2026-11-10',
-  '/compare': '2026-11-20', // batch 1: FieldEdge link; set to merge day
-  '/compare/jobber-vs-housecall-pro': '2026-11-20',
+  '/compare': '2026-11-21',
+  '/compare/jobber-vs-housecall-pro': '2026-11-21',
   '/compare/fieldpulse-alternatives': articleDates['/compare/fieldpulse-alternatives'].contentUpdated,
   '/compare/housecall-pro-vs-servicetitan': articleDates['/compare/housecall-pro-vs-servicetitan'].contentUpdated,
   '/compare/servicetitan-vs-jobber': articleDates['/compare/servicetitan-vs-jobber'].contentUpdated,
@@ -27,7 +27,7 @@ export const staticRouteLastmod: Record<string, string> = {
   '/pricing/housecall-pro': articleDates['/pricing/housecall-pro'].contentUpdated,
   '/pricing/jobber': articleDates['/pricing/jobber'].contentUpdated,
   '/for-small-business': '2026-10-24',
-  '/guides': '2026-11-20', // batch 1: four guide cards; set to merge day
+  '/guides': '2026-11-21',
   '/guides/refrigerant-tracking-software': articleDates['/guides/refrigerant-tracking-software'].contentUpdated,
   '/guides/hvac-dispatch-software': articleDates['/guides/hvac-dispatch-software'].contentUpdated,
   '/guides/commercial-hvac-software': articleDates['/guides/commercial-hvac-software'].contentUpdated,
