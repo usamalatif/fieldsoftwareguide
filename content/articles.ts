@@ -18,4 +18,9 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/guides/hvac-dispatch-software': { firstPublished: '2026-11-19', contentUpdated: '2026-11-20' },
   '/guides/commercial-hvac-software': { firstPublished: '2026-11-19', contentUpdated: '2026-11-19' },
   '/compare/servicetitan-vs-jobber': { firstPublished: '2026-11-19', contentUpdated: '2026-11-19' },
+  '/guides/field-service-invoicing-software': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
+  '/guides/field-service-quoting-software': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
+  '/guides/hvac-maintenance-agreement-software': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
+  '/guides/open-source-field-service-software': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
+  '/compare/fieldedge-alternatives': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
 }
