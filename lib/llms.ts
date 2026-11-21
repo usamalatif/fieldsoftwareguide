@@ -64,6 +64,11 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [Jobber vs Housecall Pro](${site.url}/compare/jobber-vs-housecall-pro): verified head-to-head comparison
 - [Housecall Pro vs ServiceTitan](${site.url}/compare/housecall-pro-vs-servicetitan): published vs quote-only pricing, contracts, onboarding, dispatch and offline use, from vendor documents
 - [FieldPulse Alternatives](${site.url}/compare/fieldpulse-alternatives): FieldPulse alternatives compared on published pricing and fit
+- [ServiceTitan Alternatives](${site.url}/compare/servicetitan-alternatives): alternatives compared on published prices, ServiceTitan's Terms of Use (early termination fee, data export) and accounting
+- [Jobber Alternatives](${site.url}/compare/jobber-alternatives): alternatives priced by user, job and route, QuickBooks Desktop support, and exporting from Jobber
+- [Housecall Pro Alternatives](${site.url}/compare/housecall-pro-alternatives): alternatives compared on cost at 5, 8 and 10 users, offline mode, service plans and QuickBooks
+- [Workiz Alternatives](${site.url}/compare/workiz-alternatives): alternatives compared on published phone systems, prices, flat rate and QuickBooks
+- [Jobber vs Workiz](${site.url}/compare/jobber-vs-workiz): published prices vs quotes, contract terms, phone tools and plan gating side by side
 - [FieldEdge Alternatives](${site.url}/compare/fieldedge-alternatives): FieldEdge alternatives compared on published pricing, trials, QuickBooks Desktop, flat rate and FieldEdge's published contract terms
 - [Field Service Invoicing Software](${site.url}/guides/field-service-invoicing-software): card and ACH processing fees, reminders, progress billing and QuickBooks sync by plan
 - [Field Service Quoting Software](${site.url}/guides/field-service-quoting-software): quote options, e-signature, deposits, follow-ups and financing by plan
