@@ -266,7 +266,12 @@ export default function ComparePage() {
             <Link href="/compare/fieldpulse-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">FieldPulse alternatives</Link>{' '}
             comparison, and for FieldEdge, our{' '}
             <Link href="/compare/fieldedge-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">FieldEdge alternatives</Link>{' '}
-            page.
+            page. We also compare alternatives to{' '}
+            <Link href="/compare/servicetitan-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">ServiceTitan</Link>,{' '}
+            <Link href="/compare/jobber-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Jobber</Link>,{' '}
+            <Link href="/compare/housecall-pro-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro</Link> and{' '}
+            <Link href="/compare/workiz-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Workiz</Link>, plus{' '}
+            <Link href="/compare/jobber-vs-workiz" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs Workiz</Link>.
           </p>
         </section>
 
