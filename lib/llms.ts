@@ -69,6 +69,8 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [Housecall Pro Alternatives](${site.url}/compare/housecall-pro-alternatives): alternatives compared on cost at 5, 8 and 10 users, offline mode, service plans and QuickBooks
 - [Workiz Alternatives](${site.url}/compare/workiz-alternatives): alternatives compared on published phone systems, prices, flat rate and QuickBooks
 - [Jobber vs Workiz](${site.url}/compare/jobber-vs-workiz): published prices vs quotes, contract terms, phone tools and plan gating side by side
+- [Housecall Pro vs Workiz](${site.url}/compare/housecall-pro-vs-workiz): published plans vs quotes, contracts, phone add-ons, offline use and service plans
+- [ServiceTitan vs FieldEdge](${site.url}/compare/servicetitan-vs-fieldedge): two quote-only platforms compared on contracts, early termination, dispatch, flat rate and offline use
 - [FieldEdge Alternatives](${site.url}/compare/fieldedge-alternatives): FieldEdge alternatives compared on published pricing, trials, QuickBooks Desktop, flat rate and FieldEdge's published contract terms
 - [Field Service Invoicing Software](${site.url}/guides/field-service-invoicing-software): card and ACH processing fees, reminders, progress billing and QuickBooks sync by plan
 - [Field Service Quoting Software](${site.url}/guides/field-service-quoting-software): quote options, e-signature, deposits, follow-ups and financing by plan

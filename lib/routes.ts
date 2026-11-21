@@ -12,8 +12,8 @@ import { articleDates } from '@/content/articles'
  * route's date only when you actually change that page's content.
  */
 export const staticRouteLastmod: Record<string, string> = {
-  '/': '2026-10-24',
-  '/by-industry': '2026-10-24',
+  '/': '2026-11-21',
+  '/by-industry': '2026-11-21',
   '/by-size': '2026-11-10',
   '/compare': '2026-11-21',
   '/compare/jobber-vs-housecall-pro': '2026-11-21',
@@ -26,6 +26,8 @@ export const staticRouteLastmod: Record<string, string> = {
   '/compare/housecall-pro-alternatives': articleDates['/compare/housecall-pro-alternatives'].contentUpdated,
   '/compare/workiz-alternatives': articleDates['/compare/workiz-alternatives'].contentUpdated,
   '/compare/jobber-vs-workiz': articleDates['/compare/jobber-vs-workiz'].contentUpdated,
+  '/compare/housecall-pro-vs-workiz': articleDates['/compare/housecall-pro-vs-workiz'].contentUpdated,
+  '/compare/servicetitan-vs-fieldedge': articleDates['/compare/servicetitan-vs-fieldedge'].contentUpdated,
   '/free': '2026-11-10',
   '/quickbooks': '2026-10-24',
   '/pricing': articleDates['/pricing'].contentUpdated,

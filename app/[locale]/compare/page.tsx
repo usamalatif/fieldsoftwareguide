@@ -271,7 +271,9 @@ export default function ComparePage() {
             <Link href="/compare/jobber-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Jobber</Link>,{' '}
             <Link href="/compare/housecall-pro-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro</Link> and{' '}
             <Link href="/compare/workiz-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Workiz</Link>, plus{' '}
-            <Link href="/compare/jobber-vs-workiz" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs Workiz</Link>.
+            <Link href="/compare/jobber-vs-workiz" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs Workiz</Link>,{' '}
+            <Link href="/compare/housecall-pro-vs-workiz" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro vs Workiz</Link> and{' '}
+            <Link href="/compare/servicetitan-vs-fieldedge" className="font-semibold text-orange-600 dark:text-orange-400">ServiceTitan vs FieldEdge</Link>.
           </p>
         </section>
 
