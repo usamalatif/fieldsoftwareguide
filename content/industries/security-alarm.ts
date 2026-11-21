@@ -47,7 +47,7 @@ export const securityAlarm: Industry = {
     max: null,
     note: 'Generalist FSM: Housecall Pro from $59/mo (Basic, 1 user) and Jobber from $29/mo, billed annually; neither has a security page. Security and low-voltage specialist: D-Tools Cloud $99 to $1,199 a month billed monthly, or $89 to $1,079 billed annually, plus a one-time setup fee of $250 to $2,500 and $50/mo for QuickBooks or Xero. ServiceTitan, Workiz, FieldPulse, SedonaOffice and Commusoft are quote only.',
     source: { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-19' },
-    structured: true,
+    structured: false,
   },
 
   search: { monthlyVolume: null, kd: null, cpc: null },

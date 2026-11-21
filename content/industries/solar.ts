@@ -45,7 +45,7 @@ export const solar: Industry = {
     max: null,
     note: 'Field service: Housecall Pro from $59/mo (Basic, 1 user) billed annually, with customer equipment tracking from Essentials ($149); Commusoft, Workiz and ServiceTitan are quote only. Solar design and sales: Aurora Solar $159 or $259 per user a month ($135 or $220 billed annually, 50 projects a month); OpenSolar free; Enerflo quote only.',
     source: { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-19' },
-    structured: true,
+    structured: false,
   },
 
   search: { monthlyVolume: null, kd: null, cpc: null },

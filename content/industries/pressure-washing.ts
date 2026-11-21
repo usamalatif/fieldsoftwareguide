@@ -44,7 +44,7 @@ export const pressureWashing: Industry = {
     max: null,
     note: 'Generalist FSM plans start at $29/mo (Jobber Core, 1 user) and $59/mo (Housecall Pro Basic, 1 user), billed annually. Exterior cleaning tools: QuoteIQ $29.99 to $699.99 a month billed monthly (1 to 20 users, $25 per extra user); Markate $49.95 a month or $45.95 billed annually; ResponsiBid quoting from free, with paid plans at $179 and $229 a month plus a setup fee. Workiz is quote only.',
     source: { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-11-21' },
-    structured: true,
+    structured: false,
   },
 
   search: { monthlyVolume: null, kd: null, cpc: null },
