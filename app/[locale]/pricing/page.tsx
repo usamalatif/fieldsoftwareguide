@@ -66,7 +66,7 @@ const vendors: { name: string; published: string; entry: string; model: string; 
     name: 'ServiceTitan',
     published: 'No (“Request Pricing”)',
     entry: 'Not published',
-    model: 'Per-technician pricing; plans named Starter, Essentials and The Works',
+    model: 'Quote only; packages named Core, Demand AI, Field AI and MAX',
     trial: 'Demo only; no trial listed',
   },
   {
@@ -128,12 +128,12 @@ const faqs = [
   {
     question: 'How much does field service software cost per user?',
     answer:
-      'Jobber and Housecall Pro price by plan and team size rather than a flat per-user rate, so the cost per user falls as the team grows. On annual billing, a 10-user team works out to about $22.90 per user per month on Jobber Connect ($229) and an estimated $36.90 on Housecall Pro MAX with two extra users ($369, assuming its listed $35 extra-user rate applies to annual billing). Extra users cost $29/month each at Jobber and $35/month each on Housecall Pro MAX. ServiceTitan says its pricing is per technician but does not publish the rate.',
+      'Jobber and Housecall Pro price by plan and team size rather than a flat per-user rate, so the cost per user falls as the team grows. On annual billing, a 10-user team works out to about $22.90 per user per month on Jobber Connect ($229) and an estimated $36.90 on Housecall Pro MAX with two extra users ($369, assuming its listed $35 extra-user rate applies to annual billing). Extra users cost $29/month each at Jobber and $35/month each on Housecall Pro MAX. ServiceTitan does not publish a rate.',
   },
   {
     question: 'Why doesn’t ServiceTitan publish its prices?',
     answer:
-      'ServiceTitan’s pricing page names three plans (Starter, Essentials and The Works) and says its per-technician pricing is designed to fit each business, so every plan is “Request Pricing”. Third-party sites publish estimates, but they disagree and cannot be checked against an official source, so we do not repeat them. Ask for a written quote that includes onboarding, contract length and payment processing.',
+      'ServiceTitan’s pricing page names four packages (Core, Demand AI, Field AI and MAX), says its pricing “is built to drive ROI for your individual business” and shows one “Get Pricing” button. Third-party sites publish estimates, but they disagree and cannot be checked against an official source, so we do not repeat them. Ask for a written quote that includes onboarding, contract length and payment processing.',
   },
   {
     question: 'Is annual billing cheaper than monthly billing?',
@@ -159,7 +159,7 @@ const sources = [
   { name: 'Jobber help: Receptionist (30 conversations, $0.79 each after)', url: 'https://help.getjobber.com/en/articles/receptionistpowered-by-jobber-ai/', checked: '2026-11-07' },
   { name: 'Housecall Pro pricing (plans, users, features, intro offers, FAQ)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-10' },
   { name: 'Housecall Pro help: payment processing options', url: 'https://help.housecallpro.com/en/articles/2046930-housecall-pro-payment-processing-options', checked: '2026-11-10' },
-  { name: 'ServiceTitan pricing (plans, per-technician model)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-10' },
+  { name: 'ServiceTitan pricing (Core, Demand AI, Field AI and MAX packages; Get Pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-21' },
   { name: 'ServiceTitan Payments (processing fees vary by agreement)', url: 'https://www.servicetitan.com/features/payments', checked: '2026-11-07' },
   { name: 'Workiz pricing (plans, trial, annual saving, add-ons)', url: 'https://www.workiz.com/pricing-plans/', checked: '2026-11-10' },
   { name: 'FieldPulse pricing (seat-based, premium products)', url: 'https://www.fieldpulse.com/pricing', checked: '2026-11-10' },
@@ -274,10 +274,12 @@ export default function PricingHubPage() {
 
           <h3 id="servicetitan-pricing">ServiceTitan pricing</h3>
           <p>
-            ServiceTitan names three plans, Starter, Essentials, and The Works, and shows
-            &ldquo;Request Pricing&rdquo; on each. It says its &ldquo;per-technician pricing is
-            designed to fit your business and goals, at any size,&rdquo; so the cost depends on how
-            many technicians you run. It offers demos rather than a free trial. ServiceTitan does not
+            ServiceTitan names four packages, Core, Demand AI, Field AI, and MAX, and shows one
+            &ldquo;Get Pricing&rdquo; button. Core covers scheduling, dispatching, call booking,
+            invoicing, pricebook, reporting, mobile estimates, payroll, commissions, and memberships;
+            the other three add AI automation for marketing, field work, or the back office. It says
+            its &ldquo;pricing is built to drive ROI for your individual business,&rdquo; so the cost
+            depends on your quote. It offers demos rather than a free trial. ServiceTitan does not
             publish onboarding fees, contract terms, or payment processing rates; its payments page
             says fees vary with the payment method, transaction type, and your agreement.
           </p>

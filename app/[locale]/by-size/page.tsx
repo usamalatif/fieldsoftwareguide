@@ -106,7 +106,7 @@ const faqs = [
   {
     question: 'When should a growing company move to ServiceTitan or another custom-quoted tool?',
     answer:
-      'Usually when you pass the published tiers or need features they gate: Jobber asks teams of 16 or more to contact sales, and Housecall Pro charges $35 per user above 8 on MAX. Multi-location reporting, commercial service agreements, and truck inventory are the other common triggers. ServiceTitan prices per technician and FieldPulse prices by seat, both by quote.',
+      'Usually when you pass the published tiers or need features they gate: Jobber asks teams of 16 or more to contact sales, and Housecall Pro charges $35 per user above 8 on MAX. Multi-location reporting, commercial service agreements, and truck inventory are the other common triggers. ServiceTitan and FieldPulse (seat-based) both price by quote.',
   },
   {
     question: 'Is per-user or per-plan pricing cheaper as a team grows?',
@@ -273,8 +273,8 @@ export default async function BySizePage({ params }: { params: Promise<{ locale:
             Three signals usually mean it is time to get quotes: you are past 15 users (Jobber
             asks teams of 16 or more to contact sales), you pay for many extra users on Housecall
             Pro MAX, or you need commercial service agreements, truck inventory, or multi-location
-            reporting. ServiceTitan prices per technician and FieldPulse prices by seat, both by
-            quote. Workiz and Commusoft are also quote-based. The{' '}
+            reporting. ServiceTitan and FieldPulse (seat-based) both price by quote. Workiz and
+            Commusoft are also quote-based. The{' '}
             <Link href={L('/compare')}>full comparison</Link> covers all six side by side.
           </p>
 
@@ -312,7 +312,7 @@ export default async function BySizePage({ params }: { params: Promise<{ locale:
             <li><a href="https://www.getjobber.com/pricing/" target="_blank" rel="noopener noreferrer" className="underline">Jobber pricing</a> (checked Oct 31, 2026)</li>
             <li><a href="https://help.getjobber.com/en/articles/manage-teamhow-to-add-manage-and-deactivate-team-members/" target="_blank" rel="noopener noreferrer" className="underline">Jobber help: Manage Team (Core seat limit)</a> (checked Nov 10, 2026)</li>
             <li><a href="https://www.housecallpro.com/pricing/" target="_blank" rel="noopener noreferrer" className="underline">Housecall Pro pricing</a> (checked Oct 31, 2026)</li>
-            <li><a href="https://www.servicetitan.com/pricing" target="_blank" rel="noopener noreferrer" className="underline">ServiceTitan pricing</a> (checked Oct 27, 2026)</li>
+            <li><a href="https://www.servicetitan.com/pricing" target="_blank" rel="noopener noreferrer" className="underline">ServiceTitan pricing</a> (checked Nov 21, 2026)</li>
             <li><a href="https://www.fieldpulse.com/pricing" target="_blank" rel="noopener noreferrer" className="underline">FieldPulse pricing</a> (checked Oct 27, 2026)</li>
             <li><a href="https://www.workiz.com/pricing/" target="_blank" rel="noopener noreferrer" className="underline">Workiz pricing</a> (checked Oct 27, 2026)</li>
           </ul>

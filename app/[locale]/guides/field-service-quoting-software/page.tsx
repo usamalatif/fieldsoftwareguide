@@ -75,7 +75,7 @@ const tools: Tool[] = [
   },
   {
     name: 'ServiceTitan',
-    price: 'Quote only, per technician',
+    price: 'Quote only; mobile estimates in Core, AI estimates on Field AI and MAX',
     options: 'Pricebook on every package; good/better/best proposal templates; Pricebook Pro add-on',
     approval: 'Customer signs on the tech’s device; deposits in online estimates are in private preview',
     followups: 'Unsold estimates worked from the Opportunities follow-up screen',
@@ -188,7 +188,7 @@ const sources = [
   { name: 'Housecall Pro help: Profit Rhino overview', url: 'https://help.housecallpro.com/en/articles/8754493-profit-rhino-overview', checked: '2026-11-20' },
   { name: 'Housecall Pro help: getting started with Pipeline', url: 'https://help.housecallpro.com/en/articles/6185127-getting-started-with-pipeline', checked: '2026-11-20' },
   { name: 'Housecall Pro help: conversion rate reporting', url: 'https://help.housecallpro.com/en/articles/6499730-conversion-rate-reporting', checked: '2026-11-20' },
-  { name: 'ServiceTitan pricing (Pricebook, Mobile Estimates, Field Pro)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-20' },
+  { name: 'ServiceTitan pricing (Core, Demand AI, Field AI and MAX packages; Get Pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-21' },
   { name: 'ServiceTitan Field Pro (formerly Sales Pro)', url: 'https://www.servicetitan.com/features/pro/field', checked: '2026-11-20' },
   { name: 'ServiceTitan help: proposal templates', url: 'https://help.servicetitan.com/docs/proposal-templates', checked: '2026-11-20' },
   { name: 'ServiceTitan Pricebook Pro', url: 'https://www.servicetitan.com/features/pricebook-pro', checked: '2026-11-20' },

@@ -49,8 +49,8 @@ const crumbs = [
 ]
 
 const quick: { label: string; st: string; jb: string }[] = [
-  { label: 'Pricing model', st: 'Quote only, priced per technician; every package says “Request Pricing”', jb: 'Published: Core $29, Connect $99, Grow $149 per month for 1 user, Plus $399 for 5 users, billed annually' },
-  { label: 'Team-size pricing', st: 'Per technician; Terms of Use allow a minimum subscription level', jb: 'Published bands for 1, 5, 10 and 15 users; 16+ users through sales; extra users $29/month' },
+  { label: 'Pricing model', st: 'Quote only; every package uses one “Get Pricing” button', jb: 'Published: Core $29, Connect $99, Grow $149 per month for 1 user, Plus $399 for 5 users, billed annually' },
+  { label: 'Team-size pricing', st: 'Not published; Terms of Use allow a minimum subscription level', jb: 'Published bands for 1, 5, 10 and 15 users; 16+ users through sales; extra users $29/month' },
   { label: 'Billing and contract', st: '10-K: new customers mostly on annual or multi-year agreements, typically 12 to 36 months', jb: 'Three options: no commitment (cancel anytime), 1-year commitment billed monthly, or annual prepaid (non-refundable)' },
   { label: 'Free trial', st: 'No trial; demo only', jb: '14 days on the Grow plan, no credit card' },
   { label: 'Onboarding', st: 'Implementation consultant; onboarding and training fees generally invoiced separately (10-K)', jb: 'Dedicated onboarding and Premium Support included on Plus' },
@@ -58,7 +58,7 @@ const quick: { label: string; st: string; jb: string }[] = [
   { label: 'Online booking', st: 'Scheduling Pro add-on', jb: 'Online booking from Core' },
   { label: 'GPS', st: 'Technician locations on the dispatch map; live vehicle GPS with the Fleet Pro add-on', jb: 'GPS waypoints (on select plans) pin where team members clock in or complete visits; live tracking through fleet partner devices' },
   { label: 'Offline mobile', st: 'Most job work offline (status, time, signatures, notes, photos, estimates); purchase orders, financing, contracts, inventory availability and dynamic pricing need a connection', jb: 'Day’s schedule (view), timers, notes with photos, checklists and visit completion offline; no invoicing offline; Tap to Pay needs a connection' },
-  { label: 'Reporting', st: 'Dashboards, scorecards and custom reports; custom reports depend on your package; Advanced Reporting in The Works', jb: 'Built-in reporting from Core; Custom Report Builder on Plus only' },
+  { label: 'Reporting', st: 'Dashboards, scorecards and custom reports; custom reports depend on your package; advanced business owner analytics on MAX', jb: 'Built-in reporting from Core; Custom Report Builder on Plus only' },
   { label: 'Progress billing', st: 'Progress billing applications and project budgets for long-term projects', jb: 'Payment schedules and progress invoicing on all plans' },
   { label: 'QuickBooks', st: 'QuickBooks Online and Desktop', jb: 'QuickBooks Online (and Xero) from Connect; no Desktop' },
 ]
@@ -74,7 +74,7 @@ const scenarios: { who: string; pick: string; why: string }[] = [
   {
     who: 'Solo operator or crew of 2 to 5',
     pick: 'Jobber',
-    why: 'Published prices from $29/month for one user, a 14-day trial and a no-commitment monthly option. ServiceTitan’s per-technician quote, typical 12 to 36 month terms and separate onboarding fees are built for a larger rollout.',
+    why: 'Published prices from $29/month for one user, a 14-day trial and a no-commitment monthly option. ServiceTitan’s custom quote, typical 12 to 36 month terms and separate onboarding fees are built for a larger rollout.',
   },
   {
     who: '6 to 15 users who want to know the price before a sales call',
@@ -102,7 +102,7 @@ const faqs = [
   {
     question: 'Is Jobber cheaper than ServiceTitan?',
     answer:
-      'Jobber is the only one of the two with published prices: $29/month for one user on Core, and $229 to $399/month for 5 to 15 users on Grow, billed annually. ServiceTitan prices per technician by quote, and its 10-K says onboarding and training fees are generally invoiced separately. Compare written totals for the same number of users, add-ons, onboarding and contract length.',
+      'Jobber is the only one of the two with published prices: $29/month for one user on Core, and $229 to $399/month for 5 to 15 users on Grow, billed annually. ServiceTitan prices by quote, and its 10-K says onboarding and training fees are generally invoiced separately. Compare written totals for the same number of users, add-ons, onboarding and contract length.',
   },
   {
     question: 'Does ServiceTitan or Jobber require a contract?',
@@ -140,7 +140,7 @@ const sources = [
   { name: 'Jobber scheduling software (drag-and-drop calendar)', url: 'https://www.getjobber.com/features/scheduling/', checked: '2026-11-19' },
   { name: 'Jobber help: Custom Report Builder (Plus plan)', url: 'https://help.getjobber.com/en/articles/create-a-custom-report-with-jobber-ai/', checked: '2026-11-19' },
   { name: 'Jobber help: payment schedules and progress invoicing (all plans)', url: 'https://help.getjobber.com/en/articles/progress-invoicing/', checked: '2026-11-19' },
-  { name: 'ServiceTitan pricing (packages, per-technician, request pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-17' },
+  { name: 'ServiceTitan pricing (Core, Demand AI, Field AI and MAX packages; Get Pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-21' },
   { name: 'ServiceTitan dispatch software (Dispatch Pro add-on, capacity planning)', url: 'https://www.servicetitan.com/features/dispatch-software', checked: '2026-11-17' },
   { name: 'ServiceTitan help: dispatch and track technicians (Fleet Pro)', url: 'https://help.servicetitan.com/docs/dispatch-and-track-your-technicians', checked: '2026-11-17' },
   { name: 'ServiceTitan help: Scheduling Pro online booking', url: 'https://help.servicetitan.com/docs/set-up-your-online-scheduler-with-scheduling-pro-in-servicetitan-max', checked: '2026-11-17' },
@@ -189,7 +189,7 @@ export default function ServiceTitanVsJobberPage() {
             <strong>Jobber</strong> fits small and growing service teams that want to see the price
             first: plans start at $29/month for one user, published team bands run up to 15 users,
             and you can pay month to month with no commitment. <strong>ServiceTitan</strong> fits
-            operations ready for a larger rollout: it prices per technician by quote, typically signs
+            operations ready for a larger rollout: it prices by quote, typically signs
             new customers to 12 to 36 month agreements with separately invoiced onboarding, and
             documents call booking, capacity planning and QuickBooks Desktop support. Both apps
             handle core job work offline.
@@ -246,22 +246,34 @@ export default function ServiceTitanVsJobberPage() {
         </section>
 
         <div className="prose-body mt-12">
-          <h2 id="pricing">Pricing: a per-technician quote vs published team bands</h2>
+          <h2 id="pricing">Pricing: a custom quote vs published team bands</h2>
           <p>
-            ServiceTitan publishes no prices. Its pricing page says “Our per-technician pricing is
-            designed to fit your business and goals, at any size,” and each of its three packages has a
-            “Request Pricing” button:
+            ServiceTitan publishes no prices. Its pricing page says “Our pricing is built to drive
+            ROI for your individual business” and shows one “Get Pricing” button for four packages:
           </p>
           <ul>
-            <li><strong>Starter:</strong> dispatching, scheduling, call booking, invoicing and pricebook.</li>
-            <li><strong>Essentials:</strong> adds mobile estimates and payroll management.</li>
             <li>
-              <strong>The Works:</strong> adds configurable payroll, advanced reporting, commission
-              tracking and customizable memberships.
+              <strong>Core:</strong> scheduling, dispatching, call booking, invoicing, pricebook,
+              reporting, mobile estimates, configurable payroll, commission tracking and customizable
+              memberships.
+            </li>
+            <li>
+              <strong>Demand AI:</strong> Core plus demand automation: AI targeting and spend
+              allocation, campaign automation, online scheduling, voice and SMS agents and smart
+              dispatching.
+            </li>
+            <li>
+              <strong>Field AI:</strong> Core plus field automations: AI sales coaching, equipment
+              intelligence, AI estimates and presentations, multi-modal job assistance and AI job prep.
+            </li>
+            <li>
+              <strong>MAX:</strong> all of the above plus office automation: AI payments collections,
+              AP approvals and advanced business owner analytics.
             </li>
           </ul>
           <p>
-            Pro products such as Dispatch Pro, Scheduling Pro and Fleet Pro are sold on top.
+            The page says all packages are available to in-home residential customers, while MAX
+            pilots are launching for other business types. Pro products such as Dispatch Pro, Scheduling Pro and Fleet Pro are sold on top.
           </p>
           <p>
             Jobber publishes four plans and prices them by team size. Billed annually, a single user
@@ -305,7 +317,7 @@ export default function ServiceTitanVsJobberPage() {
           </p>
           <p>
             <strong>To compare fairly,</strong> ask ServiceTitan for a written quote that lists the
-            per-technician rate, the package, each Pro add-on, the onboarding fee and the contract
+            rate and how it is counted, the package, each Pro add-on, the onboarding fee and the contract
             term. Put it next to the Jobber band for the same number of users plus the add-ons you
             would need, such as Jobber’s $99/month Marketing Suite, which is included on Plus.
           </p>
@@ -376,7 +388,7 @@ export default function ServiceTitanVsJobberPage() {
           <p>
             ServiceTitan provides dashboards, technician scorecards and custom reports, but its help
             center says the ability to create custom reports depends on the package, and its pricing
-            page lists Advanced Reporting in The Works only. Jobber includes built-in reporting from Core
+            page lists reporting in Core and advanced business owner analytics on MAX only. Jobber includes built-in reporting from Core
             and limits its Custom Report Builder to Plus, where only admins can create custom reports.
           </p>
 
@@ -384,12 +396,12 @@ export default function ServiceTitanVsJobberPage() {
           <ul>
             <li>
               <strong>Quotes:</strong> ServiceTitan supports Good, Better, Best proposal types, with
-              mobile estimates from its Essentials package. Jobber adds optional line items and quote
+              mobile estimates in its Core package. Jobber adds optional line items and quote
               customization on Grow.
             </li>
             <li>
               <strong>Memberships and recurring work:</strong> ServiceTitan lists customizable
-              memberships in The Works. Jobber supports recurring jobs.
+              memberships in its Core package. Jobber supports recurring jobs.
             </li>
             <li>
               <strong>Job costing:</strong> Jobber adds job costing on Grow.

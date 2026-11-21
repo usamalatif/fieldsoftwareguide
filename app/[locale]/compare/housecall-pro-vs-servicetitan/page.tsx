@@ -49,8 +49,8 @@ const crumbs = [
 ]
 
 const quick: { label: string; hcp: string; st: string }[] = [
-  { label: 'Pricing model', hcp: 'Published: Basic $59, Essentials $149, Max $299 per month billed annually ($79, $189, $329 monthly)', st: 'Quote only, priced per technician; every package says “Request Pricing”' },
-  { label: 'Users per plan', hcp: '1, 5 and 8 users; Max adds users at $35/month each', st: 'Per technician; Terms of Use allow a minimum subscription level' },
+  { label: 'Pricing model', hcp: 'Published: Basic $59, Essentials $149, Max $299 per month billed annually ($79, $189, $329 monthly)', st: 'Quote only; every package uses one “Get Pricing” button' },
+  { label: 'Users per plan', hcp: '1, 5 and 8 users; Max adds users at $35/month each', st: 'Not published; Terms of Use allow a minimum subscription level' },
   { label: 'Free trial', hcp: '14 days with Max features, no credit card', st: 'No trial; demo only' },
   { label: 'Contract', hcp: 'No long-term contract required', st: '10-K: new customers mostly on annual or multi-year agreements, typically 12 to 36 months' },
   { label: 'Onboarding', hcp: 'Max includes a dedicated onboarding specialist and a 4-week onboarding journey', st: 'Implementation consultant; onboarding and training fees generally invoiced separately (10-K)' },
@@ -58,16 +58,16 @@ const quick: { label: string; hcp: string; st: string }[] = [
   { label: 'Online booking', hcp: 'Included from Basic, from Google or your website', st: 'Scheduling Pro add-on' },
   { label: 'GPS', hcp: 'Phone-based employee GPS from Essentials; vehicle GPS is an add-on', st: 'Technician locations on the dispatch map; live vehicle GPS with the Fleet Pro add-on' },
   { label: 'Offline mobile', hcp: 'View-only: jobs for today and the next 2 days, up to 10 per day; no editing, payments or job completion', st: 'Most job work offline (status, time, signatures, notes, photos, estimates); purchase orders, financing, contracts, inventory availability and dynamic pricing need a connection' },
-  { label: 'Reporting', hcp: 'Up to 40 out-of-the-box reports plus custom reports you can save, share and schedule', st: 'Dashboards, scorecards and custom reports; custom reports depend on your package; Advanced Reporting in The Works' },
-  { label: 'Memberships', hcp: 'Recurring Service Plans listed on Max', st: 'Customizable Memberships in The Works' },
-  { label: 'Estimates', hcp: 'Estimates from Basic; side-by-side sales proposal tool on Max', st: 'Mobile Estimates from Essentials; Good, Better, Best proposal types' },
+  { label: 'Reporting', hcp: 'Up to 40 out-of-the-box reports plus custom reports you can save, share and schedule', st: 'Dashboards, scorecards and custom reports; custom reports depend on your package; advanced business owner analytics on MAX' },
+  { label: 'Memberships', hcp: 'Recurring Service Plans listed on Max', st: 'Customizable memberships in Core' },
+  { label: 'Estimates', hcp: 'Estimates from Basic; side-by-side sales proposal tool on Max', st: 'Mobile estimates in Core; AI estimates on Field AI and MAX; Good, Better, Best proposal types' },
 ]
 
 const scenarios: { who: string; pick: string; why: string }[] = [
   {
     who: 'Owner-operator or crew of 2 to 5, residential service',
     pick: 'Housecall Pro',
-    why: 'Published price ($59 for 1 user or $149 for up to 5, billed annually), a 14-day trial and no long-term contract. ServiceTitan’s per-technician quote and implementation process are built for a heavier rollout.',
+    why: 'Published price ($59 for 1 user or $149 for up to 5, billed annually), a 14-day trial and no long-term contract. ServiceTitan’s custom quote and implementation process are built for a heavier rollout.',
   },
   {
     who: '6 to 15 technicians selling maintenance plans',
@@ -95,7 +95,7 @@ const faqs = [
   {
     question: 'Is Housecall Pro cheaper than ServiceTitan?',
     answer:
-      'Housecall Pro is the only one of the two with published prices: $59/month for 1 user, $149 for up to 5 and $299 for 8, billed annually. ServiceTitan prices per technician by quote, and its 10-K says onboarding and training fees are generally invoiced separately, so compare written totals for the same number of technicians, add-ons, onboarding and contract length.',
+      'Housecall Pro is the only one of the two with published prices: $59/month for 1 user, $149 for up to 5 and $299 for 8, billed annually. ServiceTitan prices by quote, and its 10-K says onboarding and training fees are generally invoiced separately, so compare written totals for the same number of technicians, add-ons, onboarding and contract length.',
   },
   {
     question: 'Does ServiceTitan have a free trial?',
@@ -115,7 +115,7 @@ const faqs = [
   {
     question: 'Is ServiceTitan only for large companies?',
     answer:
-      'ServiceTitan says its customers range from family-owned businesses with a few employees to large enterprises with a national footprint. In practice its per-technician quote, typical 12 to 36 month terms and separate onboarding fees suit businesses ready for a larger rollout, while Housecall Pro’s published plans and no-contract terms are easier for small teams to start on.',
+      'ServiceTitan says its customers range from family-owned businesses with a few employees to large enterprises with a national footprint. In practice its custom quote, typical 12 to 36 month terms and separate onboarding fees suit businesses ready for a larger rollout, while Housecall Pro’s published plans and no-contract terms are easier for small teams to start on.',
   },
   {
     question: 'Can I switch from Housecall Pro to ServiceTitan later?',
@@ -129,7 +129,7 @@ const sources = [
   { name: 'Housecall Pro help: offline mode on mobile', url: 'https://help.housecallpro.com/en/articles/17032352-offline-mode-on-mobile', checked: '2026-11-17' },
   { name: 'Housecall Pro help: Max onboarding and support', url: 'https://help.housecallpro.com/en/articles/4936654-max-onboarding-support-overview', checked: '2026-11-17' },
   { name: 'Housecall Pro help: managing reports', url: 'https://help.housecallpro.com/en/articles/7336458-managing-reports', checked: '2026-11-17' },
-  { name: 'ServiceTitan pricing (packages, per-technician, request pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-17' },
+  { name: 'ServiceTitan pricing (Core, Demand AI, Field AI and MAX packages; Get Pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-21' },
   { name: 'ServiceTitan dispatch software (Dispatch Pro add-on, capacity planning)', url: 'https://www.servicetitan.com/features/dispatch-software', checked: '2026-11-17' },
   { name: 'ServiceTitan help: dispatch and track technicians (Fleet Pro)', url: 'https://help.servicetitan.com/docs/dispatch-and-track-your-technicians', checked: '2026-11-17' },
   { name: 'ServiceTitan help: Scheduling Pro online booking', url: 'https://help.servicetitan.com/docs/set-up-your-online-scheduler-with-scheduling-pro-in-servicetitan-max', checked: '2026-11-17' },
@@ -180,7 +180,7 @@ export default function HousecallProVsServiceTitanPage() {
             <strong>Housecall Pro</strong> fits small and growing home service teams that want a
             published price, a free trial and no long-term contract: plans start at $59/month for one
             user and reach $299/month for eight, billed annually. <strong>ServiceTitan</strong> fits
-            operations ready for a larger rollout: it prices per technician by quote, typically signs
+            operations ready for a larger rollout: it prices by quote, typically signs
             new customers to 12 to 36 month agreements with separately invoiced onboarding, and
             documents capacity planning, add-on dispatch automation
             and offline mobile work. If your technicians
@@ -238,7 +238,7 @@ export default function HousecallProVsServiceTitanPage() {
         </section>
 
         <div className="prose-body mt-12">
-          <h2 id="pricing">Pricing: published plans vs a per-technician quote</h2>
+          <h2 id="pricing">Pricing: published plans vs a custom quote</h2>
           <p>
             Housecall Pro publishes three plans. Basic is $59/month for one user, Essentials $149 for
             five users and Max $299 for eight users, all billed annually; month-to-month billing costs
@@ -250,20 +250,32 @@ export default function HousecallProVsServiceTitanPage() {
             detail and card fee.
           </p>
           <p>
-            ServiceTitan publishes no prices. Its pricing page says “Our per-technician pricing is
-            designed to fit your business and goals, at any size,” and each of its three packages has a
-            “Request Pricing” button:
+            ServiceTitan publishes no prices. Its pricing page says “Our pricing is built to drive
+            ROI for your individual business” and shows one “Get Pricing” button for four packages:
           </p>
           <ul>
-            <li><strong>Starter:</strong> dispatching, scheduling, call booking, invoicing and pricebook.</li>
-            <li><strong>Essentials:</strong> adds mobile estimates and payroll management.</li>
             <li>
-              <strong>The Works:</strong> adds configurable payroll, advanced reporting, commission
-              tracking and customizable memberships.
+              <strong>Core:</strong> scheduling, dispatching, call booking, invoicing, pricebook,
+              reporting, mobile estimates, configurable payroll, commission tracking and customizable
+              memberships.
+            </li>
+            <li>
+              <strong>Demand AI:</strong> Core plus demand automation: AI targeting and spend
+              allocation, campaign automation, online scheduling, voice and SMS agents and smart
+              dispatching.
+            </li>
+            <li>
+              <strong>Field AI:</strong> Core plus field automations: AI sales coaching, equipment
+              intelligence, AI estimates and presentations, multi-modal job assistance and AI job prep.
+            </li>
+            <li>
+              <strong>MAX:</strong> all of the above plus office automation: AI payments collections,
+              AP approvals and advanced business owner analytics.
             </li>
           </ul>
           <p>
-            Pro products such as Dispatch Pro, Scheduling Pro, Fleet Pro, Marketing Pro and Contact
+            The page says all packages are available to in-home residential customers, while MAX
+            pilots are launching for other business types. Pro products such as Dispatch Pro, Scheduling Pro, Fleet Pro, Marketing Pro and Contact
             Center Pro are sold on top. ServiceTitan’s annual report adds the terms buyers rarely see on
             comparison sites: new customers primarily sign annual or multi-year agreements with terms
             typically from 12 to 36 months, and fees for professional services such as onboarding and
@@ -272,7 +284,7 @@ export default function HousecallProVsServiceTitanPage() {
           </p>
           <p>
             <strong>To compare fairly,</strong> ask ServiceTitan for a written quote that lists the
-            per-technician rate, the package, each Pro add-on, the onboarding fee and the contract
+            rate and how it is counted, the package, each Pro add-on, the onboarding fee and the contract
             term, then put it next to Housecall Pro’s published price for the same number of users plus
             the add-ons you would need. Our{' '}
             <Link href="/pricing" className={A}>field service software pricing</Link> guide covers
@@ -322,7 +334,7 @@ export default function HousecallProVsServiceTitanPage() {
             schedule and save custom reports from the dashboard. ServiceTitan provides dashboards,
             technician scorecards and custom reports, but its help center says “the ability to create
             custom reports depends on the ServiceTitan package your company is subscribed to,” and its
-            pricing page lists Advanced Reporting in The Works only.
+            pricing page lists reporting in Core and advanced business owner analytics on MAX only.
           </p>
 
           <h2 id="features">Estimates, memberships and other features</h2>
@@ -330,11 +342,11 @@ export default function HousecallProVsServiceTitanPage() {
             <li>
               <strong>Estimates:</strong> Housecall Pro includes estimates from Basic and adds a
               side-by-side sales proposal tool on Max. ServiceTitan supports Good, Better, Best
-              proposal types, with mobile estimates from its Essentials package.
+              proposal types, with mobile estimates in its Core package.
             </li>
             <li>
               <strong>Memberships:</strong> Housecall Pro lists Recurring Service Plans on Max;
-              ServiceTitan lists customizable memberships in The Works.
+              ServiceTitan lists customizable memberships in its Core package.
             </li>
             <li>
               <strong>Pricebook:</strong> Housecall Pro includes a price book from Basic and flat-rate

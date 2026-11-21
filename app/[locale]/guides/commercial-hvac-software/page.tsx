@@ -71,7 +71,7 @@ const tools: Tool[] = [
     quotes: 'Equipment Findings turns problems found on maintenance visits into pull-through work',
     billing: 'Application for Payment and Continuation Sheet (schedule of values) for progress billing; needs account configuration',
     accounting: 'QuickBooks Desktop and Online, Sage Intacct, Xero, CSV export',
-    price: 'Quote per technician; 10-K: terms typically 12 to 36 months',
+    price: 'Quote only; 10-K: terms typically 12 to 36 months',
   },
   {
     name: 'BuildOps',
@@ -203,7 +203,7 @@ const faqs = [
 
 const sources = [
   { name: 'ServiceTitan commercial contractor software', url: 'https://www.servicetitan.com/market/commercial-contractor-software', checked: '2026-11-19' },
-  { name: 'ServiceTitan pricing (per-technician, request pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-19' },
+  { name: 'ServiceTitan pricing (Core, Demand AI, Field AI and MAX packages; Get Pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-21' },
   { name: 'ServiceTitan help: customer record and locations', url: 'https://help.servicetitan.com/docs/how-do-you-separate-locations-under-the-same-billing-profile', checked: '2026-11-19' },
   { name: 'ServiceTitan help: customer portal (Contracts for commercial customers)', url: 'https://help.servicetitan.com/docs/customer-portal-overview', checked: '2026-11-19' },
   { name: 'ServiceTitan help: application for payment and continuation sheet', url: 'https://help.servicetitan.com/docs/complete-application-for-payment-and-continuation-sheet', checked: '2026-11-19' },
@@ -363,7 +363,7 @@ export default function CommercialHvacSoftwarePage() {
             maintenance visits into pull-through work. For projects, it documents applications for
             payment with a continuation sheet (schedule of values), which needs account configuration.
             Commercial customers see their contracts in the customer portal. It integrates with
-            QuickBooks Desktop and Online, Sage Intacct and Xero. Pricing is a per-technician quote, and
+            QuickBooks Desktop and Online, Sage Intacct and Xero. Pricing is by quote, and
             its 10-K says new customers typically sign 12 to 36 month agreements.
           </p>
 
