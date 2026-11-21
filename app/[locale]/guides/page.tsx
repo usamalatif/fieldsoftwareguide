@@ -30,6 +30,10 @@ const guides = [
   { title: 'How we review', desc: 'Our pricing-confidence standard and how rankings are decided.', href: '/how-we-review', tag: 'Methodology' },
   { title: 'HVAC dispatch software (2026)', desc: 'Seven HVAC dispatch and scheduling tools compared on which plan includes routing, GPS and maintenance visits.', href: '/guides/hvac-dispatch-software', tag: 'Dispatch' },
   { title: 'Commercial HVAC software (2026)', desc: 'Seven tools for commercial HVAC contractors compared on multi-site accounts, PM agreements and progress billing.', href: '/guides/commercial-hvac-software', tag: 'Commercial' },
+  { title: 'HVAC maintenance agreement software (2026)', desc: 'Eight tools compared on which plan includes memberships, how visits get scheduled, autopay and renewals.', href: '/guides/hvac-maintenance-agreement-software', tag: 'Agreements' },
+  { title: 'Field service quoting software (2026)', desc: 'Which plan unlocks quote options, e-signature, deposits, follow-ups and financing in eight tools.', href: '/guides/field-service-quoting-software', tag: 'Quoting' },
+  { title: 'Field service invoicing software (2026)', desc: 'Card and ACH fees, payment reminders, progress billing and QuickBooks sync compared by plan.', href: '/guides/field-service-invoicing-software', tag: 'Invoicing' },
+  { title: 'Open source field service software', desc: 'OCA Field Service, Dolibarr, ERPNext, Axelor and newer projects, checked against their licenses.', href: '/guides/open-source-field-service-software', tag: 'Open source' },
   { title: 'HVAC software guide', desc: 'The highest-demand trade guide — real pricing and top picks.', href: '/by-industry/hvac', tag: 'Popular' },
 ]
 

@@ -4,6 +4,8 @@ import type { Industry } from '@/lib/industries'
  * Pest Control — VERIFIED (researched 2026-07-08).
  * Vertical pages: Jobber, Housecall Pro, FieldPulse have real pest pages;
  * ServiceTitan's pest page hands off to FieldRoutes (its pest-specific platform);
+ * 2026-11-20: corrected. ServiceTitan's pest page now markets its own pest software to established
+ * multi-truck/multi-branch operations and says smaller pest businesses are a better fit for FieldRoutes.
  * Workiz has NO pest page (404, absent from industries list); Commusoft removed its
  * legacy pest page (404). Neither is listed as a provider here.
  * Chemical tracking: Jobber's chemical-tracking page documents chemical + registration-number
@@ -31,7 +33,7 @@ export const pestControl: Industry = {
   datePublished: '2026-07-08',
 
   answer:
-    'Pest control is where generalist FSM software hits its limits, so the honest answer depends on your compliance burden. Among the six major FSM vendors, Jobber is the strongest generalist fit. Its chemical tracking page says it records the chemicals and pesticides used on each job with their registration numbers and target pests, and route optimization and automatic payments start on Connect ($99/month billed annually for one user; Core at $29/month does not include route optimization). Jobber runs route optimization on jobber.com rather than in its mobile app. Housecall Pro (from $59/month billed annually) covers scheduling and dispatch, with route optimization and Recurring Service Plans listed on MAX ($299/month for up to 8 users). FieldPulse handles monthly and seasonal service agreements with treatment-log checklists (custom-quoted). ServiceTitan hands pest control to FieldRoutes, its pest-specific platform, and Workiz and Commusoft have no pest-control product page at all. Critically, none of the six generates state pesticide-use reports. If you file California, Arizona, or New York reports, use a pest-specific platform: PestPac (EPA-number database plus state reports, quote-based) or GorillaDesk (published pricing from $49/month per route).',
+    'Pest control is where generalist FSM software hits its limits, so the honest answer depends on your compliance burden. Among the six major FSM vendors, Jobber is the strongest generalist fit. Its chemical tracking page says it records the chemicals and pesticides used on each job with their registration numbers and target pests, and route optimization and automatic payments start on Connect ($99/month billed annually for one user; Core at $29/month does not include route optimization). Jobber runs route optimization on jobber.com rather than in its mobile app. Housecall Pro (from $59/month billed annually) covers scheduling and dispatch, with route optimization and Recurring Service Plans listed on MAX ($299/month for up to 8 users). FieldPulse handles monthly and seasonal service agreements with treatment-log checklists (custom-quoted). ServiceTitan markets pest control software to established multi-truck and multi-branch operations and points smaller pest businesses to FieldRoutes, its pest-specific platform. Workiz and Commusoft have no pest-control product page at all. Critically, none of the six generates state pesticide-use reports. If you file California, Arizona, or New York reports, use a pest-specific platform: PestPac (EPA-number database plus state reports, quote-based) or GorillaDesk (published pricing from $49/month per route).',
 
   intro:
     'Pest control runs on dense recurring routes and regulatory record-keeping. Every stop needs the treatment plan, the products applied — with registration numbers — and the bait-station checks documented, and in states like California, Arizona, and New York that record feeds mandatory pesticide-use reports. The right software has to automate quarterly and monthly recurrences, charge cards on file for commercial accounts, optimize tightly packed residential routes, and keep chemical records audit-ready. Generalist FSM tools cover the scheduling and billing side well; the compliance side is where pest-specific platforms earn their keep.',
@@ -60,7 +62,7 @@ export const pestControl: Industry = {
     { slug: 'jobber', positioning: 'Best generalist for pest control: chemical tracking, with route optimization from Connect', monthlyFromUsd: 29 },
     { slug: 'housecall-pro', positioning: 'Dispatch with published pricing; route optimization and service plans on MAX', monthlyFromUsd: 59 },
     { slug: 'fieldpulse', positioning: 'Monthly / seasonal service agreements + treatment-log checklists', monthlyFromUsd: null },
-    { slug: 'servicetitan', positioning: 'Routes pest control to FieldRoutes, its pest-specific platform', monthlyFromUsd: null },
+    { slug: 'servicetitan', positioning: 'Pest software for multi-truck and multi-branch operations; points smaller shops to FieldRoutes', monthlyFromUsd: null },
   ],
 
   bySize: [
@@ -121,13 +123,13 @@ export const pestControl: Industry = {
     },
   ],
 
-  lastUpdated: '2026-11-07',
+  lastUpdated: '2026-11-20',
   dataVerified: true,
   sources: [
     { name: 'Jobber pest control software', url: 'https://www.getjobber.com/industries/pest-control-software/', checked: '2026-07-08' },
     { name: 'Housecall Pro pest control software', url: 'https://www.housecallpro.com/industries/pest-control-software/', checked: '2026-07-08' },
     { name: 'FieldPulse pest control solution', url: 'https://www.fieldpulse.com/solutions/field-service-pest-control', checked: '2026-07-08' },
-    { name: 'ServiceTitan pest page (FieldRoutes hand-off)', url: 'https://www.servicetitan.com/industries/pest-control-software', checked: '2026-07-08' },
+    { name: 'ServiceTitan pest control software (established operations; FieldRoutes for smaller shops)', url: 'https://www.servicetitan.com/industries/pest-control-software', checked: '2026-11-20' },
     { name: 'FieldRoutes pest control software', url: 'https://www.fieldroutes.com/solutions/pest-control-software', checked: '2026-07-08' },
     { name: 'GorillaDesk pricing (per route, route definition)', url: 'https://gorilladesk.com/pricing/', checked: '2026-11-07' },
     { name: 'PestPac chemical tracking', url: 'https://www.pestpac.com/features/chemical-tracking-software', checked: '2026-07-08' },

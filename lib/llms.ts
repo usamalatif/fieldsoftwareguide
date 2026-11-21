@@ -64,6 +64,11 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [Jobber vs Housecall Pro](${site.url}/compare/jobber-vs-housecall-pro): verified head-to-head comparison
 - [Housecall Pro vs ServiceTitan](${site.url}/compare/housecall-pro-vs-servicetitan): published vs quote-only pricing, contracts, onboarding, dispatch and offline use, from vendor documents
 - [FieldPulse Alternatives](${site.url}/compare/fieldpulse-alternatives): FieldPulse alternatives compared on published pricing and fit
+- [FieldEdge Alternatives](${site.url}/compare/fieldedge-alternatives): FieldEdge alternatives compared on published pricing, trials, QuickBooks Desktop, flat rate and FieldEdge's published contract terms
+- [Field Service Invoicing Software](${site.url}/guides/field-service-invoicing-software): card and ACH processing fees, reminders, progress billing and QuickBooks sync by plan
+- [Field Service Quoting Software](${site.url}/guides/field-service-quoting-software): quote options, e-signature, deposits, follow-ups and financing by plan
+- [HVAC Maintenance Agreement Software](${site.url}/guides/hvac-maintenance-agreement-software): memberships, visit scheduling, autopay, failed-card handling and renewals compared
+- [Open Source Field Service Software](${site.url}/guides/open-source-field-service-software): open source FSM options checked against license files; Odoo's own Field Service is not in its open source edition
 - [Refrigerant Tracking Software](${site.url}/guides/refrigerant-tracking-software): seven refrigerant compliance tools compared, with EPA leak repair rules checked against eCFR
 - [Free FSM Software](${site.url}/free): what is actually free, verified on vendor sites
 - [QuickBooks Compatibility](${site.url}/quickbooks): which FSM tools sync with QuickBooks Online vs Desktop
