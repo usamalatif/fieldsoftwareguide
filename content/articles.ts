@@ -28,4 +28,7 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/compare/housecall-pro-alternatives': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
   '/compare/workiz-alternatives': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
   '/compare/jobber-vs-workiz': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
+  // Batch 3 drafts: set firstPublished and contentUpdated to the merge day when published.
+  '/compare/housecall-pro-vs-workiz': { contentUpdated: '2026-11-21' },
+  '/compare/servicetitan-vs-fieldedge': { contentUpdated: '2026-11-21' },
 }
