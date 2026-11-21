@@ -123,7 +123,7 @@ export const healthcare: Industry = {
     },
   ],
 
-  lastUpdated: '2026-11-20',
+  lastUpdated: '2026-11-21',
   dataVerified: true,
   sources: [
     { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-27' },
