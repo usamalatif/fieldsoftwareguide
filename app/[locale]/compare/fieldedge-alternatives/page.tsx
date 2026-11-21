@@ -70,7 +70,7 @@ const rows: Row[] = [
   },
   {
     name: 'ServiceTitan',
-    price: 'Not published; per technician',
+    price: 'Not published; “Get Pricing” on every package',
     trial: 'Demo',
     quickbooks: 'QuickBooks Desktop and Online, Sage Intacct, Xero',
     pricebook: 'Pricebook on every package; Pricebook Pro add-on',
@@ -173,7 +173,7 @@ const sources = [
   { name: 'FieldEdge scheduling and dispatching', url: 'https://fieldedge.com/field-service-software/scheduling-and-dispatching/', checked: '2026-11-20' },
   { name: 'Xplor US SaaS terms, linked as FieldEdge’s Service Agreement (October 2023)', url: 'https://www.xplortechnologies.com/wp-content/uploads/sites/13/2024/05/231026-Xplor-US-SaaS-Terms-Online-v1-2.pdf', checked: '2026-11-20' },
   { name: 'ServiceTitan help: export your FieldEdge data', url: 'https://help.servicetitan.com/v1/docs/export-your-fieldedge-data', checked: '2026-11-20' },
-  { name: 'ServiceTitan pricing', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-20' },
+  { name: 'ServiceTitan pricing (Core, Demand AI, Field AI and MAX packages; Get Pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-21' },
   { name: 'ServiceTitan help: accounting integrations overview', url: 'https://help.servicetitan.com/docs/accounting-integrations-overview', checked: '2026-11-19' },
   { name: 'ServiceTitan help: field mobile app FAQ (offline)', url: 'https://help.servicetitan.com/faq/servicetitan-field-mobile-app-faq', checked: '2026-11-20' },
   { name: 'ServiceTitan 10-K (contract terms)', url: 'https://www.sec.gov/Archives/edgar/data/1638826/000163882626000028/ttan-20260131.htm', checked: '2026-11-19' },
@@ -339,7 +339,7 @@ export default function FieldEdgeAlternativesPage() {
           <h3>ServiceTitan</h3>
           <p>
             <strong>Best fit:</strong> larger residential and commercial shops with dispatchers and a
-            call center. ServiceTitan prices per technician by quote, lists its Pricebook on every
+            call center. ServiceTitan prices by quote, lists its Pricebook on every
             package, and makes accounting integrations with QuickBooks Desktop and Online, Sage
             Intacct and Xero available to all customers. Its mobile app lets techs take most job
             actions offline, though dynamic pricing does not show offline. It also documents importing

@@ -85,7 +85,7 @@ const tools: Tool[] = [
   },
   {
     name: 'ServiceTitan',
-    price: 'Quote only, per technician; Starter, Essentials and The Works all say “Request Pricing”',
+    price: 'Quote only; Core, Demand AI, Field AI and MAX all use “Get Pricing”',
     dispatch: 'Drag-and-drop dispatch board; Adjust Capacity Planning books against technician hours per arrival window',
     routing: 'Map with route information and single-technician route optimization; Dispatch Pro add-on assigns techs by skill, location and performance',
     gps: 'Technician locations on the dispatch map; Fleet Pro add-on for real-time vehicle tracking',
@@ -214,7 +214,7 @@ const sources = [
   { name: 'Jobber help: GPS waypoint tracking (select plans)', url: 'https://help.getjobber.com/en/articles/gps-waypoint-tracking/', checked: '2026-11-19' },
   { name: 'Jobber help: day view of the schedule (drag and drop)', url: 'https://help.getjobber.com/en/articles/day-view-of-the-schedule-new-schedule/', checked: '2026-11-19' },
   { name: 'Jobber help: create a recurring job', url: 'https://help.getjobber.com/hc/en-us/articles/115009542848-Create-a-Recurring-Job', checked: '2026-11-19' },
-  { name: 'ServiceTitan pricing (packages, per-technician, request pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-19' },
+  { name: 'ServiceTitan pricing (Core, Demand AI, Field AI and MAX packages; Get Pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-21' },
   { name: 'ServiceTitan dispatch software (dispatch board, Map, capacity planning, Dispatch Pro)', url: 'https://www.servicetitan.com/features/dispatch-software', checked: '2026-11-19' },
   { name: 'ServiceTitan Dispatch Pro', url: 'https://www.servicetitan.com/features/pro/dispatch', checked: '2026-11-19' },
   { name: 'ServiceTitan Scheduling Pro', url: 'https://www.servicetitan.com/features/pro/scheduling', checked: '2026-11-19' },
@@ -434,7 +434,7 @@ export default function HvacDispatchSoftwarePage() {
             technician skill, location and performance and can cap drive time between jobs. Scheduling
             Pro adds 24/7 online and SMS booking that follows your capacity rules, and Fleet Pro adds
             real-time vehicle tracking. Recurring service events for maintenance visits are scheduled
-            automatically up to 12 months ahead by default. ServiceTitan prices per technician by quote;
+            automatically up to 12 months ahead by default. ServiceTitan prices by quote;
             see <Link href="/compare/housecall-pro-vs-servicetitan" className={A}>Housecall Pro vs ServiceTitan</Link>{' '}
             for contract and onboarding terms.
           </p>

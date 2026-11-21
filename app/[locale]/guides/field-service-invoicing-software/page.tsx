@@ -102,7 +102,7 @@ const tools: Tool[] = [
   },
   {
     name: 'ServiceTitan',
-    price: 'Quote only, per technician; all three packages list invoicing',
+    price: 'Quote only; invoicing is in Core, so every package has it',
     fees: 'Not published: fees “vary” by method and your agreement',
     reminders: 'Payment links and reminders; automated membership billing and batch invoices',
     staged: 'Deposits; progress billing (AIA) needs account configuration',
@@ -203,7 +203,7 @@ const sources = [
   { name: 'Service Fusion Payments', url: 'https://www.servicefusion.com/service-fusion-payments', checked: '2026-11-20' },
   { name: 'Kickserv pricing', url: 'https://www.kickserv.com/pricing', checked: '2026-11-20' },
   { name: 'Kickserv payments', url: 'https://www.kickserv.com/integrations/payments', checked: '2026-11-20' },
-  { name: 'ServiceTitan pricing', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-20' },
+  { name: 'ServiceTitan pricing (Core, Demand AI, Field AI and MAX packages; Get Pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-21' },
   { name: 'ServiceTitan Payments', url: 'https://www.servicetitan.com/features/payments', checked: '2026-11-20' },
   { name: 'ServiceTitan accounting', url: 'https://www.servicetitan.com/features/accounting', checked: '2026-11-20' },
   { name: 'ServiceTitan help: accounting integrations overview', url: 'https://help.servicetitan.com/docs/accounting-integrations-overview', checked: '2026-11-19' },
@@ -443,7 +443,7 @@ export default function FieldServiceInvoicingSoftwarePage() {
 
           <h3>Quote-only tools: ServiceTitan, Workiz, FieldPulse and Commusoft</h3>
           <p>
-            <strong>ServiceTitan</strong> lists invoicing on all three packages and says its payment
+            <strong>ServiceTitan</strong> lists invoicing in its Core platform, which every package includes, and says its payment
             fees vary by method, transaction type and your agreement. ServiceTitan Payments covers
             Tap to Pay and pay by bank in the US, payment links, automated membership billing and
             batch invoices, and its accounting integrations (QuickBooks Online and Desktop, Sage

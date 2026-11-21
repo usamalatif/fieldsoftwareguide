@@ -80,7 +80,7 @@ const tools: Tool[] = [
   },
   {
     name: 'ServiceTitan',
-    plan: 'Quote only; all three packages list customizable memberships',
+    plan: 'Quote only; customizable memberships are in Core, so every package lists them',
     visits: 'Recurring service events created up to 12 months ahead; booked from a follow-up screen',
     billing: 'Billing runs charge stored cards; for memberships it tries each stored card until one works',
     renewals: 'Service agreements can auto-renew 90 days before the end date (needs configuration)',

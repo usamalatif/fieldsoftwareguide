@@ -91,7 +91,7 @@ const rows: Row[] = [
   },
   {
     name: 'ServiceTitan',
-    price: 'Not published; per-technician pricing',
+    price: 'Not published; “Get Pricing” on every package',
     trial: 'Demo only',
     offline: 'Most job actions offline; directions, location history and Dynamic Pricing need signal (Static Pricing works offline)',
     equipment: 'Installed Equipment records',
@@ -167,7 +167,7 @@ const faqs = [
   {
     question: 'Is ServiceTitan or FieldPulse better for larger teams?',
     answer:
-      'Neither publishes prices. ServiceTitan prices per technician and is built for larger service operations; FieldPulse is seat-based, and its own guide says field-only seats for technicians who only need the mobile app cost less. Both document offline work and equipment records, so demo both against the same workflow and compare written quotes for the same seats and modules.',
+      'Neither publishes prices. ServiceTitan prices by quote and is built for larger service operations; FieldPulse is seat-based, and its own guide says field-only seats for technicians who only need the mobile app cost less. Both document offline work and equipment records, so demo both against the same workflow and compare written quotes for the same seats and modules.',
   },
 ]
 
@@ -185,7 +185,7 @@ const sources = [
   { name: 'Housecall Pro mobile app (offline viewing only)', url: 'https://www.housecallpro.com/features/mobile-app/', checked: '2026-11-11' },
   { name: 'Workiz pricing (request pricing, 7-day trial, equipment tracking on Ultimate)', url: 'https://www.workiz.com/pricing-plans/', checked: '2026-11-11' },
   { name: 'Workiz mobile app (offline, calls and messaging)', url: 'https://www.workiz.com/features/mobile-app/', checked: '2026-11-11' },
-  { name: 'ServiceTitan pricing (per-technician, request pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-10' },
+  { name: 'ServiceTitan pricing (Core, Demand AI, Field AI and MAX packages; Get Pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-21' },
   { name: 'ServiceTitan Field Mobile App FAQ (offline)', url: 'https://help.servicetitan.com/faq/servicetitan-field-mobile-app-faq', checked: '2026-11-11' },
   { name: 'ServiceTitan installed equipment', url: 'https://help.servicetitan.com/docs/installed-equipment-landing-page', checked: '2026-07-08' },
   { name: 'Commusoft plans (designed for 6+ staff; 12-month contracted licences, annual renewal; no stated licence minimum)', url: 'https://www.commusoft.com/en-us/plans/', checked: '2026-11-11' },
@@ -354,8 +354,7 @@ export default function FieldPulseAlternativesPage() {
 
           <h3 id="servicetitan">ServiceTitan</h3>
           <p>
-            <strong>Best fit:</strong> larger service operations. ServiceTitan names three plans
-            (Starter, Essentials, and The Works), prices per technician without publishing the rate,
+            <strong>Best fit:</strong> larger service operations. ServiceTitan names four packages (Core, Demand AI, Field AI, and MAX), prices them by quote without publishing a rate,
             and offers demos rather than a trial. Its mobile app handles most job actions offline,
             including notes, photos, forms, and equipment, but directions, service location history,
             and Dynamic Pricing need a connection; Static Pricing works offline. It keeps Installed
