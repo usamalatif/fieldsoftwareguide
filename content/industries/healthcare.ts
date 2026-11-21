@@ -12,11 +12,17 @@ import type { Industry } from '@/lib/industries'
  * Associate. Asset records rechecked (Workiz Equipment tracking is Ultimate-only; Housecall
  * Pro property profiles hold make/model/serial). None of the six documents calibration features.
  * 2026-10-31: Housecall Pro qualified consistently: its HVAC page lists equipment tracking on
+ * 2026-11-20: Housecall Pro's pricing page embeds plan data listing "Customer equipment tracking" on
+ * Essentials ($149/mo), though not in the visible plan cards; its HVAC package (Essentials $229 for
+ * 1 user / $299 for 5) also lists it. The property-profile help article names no plan.
+ * 2026-11-20: added healthcare CMMS (Accruent TMS, AIMS 3, Nuvolo, e-Quip) and medical device
+ * field service (Salesforce Field Service: $175/$250/$650 per user/month billed annually; Field
+ * Service listed under Service Cloud in its HIPAA BAA covered services), all from vendor sites.
+ * MediMizer (403), EZmaintain (refused), ServiceMax (redirects to ptc.com, 403) and IFS (429)
+ * could not be checked and are not described.
+ * Old 2026-10-31 note follows.
  * Essentials and MAX; the property-profile help article names no plan and the pricing page is
  * silent, so we do NOT say Basic lacks it. Market claim narrowed to the six platforms reviewed.
- * 2026-11-20 (second correction): Housecall Pro's pricing page embeds plan data listing
- * "Customer equipment tracking" on Essentials ($149/mo); it is not in the visible plan cards. The
- * HVAC package (Essentials $229+) also lists it. Equipment tracking is described as listed on Essentials.
  */
 export const healthcare: Industry = {
   slug: 'healthcare',
@@ -29,7 +35,7 @@ export const healthcare: Industry = {
   datePublished: '2026-07-08',
 
   answer:
-    'None of the six platforms we review sells medical equipment field service management software as a healthcare product (rechecked October 2026), so biomed and DME service teams choose general field service tools with strong per-asset records. FieldPulse (asset records with warranties and barcode scanning), ServiceTitan (installed-equipment history), and Commusoft (multi-site asset history with barcodes or QR codes) are the closest fits, all custom-quoted. Smaller in-home equipment providers can look at Housecall Pro (from $59/month billed annually), whose pricing page lists customer equipment tracking on Essentials ($149/month billed annually) and whose property profile app stores make, model, serial number and install date per item, or Jobber (from $29/month billed annually), which has no native asset tracking. Treat these tools as equipment-service systems, not clinical software. Workiz’s terms say it does not act as a customer’s business associate under HIPAA. For Jobber, Housecall Pro, ServiceTitan, FieldPulse, and Commusoft we found no public HIPAA or business associate agreement (BAA) documentation, which is not evidence of non-compliance, so ask in writing and keep patient data out until a vendor confirms.',
+    'None of the six platforms we review sells medical equipment field service management software as a healthcare product (rechecked November 2026), so biomed and DME service teams choose general field service tools with strong per-asset records. FieldPulse (asset records with warranties and barcode scanning), ServiceTitan (installed-equipment history), and Commusoft (multi-site asset history with barcodes or QR codes) are the closest fits, all custom-quoted. Smaller in-home equipment providers can look at Housecall Pro (from $59/month billed annually), whose pricing page lists customer equipment tracking on Essentials ($149/month billed annually) and whose property profile app stores make, model, serial number and install date per item, or Jobber (from $29/month billed annually), which has no native asset tracking. Treat these tools as equipment-service systems, not clinical software. Workiz’s terms say it does not act as a customer’s business associate under HIPAA. For Jobber, Housecall Pro, ServiceTitan, FieldPulse, and Commusoft we found no public HIPAA or business associate agreement (BAA) documentation, which is not evidence of non-compliance, so ask in writing and keep patient data out until a vendor confirms. Hospital biomed and HTM departments often use a healthcare CMMS such as Accruent TMS, AIMS or Nuvolo instead, and device makers’ service teams often use enterprise platforms such as Salesforce Field Service.',
 
   intro:
     'Healthcare field service covers biomedical equipment maintenance in hospitals and clinics, servicing of imaging, lab, and sterilization equipment, and delivery and repair of durable medical equipment (DME) in patients’ homes. Uptime and traceability define the work: a missed preventive-maintenance visit can take a device out of service, and every repair needs a dated record against the right serial number. None of the six platforms reviewed here is built specifically for healthcare, so the honest evaluation is capability-based: per-asset history, recurring maintenance scheduling, and mobile documentation, with patient-linked data kept out of the system.',
@@ -54,11 +60,88 @@ export const healthcare: Industry = {
   search: { monthlyVolume: 40, kd: 2, cpc: null },
 
   providers: [
-    { slug: 'fieldpulse', positioning: 'Best per-asset records for medical equipment / DME service (warranties, barcodes)', monthlyFromUsd: null },
-    { slug: 'servicetitan', positioning: 'Installed-equipment history; best for large multi-site service operations', monthlyFromUsd: null },
-    { slug: 'commusoft', positioning: 'Multi-site asset history with barcode/QR lookup and PPM service contracts', monthlyFromUsd: null },
-    { slug: 'housecall-pro', positioning: 'Published pricing; property profiles store make, model and serial per item', monthlyFromUsd: 59 },
-    { slug: 'jobber', positioning: 'Lowest published plan (no native asset tracking)', monthlyFromUsd: 29 },
+    {
+      slug: 'fieldpulse',
+      positioning: 'Best per-asset records for medical equipment / DME service (warranties, barcodes)',
+      monthlyFromUsd: null,
+      fit: {
+        bestFor: 'Biomed and DME service teams that want per-device records and recurring maintenance agreements in one system',
+        strengths: [
+          'Asset records cover installations, warranties, maintenance schedules and equipment condition, with barcode scanning to update records in the field.',
+          'Asset reports summarize condition, maintenance history and service recommendations for the customer.',
+          'Maintenance agreements run on the same jobs and invoices and can bill on a different cadence from the visits.',
+        ],
+        limitations: [
+          'Quote-only, seat-based pricing, and FieldPulse says it does not offer a free trial.',
+          'We found no published HIPAA statement or BAA offer, so keep patient data out unless FieldPulse confirms in writing.',
+        ],
+      },
+    },
+    {
+      slug: 'servicetitan',
+      positioning: 'Installed-equipment history; best for large multi-site service operations',
+      monthlyFromUsd: null,
+      fit: {
+        bestFor: 'Large multi-site equipment service operations that already run on a contractor platform',
+        strengths: [
+          'Tracks installed equipment at each service location, including install dates, service history and memberships.',
+          'Recurring service events for maintenance visits populate up to 12 months ahead by default.',
+        ],
+        limitations: [
+          'Built for trades contractors: its industries page lists no healthcare or medical equipment vertical.',
+          'Per-technician pricing is quote-only, and we found no published HIPAA statement or BAA offer.',
+        ],
+      },
+    },
+    {
+      slug: 'commusoft',
+      positioning: 'Multi-site asset history with barcode/QR lookup and PPM service contracts',
+      monthlyFromUsd: null,
+      fit: {
+        bestFor: 'Equipment service companies with 6 or more staff that run planned maintenance contracts across many sites',
+        strengths: [
+          'Scan QR codes or barcodes on site to open the full service history, equipment manuals and past technician notes.',
+          'Service contracts auto-generate recurring work orders and inspection visits (PPM).',
+          'Keeps digital service histories and inspection records to show work was completed to spec.',
+        ],
+        limitations: [
+          'Commusoft says it is designed for businesses with 6 or more staff, and pricing is by quote.',
+          'We found no published HIPAA statement or BAA offer.',
+        ],
+      },
+    },
+    {
+      slug: 'housecall-pro',
+      positioning: 'Published pricing; property profiles store make, model and serial per item',
+      monthlyFromUsd: 59,
+      fit: {
+        bestFor: 'Small in-home equipment or DME repair businesses that want published pricing and a 14-day trial',
+        strengths: [
+          'Its property profile app stores item type, make, model, serial number, install date and notes for each address.',
+          'Published plans from $59/month billed annually; Recurring Service Plans are included in MAX ($299/month for 8 users).',
+        ],
+        limitations: [
+          'Customer equipment tracking is listed from Essentials ($149/month billed annually), not on the $59 Basic plan’s feature list.',
+          'We found no published HIPAA statement or BAA offer.',
+        ],
+      },
+    },
+    {
+      slug: 'jobber',
+      positioning: 'Lowest published plan (no native asset tracking)',
+      monthlyFromUsd: 29,
+      fit: {
+        bestFor: 'Solo technicians who need scheduling, invoicing and recurring visits at the lowest published price',
+        strengths: [
+          'Core is $29/month billed annually for 1 user, with a 14-day trial and no card.',
+          'Recurring jobs handle repeat maintenance visits.',
+        ],
+        limitations: [
+          'No dedicated equipment module: device details would live in custom client fields or notes, not a per-device service history.',
+          'We found no published HIPAA statement or BAA offer.',
+        ],
+      },
+    },
   ],
 
   bySize: [
@@ -76,6 +159,23 @@ export const healthcare: Industry = {
         'Load ten real devices into each trial with make, model, serial number, install date, and warranty end date. Then build one service contract that schedules preventive maintenance for those devices at a fixed interval, send a tech to complete one visit, and check that the visit, parts used, photos, and technician notes land on each device’s history. Finish by exporting the history for one device as you would for a customer or audit request.',
         'The tools differ in where that record lives. ServiceTitan keeps installed equipment at each service location with a history of every completed job, Commusoft lets you attach barcodes or QR codes to equipment and keeps a full job history per asset, FieldPulse tracks warranties and maintenance history with barcode scanning, and Housecall Pro stores make, model, serial number and install date in its property profile app. Housecall Pro’s pricing page lists customer equipment tracking on Essentials ($149/month billed annually), and its separate HVAC package also lists it on Essentials (from $229/month). Workiz equipment tracking is on its Ultimate plan, and Jobber has no native asset tracking.',
         'DME providers that also rent out equipment such as hospital beds or oxygen concentrators have a second job: tracking which unit is out on which contract and when it comes back. That is rental management, not field service, and we did not verify complete rental-contract and availability workflows in any of these tools. Our guide to [equipment rental field service software](/by-industry/equipment-rental) compares rental systems with field service tools for businesses that do both.',
+      ],
+    },
+    {
+      id: 'medical-equipment-cmms',
+      heading: 'Dedicated medical equipment management software (HTM and biomed CMMS)',
+      paragraphs: [
+        'If you run an in-house biomed or healthcare technology management (HTM) department, or service hospital equipment under contract, a healthcare CMMS is often a closer fit than a trades field service tool. These systems are built around device inventories, planned maintenance and accreditation surveys. None of the four below publishes a price; each sells through a demo or quote.',
+        'Accruent TMS is a cloud CMMS for healthcare. Its product page says it supports continuous compliance with Joint Commission standards, and Accruent’s HTM page refers to audits by CMS, The Joint Commission, DNV GL and FDA. AIMS 3 from Phoenix Data Systems runs in the vendor’s cloud, where it manages upgrades for you, and interfaces with ECRI’s Sourcebase, UMDNS and Alerts Tracker and with help desks such as ServiceNow and Remedy.',
+        'Nuvolo, which Trane Technologies agreed to acquire in 2023, sells HTM asset management that schedules planned maintenance, monitors compliance and, in its words, helps you “meet AEM regulatory standards”. Its regulatory compliance module says it can work with Joint Commission, NFPA and CMS Conditions of Participation standards, ECRI integration is optional, and mobile work orders work on and offline. e-Quip is a medical device asset management system developed with NHS Trusts in the UK, so confirm US support before you shortlist it.',
+      ],
+    },
+    {
+      id: 'medical-device-field-service',
+      heading: 'Medical device field service platforms for manufacturers and service organizations',
+      paragraphs: [
+        'Device manufacturers and independent service organizations that send engineers to hospitals often use enterprise field service platforms. Salesforce Field Service publishes its prices: Technician and Dispatcher at $175 per user per month, Field Service+ Core at $250 and Field Service Max at $650, all billed annually. Salesforce lists Service Cloud, including Field Service, among the services covered by its HIPAA business associate addendum, which you must sign before using it with patient data.',
+        'We could not check ServiceMax (servicemax.com now redirects to ptc.com, which blocked our request) or IFS on their own sites for this update, so we do not describe them here. For a small DME or repair business, these platforms are usually far more than you need; the trades tools above cost less and publish their prices.',
       ],
     },
     {
@@ -97,9 +197,19 @@ export const healthcare: Industry = {
 
   faqs: [
     {
+      question: 'What is the difference between medical equipment management software and field service software?',
+      answer:
+        'Medical equipment management software, a healthcare CMMS such as Accruent TMS, AIMS or Nuvolo, is built for hospital biomed teams: device inventory, planned maintenance and accreditation records. Field service software is built for companies that send technicians to customer sites and bill for the work.',
+    },
+    {
+      question: 'Does any field service platform offer a HIPAA BAA?',
+      answer:
+        'Salesforce lists Service Cloud, including Field Service, as covered by its HIPAA business associate addendum, which must be signed before use with patient data. We found no published BAA offer from Jobber, Housecall Pro, ServiceTitan, FieldPulse or Commusoft.',
+    },
+    {
       question: 'What is the best medical equipment field service management software?',
       answer:
-        'None of the six FSM platforms we review markets a healthcare vertical (rechecked October 2026). Biomed and DME service teams usually pick by asset records: FieldPulse, ServiceTitan, and Commusoft (all custom-quoted) keep per-device service history. Smaller teams can use Housecall Pro (from $59/month billed annually), whose pricing page lists customer equipment tracking on Essentials ($149/month billed annually) and whose property profile app stores make, model and serial numbers.',
+        'None of the six FSM platforms we review markets a healthcare vertical (rechecked November 2026). Biomed and DME service teams usually pick by asset records: FieldPulse, ServiceTitan, and Commusoft (all custom-quoted) keep per-device service history. Smaller teams can use Housecall Pro (from $59/month billed annually), whose pricing page lists customer equipment tracking on Essentials ($149/month billed annually) and whose property profile app stores make, model and serial numbers.',
     },
     {
       question: 'Is field service software for medical equipment HIPAA compliant?',
@@ -123,23 +233,36 @@ export const healthcare: Industry = {
     },
   ],
 
-  lastUpdated: '2026-11-21',
+  // Set to the actual merge day (PR held until after the Dec 9 GSC review).
+  lastUpdated: '2026-11-20',
   dataVerified: true,
   sources: [
     { name: 'Jobber pricing', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-27' },
     { name: 'Housecall Pro pricing (plan data lists customer equipment tracking on Essentials)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-19' },
     { name: 'Housecall Pro property profiles', url: 'https://help.housecallpro.com/en/articles/3703307-property-profile', checked: '2026-11-20' },
     { name: 'Housecall Pro HVAC page (separate HVAC package; equipment tracking on its Essentials from $229)', url: 'https://www.housecallpro.com/industries/hvac-software/', checked: '2026-11-20' },
-    { name: 'ServiceTitan installed equipment', url: 'https://help.servicetitan.com/docs/installed-equipment-landing-page', checked: '2026-10-27' },
+    { name: 'ServiceTitan installed equipment', url: 'https://help.servicetitan.com/docs/installed-equipment-landing-page', checked: '2026-11-20' },
     { name: 'ServiceTitan service agreements', url: 'https://help.servicetitan.com/docs/service-agreement-management-overview', checked: '2026-10-27' },
-    { name: 'FieldPulse asset management', url: 'https://www.fieldpulse.com/features/asset-management', checked: '2026-10-27' },
+    { name: 'FieldPulse asset management', url: 'https://www.fieldpulse.com/features/asset-management', checked: '2026-11-20' },
     { name: 'FieldPulse maintenance agreements', url: 'https://help.fieldpulse.com/en/articles/5722045-maintenance-agreements', checked: '2026-10-27' },
-    { name: 'Commusoft asset maintenance', url: 'https://www.commusoft.com/en-us/features/asset-maintenance-software/', checked: '2026-10-27' },
-    { name: 'Commusoft service contracts', url: 'https://www.commusoft.com/en-us/features/service-contract-management-software/', checked: '2026-10-27' },
+    { name: 'Commusoft asset maintenance', url: 'https://www.commusoft.com/en-us/features/asset-maintenance-software/', checked: '2026-11-20' },
+    { name: 'Commusoft service contracts', url: 'https://www.commusoft.com/en-us/features/service-contract-management-software/', checked: '2026-11-20' },
     { name: 'Workiz equipment tracking', url: 'https://www.workiz.com/features/equipment-tracking/', checked: '2026-10-27' },
-    { name: 'Workiz terms (HIPAA / business associate)', url: 'https://www.workiz.com/terms-and-conditions/', checked: '2026-10-27' },
+    { name: 'Workiz terms (HIPAA / business associate)', url: 'https://www.workiz.com/terms-and-conditions/', checked: '2026-11-20' },
     { name: 'Jobber recurring jobs', url: 'https://help.getjobber.com/hc/en-us/articles/115009542848-Create-a-Recurring-Job', checked: '2026-10-27' },
-    { name: 'ServiceTitan industries (no healthcare vertical)', url: 'https://www.servicetitan.com/industries', checked: '2026-10-27' },
+    { name: 'ServiceTitan industries (no healthcare vertical)', url: 'https://www.servicetitan.com/industries', checked: '2026-11-20' },
     { name: 'Jobber industries (no healthcare vertical)', url: 'https://www.getjobber.com/industries/', checked: '2026-10-27' },
+    { name: 'Accruent TMS (cloud healthcare CMMS; Joint Commission)', url: 'https://www.accruent.com/products/tms', checked: '2026-11-20' },
+    { name: 'Accruent HTM software (CMS, Joint Commission, DNV GL, FDA audits)', url: 'https://www.accruent.com/solutions/healthcare-technology-management-software', checked: '2026-11-20' },
+    { name: 'AIMS 3 cloud solutions', url: 'https://www.goaims.com/cloudmanagement-solutions/', checked: '2026-11-20' },
+    { name: 'AIMS 3 interfaces (ECRI, ServiceNow, Remedy)', url: 'https://www.goaims.com/interfaces/', checked: '2026-11-20' },
+    { name: 'Nuvolo HTM asset management (AEM, offline mobile, ECRI)', url: 'https://www.nuvolo.com/products/htm-asset-management/', checked: '2026-11-20' },
+    { name: 'Nuvolo regulatory compliance management (Joint Commission, NFPA, CMS CoPs)', url: 'https://www.nuvolo.com/component/regulatory-compliance-management/', checked: '2026-11-20' },
+    { name: 'Trane Technologies to acquire Nuvolo (Nuvolo news)', url: 'https://www.nuvolo.com/news/trane-technologies-to-acquire-connected-workplace-and-enterprise-asset-management-leader-nuvolo/', checked: '2026-11-20' },
+    { name: 'e-Quip medical device asset management (NHS)', url: 'https://www.e-quip.uk.net/', checked: '2026-11-20' },
+    { name: 'Salesforce Field Service pricing', url: 'https://www.salesforce.com/service/field-service-management/pricing/', checked: '2026-11-20' },
+    { name: 'Salesforce HIPAA business associate addendum (covered services)', url: 'https://www.salesforce.com/company/legal/business-associate-addendum/', checked: '2026-11-20' },
+    { name: 'FieldPulse pricing (quote only; no free trial)', url: 'https://www.fieldpulse.com/pricing', checked: '2026-11-20' },
+    { name: 'Commusoft FAQs (designed for 6 or more staff)', url: 'https://www.commusoft.com/en-gb/faqs/', checked: '2026-11-20' },
   ],
 }
