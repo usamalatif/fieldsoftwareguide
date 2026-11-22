@@ -16,8 +16,10 @@ import { articleDates } from '@/content/articles'
  * Every figure verified 2026-10-24 on Housecall Pro's own pages: pricing (plans, users,
  * features, add-ons, FAQ), the help-center payment processing article, and the QuickBooks
  * page. Annual totals and savings are arithmetic on those figures. The pricing page does
- * not name the plan required for QuickBooks Desktop, does not price add-ons, and lists an
- * extra-user price only for MAX; the article says so rather than guessing.
+ * not price add-ons and lists an extra-user price only for MAX; the article says so rather
+ * than guessing. 2026-11-21: the pricing page embeds plan data (copy saved 2026-11-19, not in
+ * the visible plan cards) listing "QuickBooks online and desktop" on Essentials, so Desktop is
+ * now described as listed on Essentials; its Desktop guide says US versions only.
  * Jobber figures for the short comparison: Core standard annual rate checked 2026-10-22;
  * Jobber QuickBooks gating from the July 2026 research (see /quickbooks).
  */
@@ -90,7 +92,7 @@ const faqs = [
   {
     question: 'Which Housecall Pro plan includes QuickBooks?',
     answer:
-      'QuickBooks Online sync is listed on Essentials ($149/month billed annually) and therefore MAX, not on Basic. Housecall Pro’s QuickBooks page says it also integrates with QuickBooks Desktop but does not name the plan required, so confirm Desktop support for your plan with Housecall Pro.',
+      'QuickBooks Online sync is listed on Essentials ($149/month billed annually) and therefore MAX, not on Basic. Housecall Pro’s QuickBooks page says it also integrates with QuickBooks Desktop, and the plan data on its pricing page lists QuickBooks Online and Desktop on Essentials. Its Desktop guide says only US versions of QuickBooks Desktop are supported.',
   },
   {
     question: 'Is Housecall Pro cheaper than Jobber?',
@@ -100,9 +102,10 @@ const faqs = [
 ]
 
 const sources = [
-  { name: 'Housecall Pro pricing (plans, users, features, add-ons, FAQ)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-24' },
+  { name: 'Housecall Pro pricing (plans, users, features, add-ons, FAQ; plan data lists QuickBooks Online and Desktop on Essentials)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-19' },
   { name: 'Housecall Pro payment processing options (help center)', url: 'https://help.housecallpro.com/en/articles/2046930-housecall-pro-payment-processing-options', checked: '2026-10-24' },
   { name: 'Housecall Pro QuickBooks integration', url: 'https://www.housecallpro.com/quickbooks/', checked: '2026-10-24' },
+  { name: 'Housecall Pro help: QuickBooks Desktop onboarding (US versions, single-user mode)', url: 'https://help.housecallpro.com/en/articles/4327479-quickbooks-desktop-integration-onboarding-guide', checked: '2026-11-20' },
   { name: 'Jobber pricing (Core standard annual rate; QuickBooks Online-only gating checked 2026-07-08)', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-22' },
 ]
 
@@ -293,8 +296,9 @@ export default function HousecallProPricingPage() {
             Essentials and MAX but not on Basic. Housecall Pro&rsquo;s QuickBooks page says it
             integrates with both QuickBooks Online and QuickBooks Desktop, and that invoices,
             customers, line items, and payments push into QuickBooks automatically. That page does
-            not name the plan required for Desktop, so if you run QuickBooks Desktop, confirm it
-            with Housecall Pro for the plan you are buying. To see how other field service tools
+            not name a plan, but the plan data on Housecall Pro&rsquo;s pricing page lists QuickBooks
+            Online and Desktop on Essentials. Its Desktop onboarding guide says only US versions of
+            QuickBooks Desktop are supported and that setup is done in single-user mode. To see how other field service tools
             handle QuickBooks Online and Desktop, read our{' '}
             <Link href="/quickbooks">FSM software for QuickBooks</Link> guide.
           </p>
