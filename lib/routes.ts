@@ -29,7 +29,7 @@ export const staticRouteLastmod: Record<string, string> = {
   '/compare/housecall-pro-vs-workiz': articleDates['/compare/housecall-pro-vs-workiz'].contentUpdated,
   '/compare/servicetitan-vs-fieldedge': articleDates['/compare/servicetitan-vs-fieldedge'].contentUpdated,
   '/free': '2026-11-10',
-  '/quickbooks': '2026-10-24',
+  '/quickbooks': '2026-11-21', // set to the merge day (held until after the Dec 9 GSC review)
   '/pricing': articleDates['/pricing'].contentUpdated,
   '/pricing/housecall-pro': articleDates['/pricing/housecall-pro'].contentUpdated,
   '/pricing/jobber': articleDates['/pricing/jobber'].contentUpdated,
