@@ -157,6 +157,11 @@ import { airDuctCleaning } from '@/content/industries/air-duct-cleaning'
 import { gutter } from '@/content/industries/gutter'
 import { moving } from '@/content/industries/moving'
 import { treeCare } from '@/content/industries/tree-care'
+import { snowRemoval } from '@/content/industries/snow-removal'
+import { irrigation } from '@/content/industries/irrigation'
+import { waterTreatment } from '@/content/industries/water-treatment'
+import { siding } from '@/content/industries/siding'
+import { restoration } from '@/content/industries/restoration'
 
 export const industries: Industry[] = [
   hvac,
@@ -191,6 +196,11 @@ export const industries: Industry[] = [
   gutter,
   moving,
   treeCare,
+  snowRemoval,
+  irrigation,
+  waterTreatment,
+  siding,
+  restoration,
 ]
 
 const bySlug = new Map(industries.map((i) => [i.slug, i]))
