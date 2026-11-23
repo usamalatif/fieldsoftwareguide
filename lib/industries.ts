@@ -147,6 +147,11 @@ import { solar } from '@/content/industries/solar'
 import { handyman } from '@/content/industries/handyman'
 import { securityAlarm } from '@/content/industries/security-alarm'
 import { pressureWashing } from '@/content/industries/pressure-washing'
+import { painting } from '@/content/industries/painting'
+import { windowCleaning } from '@/content/industries/window-cleaning'
+import { carpetCleaning } from '@/content/industries/carpet-cleaning'
+import { junkRemoval } from '@/content/industries/junk-removal'
+import { septic } from '@/content/industries/septic'
 
 export const industries: Industry[] = [
   hvac,
@@ -171,6 +176,11 @@ export const industries: Industry[] = [
   handyman,
   securityAlarm,
   pressureWashing,
+  painting,
+  windowCleaning,
+  carpetCleaning,
+  junkRemoval,
+  septic,
 ]
 
 const bySlug = new Map(industries.map((i) => [i.slug, i]))
