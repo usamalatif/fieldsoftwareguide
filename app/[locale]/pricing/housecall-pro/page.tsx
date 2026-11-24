@@ -103,6 +103,8 @@ const sources = [
   { name: 'Housecall Pro pricing (plans, users, features, add-ons, FAQ)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-10-24' },
   { name: 'Housecall Pro payment processing options (help center)', url: 'https://help.housecallpro.com/en/articles/2046930-housecall-pro-payment-processing-options', checked: '2026-10-24' },
   { name: 'Housecall Pro QuickBooks integration', url: 'https://www.housecallpro.com/quickbooks/', checked: '2026-10-24' },
+  { name: 'Housecall Pro help: Voice FAQs (pricing)', url: 'https://help.housecallpro.com/en/articles/6666356-voice-faqs', checked: '2026-11-21' },
+  { name: 'Housecall Pro help: vehicle GPS tracking (Force, $20 per vehicle a month)', url: 'https://help.housecallpro.com/en/articles/6060351-vehicle-gps-tracking-overview', checked: '2026-11-24' },
   { name: 'Jobber pricing (Core standard annual rate; QuickBooks Online-only gating checked 2026-07-08)', url: 'https://www.getjobber.com/pricing/', checked: '2026-10-22' },
 ]
 
@@ -246,8 +248,9 @@ export default function HousecallProPricingPage() {
           <p>
             Housecall Pro lists these add-ons on its pricing page without prices: CSR AI, Sales
             Proposal Tool, Pipeline, Payroll, Accounting, Business Coaching, Voice, Campaigns,
-            vehicle GPS and dashcams, Tap to Pay, and Websites. Because no add-on prices are
-            published there, get a written quote for any add-on you plan to use. The Sales Proposal
+            vehicle GPS and dashcams, Tap to Pay, and Websites. Its help center prices two of them:
+            Voice from $45 a month, and vehicle GPS through Force at $20 per vehicle a month. For the
+            rest, get a written quote for any add-on you plan to use. The Sales Proposal
             Tool is already included on MAX. QuickBooks itself is a separate subscription: Housecall
             Pro&rsquo;s QuickBooks page notes that QuickBooks is not included in a Housecall Pro
             subscription.
