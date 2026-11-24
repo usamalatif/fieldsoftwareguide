@@ -285,7 +285,9 @@ export default function ComparePage() {
             <Link href="/compare/jobber-vs-fieldedge" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs FieldEdge</Link>,{' '}
             <Link href="/compare/housecall-pro-vs-fieldedge" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro vs FieldEdge</Link> and{' '}
             <Link href="/compare/fieldedge-vs-fieldpulse" className="font-semibold text-orange-600 dark:text-orange-400">FieldEdge vs FieldPulse</Link>, plus{' '}
-            <Link href="/compare/service-fusion-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Service Fusion alternatives</Link>.
+            <Link href="/compare/service-fusion-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Service Fusion alternatives</Link>,{' '}
+            <Link href="/compare/servicem8-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">ServiceM8 alternatives</Link> and{' '}
+            <Link href="/compare/kickserv-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Kickserv alternatives</Link>.
           </p>
         </section>
 

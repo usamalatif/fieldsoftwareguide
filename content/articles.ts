@@ -50,4 +50,9 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/guides/offline-field-service-app': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/guides/ai-answering-service-for-contractors': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/guides/field-service-inventory-management-software': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/pricing/servicem8': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/pricing/kickserv': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/pricing/commusoft': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/compare/servicem8-alternatives': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/compare/kickserv-alternatives': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
 }
