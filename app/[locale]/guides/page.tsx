@@ -34,6 +34,11 @@ const guides = [
   { title: 'Field service quoting software (2026)', desc: 'Which plan unlocks quote options, e-signature, deposits, follow-ups and financing in eight tools.', href: '/guides/field-service-quoting-software', tag: 'Quoting' },
   { title: 'Field service invoicing software (2026)', desc: 'Card and ACH fees, payment reminders, progress billing and QuickBooks sync compared by plan.', href: '/guides/field-service-invoicing-software', tag: 'Invoicing' },
   { title: 'Open source field service software', desc: 'OCA Field Service, Dolibarr, ERPNext, Axelor and newer projects, checked against their licenses.', href: '/guides/open-source-field-service-software', tag: 'Open source' },
+  { title: 'Field service scheduling software (2026)', desc: 'Ten tools compared by plan on dispatch boards, online booking, recurring jobs, on-my-way texts and GPS.', href: '/guides/field-service-scheduling-software', tag: 'Scheduling' },
+  { title: 'Route optimization software (2026)', desc: 'Which tools document automatic routing, on which plan, and how vehicle GPS is sold.', href: '/guides/route-optimization-software', tag: 'Routing' },
+  { title: 'Offline field service apps (2026)', desc: 'What ten apps let technicians do with no signal, from each vendor’s help center.', href: '/guides/offline-field-service-app', tag: 'Mobile' },
+  { title: 'AI answering service for contractors (2026)', desc: 'AI phone agents from field service vendors: booking, languages and published prices.', href: '/guides/ai-answering-service-for-contractors', tag: 'Phones' },
+  { title: 'Field service inventory management software (2026)', desc: 'Truck and warehouse stock, parts deduction, reorders and purchase orders by plan.', href: '/guides/field-service-inventory-management-software', tag: 'Inventory' },
   { title: 'HVAC software guide', desc: 'The highest-demand trade guide — real pricing and top picks.', href: '/by-industry/hvac', tag: 'Popular' },
 ]
 

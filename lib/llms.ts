@@ -87,6 +87,11 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [HVAC Maintenance Agreement Software](${site.url}/guides/hvac-maintenance-agreement-software): memberships, visit scheduling, autopay, failed-card handling and renewals compared
 - [Open Source Field Service Software](${site.url}/guides/open-source-field-service-software): open source FSM options checked against license files; Odoo's own Field Service is not in its open source edition
 - [Refrigerant Tracking Software](${site.url}/guides/refrigerant-tracking-software): seven refrigerant compliance tools compared, with EPA leak repair rules checked against eCFR
+- [Field Service Scheduling Software](${site.url}/guides/field-service-scheduling-software): ten tools compared by plan on dispatch boards, online booking, recurring and multi-day jobs, on-my-way texts and technician GPS
+- [Route Optimization Software](${site.url}/guides/route-optimization-software): which field service tools document automatic route optimization (ServiceM8, Jobber, Housecall Pro MAX, ServiceTitan), which only claim it, and how vehicle GPS is sold
+- [Offline Field Service Apps](${site.url}/guides/offline-field-service-app): what ten field service apps let technicians do without signal, from vendor help centers
+- [AI Answering Service for Contractors](${site.url}/guides/ai-answering-service-for-contractors): AI phone answering sold by field service vendors, booking, languages and published prices (Jobber $29, ServiceM8 $32 or $119)
+- [Field Service Inventory Management Software](${site.url}/guides/field-service-inventory-management-software): truck and warehouse stock, parts deduction, automatic reordering and purchase orders compared by plan
 - [Free FSM Software](${site.url}/free): what is actually free, verified on vendor sites
 - [QuickBooks Compatibility](${site.url}/quickbooks): which FSM tools sync with QuickBooks Online vs Desktop
 - [Field Service Software Pricing](${site.url}/pricing): published prices, 1 to 15 user costs, billing terms, add-ons and payment fees for six FSM platforms; which tools are quote-only
