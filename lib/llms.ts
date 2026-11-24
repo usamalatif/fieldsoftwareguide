@@ -76,6 +76,11 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [Housecall Pro vs FieldPulse](${site.url}/compare/housecall-pro-vs-fieldpulse): published plans vs a seat-based quote, offline use, service plans, equipment and QuickBooks Desktop
 - [FieldPulse vs Workiz](${site.url}/compare/fieldpulse-vs-workiz): two quote-only platforms compared on terms, trials, phone tools, offline use and plan gating
 - [Commusoft Alternatives](${site.url}/compare/commusoft-alternatives): Commusoft alternatives compared on published prices, contract terms, planned maintenance and accounting
+- [ServiceTitan vs FieldPulse](${site.url}/compare/servicetitan-vs-fieldpulse): two quote-only platforms compared on contract terms, dispatch, memberships, offline use and QuickBooks
+- [Jobber vs FieldEdge](${site.url}/compare/jobber-vs-fieldedge): published prices vs quote-only annual memberships, flat rate, agreements, offline use and QuickBooks Desktop
+- [Housecall Pro vs FieldEdge](${site.url}/compare/housecall-pro-vs-fieldedge): published plans vs quote-only annual memberships, flat rate, agreements and QuickBooks
+- [FieldEdge vs FieldPulse](${site.url}/compare/fieldedge-vs-fieldpulse): two quote-only tools on yearly terms compared on flat rate, agreements, offline use and QuickBooks
+- [Service Fusion Alternatives](${site.url}/compare/service-fusion-alternatives): alternatives compared by team size, contract terms, offline use, agreements and QuickBooks
 - [FieldEdge Alternatives](${site.url}/compare/fieldedge-alternatives): FieldEdge alternatives compared on published pricing, trials, QuickBooks Desktop, flat rate and FieldEdge's published contract terms
 - [Field Service Invoicing Software](${site.url}/guides/field-service-invoicing-software): card and ACH processing fees, reminders, progress billing and QuickBooks sync by plan
 - [Field Service Quoting Software](${site.url}/guides/field-service-quoting-software): quote options, e-signature, deposits, follow-ups and financing by plan
