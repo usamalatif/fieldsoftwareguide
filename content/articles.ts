@@ -45,4 +45,9 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/pricing/fieldpulse': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/pricing/fieldedge': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/pricing/service-fusion': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/guides/field-service-scheduling-software': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/guides/route-optimization-software': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/guides/offline-field-service-app': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/guides/ai-answering-service-for-contractors': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/guides/field-service-inventory-management-software': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
 }
