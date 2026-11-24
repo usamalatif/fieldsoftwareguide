@@ -81,6 +81,8 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [Housecall Pro vs FieldEdge](${site.url}/compare/housecall-pro-vs-fieldedge): published plans vs quote-only annual memberships, flat rate, agreements and QuickBooks
 - [FieldEdge vs FieldPulse](${site.url}/compare/fieldedge-vs-fieldpulse): two quote-only tools on yearly terms compared on flat rate, agreements, offline use and QuickBooks
 - [Service Fusion Alternatives](${site.url}/compare/service-fusion-alternatives): alternatives compared by team size, contract terms, offline use, agreements and QuickBooks
+- [ServiceM8 Alternatives](${site.url}/compare/servicem8-alternatives): six alternatives compared on per-user vs per-job pricing, QuickBooks Desktop, offline use and trials
+- [Kickserv Alternatives](${site.url}/compare/kickserv-alternatives): six alternatives compared on price for 5 and 10 users, QuickBooks Desktop, routing and trials
 - [FieldEdge Alternatives](${site.url}/compare/fieldedge-alternatives): FieldEdge alternatives compared on published pricing, trials, QuickBooks Desktop, flat rate and FieldEdge's published contract terms
 - [Field Service Invoicing Software](${site.url}/guides/field-service-invoicing-software): card and ACH processing fees, reminders, progress billing and QuickBooks sync by plan
 - [Field Service Quoting Software](${site.url}/guides/field-service-quoting-software): quote options, e-signature, deposits, follow-ups and financing by plan
@@ -102,6 +104,9 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [FieldPulse Pricing](${site.url}/pricing/fieldpulse): FieldPulse seat-based pricing, premium products, one-year auto-renewing terms and seat billing rules; no prices published
 - [FieldEdge Pricing](${site.url}/pricing/fieldedge): FieldEdge Select, Premier and Elite features and mobile licenses, annual memberships, renewal terms and extra costs; no prices published
 - [Service Fusion Pricing](${site.url}/pricing/service-fusion): Service Fusion Starter $220, Plus $339, Pro $552 a month billed annually with unlimited users, add-ons, payment fees and renewal terms
+- [ServiceM8 Pricing](${site.url}/pricing/servicem8): ServiceM8 Free, Starter $29, Growing $79, Premium $149 and Premium Plus $349 a month by jobs with unlimited users, add-ons, phone plans and card fees
+- [Kickserv Pricing](${site.url}/pricing/kickserv): Kickserv Start $60 (5 users), Run $119 (10) and Scale $199 (20) a month, QuickBooks Desktop $50 add-on, payment fees and terms
+- [Commusoft Pricing](${site.url}/pricing/commusoft): Commusoft per-license pricing, contracted, rolling and daily licenses, add-ons and 12-month terms; no prices published
 - [Best for Small Business](${site.url}/for-small-business): verified 1-user and 5-user pricing
 - [By Business Size](${site.url}/by-size): solo operator to enterprise
 - [How We Review](${site.url}/how-we-review): our pricing-confidence standard
