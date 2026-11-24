@@ -30,4 +30,9 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/compare/jobber-vs-workiz': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
   '/compare/housecall-pro-vs-workiz': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
   '/compare/servicetitan-vs-fieldedge': { firstPublished: '2026-11-21', contentUpdated: '2026-11-21' },
+  '/compare/servicetitan-vs-workiz': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/compare/jobber-vs-fieldpulse': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/compare/housecall-pro-vs-fieldpulse': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/compare/fieldpulse-vs-workiz': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/compare/commusoft-alternatives': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
 }

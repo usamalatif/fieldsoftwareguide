@@ -272,8 +272,15 @@ export default function ComparePage() {
             <Link href="/compare/housecall-pro-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro</Link> and{' '}
             <Link href="/compare/workiz-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Workiz</Link>, plus{' '}
             <Link href="/compare/jobber-vs-workiz" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs Workiz</Link>,{' '}
-            <Link href="/compare/housecall-pro-vs-workiz" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro vs Workiz</Link> and{' '}
-            <Link href="/compare/servicetitan-vs-fieldedge" className="font-semibold text-orange-600 dark:text-orange-400">ServiceTitan vs FieldEdge</Link>.
+            <Link href="/compare/housecall-pro-vs-workiz" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro vs Workiz</Link>,{' '}
+            <Link href="/compare/servicetitan-vs-fieldedge" className="font-semibold text-orange-600 dark:text-orange-400">ServiceTitan vs FieldEdge</Link> and{' '}
+            <Link href="/compare/servicetitan-vs-workiz" className="font-semibold text-orange-600 dark:text-orange-400">ServiceTitan vs Workiz</Link>.
+            FieldPulse users can also read{' '}
+            <Link href="/compare/jobber-vs-fieldpulse" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs FieldPulse</Link>,{' '}
+            <Link href="/compare/housecall-pro-vs-fieldpulse" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro vs FieldPulse</Link> and{' '}
+            <Link href="/compare/fieldpulse-vs-workiz" className="font-semibold text-orange-600 dark:text-orange-400">FieldPulse vs Workiz</Link>, and Commusoft users our{' '}
+            <Link href="/compare/commusoft-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Commusoft alternatives</Link>{' '}
+            page.
           </p>
         </section>
 
