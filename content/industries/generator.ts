@@ -25,7 +25,7 @@ export const generator: Industry = {
   category: 'Trades',
   metaDescription:
     'Compare generator dealer software for unit records, maintenance agreements, load bank test reports, multi-visit installs and QuickBooks. Verified prices.',
-  datePublished: '2026-11-23',
+  datePublished: '2026-11-24',
 
   answer:
     'Generator dealers earn on installs and then years of maintenance, so unit records, maintenance agreements and test reports matter most. Commusoft is the only big field service tool we checked with a generator page: multi-stage installs from site survey to commissioning, recurring maintenance contracts and handover packs with load bank test results (quote only, built for 6 or more staff). Smart Service, a QuickBooks add-on, has a generator page that records make, model, serial, fuel type, transfer switch, install date and warranty status, from $129 per user a month with a five-user minimum. GenService Pro, a newer generator-only tool, costs $39 to $149 a month. No tool we checked names a remote monitoring integration.',
@@ -165,7 +165,7 @@ export const generator: Industry = {
     },
   ],
 
-  lastUpdated: '2026-11-23',
+  lastUpdated: '2026-11-24',
   dataVerified: true,
   sources: [
     { name: 'Commusoft generator installation and maintenance software', url: 'https://www.commusoft.com/en-us/industries/generator-installation-and-maintenance-software/', checked: '2026-11-23' },

@@ -24,7 +24,7 @@ export const fencing: Industry = {
   category: 'Trades',
   metaDescription:
     'Compare fence contractor software for satellite fence-line measuring, linear foot quotes, material lists, deposits, crews and QuickBooks. Verified prices.',
-  datePublished: '2026-11-23',
+  datePublished: '2026-11-24',
 
   answer:
     'Fence contractors quote by the linear foot, so measuring the fence line, turning it into a material list and collecting a deposit matter most. None of the six big field service tools we checked has a fencing page. Fence-focused tools do the measuring. Visual Fence Pro draws fence lines on satellite maps and builds the material list, with a free plan and paid plans from $79 a month. QuoteIQ has a fence page with satellite fence-line measuring from its $99.99 Beginner plan, linear-foot pricing and materials deposits on every plan. Projul has a fencing page with material lists, purchase orders, deposit invoices and crew scheduling, from $199 a month billed annually. No tool we checked tracks 811 utility locates.',
@@ -163,7 +163,7 @@ export const fencing: Industry = {
     },
   ],
 
-  lastUpdated: '2026-11-23',
+  lastUpdated: '2026-11-24',
   dataVerified: true,
   sources: [
     { name: 'ServiceTitan industries (no fencing)', url: 'https://www.servicetitan.com/industries', checked: '2026-11-23' },

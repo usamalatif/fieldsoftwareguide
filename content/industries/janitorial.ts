@@ -23,7 +23,7 @@ export const janitorial: Industry = {
   category: 'Field Services',
   metaDescription:
     'Compare janitorial software for commercial cleaning: GPS time clocks, site inspections, cleaning checklists, supply requests, bids and QuickBooks.',
-  datePublished: '2026-11-23',
+  datePublished: '2026-11-24',
 
   answer:
     'Commercial cleaning companies manage people across many buildings at night, so GPS time clocks, site inspections and checklists matter more than routing. None of the six big field service tools we cover has a janitorial page; Commusoft’s building maintenance pages cover service contracts and inspections but not cleaning. Janitorial tools fill the gap. Swept is priced by location with unlimited users, from $150 a month for up to 15 locations, with a GPS-verified clock and photo inspections. Otuvy (formerly CleanTelligent) runs quality inspections from $150 a month billed annually. Janitorial Manager, from $1,000 a month, adds ISSA 612-based bidding, a geofenced time clock and supply ordering.',
@@ -162,7 +162,7 @@ export const janitorial: Industry = {
     },
   ],
 
-  lastUpdated: '2026-11-23',
+  lastUpdated: '2026-11-24',
   dataVerified: true,
   sources: [
     { name: 'Commusoft building maintenance software', url: 'https://www.commusoft.com/en-us/industries/building-maintenance-software/', checked: '2026-11-23' },

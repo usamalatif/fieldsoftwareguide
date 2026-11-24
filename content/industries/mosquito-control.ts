@@ -23,7 +23,7 @@ export const mosquitoControl: Industry = {
   category: 'Field Services',
   metaDescription:
     'Compare mosquito control software for 21-day spray programs, chemical and EPA records, wind checks, routes, autopay and QuickBooks. Verified prices.',
-  datePublished: '2026-11-23',
+  datePublished: '2026-11-24',
 
   answer:
     'Mosquito companies run season-long spray programs, so recurring treatments, chemical records, routes and autopay matter most. None of the six big field service tools we cover has a mosquito page, though ServiceTitan and FieldPulse have pest control pages with chemical logging and seasonal agreements (quote only). GorillaDesk has a mosquito page with treatments every 14, 21 or 30 days, autopay and a product library with EPA registration numbers through its Material Usage add-on, from $49 a month per route. QuoteIQ has a mosquito page that blocks saving an application when wind is above the label limit, from $29.99 a month. FieldRoutes covers pest and mosquito work with weather-aware scheduling (quote only).',
@@ -162,7 +162,7 @@ export const mosquitoControl: Industry = {
     },
   ],
 
-  lastUpdated: '2026-11-23',
+  lastUpdated: '2026-11-24',
   dataVerified: true,
   sources: [
     { name: 'ServiceTitan pest control software', url: 'https://www.servicetitan.com/industries/pest-control-software', checked: '2026-11-23' },

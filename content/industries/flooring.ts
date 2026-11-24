@@ -23,7 +23,7 @@ export const flooring: Industry = {
   category: 'Trades',
   metaDescription:
     'Compare flooring contractor software for room measuring, seam and waste layouts, estimates, roll inventory, installer schedules and QuickBooks. Verified.',
-  datePublished: '2026-11-23',
+  datePublished: '2026-11-24',
 
   answer:
     'Flooring contractors live on accurate takeoffs, so room measuring, waste and seam layouts, material orders and installer schedules matter most. None of the six big field service tools we checked has a flooring page, so flooring companies usually use flooring-specific software. MeasureSquare 8 draws rooms and optimizes seams and waste, from $54 per user a month or $540 a year, and its CRM adds installer schedules, progress billing and QuickBooks or Xero sync from $690 per user a year. Projul has a flooring page that adds waste to square footage automatically, from $199 a month billed annually for 3 users. RFMS and QFloors are flooring ERP systems for retailers, with prices on request.',
@@ -161,7 +161,7 @@ export const flooring: Industry = {
     },
   ],
 
-  lastUpdated: '2026-11-23',
+  lastUpdated: '2026-11-24',
   dataVerified: true,
   sources: [
     { name: 'Projul flooring contractor software', url: 'https://projul.com/industries/flooring-contractor/', checked: '2026-11-23' },
