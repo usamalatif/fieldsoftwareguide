@@ -280,7 +280,12 @@ export default function ComparePage() {
             <Link href="/compare/housecall-pro-vs-fieldpulse" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro vs FieldPulse</Link> and{' '}
             <Link href="/compare/fieldpulse-vs-workiz" className="font-semibold text-orange-600 dark:text-orange-400">FieldPulse vs Workiz</Link>, and Commusoft users our{' '}
             <Link href="/compare/commusoft-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Commusoft alternatives</Link>{' '}
-            page.
+            page. More head-to-heads:{' '}
+            <Link href="/compare/servicetitan-vs-fieldpulse" className="font-semibold text-orange-600 dark:text-orange-400">ServiceTitan vs FieldPulse</Link>,{' '}
+            <Link href="/compare/jobber-vs-fieldedge" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs FieldEdge</Link>,{' '}
+            <Link href="/compare/housecall-pro-vs-fieldedge" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro vs FieldEdge</Link> and{' '}
+            <Link href="/compare/fieldedge-vs-fieldpulse" className="font-semibold text-orange-600 dark:text-orange-400">FieldEdge vs FieldPulse</Link>, plus{' '}
+            <Link href="/compare/service-fusion-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Service Fusion alternatives</Link>.
           </p>
         </section>
 

@@ -35,4 +35,10 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/compare/housecall-pro-vs-fieldpulse': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/compare/fieldpulse-vs-workiz': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/compare/commusoft-alternatives': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  // Batch 11 drafts: set firstPublished and contentUpdated to the merge day when published.
+  '/compare/servicetitan-vs-fieldpulse': { contentUpdated: '2026-11-24' },
+  '/compare/jobber-vs-fieldedge': { contentUpdated: '2026-11-24' },
+  '/compare/housecall-pro-vs-fieldedge': { contentUpdated: '2026-11-24' },
+  '/compare/fieldedge-vs-fieldpulse': { contentUpdated: '2026-11-24' },
+  '/compare/service-fusion-alternatives': { contentUpdated: '2026-11-24' },
 }
