@@ -288,6 +288,12 @@ export default function ComparePage() {
             <Link href="/compare/service-fusion-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Service Fusion alternatives</Link>,{' '}
             <Link href="/compare/servicem8-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">ServiceM8 alternatives</Link> and{' '}
             <Link href="/compare/kickserv-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">Kickserv alternatives</Link>.
+            Newer head-to-heads:{' '}
+            <Link href="/compare/jobber-vs-service-fusion" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs Service Fusion</Link>,{' '}
+            <Link href="/compare/housecall-pro-vs-service-fusion" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro vs Service Fusion</Link>,{' '}
+            <Link href="/compare/jobber-vs-servicem8" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs ServiceM8</Link>,{' '}
+            <Link href="/compare/jobber-vs-kickserv" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs Kickserv</Link> and{' '}
+            <Link href="/compare/housecall-pro-vs-kickserv" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro vs Kickserv</Link>.
           </p>
         </section>
 
