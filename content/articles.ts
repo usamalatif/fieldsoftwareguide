@@ -55,7 +55,6 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/pricing/commusoft': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/compare/servicem8-alternatives': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/compare/kickserv-alternatives': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
-  // Batch 15 drafts: set firstPublished and contentUpdated to the merge day when published.
   '/compare/jobber-vs-service-fusion': { contentUpdated: '2026-11-24' },
   '/compare/housecall-pro-vs-service-fusion': { contentUpdated: '2026-11-24' },
   '/compare/jobber-vs-servicem8': { contentUpdated: '2026-11-24' },
