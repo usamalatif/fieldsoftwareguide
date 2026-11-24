@@ -179,8 +179,9 @@ export default function JobberVsHousecallProPage() {
             month-to-month, 1 user), Essentials $149/month annual ($189 month-to-month, up to 5
             users), and MAX $299/month annual ($329 month-to-month, up to 8 users, extra users
             $35/month). MAX bundles the Sales Proposal Tool and Recurring Service Plans; other
-            add-ons (Payroll, Voice, HCP Assist, Profit Rhino, Websites, vehicle GPS) are priced by
-            quote. No long-term contracts required. For every Housecall Pro plan, fee, and add-on
+            add-ons (Payroll, HCP Assist, Profit Rhino, Websites) are priced by quote, while its help
+            center prices Voice from $45 a month and vehicle GPS through Force at $20 per vehicle a
+            month. No long-term contracts required. For every Housecall Pro plan, fee, and add-on
             in one place, see our <Link href="/pricing/housecall-pro">Housecall Pro pricing</Link>{' '}
             guide, and for every Jobber plan, team-size band, and add-on, our{' '}
             <Link href="/pricing/jobber">Jobber pricing</Link> guide.
@@ -348,6 +349,8 @@ export default function JobberVsHousecallProPage() {
                 { name: 'Housecall Pro pricing', url: 'https://www.housecallpro.com/pricing/' },
                 { name: 'Housecall Pro payment processing rates', url: 'https://help.housecallpro.com/en/articles/2046930-housecall-pro-payment-processing-options' },
                 { name: 'Housecall Pro QuickBooks (Online + Desktop)', url: 'https://www.housecallpro.com/quickbooks/' },
+                { name: 'Housecall Pro help: Voice FAQs (pricing)', url: 'https://help.housecallpro.com/en/articles/6666356-voice-faqs' },
+                { name: 'Housecall Pro help: vehicle GPS tracking (Force)', url: 'https://help.housecallpro.com/en/articles/6060351-vehicle-gps-tracking-overview' },
                 { name: 'Housecall Pro Sales Proposal Tool', url: 'https://www.housecallpro.com/features/sales-proposal-tool/' },
                 { name: 'Housecall Pro review management', url: 'https://www.housecallpro.com/features/review-management/' },
                 { name: 'Housecall Pro online booking (Reserve with Google)', url: 'https://www.housecallpro.com/features/online-booking/' },
