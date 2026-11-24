@@ -83,6 +83,11 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [Service Fusion Alternatives](${site.url}/compare/service-fusion-alternatives): alternatives compared by team size, contract terms, offline use, agreements and QuickBooks
 - [ServiceM8 Alternatives](${site.url}/compare/servicem8-alternatives): six alternatives compared on per-user vs per-job pricing, QuickBooks Desktop, offline use and trials
 - [Kickserv Alternatives](${site.url}/compare/kickserv-alternatives): six alternatives compared on price for 5 and 10 users, QuickBooks Desktop, routing and trials
+- [Jobber vs Service Fusion](${site.url}/compare/jobber-vs-service-fusion): user bands vs a flat price with unlimited users, cost by team size, contract terms, QuickBooks Desktop, GPS and offline use
+- [Housecall Pro vs Service Fusion](${site.url}/compare/housecall-pro-vs-service-fusion): per-user plan limits vs unlimited users, cost at 1 to 15 users, renewal terms, offline use and QuickBooks
+- [Jobber vs ServiceM8](${site.url}/compare/jobber-vs-servicem8): per-user bands vs per-job allowances with unlimited users, accounting, phones, payment fees and terms
+- [Jobber vs Kickserv](${site.url}/compare/jobber-vs-kickserv): user bands vs team-size plans, cost at 5 and 10 users, QuickBooks Desktop, payment fees and cancellation
+- [Housecall Pro vs Kickserv](${site.url}/compare/housecall-pro-vs-kickserv): plan user caps vs team-size plans, cost by team size, payment fees, AI answering and QuickBooks
 - [FieldEdge Alternatives](${site.url}/compare/fieldedge-alternatives): FieldEdge alternatives compared on published pricing, trials, QuickBooks Desktop, flat rate and FieldEdge's published contract terms
 - [Field Service Invoicing Software](${site.url}/guides/field-service-invoicing-software): card and ACH processing fees, reminders, progress billing and QuickBooks sync by plan
 - [Field Service Quoting Software](${site.url}/guides/field-service-quoting-software): quote options, e-signature, deposits, follow-ups and financing by plan
