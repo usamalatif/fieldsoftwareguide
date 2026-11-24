@@ -125,7 +125,7 @@ const tools: Tool[] = [
     dispatch: 'Scheduling and dispatching on every plan',
     routing: 'Not stated on the pricing page',
     gps: 'GPS Fleet Tracking is an add-on on every plan (price not published)',
-    booking: 'ServiceCall.ai add-on listed on the pricing page',
+    booking: 'ZyraTalk AI call answering books into the schedule; ServiceCall.ai is a call tracking and VoIP add-on',
     maintenance: 'Progress billing and recurring invoicing: add-on on Starter and Plus, included on Pro',
   },
 ]
@@ -234,6 +234,8 @@ const sources = [
   { name: 'FieldEdge pricing (plans and feature table)', url: 'https://fieldedge.com/pricing/', checked: '2026-11-19' },
   { name: 'FieldEdge scheduling and dispatching', url: 'https://fieldedge.com/field-service-software/scheduling-and-dispatching/', checked: '2026-11-19' },
   { name: 'Service Fusion pricing (plans, unlimited users, add-ons, month-to-month)', url: 'https://www.servicefusion.com/pricing', checked: '2026-11-19' },
+  { name: 'Service Fusion AI call answering service (ZyraTalk)', url: 'https://www.servicefusion.com/ai-call-answering-service', checked: '2026-11-24' },
+  { name: 'Service Fusion ServiceCall.ai (call tracking and VoIP)', url: 'https://www.servicefusion.com/servicecall-call-tracker', checked: '2026-11-24' },
   { name: 'EPA Section 608 technician certification', url: 'https://www.epa.gov/section608/section-608-technician-certification', checked: '2026-11-19' },
   { name: 'EPA Section 608 technician certification requirements (types)', url: 'https://www.epa.gov/section608/section-608-technician-certification-requirements', checked: '2026-11-19' },
 ]

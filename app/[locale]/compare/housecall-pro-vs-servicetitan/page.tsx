@@ -127,6 +127,8 @@ const faqs = [
 const sources = [
   { name: 'Housecall Pro pricing (plans, users, trial, contract FAQ, plan features)', url: 'https://www.housecallpro.com/pricing/', checked: '2026-11-17' },
   { name: 'Housecall Pro help: offline mode on mobile', url: 'https://help.housecallpro.com/en/articles/17032352-offline-mode-on-mobile', checked: '2026-11-17' },
+  { name: 'Housecall Pro help: Voice FAQs (pricing)', url: 'https://help.housecallpro.com/en/articles/6666356-voice-faqs', checked: '2026-11-21' },
+  { name: 'Housecall Pro help: vehicle GPS tracking (Force, $20 per vehicle a month)', url: 'https://help.housecallpro.com/en/articles/6060351-vehicle-gps-tracking-overview', checked: '2026-11-24' },
   { name: 'Housecall Pro help: Max onboarding and support', url: 'https://help.housecallpro.com/en/articles/4936654-max-onboarding-support-overview', checked: '2026-11-17' },
   { name: 'Housecall Pro help: managing reports', url: 'https://help.housecallpro.com/en/articles/7336458-managing-reports', checked: '2026-11-17' },
   { name: 'ServiceTitan pricing (packages, per-technician, request pricing)', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-17' },
@@ -245,7 +247,8 @@ export default function HousecallProVsServiceTitanPage() {
             $79, $189 and $329. Max adds users at $35/month each, so a 12-user team on Max pays $439/month
             billed annually before add-ons and payment fees. The 14-day trial includes Max features
             without a credit card, and Housecall Pro says it does not require long-term contracts.
-            Add-ons such as voice, payroll and vehicle GPS are listed without prices; see{' '}
+            Some add-ons, such as payroll, are listed without prices; its help center prices Voice from
+            $45 a month and vehicle GPS through Force at $20 per vehicle a month. See{' '}
             <Link href="/pricing/housecall-pro" className={A}>Housecall Pro pricing</Link> for every plan
             detail and card fee.
           </p>

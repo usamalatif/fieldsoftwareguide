@@ -124,7 +124,7 @@ const tools: Tool[] = [
     visits: 'Not documented',
     billing: 'Says it auto-bills after the first invoice is paid',
     renewals: 'Homepage shows a dashboard of renewals and cancellations',
-    pricing: 'A June 2026 blog says built-in discounting is still being built',
+    pricing: 'Help center says agreements apply member pricing',
   },
 ]
 
@@ -215,6 +215,7 @@ const sources = [
   { name: 'Service Fusion pricing (recurring invoicing by plan)', url: 'https://www.servicefusion.com/pricing', checked: '2026-11-19' },
   { name: 'Service Fusion homepage (service agreements)', url: 'https://www.servicefusion.com/', checked: '2026-11-20' },
   { name: 'Service Fusion blog: service agreements (June 2026)', url: 'https://www.servicefusion.com/blog/service-agreements', checked: '2026-11-20' },
+  { name: 'Service Fusion help: customer service agreement tracking (member pricing)', url: 'https://servicefusion.zendesk.com/hc/en-us/articles/360001110832-Customer-Service-Agreement-Tracking', checked: '2026-11-24' },
 ]
 
 const H2 = 'text-[26px] font-extrabold tracking-[-0.02em] text-slate-900 dark:text-white'
@@ -430,7 +431,7 @@ export default function HvacMaintenanceAgreementSoftwarePage() {
             sales prompt. Membership prices apply to services and equipment; material items need
             support to enable. Housecall Pro applies a plan’s discount to the customer’s jobs
             automatically when the plan is added to the job. Jobber does not document member pricing,
-            and Service Fusion’s June 2026 blog describes built-in discounting as still being built.
+            and Service Fusion’s help center says its service agreements apply member pricing.
           </p>
 
           <h2 id="equipment-commercial">Equipment and commercial agreements</h2>
