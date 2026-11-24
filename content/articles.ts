@@ -40,10 +40,9 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/compare/housecall-pro-vs-fieldedge': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/compare/fieldedge-vs-fieldpulse': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/compare/service-fusion-alternatives': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
-  // Batch 12 drafts: set firstPublished and contentUpdated to the merge day when published.
-  '/pricing/servicetitan': { contentUpdated: '2026-11-24' },
-  '/pricing/workiz': { contentUpdated: '2026-11-24' },
-  '/pricing/fieldpulse': { contentUpdated: '2026-11-24' },
-  '/pricing/fieldedge': { contentUpdated: '2026-11-24' },
-  '/pricing/service-fusion': { contentUpdated: '2026-11-24' },
+  '/pricing/servicetitan': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/pricing/workiz': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/pricing/fieldpulse': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/pricing/fieldedge': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/pricing/service-fusion': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
 }
