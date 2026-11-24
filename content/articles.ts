@@ -45,10 +45,9 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/pricing/fieldpulse': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/pricing/fieldedge': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/pricing/service-fusion': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
-  // Batch 13 drafts: set firstPublished and contentUpdated to the merge day when published.
-  '/guides/field-service-scheduling-software': { contentUpdated: '2026-11-24' },
-  '/guides/route-optimization-software': { contentUpdated: '2026-11-24' },
-  '/guides/offline-field-service-app': { contentUpdated: '2026-11-24' },
-  '/guides/ai-answering-service-for-contractors': { contentUpdated: '2026-11-24' },
-  '/guides/field-service-inventory-management-software': { contentUpdated: '2026-11-24' },
+  '/guides/field-service-scheduling-software': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/guides/route-optimization-software': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/guides/offline-field-service-app': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/guides/ai-answering-service-for-contractors': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  '/guides/field-service-inventory-management-software': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
 }
