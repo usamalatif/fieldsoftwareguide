@@ -518,6 +518,11 @@ export default function PricingHubPage() {
           <div className="mt-8 flex flex-wrap gap-4 border-t border-slate-200 pt-6 text-sm font-semibold dark:border-slate-800">
             <Link href="/pricing/jobber" className="text-orange-600 hover:text-orange-800">Jobber pricing →</Link>
             <Link href="/pricing/housecall-pro" className="text-orange-600 hover:text-orange-800">Housecall Pro pricing →</Link>
+            <Link href="/pricing/service-fusion" className="text-orange-600 hover:text-orange-800">Service Fusion pricing →</Link>
+            <Link href="/pricing/servicetitan" className="text-orange-600 hover:text-orange-800">ServiceTitan pricing →</Link>
+            <Link href="/pricing/workiz" className="text-orange-600 hover:text-orange-800">Workiz pricing →</Link>
+            <Link href="/pricing/fieldpulse" className="text-orange-600 hover:text-orange-800">FieldPulse pricing →</Link>
+            <Link href="/pricing/fieldedge" className="text-orange-600 hover:text-orange-800">FieldEdge pricing →</Link>
             <Link href="/compare" className="text-orange-600 hover:text-orange-800">Compare all FSM software →</Link>
           </div>
           <div className="mt-10 border-t border-slate-200 pt-6 dark:border-slate-800">

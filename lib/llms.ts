@@ -92,6 +92,11 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [Field Service Software Pricing](${site.url}/pricing): published prices, 1 to 15 user costs, billing terms, add-ons and payment fees for six FSM platforms; which tools are quote-only
 - [Housecall Pro Pricing](${site.url}/pricing/housecall-pro): Housecall Pro plans, user limits, add-ons, payment fees, and QuickBooks support
 - [Jobber Pricing](${site.url}/pricing/jobber): Jobber plans and standard prices by team size and billing option, add-ons, and payment fees
+- [ServiceTitan Pricing](${site.url}/pricing/servicetitan): ServiceTitan packages (Core, Demand AI, Field AI, MAX), how it prices per its 10-K, contract length, termination fee and extra costs; no prices published
+- [Workiz Pricing](${site.url}/pricing/workiz): Workiz Standard, Pro and Ultimate features, Genius add-ons, 7-day trial, renewal and increase terms; no prices published
+- [FieldPulse Pricing](${site.url}/pricing/fieldpulse): FieldPulse seat-based pricing, premium products, one-year auto-renewing terms and seat billing rules; no prices published
+- [FieldEdge Pricing](${site.url}/pricing/fieldedge): FieldEdge Select, Premier and Elite features and mobile licenses, annual memberships, renewal terms and extra costs; no prices published
+- [Service Fusion Pricing](${site.url}/pricing/service-fusion): Service Fusion Starter $220, Plus $339, Pro $552 a month billed annually with unlimited users, add-ons, payment fees and renewal terms
 - [Best for Small Business](${site.url}/for-small-business): verified 1-user and 5-user pricing
 - [By Business Size](${site.url}/by-size): solo operator to enterprise
 - [How We Review](${site.url}/how-we-review): our pricing-confidence standard
