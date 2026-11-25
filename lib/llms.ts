@@ -55,7 +55,7 @@ Topics: FSM software by industry, FSM software by business size, tool comparison
 
 ## Pricing policy
 
-Every price we publish comes from the vendor's own current pricing page with the date checked. Tools that only quote custom pricing are labelled "Custom", never estimated. As of July 2026, only Jobber and Housecall Pro publish starting prices: ${publishedLine}. ${customLine} are custom-quoted.
+Every price we publish comes from the vendor's own current pricing page with the date checked. Tools that only quote custom pricing are labelled "Custom", never estimated. Of the main tools we compare, only Jobber and Housecall Pro publish starting prices: ${publishedLine}. ${customLine} are custom-quoted. Outside that set, Service Fusion (from $220/mo billed annually, unlimited users), ServiceM8 (free plan; paid plans from $29/mo, priced by jobs per month) and Kickserv (from $60/mo for 5 users; its page does not say whether that is the monthly or annual rate) also publish prices; see their pricing pages.
 
 ## Key Resources
 
@@ -186,7 +186,7 @@ Last updated: ${ind.lastUpdated}`
 
 ## Pricing reference
 
-As of July 2026, only Jobber and Housecall Pro publish starting prices: ${publishedLine}. ${customLine} are custom-quoted with no published flat rates.
+Of the main tools we compare, only Jobber and Housecall Pro publish starting prices: ${publishedLine}. ${customLine} are custom-quoted with no published flat rates. Outside that set, Service Fusion (from $220/mo billed annually, unlimited users), ServiceM8 (free plan; paid plans from $29/mo, priced by jobs per month) and Kickserv (from $60/mo for 5 users; its page does not say whether that is the monthly or annual rate) also publish prices; see their pricing pages.
 
 ## Compare (${site.url}/compare)
 

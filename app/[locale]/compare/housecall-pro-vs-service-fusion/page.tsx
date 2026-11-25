@@ -19,8 +19,8 @@ import { articleDates } from '@/content/articles'
  * 2026-11-19 (QuickBooks Online and Desktop listed on Essentials, as on /pricing/service-fusion; the
  * older /pricing/housecall-pro check of 2026-10-24 did not name the Desktop plan), QuickBooks page
  * 2026-10-24, help center 2026-11-17 to 11-24. www.housecallpro.com was not refetched and nothing new
- * was fetched. Not used: the $20 per vehicle Force price (our Housecall Pro pricing page lists vehicle
- * GPS as an add-on without a price), Housecall Pro introductory offers, and any claim either vendor
+ * was fetched. Vehicle GPS price ($20 per vehicle a month through Force) is from Housecall Pro's help
+ * center, checked 2026-11-24. Not used: Housecall Pro introductory offers, and any claim either vendor
  * makes about the other. Team-size totals are arithmetic on published prices. Nothing tested hands-on.
  */
 
@@ -56,7 +56,7 @@ const rows: { feature: string; hcp: string; sf: string }[] = [
   { feature: 'Contract and renewal', hcp: 'Says it does not require long-term contracts', sf: 'Pricing page says month to month; Subscription Agreement renews your order’s term automatically unless 30 days’ written notice; fees non-refundable' },
   { feature: 'QuickBooks', hcp: 'Plan data lists QuickBooks Online and Desktop on Essentials; not on Basic', sf: 'QuickBooks Online and Desktop on every plan from Starter; Desktop tool is Windows only' },
   { feature: 'Routing', hcp: 'Routes to group jobs from Essentials; Optimize by Drive Time (live traffic) on MAX', sf: 'Scheduling page names routing but does not describe route optimization' },
-  { feature: 'GPS and fleet', hcp: 'Phone-based employee GPS from Essentials; vehicle GPS and dashcams listed as an add-on, no price on the pricing page', sf: 'GPS map on the schedule; GPS fleet tracking add-on on every plan, price not published' },
+  { feature: 'GPS and fleet', hcp: 'Phone-based employee GPS from Essentials; vehicle GPS through Force at $20 per vehicle a month (help center)', sf: 'GPS map on the schedule; GPS fleet tracking add-on on every plan, price not published' },
   { feature: 'Offline', hcp: 'View only: jobs for today and the next 2 days, up to 10 a day', sf: 'View schedules and jobs; edit notes, photos, tasks and checklists; no new jobs, status changes or payments yet' },
   { feature: 'Phone and AI answering', hcp: 'Voice add-on: call tracking from $45 a month, VoIP with call tracking from $65, plus overages; CSR AI add-on, no price', sf: 'Integrated voice and text on Plus and Pro; ServiceCall.ai add-on billed per user, no price; ZyraTalk AI answering, no price' },
   { feature: 'Card and ACH fees', hcp: '2.59% in person, 2.99% online invoice, 3.49% keyed, saved or Amex; ACH 1%', sf: '2.90% + $0.30; extra 1% card not present; ACH 1% capped at $15; $0.75 daily batch fee' },
@@ -104,6 +104,7 @@ const sources = [
   { name: 'Housecall Pro help: payment processing options and fees', url: 'https://help.housecallpro.com/en/articles/2046930-housecall-pro-payment-processing-options', checked: '2026-11-20' },
   { name: 'Housecall Pro help: consumer financing', url: 'https://help.housecallpro.com/en/articles/3538947-consumer-financing-invoices-estimates', checked: '2026-11-20' },
   { name: 'Housecall Pro help: offline mode on mobile', url: 'https://help.housecallpro.com/en/articles/17032352-offline-mode-on-mobile', checked: '2026-11-17' },
+  { name: 'Housecall Pro help: vehicle GPS tracking (Force, $20 per vehicle a month)', url: 'https://help.housecallpro.com/en/articles/6060351-vehicle-gps-tracking-overview', checked: '2026-11-24' },
   { name: 'Housecall Pro help: Optimize by Drive Time (MAX)', url: 'https://help.housecallpro.com/en/articles/14093813-optimize-by-drive-time', checked: '2026-11-24' },
   { name: 'Housecall Pro help: Voice FAQs (pricing)', url: 'https://help.housecallpro.com/en/articles/6666356-voice-faqs', checked: '2026-11-21' },
   { name: 'Housecall Pro help: service plan renewals', url: 'https://help.housecallpro.com/en/articles/6879916-service-plan-renewals', checked: '2026-11-20' },
@@ -254,8 +255,8 @@ export default function HousecallProVsServiceFusionPage() {
           <p>
             Housecall Pro documents more here. Essentials adds routes to group jobs and phone-based employee GPS,
             and MAX adds Optimize by Drive Time, which reorders one technician’s jobs for the day by live
-            traffic; its help center says it does not move jobs to other days or other techs. Vehicle GPS and
-            dashcams appear on its pricing page as an add-on without a price.
+            traffic; its help center says it does not move jobs to other days or other techs. Vehicle GPS is
+            an add-on through Force, which its help center prices at $20 per vehicle a month.
           </p>
           <p>
             Service Fusion shows technicians on a GPS map on the schedule, and its scheduling page names routing

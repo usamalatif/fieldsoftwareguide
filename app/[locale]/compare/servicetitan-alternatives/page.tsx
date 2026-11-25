@@ -186,6 +186,7 @@ const sources = [
   { name: 'FieldEdge pricing', url: 'https://fieldedge.com/pricing/', checked: '2026-11-20' },
   { name: 'Xplor US SaaS terms (FieldEdge service agreement)', url: 'https://www.xplortechnologies.com/wp-content/uploads/sites/13/2024/05/231026-Xplor-US-SaaS-Terms-Online-v1-2.pdf', checked: '2026-11-20' },
   { name: 'Service Fusion pricing', url: 'https://www.servicefusion.com/pricing', checked: '2026-11-20' },
+  { name: 'Service Fusion blog: introducing offline mode (June 22, 2026)', url: 'https://www.servicefusion.com/blog/introducing-offline-mode', checked: '2026-11-24' },
   { name: 'Service Fusion blog: implementation and data import', url: 'https://www.servicefusion.com/blog/overview-of-implementation', checked: '2026-11-20' },
   { name: 'FieldPulse pricing', url: 'https://www.fieldpulse.com/pricing', checked: '2026-11-20' },
   { name: 'FieldPulse help: ServiceTitan to FieldPulse migration guide', url: 'https://help.fieldpulse.com/en/articles/15170775-servicetitan-to-fieldpulse-migration-guide', checked: '2026-11-21' },
@@ -363,7 +364,8 @@ export default function ServiceTitanAlternativesPage() {
             month-to-month terms. Plans are $220, $339 and $552 a month billed annually, with
             QuickBooks Online and Desktop, import templates and data extraction services.{' '}
             <strong>Limitation:</strong> recurring invoicing for agreements is included only on Pro,
-            and offline use is not documented on the pages we read.
+            and its offline mode, added in June 2026, lets techs view jobs and edit notes, photos and
+            checklists but not take payments.
           </p>
 
           <h3>FieldPulse</h3>

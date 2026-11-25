@@ -75,7 +75,7 @@ const rows: Row[] = [
     price: '$220, $339, $552 per month billed annually; unlimited users',
     team: '$220 at any team size on Starter',
     plans: 'Recurring invoicing on Pro, add-on below',
-    offline: 'Not documented on the pages we read',
+    offline: 'Partial offline mode since June 2026: view jobs, edit notes, photos and checklists; no payments',
     quickbooks: 'Online and Desktop',
   },
   {
@@ -181,6 +181,8 @@ const sources = [
   { name: 'Jobber help: import clients', url: 'https://help.getjobber.com/en/articles/import-clients/', checked: '2026-11-21' },
   { name: 'Service Fusion pricing', url: 'https://www.servicefusion.com/pricing', checked: '2026-11-20' },
   { name: 'Service Fusion blog: implementation and data import', url: 'https://www.servicefusion.com/blog/overview-of-implementation', checked: '2026-11-20' },
+  { name: 'Service Fusion blog: introducing offline mode (June 22, 2026)', url: 'https://www.servicefusion.com/blog/introducing-offline-mode', checked: '2026-11-24' },
+  { name: 'Housecall Pro help: vehicle GPS tracking (Force, $20 per vehicle a month)', url: 'https://help.housecallpro.com/en/articles/6060351-vehicle-gps-tracking-overview', checked: '2026-11-24' },
   { name: 'Kickserv pricing', url: 'https://www.kickserv.com/pricing', checked: '2026-11-21' },
   { name: 'Kickserv changelog (offline)', url: 'https://changelog.kickserv.com/', checked: '2026-11-21' },
   { name: 'ServiceM8 pricing (plans, auto routing, offline, recurring jobs)', url: 'https://www.servicem8.com/us/pricing', checked: '2026-11-21' },
@@ -251,8 +253,9 @@ export default function HousecallProAlternativesPage() {
             for each extra user on MAX. Routes and phone GPS start on Essentials, and its plan data
             lists customer equipment tracking and QuickBooks Online and Desktop there. One-click
             route optimization and Recurring Service Plans are on MAX. Its app works offline in view
-            mode only, showing jobs for today and the next two days. Several add-ons, such as the
-            sales proposal tool and vehicle GPS, have no published price, and its HVAC page shows a
+            mode only, showing jobs for today and the next two days. Some add-ons, such as the sales
+            proposal tool, have no published price; vehicle GPS is $20 per vehicle a month through
+            Force, according to its help center. Its HVAC page shows a
             separate, higher-priced HVAC package. Full detail is in our{' '}
             <Link href="/pricing/housecall-pro" className={A}>Housecall Pro pricing</Link> guide.
           </p>
@@ -333,8 +336,9 @@ export default function HousecallProAlternativesPage() {
             terms, and QuickBooks Online and Desktop. It offers import templates for customers,
             locations, service agreements, estimates, jobs and equipment.{' '}
             <strong>Limitation:</strong> at five users it costs more than Housecall Pro Essentials,
-            recurring invoicing is included only on Pro, and offline use and route optimization are
-            not documented on the pages we read.
+            recurring invoicing is included only on Pro, route optimization is not documented on the
+            pages we read, and its offline mode, added in June 2026, lets techs view jobs and edit
+            notes, photos and checklists but not take payments.
           </p>
 
           <h3>Kickserv</h3>
