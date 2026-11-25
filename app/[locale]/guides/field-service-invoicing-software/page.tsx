@@ -139,7 +139,7 @@ const fees: { vendor: string; online: string; inPerson: string; other: string }[
   { vendor: 'Jobber', online: '2.9% + 30¢', inPerson: '2.7% + 30¢ (Tap to Pay)', other: 'ACH 1% (US only); instant payouts +1%; same rates shown for every plan' },
   { vendor: 'ServiceM8', online: 'From 3.10% + 30¢ (payments page); 3.05% + 30¢ US domestic (help center, current as of September 2024)', inPerson: 'Same table; Tap to Pay listed', other: 'International cards 4.60% + 30¢; next-business-day deposits' },
   { vendor: 'Service Fusion', online: '“As low as 2.90% + $0.30”', inPerson: 'Card reader through Service Fusion Payments', other: 'Bank transfers accepted; fee not published' },
-  { vendor: 'Kickserv', online: '3.9% (card not present)', inPerson: '2.9% (Tap to Pay)', other: 'Instant payouts +1%; ACH fee not published' },
+  { vendor: 'Kickserv', online: '3.9% (card not present)', inPerson: '2.9% (Tap to Pay)', other: 'ACH 1% + $0.30; instant payouts +1%' },
   { vendor: 'ServiceTitan, Workiz, FieldPulse, Commusoft', online: 'Not published', inPerson: 'Not published', other: 'Ask for the full fee schedule in writing before you sign' },
 ]
 
@@ -203,6 +203,7 @@ const sources = [
   { name: 'Service Fusion Payments', url: 'https://www.servicefusion.com/service-fusion-payments', checked: '2026-11-20' },
   { name: 'Kickserv pricing', url: 'https://www.kickserv.com/pricing', checked: '2026-11-20' },
   { name: 'Kickserv payments', url: 'https://www.kickserv.com/integrations/payments', checked: '2026-11-20' },
+  { name: 'Kickserv help: ACH payments (1% + $0.30)', url: 'https://help.kickserv.com/article/94-ach-payments', checked: '2026-11-24' },
   { name: 'ServiceTitan pricing', url: 'https://www.servicetitan.com/pricing', checked: '2026-11-20' },
   { name: 'ServiceTitan Payments', url: 'https://www.servicetitan.com/features/payments', checked: '2026-11-20' },
   { name: 'ServiceTitan accounting', url: 'https://www.servicetitan.com/features/accounting', checked: '2026-11-20' },

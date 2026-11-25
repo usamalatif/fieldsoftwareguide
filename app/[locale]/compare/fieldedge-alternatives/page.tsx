@@ -183,6 +183,7 @@ const sources = [
   { name: 'Jobber help: offline use', url: 'https://help.getjobber.com/hc/en-us/articles/360037203234-Troubleshooting-Tips-How-to-Help-Us-Help-You', checked: '2026-11-20' },
   { name: 'Service Fusion pricing (plans, QuickBooks, month to month)', url: 'https://www.servicefusion.com/pricing', checked: '2026-11-20' },
   { name: 'Service Fusion blog: implementation and data import (June 2026)', url: 'https://www.servicefusion.com/blog/overview-of-implementation', checked: '2026-11-20' },
+  { name: 'Service Fusion blog: introducing offline mode (June 22, 2026)', url: 'https://www.servicefusion.com/blog/introducing-offline-mode', checked: '2026-11-24' },
   { name: 'FieldPulse pricing (seat-based, no trial, add-ons)', url: 'https://www.fieldpulse.com/pricing', checked: '2026-11-20' },
   { name: 'FieldPulse help: QuickBooks Desktop pre-sync', url: 'https://help.fieldpulse.com/en/articles/8292219-pre-sync-quickbooks-desktop', checked: '2026-11-20' },
   { name: 'FieldPulse help: offline mode', url: 'https://help.fieldpulse.com/en/articles/4063488-offline-mode', checked: '2026-11-20' },
@@ -257,8 +258,8 @@ export default function FieldEdgeAlternativesPage() {
             <li><strong>Add-ons:</strong> Proposal Pro, MarketingEdge and the customer portal are included on Elite and priced on request below it.</li>
           </ul>
           <p>
-            FieldEdge’s roadmap lists offline mode for its Mobile 2.0 app as in rolling development,
-            and its 2026 app release notes describe offline support being added in stages. You can
+            FieldEdge’s roadmap lists offline mode for its Mobile 2.0 app as in rolling development.
+            You can
             upgrade at any time, but its FAQ says downgrades happen at the end of the contract period.
           </p>
 
@@ -379,7 +380,8 @@ export default function FieldEdgeAlternativesPage() {
             It offers import templates for customers, locations, service agreements, estimates, jobs
             and equipment, and says data extraction services are available.{' '}
             <strong>Limitation:</strong> recurring invoicing for agreements is included only on Pro,
-            and offline behavior is not documented on the pages we read.
+            and its offline mode, added in June 2026, lets techs view jobs and edit notes, photos and
+            checklists but not take payments.
           </p>
 
           <h3>FieldPulse</h3>
