@@ -64,4 +64,9 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/pricing/fergus': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
   '/pricing/gorilladesk': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
   '/pricing/servicetrade': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
+  '/compare/servicem8-vs-tradify': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/tradify-vs-fergus': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/servicem8-vs-fergus': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/jobber-vs-tradify': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/jobber-vs-gorilladesk': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
 }
