@@ -294,6 +294,12 @@ export default function ComparePage() {
             <Link href="/compare/jobber-vs-servicem8" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs ServiceM8</Link>,{' '}
             <Link href="/compare/jobber-vs-kickserv" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs Kickserv</Link> and{' '}
             <Link href="/compare/housecall-pro-vs-kickserv" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro vs Kickserv</Link>.
+            Per-job, per-user and per-route pricing compared:{' '}
+            <Link href="/compare/servicem8-vs-tradify" className="font-semibold text-orange-600 dark:text-orange-400">ServiceM8 vs Tradify</Link>,{' '}
+            <Link href="/compare/tradify-vs-fergus" className="font-semibold text-orange-600 dark:text-orange-400">Tradify vs Fergus</Link>,{' '}
+            <Link href="/compare/servicem8-vs-fergus" className="font-semibold text-orange-600 dark:text-orange-400">ServiceM8 vs Fergus</Link>,{' '}
+            <Link href="/compare/jobber-vs-tradify" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs Tradify</Link> and{' '}
+            <Link href="/compare/jobber-vs-gorilladesk" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs GorillaDesk</Link>.
           </p>
         </section>
 

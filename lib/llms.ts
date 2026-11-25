@@ -88,6 +88,11 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [Jobber vs ServiceM8](${site.url}/compare/jobber-vs-servicem8): per-user bands vs per-job allowances with unlimited users, accounting, phones, payment fees and terms
 - [Jobber vs Kickserv](${site.url}/compare/jobber-vs-kickserv): user bands vs team-size plans, cost at 5 and 10 users, QuickBooks Desktop, payment fees and cancellation
 - [Housecall Pro vs Kickserv](${site.url}/compare/housecall-pro-vs-kickserv): plan user caps vs team-size plans, cost by team size, payment fees, AI answering and QuickBooks
+- [ServiceM8 vs Tradify](${site.url}/compare/servicem8-vs-tradify): pricing by jobs a month with unlimited users vs per-user plans, cost by team size, card fees and refund terms
+- [Tradify vs Fergus](${site.url}/compare/tradify-vs-fergus): flat per-user plans vs timesheet and contractor user types, card fees, support and cancellation terms
+- [ServiceM8 vs Fergus](${site.url}/compare/servicem8-vs-fergus): job limits with unlimited users vs per-user seats and contractor day rates, crew fit and terms
+- [Jobber vs Tradify](${site.url}/compare/jobber-vs-tradify): team-band pricing vs per-user pricing, cost by team size, accounting sync, job costing and terms
+- [Jobber vs GorillaDesk](${site.url}/compare/jobber-vs-gorilladesk): user bands vs per-route pricing with free office users, pest control tools, QuickBooks and phones
 - [FieldEdge Alternatives](${site.url}/compare/fieldedge-alternatives): FieldEdge alternatives compared on published pricing, trials, QuickBooks Desktop, flat rate and FieldEdge's published contract terms
 - [Field Service Invoicing Software](${site.url}/guides/field-service-invoicing-software): card and ACH processing fees, reminders, progress billing and QuickBooks sync by plan
 - [Field Service Quoting Software](${site.url}/guides/field-service-quoting-software): quote options, e-signature, deposits, follow-ups and financing by plan

@@ -64,4 +64,10 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/pricing/fergus': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
   '/pricing/gorilladesk': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
   '/pricing/servicetrade': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
+  // Batch 17 drafts: set firstPublished and contentUpdated to the merge day when published.
+  '/compare/servicem8-vs-tradify': { contentUpdated: '2026-11-25' },
+  '/compare/tradify-vs-fergus': { contentUpdated: '2026-11-25' },
+  '/compare/servicem8-vs-fergus': { contentUpdated: '2026-11-25' },
+  '/compare/jobber-vs-tradify': { contentUpdated: '2026-11-25' },
+  '/compare/jobber-vs-gorilladesk': { contentUpdated: '2026-11-25' },
 }
