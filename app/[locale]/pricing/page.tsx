@@ -526,6 +526,10 @@ export default function PricingHubPage() {
             <Link href="/pricing/servicem8" className="text-orange-600 hover:text-orange-800">ServiceM8 pricing →</Link>
             <Link href="/pricing/kickserv" className="text-orange-600 hover:text-orange-800">Kickserv pricing →</Link>
             <Link href="/pricing/commusoft" className="text-orange-600 hover:text-orange-800">Commusoft pricing →</Link>
+            <Link href="/pricing/tradify" className="text-orange-600 hover:text-orange-800">Tradify pricing →</Link>
+            <Link href="/pricing/fergus" className="text-orange-600 hover:text-orange-800">Fergus pricing →</Link>
+            <Link href="/pricing/gorilladesk" className="text-orange-600 hover:text-orange-800">GorillaDesk pricing →</Link>
+            <Link href="/pricing/servicetrade" className="text-orange-600 hover:text-orange-800">ServiceTrade pricing →</Link>
             <Link href="/compare" className="text-orange-600 hover:text-orange-800">Compare all FSM software →</Link>
           </div>
           <div className="mt-10 border-t border-slate-200 pt-6 dark:border-slate-800">

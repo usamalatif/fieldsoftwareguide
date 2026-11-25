@@ -60,4 +60,8 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/compare/jobber-vs-servicem8': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
   '/compare/jobber-vs-kickserv': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
   '/compare/housecall-pro-vs-kickserv': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
+  '/pricing/tradify': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
+  '/pricing/fergus': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
+  '/pricing/gorilladesk': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
+  '/pricing/servicetrade': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
 }

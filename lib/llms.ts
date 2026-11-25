@@ -112,6 +112,10 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [ServiceM8 Pricing](${site.url}/pricing/servicem8): ServiceM8 Free, Starter $29, Growing $79, Premium $149 and Premium Plus $349 a month by jobs with unlimited users, add-ons, phone plans and card fees
 - [Kickserv Pricing](${site.url}/pricing/kickserv): Kickserv Start $60 (5 users), Run $119 (10) and Scale $199 (20) a month, QuickBooks Desktop $50 add-on, payment fees and terms
 - [Commusoft Pricing](${site.url}/pricing/commusoft): Commusoft per-license pricing, contracted, rolling and daily licenses, add-ons and 12-month terms; no prices published
+- [Tradify Pricing](${site.url}/pricing/tradify): Tradify Lite $47, Pro $51 and Plus $61 per user a month, Custom plan, website add-on, Stripe card fees and cancellation terms
+- [Fergus Pricing](${site.url}/pricing/fergus): Fergus US Essentials from $31 and Professional from $44 a month, timesheet and contractor users, add-ons, card fees and monthly terms
+- [GorillaDesk Pricing](${site.url}/pricing/gorilladesk): GorillaDesk Basic $49, Pro $99 and Growth $149 a month per route with unlimited users, extra routes, texts, VoIP and card fees
+- [ServiceTrade Pricing](${site.url}/pricing/servicetrade): ServiceTrade Select, Premium and Enterprise priced by technicians on request, auto-renewal, 7% renewal cap and setup fees; no prices published
 - [Best for Small Business](${site.url}/for-small-business): verified 1-user and 5-user pricing
 - [By Business Size](${site.url}/by-size): solo operator to enterprise
 - [How We Review](${site.url}/how-we-review): our pricing-confidence standard
