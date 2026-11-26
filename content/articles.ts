@@ -50,6 +50,11 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/guides/offline-field-service-app': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/guides/ai-answering-service-for-contractors': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/guides/field-service-inventory-management-software': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
+  // Batch 20 drafts: set firstPublished and contentUpdated to the merge day when published.
+  '/guides/field-service-software-contract-terms': { contentUpdated: '2026-11-26' },
+  '/guides/subcontractor-management-software': { contentUpdated: '2026-11-26' },
+  '/guides/job-costing-software-for-contractors': { contentUpdated: '2026-11-26' },
+  '/guides/contractor-time-tracking-software': { contentUpdated: '2026-11-26' },
   '/pricing/servicem8': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/pricing/kickserv': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/pricing/commusoft': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
