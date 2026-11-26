@@ -312,6 +312,11 @@ export default function ComparePage() {
             <Link href="/compare/jobber-vs-fergus" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs Fergus</Link>,{' '}
             <Link href="/compare/servicetitan-vs-service-fusion" className="font-semibold text-orange-600 dark:text-orange-400">ServiceTitan vs Service Fusion</Link> and{' '}
             <Link href="/compare/servicetitan-vs-servicetrade" className="font-semibold text-orange-600 dark:text-orange-400">ServiceTitan vs ServiceTrade</Link>.
+            Quote-only vs published prices:{' '}
+            <Link href="/compare/workiz-vs-servicem8" className="font-semibold text-orange-600 dark:text-orange-400">Workiz vs ServiceM8</Link>,{' '}
+            <Link href="/compare/workiz-vs-kickserv" className="font-semibold text-orange-600 dark:text-orange-400">Workiz vs Kickserv</Link>,{' '}
+            <Link href="/compare/fieldpulse-vs-tradify" className="font-semibold text-orange-600 dark:text-orange-400">FieldPulse vs Tradify</Link> and{' '}
+            <Link href="/compare/service-fusion-vs-kickserv" className="font-semibold text-orange-600 dark:text-orange-400">Service Fusion vs Kickserv</Link>.
           </p>
         </section>
 

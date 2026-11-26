@@ -103,6 +103,10 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [ServiceTitan vs ServiceTrade](${site.url}/compare/servicetitan-vs-servicetrade): two quote-only tools compared on what each counts (users or technicians), contract terms, renewal caps and fire features
 - [Jobber vs Fergus](${site.url}/compare/jobber-vs-fergus): user bands with annual billing vs monthly billing in arrears with timesheet and contractor users, card fees and purchasing
 - [Housecall Pro vs Tradify](${site.url}/compare/housecall-pro-vs-tradify): user-capped plans vs per-user pricing, cost by team size, trade focus, add-ons and refund terms
+- [Workiz vs ServiceM8](${site.url}/compare/workiz-vs-servicem8): quote-only plans on a 12-month renewing term vs pricing by jobs a month with unlimited users and a free plan
+- [FieldPulse vs Tradify](${site.url}/compare/fieldpulse-vs-tradify): custom seat-based quotes on a renewing one-year term vs per-user prices with no fixed term
+- [Workiz vs Kickserv](${site.url}/compare/workiz-vs-kickserv): quoted plans on a yearly term vs published plans with set user tiers, phones, QuickBooks and fees
+- [Service Fusion vs Kickserv](${site.url}/compare/service-fusion-vs-kickserv): unlimited users at a flat price vs user-capped plans, cost by team size, QuickBooks Desktop and terms
 - [FieldEdge Alternatives](${site.url}/compare/fieldedge-alternatives): FieldEdge alternatives compared on published pricing, trials, QuickBooks Desktop, flat rate and FieldEdge's published contract terms
 - [Field Service Invoicing Software](${site.url}/guides/field-service-invoicing-software): card and ACH processing fees, reminders, progress billing and QuickBooks sync by plan
 - [Field Service Quoting Software](${site.url}/guides/field-service-quoting-software): quote options, e-signature, deposits, follow-ups and financing by plan
@@ -118,6 +122,7 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [Subcontractor Management Software](${site.url}/guides/subcontractor-management-software): how nine field service tools charge for, schedule and restrict subcontractors
 - [Job Costing Software for Contractors](${site.url}/guides/job-costing-software-for-contractors): which plan unlocks job costing in 11 tools, what each tracks and how job profit is reported
 - [Contractor Time Tracking Software](${site.url}/guides/contractor-time-tracking-software): clock in, job timers, GPS on time entries, payroll export and timesheet-only users in 10 tools
+- [Field Service Customer Portal](${site.url}/guides/customer-portal-software): which tools include a client portal, on which plan, and what customers can do in it
 - [Free FSM Software](${site.url}/free): what is actually free, verified on vendor sites
 - [QuickBooks Compatibility](${site.url}/quickbooks): which FSM tools sync with QuickBooks Online vs Desktop
 - [Field Service Software Pricing](${site.url}/pricing): published prices, 1 to 15 user costs, billing terms, add-ons and payment fees for six FSM platforms; which tools are quote-only
