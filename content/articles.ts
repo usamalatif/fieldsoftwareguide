@@ -69,4 +69,10 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/compare/servicem8-vs-fergus': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
   '/compare/jobber-vs-tradify': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
   '/compare/jobber-vs-gorilladesk': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  // Batch 18 drafts: set firstPublished and contentUpdated to the merge day when published.
+  '/compare/tradify-alternatives': { contentUpdated: '2026-11-26' },
+  '/compare/fergus-alternatives': { contentUpdated: '2026-11-26' },
+  '/compare/gorilladesk-alternatives': { contentUpdated: '2026-11-26' },
+  '/compare/servicetrade-alternatives': { contentUpdated: '2026-11-26' },
+  '/compare/housecall-pro-vs-gorilladesk': { contentUpdated: '2026-11-26' },
 }
