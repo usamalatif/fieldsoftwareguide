@@ -93,6 +93,11 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [ServiceM8 vs Fergus](${site.url}/compare/servicem8-vs-fergus): job limits with unlimited users vs per-user seats and contractor day rates, crew fit and terms
 - [Jobber vs Tradify](${site.url}/compare/jobber-vs-tradify): team-band pricing vs per-user pricing, cost by team size, accounting sync, job costing and terms
 - [Jobber vs GorillaDesk](${site.url}/compare/jobber-vs-gorilladesk): user bands vs per-route pricing with free office users, pest control tools, QuickBooks and phones
+- [Housecall Pro vs GorillaDesk](${site.url}/compare/housecall-pro-vs-gorilladesk): plan user caps vs per-route pricing with free office users, routing tiers, pest tools and QuickBooks
+- [Tradify Alternatives](${site.url}/compare/tradify-alternatives): five tools compared with Tradify's per-user pricing on billing basis, team cost, card fees and cancellation terms
+- [Fergus Alternatives](${site.url}/compare/fergus-alternatives): six tools compared on how they bill full users, part-time staff and subcontractors, purchasing, accounting and contracts
+- [GorillaDesk Alternatives](${site.url}/compare/gorilladesk-alternatives): six tools compared with per-route pricing on billing basis, pest and lawn features, chemical records and QuickBooks
+- [ServiceTrade Alternatives](${site.url}/compare/servicetrade-alternatives): five tools for commercial and fire work compared on pricing basis, renewal, notice periods and price caps
 - [FieldEdge Alternatives](${site.url}/compare/fieldedge-alternatives): FieldEdge alternatives compared on published pricing, trials, QuickBooks Desktop, flat rate and FieldEdge's published contract terms
 - [Field Service Invoicing Software](${site.url}/guides/field-service-invoicing-software): card and ACH processing fees, reminders, progress billing and QuickBooks sync by plan
 - [Field Service Quoting Software](${site.url}/guides/field-service-quoting-software): quote options, e-signature, deposits, follow-ups and financing by plan

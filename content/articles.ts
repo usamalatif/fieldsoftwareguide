@@ -69,4 +69,9 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/compare/servicem8-vs-fergus': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
   '/compare/jobber-vs-tradify': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
   '/compare/jobber-vs-gorilladesk': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/tradify-alternatives': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/fergus-alternatives': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/gorilladesk-alternatives': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/servicetrade-alternatives': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/housecall-pro-vs-gorilladesk': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
 }
