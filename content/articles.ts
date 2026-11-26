@@ -74,10 +74,9 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/compare/gorilladesk-alternatives': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
   '/compare/servicetrade-alternatives': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
   '/compare/housecall-pro-vs-gorilladesk': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
-  // Batch 19 drafts: set firstPublished and contentUpdated to the merge day when published.
-  '/compare/housecall-pro-vs-servicem8': { contentUpdated: '2026-11-26' },
-  '/compare/servicetitan-vs-service-fusion': { contentUpdated: '2026-11-26' },
-  '/compare/servicetitan-vs-servicetrade': { contentUpdated: '2026-11-26' },
-  '/compare/jobber-vs-fergus': { contentUpdated: '2026-11-26' },
-  '/compare/housecall-pro-vs-tradify': { contentUpdated: '2026-11-26' },
+  '/compare/housecall-pro-vs-servicem8': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/servicetitan-vs-service-fusion': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/servicetitan-vs-servicetrade': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/jobber-vs-fergus': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/housecall-pro-vs-tradify': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
 }
