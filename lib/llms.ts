@@ -114,6 +114,10 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [Offline Field Service Apps](${site.url}/guides/offline-field-service-app): what ten field service apps let technicians do without signal, from vendor help centers
 - [AI Answering Service for Contractors](${site.url}/guides/ai-answering-service-for-contractors): AI phone answering sold by field service vendors, booking, languages and published prices (Jobber $29, ServiceM8 $32 or $119)
 - [Field Service Inventory Management Software](${site.url}/guides/field-service-inventory-management-software): truck and warehouse stock, parts deduction, automatic reordering and purchase orders compared by plan
+- [Field Service Software Contracts](${site.url}/guides/field-service-software-contract-terms): term length, auto-renewal, notice to cancel, price increase caps, refunds, data on exit and governing law for 13 tools
+- [Subcontractor Management Software](${site.url}/guides/subcontractor-management-software): how nine field service tools charge for, schedule and restrict subcontractors
+- [Job Costing Software for Contractors](${site.url}/guides/job-costing-software-for-contractors): which plan unlocks job costing in 11 tools, what each tracks and how job profit is reported
+- [Contractor Time Tracking Software](${site.url}/guides/contractor-time-tracking-software): clock in, job timers, GPS on time entries, payroll export and timesheet-only users in 10 tools
 - [Free FSM Software](${site.url}/free): what is actually free, verified on vendor sites
 - [QuickBooks Compatibility](${site.url}/quickbooks): which FSM tools sync with QuickBooks Online vs Desktop
 - [Field Service Software Pricing](${site.url}/pricing): published prices, 1 to 15 user costs, billing terms, add-ons and payment fees for six FSM platforms; which tools are quote-only

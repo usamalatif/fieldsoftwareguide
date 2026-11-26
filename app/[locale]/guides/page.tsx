@@ -39,6 +39,10 @@ const guides = [
   { title: 'Offline field service apps (2026)', desc: 'What ten apps let technicians do with no signal, from each vendor’s help center.', href: '/guides/offline-field-service-app', tag: 'Mobile' },
   { title: 'AI answering service for contractors (2026)', desc: 'AI phone agents from field service vendors: booking, languages and published prices.', href: '/guides/ai-answering-service-for-contractors', tag: 'Phones' },
   { title: 'Field service inventory management software (2026)', desc: 'Truck and warehouse stock, parts deduction, reorders and purchase orders by plan.', href: '/guides/field-service-inventory-management-software', tag: 'Inventory' },
+  { title: 'Field service software contracts (2026)', desc: 'Term length, auto-renewal, notice to cancel, price caps, refunds and data on exit for 13 tools.', href: '/guides/field-service-software-contract-terms', tag: 'Contracts' },
+  { title: 'Subcontractor management software (2026)', desc: 'How nine tools charge for, schedule and restrict subcontractors, from day-rate seats to free connections.', href: '/guides/subcontractor-management-software', tag: 'Subcontractors' },
+  { title: 'Job costing software for contractors (2026)', desc: 'Which plan unlocks job costing in 11 tools and what each tracks: labor, materials, bills and markup.', href: '/guides/job-costing-software-for-contractors', tag: 'Job costing' },
+  { title: 'Contractor time tracking software (2026)', desc: 'Clock in, job timers, GPS on time entries, payroll export and timesheet-only users in 10 tools.', href: '/guides/contractor-time-tracking-software', tag: 'Timesheets' },
   { title: 'HVAC software guide', desc: 'The highest-demand trade guide — real pricing and top picks.', href: '/by-industry/hvac', tag: 'Popular' },
 ]
 
