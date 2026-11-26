@@ -306,6 +306,12 @@ export default function ComparePage() {
             <Link href="/compare/gorilladesk-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">GorillaDesk alternatives</Link> and{' '}
             <Link href="/compare/servicetrade-alternatives" className="font-semibold text-orange-600 dark:text-orange-400">ServiceTrade alternatives</Link>, plus{' '}
             <Link href="/compare/housecall-pro-vs-gorilladesk" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro vs GorillaDesk</Link>.
+            Also compared:{' '}
+            <Link href="/compare/housecall-pro-vs-servicem8" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro vs ServiceM8</Link>,{' '}
+            <Link href="/compare/housecall-pro-vs-tradify" className="font-semibold text-orange-600 dark:text-orange-400">Housecall Pro vs Tradify</Link>,{' '}
+            <Link href="/compare/jobber-vs-fergus" className="font-semibold text-orange-600 dark:text-orange-400">Jobber vs Fergus</Link>,{' '}
+            <Link href="/compare/servicetitan-vs-service-fusion" className="font-semibold text-orange-600 dark:text-orange-400">ServiceTitan vs Service Fusion</Link> and{' '}
+            <Link href="/compare/servicetitan-vs-servicetrade" className="font-semibold text-orange-600 dark:text-orange-400">ServiceTitan vs ServiceTrade</Link>.
           </p>
         </section>
 
