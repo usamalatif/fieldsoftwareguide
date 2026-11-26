@@ -180,6 +180,7 @@ const sources = [
   { name: 'Jobber help: QuickBooks integration FAQs', url: 'https://help.getjobber.com/en/articles/quickbooks-integration-faqs/', checked: '2026-11-20' },
   { name: 'Jobber help: import clients', url: 'https://help.getjobber.com/en/articles/import-clients/', checked: '2026-11-21' },
   { name: 'Service Fusion pricing', url: 'https://www.servicefusion.com/pricing', checked: '2026-11-20' },
+  { name: 'Service Fusion Subscription Agreement (auto-renewal, 30 days’ notice)', url: 'https://www.servicefusion.com/subscription-agreement', checked: '2026-11-24' },
   { name: 'Service Fusion blog: implementation and data import', url: 'https://www.servicefusion.com/blog/overview-of-implementation', checked: '2026-11-20' },
   { name: 'Service Fusion blog: introducing offline mode (June 22, 2026)', url: 'https://www.servicefusion.com/blog/introducing-offline-mode', checked: '2026-11-24' },
   { name: 'Housecall Pro help: vehicle GPS tracking (Force, $20 per vehicle a month)', url: 'https://help.housecallpro.com/en/articles/6060351-vehicle-gps-tracking-overview', checked: '2026-11-24' },
@@ -334,7 +335,7 @@ export default function HousecallProAlternativesPage() {
             <strong>Best fit:</strong> growing teams that want one price regardless of users. Plans
             are $220, $339 and $552 a month billed annually with unlimited users, month-to-month
             terms, and QuickBooks Online and Desktop. It offers import templates for customers,
-            locations, service agreements, estimates, jobs and equipment.{' '}
+            locations, service agreements, estimates, jobs and equipment. Its Subscription Agreement renews the ordered term automatically for the same length unless you give 30 days’ written notice before it ends, so check the term on your order.{' '}
             <strong>Limitation:</strong> at five users it costs more than Housecall Pro Essentials,
             recurring invoicing is included only on Pro, route optimization is not documented on the
             pages we read, and its offline mode, added in June 2026, lets techs view jobs and edit
