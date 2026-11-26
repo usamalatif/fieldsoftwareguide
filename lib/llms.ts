@@ -98,6 +98,11 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [Fergus Alternatives](${site.url}/compare/fergus-alternatives): six tools compared on how they bill full users, part-time staff and subcontractors, purchasing, accounting and contracts
 - [GorillaDesk Alternatives](${site.url}/compare/gorilladesk-alternatives): six tools compared with per-route pricing on billing basis, pest and lawn features, chemical records and QuickBooks
 - [ServiceTrade Alternatives](${site.url}/compare/servicetrade-alternatives): five tools for commercial and fire work compared on pricing basis, renewal, notice periods and price caps
+- [Housecall Pro vs ServiceM8](${site.url}/compare/housecall-pro-vs-servicem8): plan user caps vs monthly job limits with unlimited users and a free plan, cost by team size, fees and QuickBooks
+- [ServiceTitan vs Service Fusion](${site.url}/compare/servicetitan-vs-service-fusion): quote-only user-based pricing on 12 to 36 month terms vs published flat prices with unlimited users and contract renewal
+- [ServiceTitan vs ServiceTrade](${site.url}/compare/servicetitan-vs-servicetrade): two quote-only tools compared on what each counts (users or technicians), contract terms, renewal caps and fire features
+- [Jobber vs Fergus](${site.url}/compare/jobber-vs-fergus): user bands with annual billing vs monthly billing in arrears with timesheet and contractor users, card fees and purchasing
+- [Housecall Pro vs Tradify](${site.url}/compare/housecall-pro-vs-tradify): user-capped plans vs per-user pricing, cost by team size, trade focus, add-ons and refund terms
 - [FieldEdge Alternatives](${site.url}/compare/fieldedge-alternatives): FieldEdge alternatives compared on published pricing, trials, QuickBooks Desktop, flat rate and FieldEdge's published contract terms
 - [Field Service Invoicing Software](${site.url}/guides/field-service-invoicing-software): card and ACH processing fees, reminders, progress billing and QuickBooks sync by plan
 - [Field Service Quoting Software](${site.url}/guides/field-service-quoting-software): quote options, e-signature, deposits, follow-ups and financing by plan
