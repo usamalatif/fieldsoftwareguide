@@ -43,6 +43,7 @@ const guides = [
   { title: 'Subcontractor management software (2026)', desc: 'How nine tools charge for, schedule and restrict subcontractors, from day-rate seats to free connections.', href: '/guides/subcontractor-management-software', tag: 'Subcontractors' },
   { title: 'Job costing software for contractors (2026)', desc: 'Which plan unlocks job costing in 11 tools and what each tracks: labor, materials, bills and markup.', href: '/guides/job-costing-software-for-contractors', tag: 'Job costing' },
   { title: 'Contractor time tracking software (2026)', desc: 'Clock in, job timers, GPS on time entries, payroll export and timesheet-only users in 10 tools.', href: '/guides/contractor-time-tracking-software', tag: 'Timesheets' },
+  { title: 'Field service customer portal (2026)', desc: 'Which tools include a client portal, on which plan, and what customers can do: approve quotes, pay, book, save cards.', href: '/guides/customer-portal-software', tag: 'Portal' },
   { title: 'HVAC software guide', desc: 'The highest-demand trade guide — real pricing and top picks.', href: '/by-industry/hvac', tag: 'Popular' },
 ]
 

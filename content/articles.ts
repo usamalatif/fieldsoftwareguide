@@ -54,6 +54,7 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/guides/subcontractor-management-software': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
   '/guides/job-costing-software-for-contractors': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
   '/guides/contractor-time-tracking-software': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/guides/customer-portal-software': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
   '/pricing/servicem8': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/pricing/kickserv': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
   '/pricing/commusoft': { firstPublished: '2026-11-24', contentUpdated: '2026-11-24' },
@@ -83,4 +84,8 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/compare/servicetitan-vs-servicetrade': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
   '/compare/jobber-vs-fergus': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
   '/compare/housecall-pro-vs-tradify': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
+  '/compare/workiz-vs-servicem8': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
+  '/compare/fieldpulse-vs-tradify': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
+  '/compare/workiz-vs-kickserv': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
+  '/compare/service-fusion-vs-kickserv': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
 }
