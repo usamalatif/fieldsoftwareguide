@@ -69,6 +69,11 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/pricing/fergus': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
   '/pricing/gorilladesk': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
   '/pricing/servicetrade': { firstPublished: '2026-11-25', contentUpdated: '2026-11-25' },
+  // Batch 23 drafts: set firstPublished and contentUpdated to the merge day when published.
+  '/pricing/synchroteam': { contentUpdated: '2026-11-28' },
+  '/pricing/zuper': { contentUpdated: '2026-11-28' },
+  '/pricing/fieldroutes': { contentUpdated: '2026-11-28' },
+  '/pricing/quoteiq': { contentUpdated: '2026-11-28' },
   '/compare/servicem8-vs-tradify': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
   '/compare/tradify-vs-fergus': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },
   '/compare/servicem8-vs-fergus': { firstPublished: '2026-11-26', contentUpdated: '2026-11-26' },

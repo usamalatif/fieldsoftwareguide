@@ -145,6 +145,10 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [Fergus Pricing](${site.url}/pricing/fergus): Fergus US Essentials from $31 and Professional from $44 a month, timesheet and contractor users, add-ons, card fees and monthly terms
 - [GorillaDesk Pricing](${site.url}/pricing/gorilladesk): GorillaDesk Basic $49, Pro $99 and Growth $149 a month per route with unlimited users, extra routes, texts, VoIP and card fees
 - [ServiceTrade Pricing](${site.url}/pricing/servicetrade): ServiceTrade Select, Premium and Enterprise priced by technicians on request, auto-renewal, 7% renewal cap and setup fees; no prices published
+- [Synchroteam Pricing](${site.url}/pricing/synchroteam): Standard $39 and Premium $64 per user a month billed annually ($49 and $79 monthly), route optimization on Premium, SMS packs, card fees and terms
+- [Zuper Pricing](${site.url}/pricing/zuper): Zuper publishes no subscription prices; Starter, Core and Premium, Zuper Pay card and ACH fees, support plans and auto-renewing terms
+- [FieldRoutes Pricing](${site.url}/pricing/fieldroutes): FieldRoutes Growth and Corporate priced by active customers on request, two-year initial term, renewal increases and published usage fees
+- [QuoteIQ Pricing](${site.url}/pricing/quoteiq): five plans from $29.99 to $699.99 a month for 1 to 20 users, $25 per extra user, yearly billing, IQ Credits, add-ons and card fees
 - [Best for Small Business](${site.url}/for-small-business): verified 1-user and 5-user pricing
 - [By Business Size](${site.url}/by-size): solo operator to enterprise
 - [How We Review](${site.url}/how-we-review): our pricing-confidence standard
