@@ -88,4 +88,10 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/compare/fieldpulse-vs-tradify': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
   '/compare/workiz-vs-kickserv': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
   '/compare/service-fusion-vs-kickserv': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
+  // Batch 22 drafts: set firstPublished and contentUpdated to the merge day when published.
+  '/compare/workiz-vs-service-fusion': { contentUpdated: '2026-11-28' },
+  '/compare/fieldpulse-vs-service-fusion': { contentUpdated: '2026-11-28' },
+  '/compare/fieldedge-vs-service-fusion': { contentUpdated: '2026-11-28' },
+  '/compare/servicem8-vs-kickserv': { contentUpdated: '2026-11-28' },
+  '/compare/fieldedge-vs-workiz': { contentUpdated: '2026-11-28' },
 }

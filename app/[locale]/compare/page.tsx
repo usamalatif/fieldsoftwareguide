@@ -317,6 +317,12 @@ export default function ComparePage() {
             <Link href="/compare/workiz-vs-kickserv" className="font-semibold text-orange-600 dark:text-orange-400">Workiz vs Kickserv</Link>,{' '}
             <Link href="/compare/fieldpulse-vs-tradify" className="font-semibold text-orange-600 dark:text-orange-400">FieldPulse vs Tradify</Link> and{' '}
             <Link href="/compare/service-fusion-vs-kickserv" className="font-semibold text-orange-600 dark:text-orange-400">Service Fusion vs Kickserv</Link>.
+            More pairs:{' '}
+            <Link href="/compare/workiz-vs-service-fusion" className="font-semibold text-orange-600 dark:text-orange-400">Workiz vs Service Fusion</Link>,{' '}
+            <Link href="/compare/fieldpulse-vs-service-fusion" className="font-semibold text-orange-600 dark:text-orange-400">FieldPulse vs Service Fusion</Link>,{' '}
+            <Link href="/compare/fieldedge-vs-service-fusion" className="font-semibold text-orange-600 dark:text-orange-400">FieldEdge vs Service Fusion</Link>,{' '}
+            <Link href="/compare/fieldedge-vs-workiz" className="font-semibold text-orange-600 dark:text-orange-400">FieldEdge vs Workiz</Link> and{' '}
+            <Link href="/compare/servicem8-vs-kickserv" className="font-semibold text-orange-600 dark:text-orange-400">ServiceM8 vs Kickserv</Link>.
           </p>
         </section>
 
