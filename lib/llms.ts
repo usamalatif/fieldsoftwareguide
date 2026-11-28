@@ -107,6 +107,11 @@ Every price we publish comes from the vendor's own current pricing page with the
 - [FieldPulse vs Tradify](${site.url}/compare/fieldpulse-vs-tradify): custom seat-based quotes on a renewing one-year term vs per-user prices with no fixed term
 - [Workiz vs Kickserv](${site.url}/compare/workiz-vs-kickserv): quoted plans on a yearly term vs published plans with set user tiers, phones, QuickBooks and fees
 - [Service Fusion vs Kickserv](${site.url}/compare/service-fusion-vs-kickserv): unlimited users at a flat price vs user-capped plans, cost by team size, QuickBooks Desktop and terms
+- [Workiz vs Service Fusion](${site.url}/compare/workiz-vs-service-fusion): quote-only plans with a 10% increase cap vs flat published prices with unlimited users, renewal terms, phones and QuickBooks Desktop
+- [FieldPulse vs Service Fusion](${site.url}/compare/fieldpulse-vs-service-fusion): seat-based quotes on a one-year term vs flat prices with unlimited users, QuickBooks Desktop, agreements and offline
+- [FieldEdge vs Service Fusion](${site.url}/compare/fieldedge-vs-service-fusion): quote-only annual memberships on Xplor terms vs published prices with unlimited users, HVAC dispatch and agreements
+- [ServiceM8 vs Kickserv](${site.url}/compare/servicem8-vs-kickserv): pricing by jobs a month with unlimited users vs user-capped plans, cost by crew size and job volume, QuickBooks and fees
+- [FieldEdge vs Workiz](${site.url}/compare/fieldedge-vs-workiz): two quote-only tools compared on renewal notice, price increase rules, plans, QuickBooks and phones
 - [FieldEdge Alternatives](${site.url}/compare/fieldedge-alternatives): FieldEdge alternatives compared on published pricing, trials, QuickBooks Desktop, flat rate and FieldEdge's published contract terms
 - [Field Service Invoicing Software](${site.url}/guides/field-service-invoicing-software): card and ACH processing fees, reminders, progress billing and QuickBooks sync by plan
 - [Field Service Quoting Software](${site.url}/guides/field-service-quoting-software): quote options, e-signature, deposits, follow-ups and financing by plan

@@ -88,4 +88,9 @@ export const articleDates: Record<string, { firstPublished?: string; contentUpda
   '/compare/fieldpulse-vs-tradify': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
   '/compare/workiz-vs-kickserv': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
   '/compare/service-fusion-vs-kickserv': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
+  '/compare/workiz-vs-service-fusion': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
+  '/compare/fieldpulse-vs-service-fusion': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
+  '/compare/fieldedge-vs-service-fusion': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
+  '/compare/servicem8-vs-kickserv': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
+  '/compare/fieldedge-vs-workiz': { firstPublished: '2026-11-28', contentUpdated: '2026-11-28' },
 }
