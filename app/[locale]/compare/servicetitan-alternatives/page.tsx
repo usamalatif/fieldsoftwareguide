@@ -90,7 +90,7 @@ const rows: Row[] = [
   {
     name: 'Service Fusion',
     price: '$220, $339, $552 per month billed annually; unlimited users',
-    contract: 'Month to month; 15% off annual',
+    contract: 'Pricing page: month to month, 15% off annual; agreement auto-renews the ordered term (30 days’ notice)',
     dispatch: 'Scheduling and dispatching on every plan',
     agreements: 'Recurring invoicing on Pro, add-on below',
     quickbooks: 'Online and Desktop',
@@ -98,7 +98,7 @@ const rows: Row[] = [
   {
     name: 'FieldPulse',
     price: 'Not published; seat-based',
-    contract: 'Not stated on the pages we read',
+    contract: 'One-year term, renews yearly; 60 days’ notice before the term ends',
     dispatch: 'Drag-and-drop dispatch by team, service type or priority',
     agreements: 'Maintenance agreements on the same dispatch board',
     quickbooks: 'Online and Desktop 2024 or newer',
@@ -122,7 +122,7 @@ const rows: Row[] = [
   {
     name: 'ServiceTrade (commercial)',
     price: 'Not published; by technicians, office users free',
-    contract: 'Not stated on the pages we read',
+    contract: 'Renews yearly; 30 days’ notice; renewal increase capped at 7%',
     dispatch: 'Commercial service scheduling',
     agreements: 'Planned maintenance and contract work',
     quickbooks: 'QuickBooks on Select',
@@ -186,6 +186,9 @@ const sources = [
   { name: 'FieldEdge pricing', url: 'https://fieldedge.com/pricing/', checked: '2026-11-20' },
   { name: 'Xplor US SaaS terms (FieldEdge service agreement)', url: 'https://www.xplortechnologies.com/wp-content/uploads/sites/13/2024/05/231026-Xplor-US-SaaS-Terms-Online-v1-2.pdf', checked: '2026-11-20' },
   { name: 'Service Fusion pricing', url: 'https://www.servicefusion.com/pricing', checked: '2026-11-20' },
+  { name: 'Service Fusion Subscription Agreement (auto-renewal, 30 days’ notice)', url: 'https://www.servicefusion.com/subscription-agreement', checked: '2026-11-24' },
+  { name: 'FieldPulse Terms of Service (one-year term, renewal, 60 days’ notice)', url: 'https://www.fieldpulse.com/terms-of-service', checked: '2026-11-24' },
+  { name: 'ServiceTrade Master Services Agreement (updated August 10, 2026)', url: 'https://servicetrade.com/company/terms/msa-aug2026/', checked: '2026-11-25' },
   { name: 'Service Fusion blog: introducing offline mode (June 22, 2026)', url: 'https://www.servicefusion.com/blog/introducing-offline-mode', checked: '2026-11-24' },
   { name: 'Service Fusion blog: implementation and data import', url: 'https://www.servicefusion.com/blog/overview-of-implementation', checked: '2026-11-20' },
   { name: 'FieldPulse pricing', url: 'https://www.fieldpulse.com/pricing', checked: '2026-11-20' },
@@ -365,7 +368,7 @@ export default function ServiceTitanAlternativesPage() {
             QuickBooks Online and Desktop, import templates and data extraction services.{' '}
             <strong>Limitation:</strong> recurring invoicing for agreements is included only on Pro,
             and its offline mode, added in June 2026, lets techs view jobs and edit notes, photos and
-            checklists but not take payments.
+            checklists but not take payments. Its Subscription Agreement renews the ordered term automatically for the same length unless you give 30 days’ written notice before it ends, so check the term on your order.
           </p>
 
           <h3>FieldPulse</h3>
