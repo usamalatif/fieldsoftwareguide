@@ -234,6 +234,7 @@ const sources = [
   { name: 'FieldEdge pricing (plans and feature table)', url: 'https://fieldedge.com/pricing/', checked: '2026-11-19' },
   { name: 'FieldEdge scheduling and dispatching', url: 'https://fieldedge.com/field-service-software/scheduling-and-dispatching/', checked: '2026-11-19' },
   { name: 'Service Fusion pricing (plans, unlimited users, add-ons, month-to-month)', url: 'https://www.servicefusion.com/pricing', checked: '2026-11-19' },
+  { name: 'Service Fusion Subscription Agreement (auto-renewal, 30 days’ notice)', url: 'https://www.servicefusion.com/subscription-agreement', checked: '2026-11-24' },
   { name: 'Service Fusion AI call answering service (ZyraTalk)', url: 'https://www.servicefusion.com/ai-call-answering-service', checked: '2026-11-24' },
   { name: 'Service Fusion ServiceCall.ai (call tracking and VoIP)', url: 'https://www.servicefusion.com/servicecall-call-tracker', checked: '2026-11-24' },
   { name: 'EPA Section 608 technician certification', url: 'https://www.epa.gov/section608/section-608-technician-certification', checked: '2026-11-19' },
@@ -474,7 +475,7 @@ export default function HvacDispatchSoftwarePage() {
             Service Fusion is the only tool here that publishes prices with unlimited users: Starter
             $259, Plus $399 and Pro $649 per month, or $220, $339 and $552 billed annually as one
             payment. Scheduling and dispatching are on every plan, plans are month to month, and GPS
-            fleet tracking is an add-on with no published price.
+            fleet tracking is an add-on with no published price. Its Subscription Agreement renews the ordered term automatically for the same length unless you give 30 days’ written notice before it ends, so check the term on your order.
           </p>
 
           <h2 id="certification">Matching technicians by EPA 608 certification</h2>

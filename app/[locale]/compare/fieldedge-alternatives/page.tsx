@@ -102,7 +102,7 @@ const rows: Row[] = [
     quickbooks: 'QuickBooks Online and Desktop',
     pricebook: 'Not stated per plan',
     agreements: 'Recurring invoicing on Pro, add-on below',
-    contract: 'Month to month; 15% off with annual billing',
+    contract: 'Pricing page: month to month, 15% off annual; agreement auto-renews the ordered term (30 days’ notice)',
   },
   {
     name: 'FieldPulse',
@@ -111,7 +111,7 @@ const rows: Row[] = [
     quickbooks: 'QuickBooks Online and Desktop (2024 or newer), two-way',
     pricebook: 'Pricebook is a paid add-on',
     agreements: 'Maintenance agreements on the same dispatch board',
-    contract: 'Not stated on the pages we read',
+    contract: 'One-year term, renews yearly; 60 days’ notice before the term ends',
   },
   {
     name: 'Workiz',
@@ -182,6 +182,8 @@ const sources = [
   { name: 'Jobber help: QuickBooks integration FAQs (Online only)', url: 'https://help.getjobber.com/en/articles/quickbooks-integration-faqs/', checked: '2026-11-20' },
   { name: 'Jobber help: offline use', url: 'https://help.getjobber.com/hc/en-us/articles/360037203234-Troubleshooting-Tips-How-to-Help-Us-Help-You', checked: '2026-11-20' },
   { name: 'Service Fusion pricing (plans, QuickBooks, month to month)', url: 'https://www.servicefusion.com/pricing', checked: '2026-11-20' },
+  { name: 'Service Fusion Subscription Agreement (auto-renewal, 30 days’ notice)', url: 'https://www.servicefusion.com/subscription-agreement', checked: '2026-11-24' },
+  { name: 'FieldPulse Terms of Service (one-year term, renewal, 60 days’ notice)', url: 'https://www.fieldpulse.com/terms-of-service', checked: '2026-11-24' },
   { name: 'Service Fusion blog: implementation and data import (June 2026)', url: 'https://www.servicefusion.com/blog/overview-of-implementation', checked: '2026-11-20' },
   { name: 'Service Fusion blog: introducing offline mode (June 22, 2026)', url: 'https://www.servicefusion.com/blog/introducing-offline-mode', checked: '2026-11-24' },
   { name: 'FieldPulse pricing (seat-based, no trial, add-ons)', url: 'https://www.fieldpulse.com/pricing', checked: '2026-11-20' },
@@ -376,7 +378,7 @@ export default function FieldEdgeAlternativesPage() {
           <p>
             <strong>Best fit:</strong> growing teams that want unlimited users on a published price and
             QuickBooks Desktop. Plans are $220, $339 and $552 a month billed annually, or $259, $399
-            and $649 month to month, and Service Fusion says all plans are available month to month.
+            and $649 month to month, and Service Fusion says all plans are available month to month. Its Subscription Agreement renews the ordered term automatically for the same length unless you give 30 days’ written notice before it ends, so check the term on your order.
             It offers import templates for customers, locations, service agreements, estimates, jobs
             and equipment, and says data extraction services are available.{' '}
             <strong>Limitation:</strong> recurring invoicing for agreements is included only on Pro,

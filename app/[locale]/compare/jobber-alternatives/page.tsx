@@ -185,6 +185,7 @@ const sources = [
   { name: 'Kickserv pricing', url: 'https://www.kickserv.com/pricing', checked: '2026-11-21' },
   { name: 'Kickserv help: customers and contacts (import)', url: 'https://help.kickserv.com/article/36-customers-and-contacts', checked: '2026-11-21' },
   { name: 'Service Fusion pricing', url: 'https://www.servicefusion.com/pricing', checked: '2026-11-20' },
+  { name: 'Service Fusion Subscription Agreement (auto-renewal, 30 days’ notice)', url: 'https://www.servicefusion.com/subscription-agreement', checked: '2026-11-24' },
   { name: 'Service Fusion blog: implementation and data import', url: 'https://www.servicefusion.com/blog/overview-of-implementation', checked: '2026-11-20' },
   { name: 'FieldPulse pricing', url: 'https://www.fieldpulse.com/pricing', checked: '2026-11-20' },
   { name: 'FieldPulse help: migrating from Jobber', url: 'https://help.fieldpulse.com/getting-started/migrating/jobber', checked: '2026-11-21' },
@@ -353,7 +354,7 @@ export default function JobberAlternativesPage() {
           <p>
             <strong>Best fit:</strong> growing teams that want unlimited users and QuickBooks Desktop.
             Plans are $220, $339 and $552 a month billed annually, month to month, with import templates
-            and data extraction services. <strong>Limitation:</strong> the entry price is far above
+            and data extraction services. Its Subscription Agreement renews the ordered term automatically for the same length unless you give 30 days’ written notice before it ends, so check the term on your order. <strong>Limitation:</strong> the entry price is far above
             Jobber Core, and recurring invoicing is included only on Pro.
           </p>
 
